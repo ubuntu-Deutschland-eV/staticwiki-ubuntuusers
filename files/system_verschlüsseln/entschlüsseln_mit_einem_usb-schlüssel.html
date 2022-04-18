@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>System_verschlüsseln/Entschlüsseln_mit_einem_USB-Schlüssel › ubuntuusers statisches Wiki</title>
+<link href="../_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="../_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="../_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="../_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="../_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="../_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="../startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="../system_verschlüsseln/entschlüsseln_mit_einem_usb-schlüssel.html">Entschlüsseln mit einem USB-Schlüssel</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/System_verschlüsseln/Entschlüsseln_mit_einem_USB-Schlüssel">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="../wiki/index.html">Index</a></li>
+<li><a href="../wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="../wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="../wiki.html">Übersicht</a></li>
+<li><a href="../wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="../wiki/benutzung.html">Benutzung</a></li>
+<li><a href="../kategorien.html">Kategorie</a></li>
+<li><a href="../wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="../wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="../howto.html">Howto anlegen</a></li>
+<li><a href="../wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="../wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="../baustelle.html">Baustellen</a></li>
+<li><a href="../wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="../wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="../wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="../wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="../system_verschlüsseln/entschlüsseln_mit_einem_usb-schlüssel/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="../system_verschlüsseln/entschlüsseln_mit_einem_usb-schlüssel/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="../system_verschlüsseln/entschlüsseln_mit_einem_usb-schlüssel/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="../system_verschlüsseln/entschlüsseln_mit_einem_usb-schlüssel/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="../system_verschlüsseln/entschlüsseln_mit_einem_usb-schlüssel/a/backlinks.html">Entschlüsseln mit einem USB-Schlüssel</a></h1>
+<div id="page"><p>
+</p><div class="box tested_for"><h3 class="box tested_for">Dieser Artikel wurde für die folgenden
+Ubuntu-Versionen getestet:</h3><div class="contents"><p>
+</p><ul><li><p><a class="internal" href="../xenial_xerus.html">Ubuntu 16.04</a> Xenial Xerus</p></li><li><p><a class="internal" href="../trusty_tahr.html">Ubuntu 14.04</a> Trusty Tahr</p></li></ul></div></div><p>
+</p><div class="box advanced"><h3 class="box advanced">Artikel für fortgeschrittene Anwender</h3><div class="contents"><p>
+Dieser Artikel erfordert mehr Erfahrung im Umgang mit
+Linux und ist daher nur für fortgeschrittene Benutzer
+gedacht.
+</p></div></div><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="../system_verschlüsseln.html">Ein verschlüsseltes System aufsetzen</a></p></li><li><p><a class="crosslink anchor" href="#source-2" id="source-2"></a> <a class="internal" href="../terminal.html">Ein Terminal öffnen</a></p></li><li><p><a class="crosslink anchor" href="#source-3" id="source-3"></a> <a class="internal" href="../sudo.html">Root-Rechte</a></p></li><li><p><a class="crosslink anchor" href="#source-4" id="source-4"></a> <a class="internal" href="../skripte/gerät_mit_pseudozufallszahlen_überschreiben.html">Gerät mit Pseudozufallszahlen überschreiben</a></p></li><li><p><a class="crosslink anchor" href="#source-5" id="source-5"></a> <a class="internal" href="../luks.html">Verschlüsselte Partitionen mit LUKS</a></p></li><li><p><a class="crosslink anchor" href="#source-6" id="source-6"></a> <a class="internal" href="../editor.html">Einen Editor öffnen</a></p></li></ol></div></div><p>
+</p><div class="toc toc-depth-3"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a class="crosslink" href="#Anfertigen-des-Schluessels">Anfertigen des Schlüssels
+</a></li><li><a class="crosslink" href="#Vorbereiten-des-Schlosses">Vorbereiten des Schlosses
+</a></li><li><a class="crosslink" href="#Vorbereiten-eines-zweiten-Schlosses">Vorbereiten eines zweiten Schlosses
+</a></li><li><a class="crosslink" href="#Anlegen-der-noetigen-Konfigurationsdateien">Anlegen der nötigen Konfigurationsdateien
+</a></li><li><a class="crosslink" href="#Anpassen-von-etc-crypttab">Anpassen von /etc/crypttab
+</a></li><li><a class="crosslink" href="#Konfiguration-des-initramfs">Konfiguration des initramfs
+</a></li><li><a class="crosslink" href="#Neues-initramfs-erzeugen">Neues initramfs erzeugen
+</a></li><li><a class="crosslink" href="#Abschliessende-Anmerkungen">Abschließende Anmerkungen
+</a></li><li><a class="crosslink" href="#Links">Links
+</a></li></ol></div><p><img alt="Wiki/Icons/secure_non.png" class="image-left" src="../_/1ca0b02210b1f6de3a853e5e1dbe2f94b79cead7.png"/>
+So schön ein vollverschlüsseltes Ubuntu-System auch ist, manchmal ist es schon sehr lästig, bei jedem Systemstart das Passwort für die Entschlüsselung eingeben zu müssen. Denn normalerweise greift hier das Prinzip: <em>"Sicherheit und Benutzerkomfort schließen sich gegenseitig aus"</em>.</p><p>Diese Anleitung beschreibt, wie alternativ zum Passwort ein handelsüblicher USB-Stick als "Schlüssel" zum Freischalten des Systems verwenden kann, ohne dass auf diesem eine offensichtliche Schlüsseldatei angelegt werden muss.</p><p>Steckt der "richtige" USB-Stick beim Systemstart am Rechner, so wird die Festplatte automatisch entschlüsselt, und das System startet ganz ohne Passworteingabe. Der USB-Stick kann weiterhin als Speichermedium verwendet werden – nur man selbst und der eigene Rechner wissen, dass es sich um einen "Schlüssel" handelt. Alternativ kann auch eine handelsübliche SD-Karte benutzt werden, wenn der Rechner mit einem Kartenleser ausgerüstet ist.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Die Anleitung geht davon aus, dass bereits ein Ubuntu-System mit verschlüsselter <code class="notranslate">root</code>-Partition <sup><a href="#source-1">[1]</a></sup> installiert ist bzw. dass zwei oder mehr verschlüsselte Partitionen vorhanden sind. Die Option, die Festplatte mittels eines USB-Sticks oder einer SD-Karte als "Schlüssel" zu entsperren, wird dem System nachträglich hinzugefügt.</p><p>Das Passwort, das bei der Installation angegeben wurde, sollte unbedingt beibehalten werden. Der USB-Stick dient quasi nur als "Zweitschlüssel".
+</p></div></div><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Datenverlust auf dem USB-Speicherstick bzw. der SD-Karte ist möglich. Es sollte vorsichtshalber eine Sicherung der Daten gemacht werden. 
+</p></div></div><div class="section_1"><h2 id="Anfertigen-des-Schluessels">Anfertigen des Schlüssels<a class="headerlink" href="#Anfertigen-des-Schluessels">¶</a></h2><p>
+Wenn man den USB-Stick nicht neu initialisieren bzw. formatieren will (Datenverlust!), dann gilt es, einen freien Bereich zu finden, in dem man die Schlüsseldaten ablegen kann. Die meisten USB-Sticks haben ab Werk einen ausreichend großen freien Bereich zwischen dem "Master Boot Record" (MBR) und der ersten Partition.</p><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Im Beispiel wird angenommen, dass der USB-Stick der Gerätedatei <strong>/dev/sdb</strong> entspricht. Die folgenden Befehle sind an die realen Verhältnisse anzupassen. Bei SD-Karten ist das häufig <strong>/dev/mmcblk0</strong>.
+</p></div></div><p>Am besten prüft man das im Terminal <sup><a href="#source-2">[2]</a></sup><sup><a href="#source-3">[3]</a></sup> nach (der USB-Stick muss dazu am Rechner stecken):</p><div class="bash"><div class="contents"><pre class="notranslate">sudo fdisk -l /dev/sdb </pre></div></div><pre class="notranslate">Platte /dev/sdb: 2051 MByte, 2051013632 Byte
+...
+Einheiten = Sektoren von 1 × 512 = 512 Bytes
+...
+Gerät  boot.     Anfang        Ende     Blöcke   Id  System
+/dev/sdb1   *          62     4003711     2001825    c  W95 FAT32 (LBA)</pre><p>
+In diesem Fall ist also der Bereich von Sektor 2 bis Sektor 61 ungenutzt, also 60 * 512 Byte = 30 KiB. Da das für den Schlüssel mehr als ausreicht, wird dieser Platz benutzt. Für den Schlüssel selbst brauchen wir nur ca. 4 bis 6 Sektoren, damit der Schlüsselbereich aber einem eventuellen "neugierigen Angreifer" nicht sofort ins Auge sticht, wird ein deutlich größerer Bereich mit Zufallszahlen initialisiert <sup><a href="#source-4">[4]</a></sup>.</p><div class="bash"><div class="contents"><pre class="notranslate">sudo dd if=/dev/urandom of=/dev/sdb bs=512 seek=1 count=60 </pre></div></div><pre class="notranslate">60+0 Datensätze ein
+60+0 Datensätze aus
+30720 Bytes (31 kB) kopiert, 0,00665825 s, 4,6 MB/s</pre><p>
+Der Schlüssel ist jetzt fertig. Am besten lässt man ihn aber noch am Rechner stecken, denn er wird gleich wieder gebraucht.</p></div><div class="section_1"><h2 id="Vorbereiten-des-Schlosses">Vorbereiten des Schlosses<a class="headerlink" href="#Vorbereiten-des-Schlosses">¶</a></h2><p>
+Jetzt hat man zwar einen Schlüssel, aber nun gilt es sicherzustellen,  dass dieser auch "sperrt". Dazu muss erst einmal festgelegt werden, welcher Bereich der oben generierten Zufallszahlen als Luks-Schlüssel <sup><a href="#source-5">[5]</a></sup> dienen soll.</p><p>Im Beispiel steht ein Bereich von 60 Sektoren, beginnend bei Sektor 2, zur Verfügung. Es wird nun der Bereich von Sektor 2 bis Sektor 5 als Luks-Schlüssel festgelegt, d.h. 4 Sektoren à 512 Byte = 2048 Byte, direkt anschließend an den MBR.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Sollen <span class="underline">mehrere</span> USB-Schlüssel für denselben Rechner benutzt werden, ist sicherzustellen, dass exakt der <span class="underline">selbe</span> Bereich auf <span class="underline">allen</span> USB-Schlüsseln als Luks-Schlüssel benutzt werden kann.
+</p></div></div><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Im Beispiel wird angenommen, dass die verschlüsselte Partition über die Gerätedatei <strong>/dev/sda5</strong> und der USB-Stick über die Gerätedatei <strong>/dev/sdb</strong> zu finden ist. Der Befehl ist an die realen Verhältnisse anzupassen.
+</p></div></div><p>Nun wird der verschlüsselten Platte der Schlüssel hinzugefügt:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo dd if=/dev/sdb bs=512 skip=1 count=4 &gt; tempKeyFile.bin </pre></div></div><pre class="notranslate">4+0 Datensätze ein
+4+0 Datensätze aus
+2048 Bytes (2,0 kB) kopiert, 7,8013e-05 s, 26,3 MB/s</pre><div class="bash"><div class="contents"><pre class="notranslate">sudo cryptsetup luksAddKey /dev/sda5 tempKeyFile.bin </pre></div></div><pre class="notranslate">Geben Sie irgendeinen Passsatz ein:</pre><p>
+Wer will, kann die Datei <strong>tempKeyFile.bin</strong> für späteren Gebrauch an einem sicheren Ort aufbewahren. Sie wird aber hier nicht mehr gebraucht und kann jetzt gelöscht werden:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo rm -f tempKeyFile.bin </pre></div></div><p>Das "Schloss" ist jetzt auch fertig vorbereitet. Jetzt muss das System so eingestellt werden, dass es beim Systemstart selbständig "den Schlüssel im Schloss umdreht".</p></div><div class="section_1"><h2 id="Vorbereiten-eines-zweiten-Schlosses">Vorbereiten eines zweiten Schlosses<a class="headerlink" href="#Vorbereiten-eines-zweiten-Schlosses">¶</a></h2><p>
+Wenn man mehrere LVM verschlüsselte Partitionen hat, wie etwa eine verschlüsselte Root-Partition und eine separate, ebenfalls verschlüsselte Home-Partition, so muss ein zweiter Schlüssel erzeugt werden. Diesmal wird bei "<code class="notranslate">skip=</code>" <code class="notranslate">4</code> eingetragen, damit der bereits zuvor erstellte Schlüssel, der bis Sektor 4 geht, nicht überschrieben wird. Außerdem muss der Dateiname der Schlüsseldatei auf <strong>tempKeyFile2.bin</strong> geändert werden.
+</p><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Wenn man jedoch nur eine verschlüsselte Partition hat, dann bitte diese Schritte bis zum nächsten Punkt überspringen.
+</p></div></div><p>Schlüsseldatei erzeugen:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo dd if=/dev/sdb bs=512 skip=4 count=4 &gt; tempKeyFile2.bin </pre></div></div><pre class="notranslate">4+0 Datensätze ein
+4+0 Datensätze aus
+2048 Bytes (2,0 kB) kopiert, 7,8013e-05 s, 26,2 MB/s</pre><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>In diesem Beispiel wird davon ausgegangen, dass die Home-Partition den Pfad <strong>/dev/sda6</strong> hat. Dieser Wert muss natürlich angepasst werden, wenn er vom Beispiel abweicht.
+</p></div></div><p>Neuen Schlüssel mit Schlüsseldatei hinzufügen.
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo cryptsetup luksAddKey /dev/sda6 --key-file=tempKeyFile2.bin </pre></div></div><pre class="notranslate">Geben Sie irgendeinen Passsatz ein:</pre><p>Auch der zweite Schlüssel kann gelöscht werden, wenn man ihn nicht weiter aufbewahren will.</p><div class="bash"><div class="contents"><pre class="notranslate">sudo rm -f tempKeyFile2.bin </pre></div></div></div><div class="section_1"><h2 id="Anlegen-der-noetigen-Konfigurationsdateien">Anlegen der nötigen Konfigurationsdateien<a class="headerlink" href="#Anlegen-der-noetigen-Konfigurationsdateien">¶</a></h2><p>
+Es gilt nun dem System beizubringen, woran es einen Schlüssel erkennen soll, und die getroffenen Festlegungen bezüglich der Position des Luks-Schlüssels mitzuteilen. Dafür legt man zunächst ein eigenes Konfigurationsverzeichnis unter <strong>/etc/</strong> an.</p><div class="bash"><div class="contents"><pre class="notranslate">sudo mkdir /etc/decryptkeydevice </pre></div></div><p>
+In diesem Ordner erstellt man nun mit Root-Rechten zwei Dateien <sup><a href="#source-6">[6]</a></sup>. Zum einen die Konfiguration <strong>/etc/decryptkeydevice/decryptkeydevice.conf</strong> selbst. Hier werden alle getroffenen Festlegungen eingetragen. Beispiel:</p><ul><li><p>der Luks-Schlüssel startet bei Sektor 2, es wird also 1 Sektor übersprungen: </p><pre class="notranslate">DECRYPTKEYDEVICE_SKIPBLOCKS="1"</pre></li><li><p>Der Luks-Schlüssel im Beispiel ist 4 Sektoren lang: </p><pre class="notranslate">DECRYPTKEYDEVICE_READBLOCKS="4"</pre></li><li><p>Sektorgröße 512 Byte passt eigentlich immer: </p><pre class="notranslate">DECRYPTKEYDEVICE_BLOCKSIZE="512"</pre></li><li><p>Welche USB-Speichersticks bzw. SD-Karten Schlüssel sind: </p><pre class="notranslate">DECRYPTKEYDEVICE_DISKID="mmc-XXX_0x0AAABBBCCCDDD   usb-XyzFlash_XYZDFGHIJK_XXYYZZ00AA-0:0"</pre></li></ul><p>
+Die Schlüssel sollen dabei anhand ihrer vom System vergebenen Disk-ID erkannt werden. Die Disk-ID(s) des(der) verwendeten Schlüssel(s) werden mit Leerzeichen getrennt in der Zeile <code class="notranslate">DECRYPTKEYDEVICE_DISKID=" " </code> eingetragen.</p><p>Die Disk-ID des verwendeten USB-Sticks ermittelt der folgenden Befehl:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo ls -l /dev/disk/by-id </pre></div></div><pre class="notranslate">lrwxrwxrwx 1 root root 13 2011-12-20 21:27 mmc-XXX_0x0AAABBBCCCDDD -&gt; ../../mmcblk0
+lrwxrwxrwx 1 root root 15 2011-12-20 21:27 mmc-XXX_0x0AAABBBCCCDDD-part1 -&gt; ../../mmcblk0p1
+...
+lrwxrwxrwx 1 root root  9 2011-12-20 21:36 usb-XyzFlash_XYZDFGHIJK_XXYYZZ00AA-0:0 -&gt; ../../sdb
+lrwxrwxrwx 1 root root 10 2011-12-20 21:36 usb-XyzFlash_XYZDFGHIJK_XXYYZZ00AA-0:0-part1 -&gt; ../../sdb1</pre><p> 
+Verwendet wird nur die Disk-ID des "rohen" Geräts, also im Beispiel die von <strong>sdb</strong> und nicht die von <strong>sdb1</strong>. Für die SD-Karte ist das dementsprechend <strong>mmcblk0</strong> und nicht <strong>mmcblk0p1</strong>. Diese Disk-IDs werden zusammen mit den anderen Daten gespeichert. Beispiel der Datei <strong>/etc/decryptkeydevice/decryptkeydevice.conf</strong>:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="c1"># configuration for decryptkeydevice</span>
+<span class="c1">#</span>
+
+<span class="c1"># ID(s) of the USB/MMC key(s) for decryption (sparated by blanks)</span>
+<span class="c1"># as listed in /dev/disk/by-id/</span>
+<span class="nv">DECRYPTKEYDEVICE_DISKID</span><span class="o">=</span><span class="s2">"mmc-XXX_0x0AAABBBCCCDDD usb-XyzFlash_XYZDFGHIJK_XXYYZZ00AA-0:0"</span>
+
+<span class="c1"># blocksize usually 512 is OK</span>
+<span class="nv">DECRYPTKEYDEVICE_BLOCKSIZE</span><span class="o">=</span><span class="s2">"512"</span>
+
+<span class="c1"># start of key information on keydevice DECRYPTKEYDEVICE_BLOCKSIZE * DECRYPTKEYDEVICE_SKIPBLOCKS</span>
+<span class="nv">DECRYPTKEYDEVICE_SKIPBLOCKS</span><span class="o">=</span><span class="s2">"1"</span>
+
+<span class="c1"># length of key information on keydevice DECRYPTKEYDEVICE_BLOCKSIZE * DECRYPTKEYDEVICE_READBLOCKS</span>
+<span class="nv">DECRYPTKEYDEVICE_READBLOCKS</span><span class="o">=</span><span class="s2">"4"</span>
+</pre></div>
+</td></tr></table></div><p>Nun fehlt noch die zweite Datei, und zwar ein "Key-Skript" für <strong>cryptsetup</strong>. Dieses kleine Skript wird dann beim Systemstart aufgerufen, um das System zu entschlüsseln. Inhalt von <strong>/etc/decryptkeydevice/decryptkeydevice_keyscript.sh</strong>:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/sh</span>
+
+<span class="c1">#</span>
+<span class="c1"># original file name crypto-usb-key.sh</span>
+<span class="c1"># heavily modified and adapted for "decryptkeydevice" by Franco</span>
+<span class="c1">#</span>
+<span class="c1">### original header :</span>
+<span class="c1">#</span>
+<span class="c1"># Part of passwordless cryptofs setup in Debian Etch.</span>
+<span class="c1"># See: http://wejn.org/how-to-make-passwordless-cryptsetup.html</span>
+<span class="c1"># Author: Wejn &lt;wejn at box dot cz&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># Updated by Rodolfo Garcia (kix) &lt;kix at kix dot com&gt;</span>
+<span class="c1"># For multiple partitions</span>
+<span class="c1"># http://www.kix.es/</span>
+<span class="c1">#</span>
+<span class="c1"># Updated by TJ &lt;linux@tjworld.net&gt; 7 July 2008</span>
+<span class="c1"># For use with Ubuntu Hardy, usplash, automatic detection of USB devices,</span>
+<span class="c1"># detection and examination of *all* partitions on the device (not just partition #1), </span>
+<span class="c1"># automatic detection of partition type, refactored, commented, debugging code.</span>
+<span class="c1">#</span>
+<span class="c1"># Updated by Hendrik van Antwerpen &lt;hendrik at van-antwerpen dot net&gt; 3 Sept 2008</span>
+<span class="c1"># For encrypted key device support, also added stty support for not</span>
+<span class="c1"># showing your password in console mode.</span>
+
+<span class="c1"># define counter-intuitive shell logic values (based on /bin/true &amp; /bin/false)</span>
+<span class="c1"># NB. use FALSE only to *set* something to false, but don't test for</span>
+<span class="c1"># equality, because a program might return any non-zero on error</span>
+
+<span class="c1"># Updated by Dominique Bellenger &lt;dev at domesdomain dot de&gt;</span>
+<span class="c1"># for usage with Ubuntu 10.04 Lucid Lynx</span>
+<span class="c1"># - Removed non working USB device check</span>
+<span class="c1"># - changed vol_id to blkid, changed sed expression</span>
+<span class="c1"># - changed TRUE and FALSE to be 1 and 0</span>
+<span class="c1"># - changed usplash usage to plymouth usage</span>
+<span class="c1"># - removed possibility to read from an encrypted device (why would I want to do this? The script is unnecessary if I have to type in a password)</span>
+<span class="c1">#</span>
+<span class="c1">### original header END</span>
+
+<span class="c1"># read decryptkeydevice Key configuration settings</span>
+<span class="nv">DECRYPTKEYDEVICE_DISKID</span><span class="o">=</span><span class="s2">""</span>
+<span class="k">if</span> <span class="o">[</span> -f /etc/decryptkeydevice/decryptkeydevice.conf <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+		.  /etc/decryptkeydevice/decryptkeydevice.conf
+<span class="k">fi</span>
+
+<span class="nv">TRUE</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">FALSE</span><span class="o">=</span><span class="m">0</span>
+
+<span class="c1"># set DEBUG=$TRUE to display debug messages, DEBUG=$FALSE to be quiet</span>
+<span class="nv">DEBUG</span><span class="o">=</span><span class="nv">$FALSE</span>
+
+<span class="nv">PLYMOUTH</span><span class="o">=</span><span class="nv">$FALSE</span>
+<span class="c1"># test for plymouth and if plymouth is running</span>
+<span class="k">if</span> <span class="o">[</span> -x /bin/plymouth <span class="o">]</span> <span class="o">&amp;&amp;</span> plymouth --ping<span class="p">;</span> <span class="k">then</span>
+        <span class="nv">PLYMOUTH</span><span class="o">=</span><span class="nv">$TRUE</span>
+<span class="k">fi</span>
+
+<span class="c1"># is stty available? default false</span>
+<span class="nv">STTY</span><span class="o">=</span><span class="nv">$FALSE</span>
+<span class="nv">STTYCMD</span><span class="o">=</span><span class="nb">false</span>
+<span class="c1"># check for stty executable</span>
+<span class="k">if</span> <span class="o">[</span> -x /bin/stty <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+	<span class="nv">STTY</span><span class="o">=</span><span class="nv">$TRUE</span>
+	<span class="nv">STTYCMD</span><span class="o">=</span>/bin/stty
+<span class="k">elif</span> <span class="o">[</span> <span class="sb">`</span><span class="o">(</span>busybox stty &gt;/dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="p">;</span> <span class="nb">echo</span> <span class="nv">$?</span><span class="o">)</span><span class="sb">`</span> -eq <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+	<span class="nv">STTY</span><span class="o">=</span><span class="nv">$TRUE</span>
+	<span class="nv">STTYCMD</span><span class="o">=</span><span class="s2">"busybox stty"</span>
+<span class="k">fi</span>
+
+<span class="c1"># print message to plymouth or stderr</span>
+<span class="c1"># usage: msg "message" [switch]</span>
+<span class="c1"># switch : switch used for echo to stderr (ignored for plymouth)</span>
+<span class="c1"># when using plymouth the command will cause "message" to be</span>
+<span class="c1"># printed according to the "plymouth message" definition.</span>
+<span class="c1"># using the switch -n will allow echo to write multiple messages</span>
+<span class="c1"># to the same line</span>
+msg <span class="o">()</span>
+<span class="o">{</span>
+	<span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -gt <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+		<span class="c1"># handle multi-line messages</span>
+		<span class="nb">echo</span> <span class="nv">$2</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> LINE<span class="p">;</span> <span class="k">do</span>
+			<span class="k">if</span> <span class="o">[</span> <span class="nv">$PLYMOUTH</span> -eq <span class="nv">$TRUE</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+				/bin/plymouth message --text<span class="o">=</span><span class="s2">"</span><span class="nv">$1</span><span class="s2"> </span><span class="nv">$LINE</span><span class="s2">"</span>		
+			<span class="c1">#else</span>
+				<span class="c1"># use stderr for all messages</span>
+				<span class="nb">echo</span> <span class="nv">$3</span> <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span> &gt;<span class="p">&amp;</span><span class="m">2</span>
+			<span class="k">fi</span>
+		<span class="k">done</span>
+	<span class="k">fi</span>
+<span class="o">}</span>
+
+dbg <span class="o">()</span>
+<span class="o">{</span>
+	<span class="k">if</span> <span class="o">[</span> <span class="nv">$DEBUG</span> -eq <span class="nv">$TRUE</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+		msg <span class="s2">"</span><span class="nv">$@</span><span class="s2">"</span>
+	<span class="k">fi</span>
+<span class="o">}</span>
+
+<span class="c1"># read password from console or with plymouth</span>
+<span class="c1"># usage: readpass "prompt"</span>
+readpass <span class="o">()</span>
+<span class="o">{</span>
+	<span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -gt <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+		<span class="k">if</span> <span class="o">[</span> <span class="nv">$PLYMOUTH</span> -eq <span class="nv">$TRUE</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+			<span class="nv">PASS</span><span class="o">=</span><span class="sb">`</span>/bin/plymouth ask-for-password --prompt<span class="o">=</span><span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span><span class="sb">`</span>
+		<span class="k">else</span>
+			<span class="o">[</span> <span class="nv">$STTY</span> -ne <span class="nv">$TRUE</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> msg <span class="s2">"WARNING stty not found, password will be visible"</span>
+			<span class="nb">echo</span> -n <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> &gt;<span class="p">&amp;</span><span class="m">2</span>
+			<span class="nv">$STTYCMD</span> -echo
+			<span class="nb">read</span> -s PASS &lt;/dev/console &gt;/dev/null
+			<span class="o">[</span> <span class="nv">$STTY</span> -eq <span class="nv">$TRUE</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> &gt;<span class="p">&amp;</span><span class="m">2</span>
+			<span class="nv">$STTYCMD</span> <span class="nb">echo</span>
+		<span class="k">fi</span>
+	<span class="k">fi</span>
+	<span class="nb">echo</span> -n <span class="s2">"</span><span class="nv">$PASS</span><span class="s2">"</span>
+<span class="o">}</span>
+
+<span class="c1"># flag tracking key-file availability</span>
+<span class="nv">OPENED</span><span class="o">=</span><span class="nv">$FALSE</span>
+
+<span class="c1"># decryptkeydevice configured so try to find a key</span>
+<span class="k">if</span> <span class="o">[</span> ! -z <span class="s2">"</span><span class="nv">$DECRYPTKEYDEVICE_DISKID</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+	msg <span class="s2">"Checking devices for decryption key ..."</span>
+	<span class="c1"># Is the USB driver loaded?</span>
+	cat /proc/modules <span class="p">|</span> busybox grep usb_storage &gt;/dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+	<span class="nv">USBLOAD</span><span class="o">=</span><span class="m">0</span><span class="nv">$?</span>
+	<span class="k">if</span> <span class="o">[</span> <span class="nv">$USBLOAD</span> -gt <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+		dbg <span class="s2">"Loading driver 'usb_storage'"</span>
+		modprobe usb_storage &gt;/dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+	<span class="k">fi</span>
+	<span class="c1"># Is the mmc_block driver loaded?</span>
+	cat /proc/modules <span class="p">|</span> busybox grep mmc &gt;/dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+	<span class="nv">MMCLOAD</span><span class="o">=</span><span class="m">0</span><span class="nv">$?</span>
+	<span class="k">if</span> <span class="o">[</span> <span class="nv">$MMCLOAD</span> -gt <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+		dbg <span class="s2">"Loading drivers for 'mmc'"</span>
+		modprobe mmc_core &gt;/dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+		modprobe ricoh_mmc &gt;/dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+		modprobe mmc_block &gt;/dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+		modprobe sdhci &gt;/dev/null <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+	<span class="k">fi</span>
+
+	<span class="c1"># give the system time to settle and open the devices</span>
+	sleep <span class="m">2</span>
+
+	<span class="k">for</span> DECRYPTKEYDEVICE_ID in <span class="nv">$DECRYPTKEYDEVICE_DISKID</span> <span class="p">;</span> <span class="k">do</span>
+		<span class="nv">DECRYPTKEYDEVICE_FILE</span><span class="o">=</span><span class="s2">"/dev/disk/by-id/</span><span class="nv">$DECRYPTKEYDEVICE_ID</span><span class="s2">"</span>
+		dbg <span class="s2">"Trying </span><span class="nv">$DECRYPTKEYDEVICE_FILE</span><span class="s2"> ..."</span>
+		<span class="k">if</span> <span class="o">[</span> -e <span class="nv">$DECRYPTKEYDEVICE_FILE</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+			dbg <span class="s2">" found </span><span class="nv">$DECRYPTKEYDEVICE_FILE</span><span class="s2"> ..."</span>
+			<span class="nv">OPENED</span><span class="o">=</span><span class="nv">$TRUE</span>
+			<span class="nb">break</span>
+		<span class="k">fi</span>
+		<span class="nv">DECRYPTKEYDEVICE_FILE</span><span class="o">=</span><span class="s2">""</span>
+	<span class="k">done</span>
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$OPENED</span> -eq <span class="nv">$TRUE</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+	/bin/dd <span class="k">if</span><span class="o">=</span><span class="nv">$DECRYPTKEYDEVICE_FILE</span> <span class="nv">bs</span><span class="o">=</span><span class="nv">$DECRYPTKEYDEVICE_BLOCKSIZE</span> <span class="nv">skip</span><span class="o">=</span><span class="nv">$DECRYPTKEYDEVICE_SKIPBLOCKS</span> <span class="nv">count</span><span class="o">=</span><span class="nv">$DECRYPTKEYDEVICE_READBLOCKS</span> <span class="m">2</span>&gt;/dev/null
+	<span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> -eq <span class="m">0</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+		dbg <span class="s2">"Reading key from '</span><span class="nv">$DECRYPTKEYDEVICE_FILE</span><span class="s2">' ..."</span>
+	<span class="k">else</span>
+		dbg <span class="s2">"FAILED Reading key from '</span><span class="nv">$DECRYPTKEYDEVICE_FILE</span><span class="s2">' ..."</span>
+		<span class="nv">OPENED</span><span class="o">=</span><span class="nv">$FALSE</span>
+	<span class="k">fi</span>
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$OPENED</span> -ne <span class="nv">$TRUE</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+	msg <span class="s2">"FAILED to find suitable Key device. Plug in now and press enter, or"</span>
+	readpass <span class="s2">"Enter passphrase: "</span>
+	msg <span class="s2">" "</span>
+<span class="k">else</span>
+	msg <span class="s2">"Success loading key from '</span><span class="nv">$DECRYPTKEYDEVICE_FILE</span><span class="s2">'"</span>
+<span class="k">fi</span>
+</pre></div>
+</td></tr></table></div><p>
+Diese Datei muss ausführbar sein:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo chmod +x /etc/decryptkeydevice/decryptkeydevice_keyscript.sh </pre></div></div><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Wenn <span class="underline">mehrere</span> Schlüssel für denselben Rechner benutzt werden und beim Systemstart <span class="underline">gleichzeitig</span> angesteckt sind, wird nur der <span class="underline">zuerst</span> gefundene USB-Schlüssel benutzt.</p><p>Dies ist kein Problem, da zum Entschlüsseln der Platte nur <span class="underline">ein</span> gültiger Schlüssel benötigt wird.
+</p></div></div></div><div class="section_1"><h2 id="Anpassen-von-etc-crypttab">Anpassen von /etc/crypttab<a class="headerlink" href="#Anpassen-von-etc-crypttab">¶</a></h2><p>
+Jetzt muss dem System noch mitgeteilt werden, dass das eben erstellte "Key-Skript" auch zum Entschlüsseln der Partition verwendet werden soll. Zu diesem Zweck wird in die Datei <strong>/etc/crypttab</strong> die Option "<code class="notranslate">keyscript=/etc/decryptkeydevice/decryptkeydevice_keyscript.sh</code>" eingefügt. Beispiel:</p><pre class="notranslate"># &lt;target name&gt;	&lt;source device&gt;		&lt;key file&gt;	&lt;options&gt;
+lvm UUID=xxYYzz0011-xyz4-1x2y-xxx-xyxyxyxyxyxyzzz none luks,tries=3,keyscript=/etc/decryptkeydevice/decryptkeydevice_keyscript.sh</pre><p>Bei zwei verschlüsselten Partitionen, muss auch beim zweiten Eintrag, die Option "<code class="notranslate">keyscript=/etc/decryptkeydevice/decryptkeydevice_keyscript.sh</code>" eingefügt werden.</p><pre class="notranslate"># &lt;target name&gt;	&lt;source device&gt;		&lt;key file&gt;	&lt;options&gt;
+lvm UUID=xxYYzz0011-xyz4-1x2y-xxx-xyxyxyxyxyxyzzz none luks,tries=3,keyscript=/etc/decryptkeydevice/decryptkeydevice_keyscript.sh
+lvm UUID=xxYYzz0012-xyz5-2x3y-xxx-yxyxyxyxyxyxzzz none luks,tries=3,keyscript=/etc/decryptkeydevice/decryptkeydevice_keyscript.sh</pre></div><div class="section_1"><h2 id="Konfiguration-des-initramfs">Konfiguration des initramfs<a class="headerlink" href="#Konfiguration-des-initramfs">¶</a></h2><p>
+Jetzt muss die oben vorgenommene Anpassung noch in das <strong>initramfs</strong> integriert werden, denn der Schlüssel soll schließlich schon beim Systemstart gefunden und benutzt werden. Dazu legt man einen sog. "hook" an: ein Skript, das die benötigten Dateien in das <strong>initramfs</strong> "zieht". Inhalt der Datei <strong>/etc/initramfs-tools/hooks/decryptkeydevice.hook</strong>:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/sh</span>
+<span class="c1"># copy decryptkeydevice files to initramfs</span>
+<span class="c1">#</span>
+
+mkdir -p <span class="nv">$DESTDIR</span>/etc/
+cp -rp /etc/decryptkeydevice <span class="nv">$DESTDIR</span>/etc/
+</pre></div>
+</td></tr></table></div><p>
+Diese Datei muss ausführbar sein:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo chmod +x /etc/initramfs-tools/hooks/decryptkeydevice.hook </pre></div></div><p> 
+Damit sind alle Vorbereitungen abgeschlossen.</p></div><div class="section_1"><h2 id="Neues-initramfs-erzeugen">Neues initramfs erzeugen<a class="headerlink" href="#Neues-initramfs-erzeugen">¶</a></h2><p>
+</p><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Ein beschädigtes initramfs kann dazu führen, dass sich das System nicht mehr starten lässt.</p><p>Es wird dringend empfohlen, eine Kopie des originalen initramfs in der <strong>/boot/</strong>-Partion anzulegen, damit man im Notfall damit das System wieder starten kann. 
+</p></div></div><p>Als letzter Schritt muss nur noch das neue <strong>initramfs</strong> erzeugt werden:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo update-initramfs -k `uname -r` -c </pre></div></div><p>
+Beim nächsten Neustart wird der USB-Key dann automatisch erkannt und die Platte entschlüsselt.</p></div><div class="section_1"><h2 id="Abschliessende-Anmerkungen">Abschließende Anmerkungen<a class="headerlink" href="#Abschliessende-Anmerkungen">¶</a></h2><p>
+Es existieren etliche unterschiedliche Anleitungen für die Verwendung von USB-Sticks zum automatischen Entsperren des Systems während des Startvorgangs. Die hier vorgestellte Methode unterscheidet sich von den meisten anderen vor allem dadurch, dass auf dem als Schlüssel verwendeten USB-Stick keine offensichtliche Schlüsseldatei angelegt wird. Ein Finder eines verlorengegangenen USB-Sticks wird nicht vermuten, dass es sich um einen Schlüssel handelt.</p><p>Der Einfachheit halber sind alle hier vorgestellten Dateien in ein <strong>tar.gz</strong>-Archiv gepackt, das sich als <a class="crosslink" href="../system_verschlüsseln/entschlüsseln_mit_einem_usb-schlüssel.html">decryptkeydevice.tar.gz</a> <img alt="{dl}" src="../_/8e630211d0f5f5cb7c6424055f9c9aa15a420fab.png"/> herunterladen lässt.</p></div><div class="section_1"><h2 id="Links">Links<a class="headerlink" href="#Links">¶</a></h2><p>
+</p><ul><li><p><a class="external" href="http://da.finchi.de/2011/09/datensicherheit-2-%E2%80%93-verschlusseltes-system-reloaded" rel="nofollow">Datensicherheit 2 – Verschlüsseltes System Reloaded</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/> - Die "Inspiration" zu diesem Artikel, Blogbeitrag 09/2011</p></li><li><p><a class="external" href="http://wejn.org/how-to-make-passwordless-cryptsetup.html" rel="nofollow">How to setup passwordless disk encryption in Debian Etch</a> <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> - Die Quelle der ursprünglichen Version des verwendeten Key-Skripts</p></li><li><p><a class="internal" href="../authentifizierung_mit_usb-stick.html">Authentifizierung mit USB-Stick</a> - bei unverschlüsselten Systemen</p></li><li><p><a class="internal" href="../system_verschlüsseln.html">System verschlüsseln</a> <img alt="{Übersicht}" src="../_/021d71c30babf2ce4dd27339ba3c55995610945b.png"/> Übersichtsseite</p></li></ul><p>
+</p></div></div>
+<p class="meta">
+<a href="../system_verschlüsseln/entschlüsseln_mit_einem_usb-schlüssel/a/revision/940235.html">Diese Revision</a> wurde am 7. Mai 2017 16:54 von <a href="https://ubuntuusers.de/user/Heinrich_Schwietering/">Heinrich_Schwietering</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="../startseite.html">Wiki</a></li>
+<li><a href="../system_verschlüsseln.html">System verschlüsseln</a></li>
+<li><a href="../system_verschlüsseln/entschlüsseln_mit_einem_usb-schlüssel.html">Entschlüsseln mit einem USB-Schlüssel</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="../_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="../_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="../_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="../_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Howto/Samba4_als_Domaincontroller › ubuntuusers statisches Wiki</title>
+<link href="../_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="../_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="../_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="../_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="../_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="../_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="../startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="../howto/samba4_als_domaincontroller.html">Samba4 als Domaincontroller</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/Howto/Samba4_als_Domaincontroller">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="../wiki/index.html">Index</a></li>
+<li><a href="../wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="../wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="../wiki.html">Übersicht</a></li>
+<li><a href="../wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="../wiki/benutzung.html">Benutzung</a></li>
+<li><a href="../kategorien.html">Kategorie</a></li>
+<li><a href="../wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="../wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="../howto.html">Howto anlegen</a></li>
+<li><a href="../wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="../wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="../baustelle.html">Baustellen</a></li>
+<li><a href="../wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="../wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="../wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="../wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="../howto/samba4_als_domaincontroller/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="../howto/samba4_als_domaincontroller/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="../howto/samba4_als_domaincontroller/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="../howto/samba4_als_domaincontroller/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="../howto/samba4_als_domaincontroller/a/backlinks.html">Samba4 als Domaincontroller</a></h1>
+<div id="page"><div class="box advanced"><h3 class="box advanced">Artikel für fortgeschrittene Anwender</h3><div class="contents"><p>
+Dieser Artikel erfordert mehr Erfahrung im Umgang mit
+Linux und ist daher nur für fortgeschrittene Benutzer
+gedacht.
+</p></div></div><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Die Verwendung dieses Howto geschieht wie üblich auf eigene Gefahr. Bei Problemen mit der Anleitung melde dies bitte in der dazugehörigen Diskussion und wende dich zusätzlich an den Verfasser des Howtos.
+</p></div></div><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Diese Howto-Anleitung wurde zuletzt von <a class="crosslink user" href="https://ubuntuusers.de/user/luftpump/">luftpump</a> am 23.03.2017 unter Xubuntu 16.04.01 LTS erfolgreich getestet. 
+</p></div></div><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="../pakete_installieren.html">Installation von Programmen</a></p></li><li><p><a class="crosslink anchor" href="#source-2" id="source-2"></a> <a class="internal" href="../programme_starten.html">Starten von Programmen</a></p></li><li><p><a class="crosslink anchor" href="#source-3" id="source-3"></a> <a class="internal" href="../terminal.html">Ein Terminal öffnen</a></p></li><li><p><a class="crosslink anchor" href="#source-4" id="source-4"></a> <a class="internal" href="../sudo.html">Root-Rechte</a></p></li><li><p><a class="crosslink anchor" href="#source-5" id="source-5"></a> <a class="internal" href="../samba.html">Samba</a>  (Übersichtsartikel)</p></li><li><p><a class="crosslink anchor" href="#source-6" id="source-6"></a> <a class="internal" href="../samba_server.html">Samba Server</a></p></li><li><p><a class="crosslink anchor" href="#source-7" id="source-7"></a> <a class="internal" href="../kerberos.html">Kerberos</a></p></li><li><p><a class="crosslink anchor" href="#source-8" id="source-8"></a> <a class="internal" href="../dnsmasq.html">Dnsmasq</a></p></li></ol></div></div><div class="toc toc-depth-2"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a class="crosslink" href="#Grundlagen">Grundlagen
+</a></li><li><a class="crosslink" href="#Abgrenzung-und-noch-offene-Punkte">Abgrenzung und (noch) offene Punkte
+</a></li><li><a class="crosslink" href="#Alternative-Linux-Distributionen-fuer-Samba4-im-AD-Betrieb-und-andere-Services-wie-DNS-DHCP-Firewall-Proxy-etc">Alternative Linux-Distributionen für Samba...</a></li><li><a class="crosslink" href="#Speicherort-der-Samba-Konfigurationsdateien-Standardpfade">Speicherort der Samba-Konfigurationsdateie...</a></li><li><a class="crosslink" href="#Voraussetzungen-zur-Installation">Voraussetzungen zur Installation
+</a><ol class="arabic"><li><a class="crosslink" href="#gleiche-Systemzeit-fuer-Alle">gleiche Systemzeit für Alle
+</a></li><li><a class="crosslink" href="#feste-IP-Konfiguration">feste IP-Konfiguration
+</a></li><li><a class="crosslink" href="#Windows-Clients">Windows-Clients
+</a></li></ol></li><li><a class="crosslink" href="#Vorarbeiten">Vorarbeiten
+</a><ol class="arabic"><li><a class="crosslink" href="#NTP-Daemon-installieren">NTP-Daemon installieren
+</a></li><li><a class="crosslink" href="#DNS-Port-frei-machen">DNS-Port frei machen
+</a></li><li><a class="crosslink" href="#ACL-Option-fuer-Dateisysteme-aktivieren">ACL-Option für Dateisysteme aktivieren
+</a></li></ol></li><li><a class="crosslink" href="#Installation-von-Samba-Paket">Installation von Samba-Paket
+</a></li><li><a class="crosslink" href="#Erstkonfiguration-von-Samba">Erstkonfiguration von Samba
+</a></li><li><a class="crosslink" href="#Benutzer-und-Gruppen-Administration">Benutzer- und Gruppen-Administration
+</a></li><li><a class="crosslink" href="#Einrichtung-weiterer-Freigaben-Shares">Einrichtung weiterer Freigaben (Shares)
+</a><ol class="arabic"><li><a class="crosslink" href="#rlimit-max-Fehler-beheben">rlimit_max Fehler beheben
+</a></li><li><a class="crosslink" href="#Tausch-Verzeichnis-fuer-JEDEN">Tausch-Verzeichnis für JEDEN
+</a></li><li><a class="crosslink" href="#Daten-Verzeichnis-fuer-Domaingruppen">Daten-Verzeichnis für Domaingruppen
+</a></li></ol></li></ol></div><div class="section_1"><h2 id="Grundlagen">Grundlagen<a class="headerlink" href="#Grundlagen">¶</a></h2><p>
+<img alt="Samba_Server/samba-logo.png" class="image-left" src="../_/a8ef26a0d93a67702ef6b8f48761da6a0e0a2c2d.png"/></p><p>Ab Samba Version 4.x kann man Samba im Microsoft-kompatiblen Modus "Active-Directory Domain-Controller" (kurz AD DC) laufen lassen. Dieser Artikel beschreibt die Grundinstallation eines Samba-Servers als DC für eine Windows Domäne.</p><p>Es werden nur offizielle Pakete aus dem Ubuntu-Repo benutzt, und orientiert sich weitgehend am Artikel im offiziellen Samba-Wiki. Sie berücksichtigt aber die Besonderheiten bei Ubuntu.</p><p>Offizielles Samba-HowTo - <a class="external" href="https://wiki.samba.org/index.php/Samba_AD_DC_HOWTO" rel="nofollow" title="https://wiki.samba.org/index.php/Samba_AD_DC_HOWTO">https://wiki.samba.org/index.php/Samba_AD_DC_HOWTO</a> <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/></p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Dieser Artikel ist nur für erfahrenen Ubuntu-Benutzer geeignet, die wissen, was ein Active-Directory Domaincontroller ist.</p><p>Sämtliche Eingaben setzen voraus, dass man Root-Rechten arbeitet ist (<code class="notranslate">sudo -s</code>).
+</p></div></div></div><div class="section_1"><h2 id="Abgrenzung-und-noch-offene-Punkte">Abgrenzung und (noch) offene Punkte<a class="headerlink" href="#Abgrenzung-und-noch-offene-Punkte">¶</a></h2><p>
+1. AD-Replikation (mit weiterem DC)
+2. SYSVOL-Replikation (mit weiterem DC)
+3. Datensicherung und Recovery</p></div><div class="section_1"><h2 id="Alternative-Linux-Distributionen-fuer-Samba4-im-AD-Betrieb-und-andere-Services-wie-DNS-DHCP-Firewall-Proxy-etc">Alternative Linux-Distributionen für Samba4 im AD-Betrieb (und andere Services wie DNS, DHCP, Firewall, Proxy, etc.)<a class="headerlink" href="#Alternative-Linux-Distributionen-fuer-Samba4-im-AD-Betrieb-und-andere-Services-wie-DNS-DHCP-Firewall-Proxy-etc">¶</a></h2><p>
+<a class="external" href="http://www.zentyal.org/" rel="nofollow" title="http://www.zentyal.org/">http://www.zentyal.org/</a></p></div><div class="section_1"><h2 id="Speicherort-der-Samba-Konfigurationsdateien-Standardpfade">Speicherort der Samba-Konfigurationsdateien (Standardpfade)<a class="headerlink" href="#Speicherort-der-Samba-Konfigurationsdateien-Standardpfade">¶</a></h2><p>
+(wichtig für Datensicherung und Wiederherstellung)
+</p><ol class="arabic"><li><p>/var/lib/samba/</p></li></ol><p>siehe auch (veraltet) - <a class="external" href="https://wiki.samba.org/index.php/TDB_Locations" rel="nofollow" title="https://wiki.samba.org/index.php/TDB_Locations">https://wiki.samba.org/index.php/TDB_Locations</a></p><p>Hier liegen die Dateien &amp; Verzeichnisse für:
+</p><ul><li><p>Samba-Datenbank</p></li><li><p>LDAP-Config</p></li><li><p>Group-Policies</p></li><li><p>DNS-Config</p></li><li><p>SPNs</p></li><li><p>Kerberos-Config</p></li><li><p>Passwörter</p></li><li><p>SYSVOL</p></li><li><p>Zertifikate</p></li><li><p>Druckertreiber</p></li></ul><p>
+ 2. etc/samba/
+</p><ul><li><p>Samba-Konfigurationsdatei "smb.conf"</p></li></ul><p>
+</p></div><div class="section_1"><h2 id="Voraussetzungen-zur-Installation">Voraussetzungen zur Installation<a class="headerlink" href="#Voraussetzungen-zur-Installation">¶</a></h2><p>
+</p><div class="section_2"><h3 id="gleiche-Systemzeit-fuer-Alle">gleiche Systemzeit für Alle<a class="headerlink" href="#gleiche-Systemzeit-fuer-Alle">¶</a></h3><p>
+Die Systemzeit von Clients und Samba-Server muss gleich sein. Ansonsten gibt es Probleme mit Kerberos-Tickets, und somit Probleme mit der Authentifizierung und Zugriffsprobleme.</p></div><div class="section_2"><h3 id="feste-IP-Konfiguration">feste IP-Konfiguration<a class="headerlink" href="#feste-IP-Konfiguration">¶</a></h3><p>
+Der Samba-Server muss eine feste IP-Adresse haben. (über GUI anpassbar) Denn die Clients nutzen ihn auch als DNS-Server, und auf den Clients muss diese als IP-Adresse hinterlegt werden. Der Samba-Server selbst nutzt den DNS-Server des Providers oder DSL-Routers (inkl. Gateway für den Internetzugriff)</p></div><div class="section_2"><h3 id="Windows-Clients">Windows-Clients<a class="headerlink" href="#Windows-Clients">¶</a></h3><p>
+Wenn Windows-Clients (XP, Win 7, 8, oder 10) verwendet werden, und zur Domäne beitreten wollen, müssen diese entweder Windows Pro oder Enterprise-Edition sein, denn die Home-Edition von Windows kann keiner Domäne beitreten.</p><p>Diese Windows Clients, oder Windows-Server müssen dann den Samba-Server als DNS eingetragen haben damit sie Verbindung zur Domäne bekommen.</p></div></div><div class="section_1"><h2 id="Vorarbeiten">Vorarbeiten<a class="headerlink" href="#Vorarbeiten">¶</a></h2><p>
+</p><div class="section_2"><h3 id="NTP-Daemon-installieren">NTP-Daemon installieren<a class="headerlink" href="#NTP-Daemon-installieren">¶</a></h3><p>
+Dies wird benötigt, damit alle Clients ihre Zeit mit dem Domaincontroller synchronisieren können.</p><p>Dies ist eine Voraussetzung für einen reibungslosen Betrieb von Kerberos-Authentifizierung.
+</p><pre class="notranslate">sudo apt-get install ntp
+sudo service ntp start</pre><p>
+Überprüfen ob Daemon korrekt läuft:
+</p><pre class="notranslate">netstat -tulpn |grep ":123 "</pre><p>
+Problem: Bei Neustart des Servers ist der Daemon zwar gestartet, aber der Port UDP 123 ist trotzdem nicht offen.</p><p>Lösung: Es darf kein ntpdate installiert sein. Also: 
+</p><pre class="notranslate">sudo apt-get remove ntpdate
+sudo service ntp restart</pre><p>Verbindung zu vorhandenen Peers und dessen Zeit anzeigen,
+auf dem Server selbst ausführen:
+</p><pre class="notranslate">ntpq --peers</pre><p>Zeitserver aus Sicht eines Windows 10 Clients überprüfen:
+</p><pre class="notranslate">w32tm /monitor /computers:&lt;ip-adresse-des-Samba-Servers&gt;</pre></div><div class="section_2"><h3 id="DNS-Port-frei-machen">DNS-Port frei machen<a class="headerlink" href="#DNS-Port-frei-machen">¶</a></h3><p>
+Bei Ubuntu und Debian 8 gibt es eine Besonderheit in der DNS-Konfiguration:</p><p>Am Client wird die DNS-Namensauflösung mit Hilfe eines lokalen DNS-Dienstes "dnsmasq" realisiert.</p><p>Der Samba-Server will aber seinen eigenen DNS-Service installieren, und scheitert damit, weil dieser schon von "dnsmasq" belegt ist. Somit muss zuvor diese Hürde bereinigt werden.</p><p>So kann man den störenden "dnsmasq" deaktivieren:
+</p><pre class="notranslate">sudo systemctl disable dnsmasq</pre><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Jetzt muss der Computer zwingend neu gebootet werden.
+</p></div></div><p>Prüfung ob der DNS-Port 53 jetzt frei ist:
+</p><pre class="notranslate">sudo netstat -tlpn |grep ":53 "</pre><p>
+Der Befehl darf keine Ausgabe bringen, jedenfalls nichts mit "dnsmasq" am Ende der Zeile.</p><p>Hinweis: Denn wenn der Samba-Dienst nicht richtig läuft, dann liegt es vermutlich daran, dass der Netzwerkport 53 (DNS) schon belegt ist.</p><p>Dazu Samba im interaktiven Modus starten: samba -i</p><p>Dann kommt folgende Fehlermeldung: Failed to bind to 0.0.0.0:53 - NT_STATUS_ADDRESS_ALREADY_ASSOCIATED</p></div><div class="section_2"><h3 id="ACL-Option-fuer-Dateisysteme-aktivieren">ACL-Option für Dateisysteme aktivieren<a class="headerlink" href="#ACL-Option-fuer-Dateisysteme-aktivieren">¶</a></h3><p>
+siehe auch - <a class="internal" href="../acl.html">ACL Wikiartikel</a></p><p>Für das eingebundene Share muss dessen Dateisystem mit acl-Option gemountet sein, sonst sind keine erweiterten ACLs möglich. (Standard)</p><p>Seit Ubuntu 12.04 gehört ACL bei den Dateisystemen ext3 und ext4 zu den Default-Optionen (Parameter "defaults") und braucht deshalb auch bei diesen nicht mehr explizit aktiviert zu werden.</p><p>Mit dem Mount-Parameter "noacl" kann man die Nutzung von ACLs aber explizit verbieten.</p><p>Kommandos zur Überprüfung:
+</p><pre class="notranslate">cat /etc/fstab |grep -i noacl
+mount |grep -i noacl</pre><p>
+Beide Befehle dürfen für die Partitionen auf denen Shares liegen, keine Ausgabe bringen.</p></div></div><div class="section_1"><h2 id="Installation-von-Samba-Paket">Installation von Samba-Paket<a class="headerlink" href="#Installation-von-Samba-Paket">¶</a></h2><p>
+("winbind" wird nur zur Analysezwecken gebraucht, ist aber dafür wertvoll)
+</p><pre class="notranslate">sudo apt-get install samba
+sudo apt-get install winbind </pre></div><div class="section_1"><h2 id="Erstkonfiguration-von-Samba">Erstkonfiguration von Samba<a class="headerlink" href="#Erstkonfiguration-von-Samba">¶</a></h2><p>
+Beispielkonfigurationsdaten für den Samba-Server:
+</p><pre class="notranslate">Hostname des Samba-Servers: DC1
+IP-Adresse: 192.168.1.5
+getestete Samba-Version: 4.3.11-Ubuntu</pre><p>Die bestehende Datei smb.conf löschen oder umbenenen:
+</p><pre class="notranslate">sudo rm /etc/samba/smb.conf</pre><p>
+Dann folgendes als root ausführen zur Ersteinrichtung eines DC:
+</p><pre class="notranslate">samba-tool domain provision</pre><p>Es werden dann Domänennamen, NETBIOS-Name der Domäne, DNS-Server des Providers/DSL-Routers, und User-Passwort für den Samba-Administrator abgefragt, Beispiel:
+</p><pre class="notranslate">root@DC1:/etc/samba# samba-tool domain provision
+Realm [FRITZ.BOX]: TESTFIRMA.DOM
+ Domain [TESTFIRMA]: 
+ Server Role (dc, member, standalone) [dc]: 
+ DNS backend (SAMBA_INTERNAL, BIND9_FLATFILE, BIND9_DLZ, NONE) [SAMBA_INTERNAL]: 
+ DNS forwarder IP address (write 'none' to disable forwarding) [192.168.1.1]: 
+Administrator password: 
+Retype password: </pre><p>Danach kommt folgende Ausgabe, z.B.:
+</p><pre class="notranslate">Looking up IPv4 addresses
+Looking up IPv6 addresses
+More than one IPv6 address found. Using fd88:fdcf:c3ea::135
+Setting up share.ldb
+Setting up secrets.ldb
+Setting up the registry
+Setting up the privileges database
+Setting up idmap db
+Setting up SAM db
+Setting up sam.ldb partitions and settings
+Setting up sam.ldb rootDSE
+Pre-loading the Samba 4 and AD schema
+Adding DomainDN: DC=testfirma,DC=dom
+Adding configuration container
+Setting up sam.ldb schema
+Setting up sam.ldb configuration data
+Setting up display specifiers
+Modifying display specifiers
+Adding users container
+Modifying users container
+Adding computers container
+Modifying computers container
+Setting up sam.ldb data
+Setting up well known security principals
+Setting up sam.ldb users and groups
+Setting up self join
+Adding DNS accounts
+Creating CN=MicrosoftDNS,CN=System,DC=testfirma,DC=dom
+Creating DomainDnsZones and ForestDnsZones partitions
+Populating DomainDnsZones and ForestDnsZones partitions
+Setting up sam.ldb rootDSE marking as synchronized
+Fixing provision GUIDs
+A Kerberos configuration suitable for Samba 4 has been generated at /var/lib/samba/private/krb5.conf
+Once the above files are installed, your Samba4 server will be ready to use
+Server Role:           active directory domain controller
+Hostname:              DC1
+NetBIOS Domain:        TESTFIRMA
+DNS Domain:            testfirma.dom
+DOMAIN SID:            S-1-5-21-1643755149-329575646-4284657705</pre><p>Danach ist die /etc/samba/smb.conf mit folgender Rolle und Config eingerichtet (mehr nicht!), z.B.:
+</p><pre class="notranslate"># Global parameters
+[global]
+        workgroup = TESTFIRMA
+        realm = TESTFIRMA.DOM
+        netbios name = DC1
+        server role = active directory domain controller
+        dns forwarder = 192.168.1.1
+
+[netlogon]
+        path = /var/lib/samba/sysvol/testfirma.dom/scripts
+        read only = No
+
+[sysvol]
+        path = /var/lib/samba/sysvol
+        read only = No</pre><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Jetzt muss der Rechner zwingend neu gebootet werden.
+</p></div></div><p>Nach dem Reboot sind die üblichen Ports eines Domaincontrollers offen, hier die Ausgabe von <code class="notranslate">sudo netstat -tlpn</code>:</p><p>(der aufgelistete sshd-Service auf Port 22 wurde zuvor manuell hinzu installiert, und gehört nicht zur eigentlichen Samba-Installation. Der cupsd ist ab Werk bei Ubuntu schon installiert.)
+</p><pre class="notranslate">Aktive Internetverbindungen (Nur Server)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:464             0.0.0.0:*               LISTEN      1572/samba      
+tcp        0      0 0.0.0.0:53              0.0.0.0:*               LISTEN      1578/samba      
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      792/sshd        
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      655/cupsd       
+tcp        0      0 0.0.0.0:88              0.0.0.0:*               LISTEN      1572/samba      
+tcp        0      0 0.0.0.0:636             0.0.0.0:*               LISTEN      1570/samba      
+tcp        0      0 0.0.0.0:445             0.0.0.0:*               LISTEN      1569/smbd       
+tcp        0      0 0.0.0.0:1024            0.0.0.0:*               LISTEN      1566/samba      
+tcp        0      0 0.0.0.0:3268            0.0.0.0:*               LISTEN      1570/samba      
+tcp        0      0 0.0.0.0:3269            0.0.0.0:*               LISTEN      1570/samba      
+tcp        0      0 0.0.0.0:389             0.0.0.0:*               LISTEN      1570/samba      
+tcp        0      0 0.0.0.0:135             0.0.0.0:*               LISTEN      1566/samba      
+tcp        0      0 0.0.0.0:139             0.0.0.0:*               LISTEN      1569/smbd       
+tcp6       0      0 :::464                  :::*                    LISTEN      1572/samba      
+tcp6       0      0 :::53                   :::*                    LISTEN      1578/samba      
+tcp6       0      0 :::22                   :::*                    LISTEN      792/sshd        
+tcp6       0      0 ::1:631                 :::*                    LISTEN      655/cupsd       
+tcp6       0      0 :::88                   :::*                    LISTEN      1572/samba      
+tcp6       0      0 :::636                  :::*                    LISTEN      1570/samba      
+tcp6       0      0 :::445                  :::*                    LISTEN      1569/smbd       
+tcp6       0      0 :::1024                 :::*                    LISTEN      1566/samba      
+tcp6       0      0 :::3268                 :::*                    LISTEN      1570/samba      
+tcp6       0      0 :::3269                 :::*                    LISTEN      1570/samba      
+tcp6       0      0 :::389                  :::*                    LISTEN      1570/samba      
+tcp6       0      0 :::135                  :::*                    LISTEN      1566/samba      
+tcp6       0      0 :::139                  :::*                    LISTEN      1569/smbd   </pre><p>Damit ist jetzt grundsätzlich der Samba-Server als Domaincontroller mit LDAP, Kerberos, DNS und CIFS-Protokoll erreichbar und einsetzbar.</p></div><div class="section_1"><h2 id="Benutzer-und-Gruppen-Administration">Benutzer- und Gruppen-Administration<a class="headerlink" href="#Benutzer-und-Gruppen-Administration">¶</a></h2><p>
+Die Domänenverwaltung des Active-Directory des Samba-Servers geschieht per Linux auf der Kommandozeile mit dem Programm "samba-tool".
+("samba-tool" ist ein Teil des Samba4-Pakets)</p><p>Syntax siehe auch hier - <a class="external" href="https://www.samba.org/samba/docs/man/manpages-3/samba-tool.8.html" rel="nofollow" title="https://www.samba.org/samba/docs/man/manpages-3/samba-tool.8.html">https://www.samba.org/samba/docs/man/manpages-3/samba-tool.8.html</a></p><p>Einfache Informationsausgaben einer Domäne kann man auch mit "wbinfo" (eigenes Paket) erledigen.</p><p>Alle Benutzerkonten auflisten:
+</p><pre class="notranslate">samba-tool user list</pre><p>
+oder
+</p><pre class="notranslate">wbinfo -u</pre><p>Einen neuen Benutzer hinzufügen (soweit noch nicht vorhanden):</p><p>HINWEISE dazu:
+</p><ul><li><p>Samba 4 benötigt KEINE vorherige Anlage eines Unix Users bevor er in Samba angelegt werden kann.</p></li><li><p>Es wird bei Usernamen entgegen den Linuxstandards nicht zwischen Groß- und Kleinschreibung unterschieden.</p></li><li><p>Bei der Anlage wird ein Passwort abgefragt, dies unterliegt einer strengen Passwort-Policy.</p></li></ul><p>
+</p><pre class="notranslate">samba-tool user add "Alice"</pre><p>Eine neue Gruppe hinzufügen:
+</p><pre class="notranslate">samba-tool group add Team-A</pre><p>Alle Gruppen auflisten (ab Werk sind schon jede Menge Standard-Gruppen vorhanden)
+</p><pre class="notranslate">samba-tool group list</pre><p>
+oder
+</p><pre class="notranslate">wbinfo -g</pre><p>Einen Benutzer zu einer bestehenden Gruppe hinzufügen:
+</p><pre class="notranslate">samba-tool group addmembers Team-A Alice</pre><p>Alle Mitglieder einer Gruppe anzeigen:
+</p><pre class="notranslate">samba-tool group listmembers Team-A</pre></div><div class="section_1"><h2 id="Einrichtung-weiterer-Freigaben-Shares">Einrichtung weiterer Freigaben (Shares)<a class="headerlink" href="#Einrichtung-weiterer-Freigaben-Shares">¶</a></h2><p>
+Ab Werk sind auf dem Sambaserver jetzt nun die CIFS-Shares "netlogon" und "sysvol" verfügbar.</p><p>SYSVOL ist ein Standard-Verzeichnis bei Domaincontrollern und beinhaltet die Windows Group-Policies sowie beinhaltet auch das NETLOGON-Share.</p><p>Das NETLOGON-Share ist standardmässig nur für Loginscripte vorgesehen.</p><p>EMPFEHLUNG: Beide Shares sollten nicht für andere Zwecke missbraucht werden!</p><p>Wenn man diesen Server somit nicht nur als Domaincontroller verwenden möchte, sondern auch als Fileserver, kann man weitere Shares einrichten.</p><div class="section_2"><h3 id="rlimit-max-Fehler-beheben">rlimit_max Fehler beheben<a class="headerlink" href="#rlimit-max-Fehler-beheben">¶</a></h3><p>
+Für die Nutzung weiterer Shares muss man erst einen altbekannten Fehler beheben:
+testparm-Fehlermeldung: (kommt bei der Ausführung des Befehls "testparm") 
+</p><pre class="notranslate">rlimit_max (1024) below minimum Windows limit (16384)</pre><p>
+Lösung: <a class="external" href="http://lists.samba.org/archive/samba/2010-January/153331.html" rel="nofollow" title="http://lists.samba.org/archive/samba/2010-January/153331.html">http://lists.samba.org/archive/samba/2010-January/153331.html</a></p><p>Um diesen Fehler permanent zu beheben, muss man in der Datei "/etc/security/limits.conf" in der vorletzten Zeile vor der Zeile "# End of File" folgende Zeile hinzufügen und abspeichern:
+</p><pre class="notranslate">* - nofile 16384</pre><p>
+</p><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Jetzt muss der Rechner zwingend neu gebootet werden.
+</p></div></div><p>
+Nach dem Reboot sollte bei der Ausführung von "testparm" diese Fehlermeldung nicht mehr kommen, und man kann nun weitere Shares einrichten.</p></div><div class="section_2"><h3 id="Tausch-Verzeichnis-fuer-JEDEN">Tausch-Verzeichnis für JEDEN<a class="headerlink" href="#Tausch-Verzeichnis-fuer-JEDEN">¶</a></h3><p>
+(auch mit Schreib-Zugriff für echte Gäste, und Nicht-Domänenmitgliedern ohne Domänenaccount)
+Richten Sie im Dateisystem das Verzeichnis "tausch" ein, und berechtigen sie jeden mit Schreibrechten:</p><p>Beispiel:
+</p><pre class="notranslate">sudo mkdir /mnt/tausch
+sudo chmod 777 /mnt/tausch</pre><p>Ergänzen Sie die Datei "/etc/samba/smb.conf" am Ende um folgende Zeilen:
+</p><pre class="notranslate">[tausch]
+	comment = Tausch
+	path = /mnt/tausch
+	read only = No
+	inherit permissions = Yes
+	inherit acls = Yes
+	inherit owner = Yes
+	guest ok = Yes</pre><p><strong>Passende Berechtigungen (ACLs) im Dateisystem für das Share "tausch" setzen:</strong>
+</p><pre class="notranslate">chown -R root:root /mnt/tausch/
+chmod -R 777 /mnt/tausch/
+setfacl -R -b /mnt/tausch/   # entfernt alle bestehenden Rechte
+setfacl -R -d -m:rxw /mnt/tausch/    # setzt rwx als Default-Recht für alle User</pre></div><div class="section_2"><h3 id="Daten-Verzeichnis-fuer-Domaingruppen">Daten-Verzeichnis für Domaingruppen<a class="headerlink" href="#Daten-Verzeichnis-fuer-Domaingruppen">¶</a></h3><p>
+Ergänzen Sie die Datei "/etc/samba/smb.conf" am Ende um folgende Zeilen:
+</p><pre class="notranslate">[daten]
+	comment = Daten
+	path = /mnt/daten
+	read only = No
+	inherit permissions = Yes
+	inherit acls = Yes
+	inherit owner = Yes
+	guest ok = No</pre><p>
+<strong>Berechtigungen (ACLs) für das Shares "daten" setzen:</strong></p><p>Tatsächliche Linux ID für einen Windows-User oder Windows-Gruppe ermitteln.</p><p>Beispiel für die Gruppe  "Domain Admins":  (beim User oder Gruppennamen spielt Gross/Kleinschreibung keine Rolle)
+</p><pre class="notranslate">wbinfo -i "domain admins"</pre><p>
+Beispielausgabe:
+</p><pre class="notranslate">TESTFIRMA\domain admins:*:3000008:3000008::/home/TESTFIRMA/domain admins:/bin/false</pre><p>
+Erkenntnis: Die zugehörige Linux-ID lautet somit: 3000008</p><p>Beispiel für die zuvor angelegt Gruppe "team-a":
+</p><pre class="notranslate">wbinfo -i "team-a"</pre><p>
+Beispielausgabe:
+</p><pre class="notranslate">TESTFIRMA\team-a:*:3000026:3000026::/home/TESTFIRMA/team-a:/bin/false</pre><p>
+Erkenntnis: Die zugehörige Linux-ID von "team-a" lautet: 3000026</p><p>Die zwei Gruppen "Domain Admins" und "team-a" mit Vollzugriff berechtigen (inkl. Vererbung auf Unterobjekte und Defaultrechte, Parameter -d)
+</p><pre class="notranslate">chown -R root:root /mnt/daten/   # root zum Besitzer aller Dateien machen
+chmod -R 700 /mnt/daten/   # alle Rechte auf root einschränken
+setfacl -R -b /mnt/daten/   # entfernt alle bestehenden ACLs
+setfacl -R -d -m g:3000008:rwx /mnt/daten/   # die Gruppe "Domain Admins" mit Vollrechten ausstatten
+setfacl -R -d -m g:3000026:rwx /mnt/daten/   # die Gruppe "team-a" mit Vollrechten ausstatten</pre><p>Anzeige im Linuxdateisystem:
+</p><pre class="notranslate">root@DC1:/mnt# getfacl  -t /mnt/daten/
+# file: mnt/daten
+# owner: root
+# group: root
+user::rwx
+group::---
+other::---
+default:user::rwx
+default:group::---
+default:group:3000008:rwx
+default:group:3000026:rwx
+default:mask::rwx
+default:other::---</pre><p></p></div></div></div>
+<p class="meta">
+<a href="../howto/samba4_als_domaincontroller/a/revision/941952.html">Diese Revision</a> wurde am 15. Juni 2017 14:19 von <a href="https://ubuntuusers.de/user/noisefloor/">noisefloor</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="../startseite.html">Wiki</a></li>
+<li><a href="../howto.html">Howto</a></li>
+<li><a href="../howto/samba4_als_domaincontroller.html">Samba4 als Domaincontroller</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="../_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="../_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="../_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="../_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

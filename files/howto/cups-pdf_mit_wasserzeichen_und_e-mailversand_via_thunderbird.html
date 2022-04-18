@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Howto/CUPS-PDF_mit_Wasserzeichen_und_E-Mailversand_via_Thunderbird › ubuntuusers statisches Wiki</title>
+<link href="../_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="../_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="../_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="../_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="../_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="../_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="../startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="../howto/cups-pdf_mit_wasserzeichen_und_e-mailversand_via_thunderbird.html">CUPS-PDF mit Wasserzeichen und E-Mailversand via Thunderbird</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/Howto/CUPS-PDF_mit_Wasserzeichen_und_E-Mailversand_via_Thunderbird">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="../wiki/index.html">Index</a></li>
+<li><a href="../wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="../wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="../wiki.html">Übersicht</a></li>
+<li><a href="../wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="../wiki/benutzung.html">Benutzung</a></li>
+<li><a href="../kategorien.html">Kategorie</a></li>
+<li><a href="../wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="../wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="../howto.html">Howto anlegen</a></li>
+<li><a href="../wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="../wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="../baustelle.html">Baustellen</a></li>
+<li><a href="../wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="../wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="../wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="../wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="../howto/cups-pdf_mit_wasserzeichen_und_e-mailversand_via_thunderbird/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="../howto/cups-pdf_mit_wasserzeichen_und_e-mailversand_via_thunderbird/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="../howto/cups-pdf_mit_wasserzeichen_und_e-mailversand_via_thunderbird/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="../howto/cups-pdf_mit_wasserzeichen_und_e-mailversand_via_thunderbird/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="../howto/cups-pdf_mit_wasserzeichen_und_e-mailversand_via_thunderbird/a/backlinks.html">CUPS-PDF mit Wasserzeichen und E-Mailversand via Thunderbird</a></h1>
+<div id="page"><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Die Verwendung dieses Howto geschieht auf eigene Gefahr. Bei Problemen mit der Anleitung melde dies bitte in der dazugehörigen Diskussion und wende dich zusätzlich an den Verfasser des Howtos.
+</p></div></div><div class="box advanced"><h3 class="box advanced">Artikel für fortgeschrittene Anwender</h3><div class="contents"><p>
+Dieser Artikel erfordert mehr Erfahrung im Umgang mit
+Linux und ist daher nur für fortgeschrittene Benutzer
+gedacht.
+</p></div></div><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Diese Howto-Anleitung wurde zuletzt von <a class="crosslink user" href="https://ubuntuusers.de/user/Manuel%40teddy/">Manuel@teddy</a> am 25.04.2017 mit <strong>Ubuntu 14.04</strong> bis <strong>Ubuntu 17.04</strong> erfolgreich getestet.
+</p></div></div><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="../pakete_installieren.html">Installation von Programmen</a></p></li><li><p><a class="crosslink anchor" href="#source-2" id="source-2"></a> <a class="internal" href="../paketinstallation_deb.html">Ein einzelnes Paket installieren</a></p></li><li><p><a class="crosslink anchor" href="#source-3" id="source-3"></a> <a class="internal" href="../terminal.html">Ein Terminal öffnen</a> </p></li><li><p><a class="crosslink anchor" href="#source-4" id="source-4"></a> <a class="internal" href="../editor.html">Einen Editor öffnen</a> </p></li><li><p><a class="crosslink anchor" href="#source-5" id="source-5"></a> <a class="internal" href="../sudo.html">Root-Rechte erlangen</a></p></li><li><p><a class="crosslink anchor" href="#source-6" id="source-6"></a> <a class="internal" href="../programme_starten.html">Starten von Programmen</a></p></li><li><p><a class="crosslink anchor" href="#source-7" id="source-7"></a> <a class="internal" href="../meld.html">Dateien mergen</a></p></li><li><p><a class="crosslink anchor" href="#source-8" id="source-8"></a> <a class="internal" href="../cups-pdf.html">Hintergrundwissen zu CUPS-PDF</a></p></li></ol></div></div><div class="toc toc-depth-2"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a class="crosslink" href="#Vorwort">Vorwort
+</a></li><li><a class="crosslink" href="#Installation-bis-Ubuntu-16-10">Installation bis Ubuntu 16.10
+</a></li><li><a class="crosslink" href="#Installation-ab-Ubuntu-17-04">Installation ab Ubuntu 17.04
+</a><ol class="arabic"><li><a class="crosslink" href="#Anlegen-der-benoetigten-CUPS-Backends">Anlegen der benötigten CUPS-Backends
+</a></li><li><a class="crosslink" href="#Anlegen-der-Konfigurationsdateien-fuer-jedes-Backend">Anlegen der Konfigurationsdateien für je...</a></li><li><a class="crosslink" href="#Anlegen-der-benoetigten-PostProcessing-Skripte">Anlegen der benötigten PostProcessing-Sk...</a></li><li><a class="crosslink" href="#Skript-fuer-den-Speicherdialog-und-E-Mail-Versand">Skript für den Speicherdialog und E-Mail...</a></li><li><a class="crosslink" href="#Anpassung-von-AppArmor">Anpassung von AppArmor
+</a></li><li><a class="crosslink" href="#Hinzufuegen-der-virtuellen-Drucker">Hinzufügen der virtuellen Drucker
+</a></li></ol></li><li><a class="crosslink" href="#Fazit">Fazit
+</a></li><li><a class="crosslink" href="#Problembehebung">Problembehebung
+</a></li><li><a class="crosslink" href="#Links">Links
+</a></li></ol></div><div class="section_1"><h2 id="Vorwort">Vorwort<a class="headerlink" href="#Vorwort">¶</a></h2><p>
+In diesem Artikel wird beschrieben wie man mittels CUPS-PDF verschiedene virtuelle PDF-Drucker einrichtet. Diese können im Anschluss dazu genutzt werden, verschiedenste Sachen zu automatisieren, wie z.B.
+</p><ul><li><p>Dateiauswahldialog um den Namen der PDF festzulegen</p></li><li><p>Hinterlegen von verschiedenen Wasserzeichen (Briefbögen)</p></li><li><p>Anschließender Versand per E-Mail</p></li></ul><p>In dem Artikel wird davon ausgegangen, dass man <a class="internal" href="../cups-pdf.html">CUPS-PDF</a> durchgearbeitet und verstanden hat.</p></div><div class="section_1"><h2 id="Installation-bis-Ubuntu-16-10">Installation bis Ubuntu 16.10<a class="headerlink" href="#Installation-bis-Ubuntu-16-10">¶</a></h2><p>
+Die folgenden Pakete müssen (je nach dem welche Features man benötigt) installiert <sup><a href="#source-1">[1]</a></sup> werden:</p><ul><li><p><strong>cups-pdf</strong></p></li><li><p><strong>pdftk</strong></p></li><li><p><strong>zenity</strong></p></li><li><p><strong>yad</strong></p></li><li><p><strong>thunderbird</strong></p></li></ul><p><img alt="Wiki/Vorlagen/Installbutton/button.png" class="image-default" src="../_/fd60ccb86c4d96df2f4518df2936cc7d038467aa.png"/>
+mit <a class="internal" href="../apturl.html">apturl</a>
+</p><div class="package-list"><div class="contents"><p>
+Paketliste zum Kopieren:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo apt-get install cups-pdf pdftk zenity yad thunderbird </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo aptitude install cups-pdf pdftk zenity yad thunderbird </pre></div></div><p>
+</p></div></div></div><div class="section_1"><h2 id="Installation-ab-Ubuntu-17-04">Installation ab Ubuntu 17.04<a class="headerlink" href="#Installation-ab-Ubuntu-17-04">¶</a></h2><p>
+Die folgenden Pakete müssen (je nach dem welche Features man benötigt) installiert <sup><a href="#source-1">[1]</a></sup> werden:</p><ul><li><p><strong>printer-driver-cups-pdf</strong></p></li><li><p><strong>pdftk</strong></p></li><li><p><strong>zenity</strong></p></li><li><p><strong>yad</strong></p></li><li><p><strong>thunderbird</strong></p></li></ul><p><img alt="Wiki/Vorlagen/Installbutton/button.png" class="image-default" src="../_/fd60ccb86c4d96df2f4518df2936cc7d038467aa.png"/>
+mit <a class="internal" href="../apturl.html">apturl</a>
+</p><div class="package-list"><div class="contents"><p>
+Paketliste zum Kopieren:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo apt-get install printer-driver-cups-pdf pdftk zenity yad thunderbird </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo aptitude install printer-driver-cups-pdf pdftk zenity yad thunderbird </pre></div></div><p>
+</p></div></div><p>Die folgende Tabelle liefert eine übersicht wozu die Pakete benötigt werden:</p><p>
+</p><table><tr class="titel"><td colspan="2"> Übersicht der installierten Pakete </td></tr><tr class="kopf"><td> Paket </td><td> Beschreibung </td></tr><tr><td> cups-pdf bzw. printer-driver-cups-pdf </td><td> virtueller Druckertreiber zum Erzeugen von PDF-Dateien </td></tr><tr><td> pdftk </td><td> Werkzeug für die Manipulation von PDF-Dokumenten </td></tr><tr><td> zenity </td><td> Zeigt graphische Dialogfelder von Shell-Skripten aus an </td></tr><tr><td> yad </td><td> Zeigt graphische Dialogfelder von Shell-Skripten aus an (Weiterentwicklung von zenity) </td></tr><tr><td> thunderbird </td><td> E-Mail-, RSS- und Newsgroup-Client mit integriertem Spamfilter </td></tr></table><div class="section_2"><h3 id="Anlegen-der-benoetigten-CUPS-Backends">Anlegen der benötigten CUPS-Backends<a class="headerlink" href="#Anlegen-der-benoetigten-CUPS-Backends">¶</a></h3><p>
+Zum Anlegen weiterer CUPS-Backends werden die Quellen von CUPS-PDF benötigt, welche mit</p><div class="bash"><div class="contents"><pre class="notranslate">apt-get source cups-pdf </pre></div></div><p>bzw. ab Ubuntu 17.04 mit</p><div class="bash"><div class="contents"><pre class="notranslate">apt-get source printer-driver-cups-pdf </pre></div></div><p>installiert werden können. Als nächstes wechseln wir in das src Verzeichnis der soeben heruntergeladenen Sourcen mit</p><div class="bash"><div class="contents"><pre class="notranslate">cd cups-pdf-*/src </pre></div></div><p>In dem Verzeichnis öffnet man die Datei cups-pdf.h mit einem Texteditor seiner Wahl
+</p><div class="bash"><div class="contents"><pre class="notranslate">vi cups-pdf.h </pre></div></div><p>
+und ändern die Zeile für die Konfigurationsdatei unseres neuen Backends von
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="cp">#define CPCONFIG "/etc/cups/cups-pdf.conf"</span>
+</pre></div>
+</td></tr></table></div><p>
+in z.B.
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="cp">#define CPCONFIG "/etc/cups/cups-pdf-md1.conf"</span>
+</pre></div>
+</td></tr></table></div><p>
+ab. Nun können wir das neue Backend mit</p><div class="bash"><div class="contents"><pre class="notranslate">gcc -O9 -s -o cups-pdf-md1 cups-pdf.c </pre></div></div><p>kompilieren. Je nachdem wieviele weitere Backends man benötigt, müssen diese Schritte mit anderen Namen wiederholt werden. In dem Beispiel wurden 4 weitere Backends (cups-pdf-md1 bis cups-pdf-md4) angelegt. Die erzeugten Backends stehen nach dem Kopieren mit</p><div class="bash"><div class="contents"><pre class="notranslate">sudo cp cups-pdf-md* /usr/lib/cups/backend </pre></div></div><p>nach /usr/lib/cups/backend und der Anpassung der Rechte mit</p><div class="bash"><div class="contents"><pre class="notranslate">sudo chown root.root /usr/lib/cups/backend/cups-pdf-md*
+sudo chmod 700 /usr/lib/cups/backend/cups-pdf-md* </pre></div></div><p>nun zur Verfügung.</p></div><div class="section_2"><h3 id="Anlegen-der-Konfigurationsdateien-fuer-jedes-Backend">Anlegen der Konfigurationsdateien für jedes Backend<a class="headerlink" href="#Anlegen-der-Konfigurationsdateien-fuer-jedes-Backend">¶</a></h3><p>
+Nun kann man die bereits existierende Original-Konfigurationsdatei für cups-pdf für die anderen Backends duplizieren</p><div class="bash"><div class="contents"><pre class="notranslate">sudo cp /etc/cups-pdf.conf /etc/cups-pdf-md1.conf
+sudo cp /etc/cups-pdf.conf /etc/cups-pdf-md2.conf
+sudo cp /etc/cups-pdf.conf /etc/cups-pdf-md3.conf
+sudo cp /etc/cups-pdf.conf /etc/cups-pdf-md4.conf </pre></div></div><p>Im nächsten Schritt werden für die verschiedenen Backends unterschiedliche Postprocessor-Direktiven konfiguriert. Dazu öffnet man die jeweilige Konfigurationsdatei mit einem Textedit seiner Wahl</p><div class="bash"><div class="contents"><pre class="notranslate">sudo vi /etc/cups-pdf-md1.conf
+sudo vi /etc/cups-pdf-md2.conf
+sudo vi /etc/cups-pdf-md3.conf
+sudo vi /etc/cups-pdf-md4.conf </pre></div></div><p>und fügt die Zeile für das PostProcessing-Skript ein:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="c1">### Key: PostProcessing</span>
+<span class="c1">##  postprocessing script that will be called after the creation of the PDF</span>
+<span class="c1">##  as arguments the filename of the PDF, the username as determined by </span>
+<span class="c1">##  CUPS-PDF and the one as given to CUPS-PDF will be passed</span>
+<span class="c1">##  the script will be called with user privileges</span>
+<span class="c1">##  set this to an empty value to use no postprocessing</span>
+<span class="c1">### Default: &lt;empty&gt;</span>
+
+PostProcessing /etc/cups/cups-pdf-md1.sh
+</pre></div>
+</td></tr></table></div><p>Da wir in den Backends später unterschiedliche Wasserzeichen hinterlegen wollen, weisen wir über diesen Weg jedem Backend ein anderes PostProcessing-Skript zu. Die folgende Tabelle zeigt die Abhängigkeiten nochmals in der Übersicht:</p><p>
+</p><table><tr class="titel"><td colspan="4"> Übersicht der Abhängigkeiten </td></tr><tr class="kopf"><td> Backend </td><td> Konfigurationsdatei </td><td> Post-Processing-Skript </td><td> wasserzeichen </td></tr><tr><td> cups-pdf-md1 </td><td> /etc/cups/cups-pdf-md1.conf </td><td> /etc/cups/cups-pdf-md1.sh </td><td> /etc/cups/cups-pdf-md1.pdf </td></tr><tr><td> cups-pdf-md2 </td><td> /etc/cups/cups-pdf-md2.conf </td><td> /etc/cups/cups-pdf-md2.sh </td><td> /etc/cups/cups-pdf-md2.pdf </td></tr><tr><td> cups-pdf-md3 </td><td> /etc/cups/cups-pdf-md3.conf </td><td> /etc/cups/cups-pdf-md3.sh </td><td> /etc/cups/cups-pdf-md3.pdf </td></tr><tr><td> cups-pdf-md4 </td><td> /etc/cups/cups-pdf-md4.conf </td><td> /etc/cups/cups-pdf-md4.sh </td><td> /etc/cups/cups-pdf-md4.pdf </td></tr></table><p>Wie der Tabelle zu entnehmen ist, muss man die PDF-Dateien für das Wasserzeichen unter /etc/cups ablegen.</p></div><div class="section_2"><h3 id="Anlegen-der-benoetigten-PostProcessing-Skripte">Anlegen der benötigten PostProcessing-Skripte<a class="headerlink" href="#Anlegen-der-benoetigten-PostProcessing-Skripte">¶</a></h3><p>
+Im nächsten Schritt erzeugen wir nun die einzelnen Post-Processing-Skripts für unsere verschiedenen Backends.</p><p>Erzeugen der Datei /etc/cups/cups-pdf.sh mit folgendem Inhalt:
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+/etc/cups/PDF2Mail.sh <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$3</span><span class="s2">"</span>
+</pre></div>
+</td></tr></table></div><p>Erzeugen der Datei /etc/cups/cups-pdf-md1.sh mit folgendem Inhalt:
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+/etc/cups/PDF2Mail.sh <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$3</span><span class="s2">"</span> <span class="s2">"/etc/cups/cups-pdf-md1.pdf"</span>
+</pre></div>
+</td></tr></table></div><p>Erzeugen der Datei /etc/cups/cups-pdf-md2.sh mit folgendem Inhalt:
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+/etc/cups/PDF2Mail.sh <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$3</span><span class="s2">"</span> <span class="s2">"/etc/cups/cups-pdf-md2.pdf"</span>
+</pre></div>
+</td></tr></table></div><p>Erzeugen der Datei /etc/cups/cups-pdf-md3.sh mit folgendem Inhalt:
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+/etc/cups/PDF2Mail.sh <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$3</span><span class="s2">"</span> <span class="s2">"/etc/cups/cups-pdf-md3.pdf"</span>
+</pre></div>
+</td></tr></table></div><p>Erzeugen der Datei /etc/cups/cups-pdf-md4.sh mit folgendem Inhalt:
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+/etc/cups/PDF2Mail.sh <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$3</span><span class="s2">"</span> <span class="s2">"/etc/cups/cups-pdf-md4.pdf"</span>
+</pre></div>
+</td></tr></table></div><p>In dem Beispiel, ist auch bei der Standard-PDF Ausgabe ein Versand per E-Mail möglich, ohne jedoch ein Wasserzeichen zu hinterlegen. Dafür wurde die Post-Processing Direktive in der cups-pdf.conf auf /etc/cups/cups-pdf.sh gesetzt.</p></div><div class="section_2"><h3 id="Skript-fuer-den-Speicherdialog-und-E-Mail-Versand">Skript für den Speicherdialog und E-Mail-Versand<a class="headerlink" href="#Skript-fuer-den-Speicherdialog-und-E-Mail-Versand">¶</a></h3><p>
+Um nach der Erstellung der PDF-Datei mit CUPS-PDF, die PDF mit einem Wasserzeichen hinterlegen und versenden zu können, kann man z.B. folgendes Skript in der Datei /etc/cups/PDF2Mail.sh ablegen:
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1">#</span>
+<span class="c1"># PDF2Mail.sh</span>
+<span class="c1">#</span>
+<span class="c1"># This script is a CUPS postprocessor. It adds a watermark </span>
+<span class="c1"># if necessary, renames the file and offers the possibility </span>
+<span class="c1"># for sending the file by e-mail.</span>
+<span class="c1">#</span>
+<span class="c1"># @author.: Manuel Dräger</span>
+<span class="c1"># @datei..: 20.03.2016</span>
+<span class="c1"># @version: 0.1</span>
+<span class="c1"># @usage..: with postprocessor directive in /etc/cups-pdf.conf</span>
+
+<span class="nb">export</span> <span class="nv">file</span><span class="o">=</span><span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>
+<span class="nb">export</span> <span class="nv">USER</span><span class="o">=</span><span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span>
+<span class="nb">export</span> <span class="nv">wmfile</span><span class="o">=</span><span class="s2">"</span><span class="nv">$4</span><span class="s2">"</span>
+<span class="nb">export</span> <span class="nv">date</span><span class="o">=</span><span class="sb">`</span>date +%Y.%m.%d<span class="sb">`</span>
+<span class="nb">export</span> <span class="nv">time</span><span class="o">=</span><span class="sb">`</span>date +%H.%M.%S<span class="sb">`</span>
+<span class="nb">export</span> <span class="nv">hostname</span><span class="o">=</span><span class="sb">`</span>hostname<span class="sb">`</span>
+<span class="nb">export</span> <span class="nv">dirname</span><span class="o">=</span><span class="sb">`</span>dirname <span class="nv">$file</span><span class="sb">`</span>
+<span class="nb">export</span> <span class="nv">filename</span><span class="o">=</span><span class="sb">`</span>basename <span class="nv">$file</span><span class="sb">`</span>
+<span class="nb">export</span> <span class="nv">newfile</span><span class="o">=</span><span class="s2">"</span><span class="nv">$date</span><span class="s2"> - </span><span class="nv">$time</span><span class="s2"> - </span><span class="nv">$hostname</span><span class="s2"> - </span><span class="nv">$filename</span><span class="s2">"</span>
+<span class="nb">export</span> <span class="nv">nfile</span><span class="o">=</span><span class="s2">"</span><span class="nv">$dirname</span><span class="s2">/</span><span class="nv">$newfile</span><span class="s2">"</span>
+<span class="nb">export</span> <span class="nv">self</span><span class="o">=</span><span class="sb">`</span>basename <span class="nv">$0</span><span class="sb">`</span>
+<span class="nb">export</span> <span class="nv">DISPLAY</span><span class="o">=</span>:0.0
+<span class="nb">export</span> <span class="nv">HOME</span><span class="o">=</span>/home/<span class="nv">$USER</span>
+<span class="nb">export</span> <span class="nv">XAUTHORITY</span><span class="o">=</span><span class="nv">$HOME</span>/.Xauthority
+
+<span class="c1"># thunderbird needs a D-BUS session, if thunderbird is not running</span>
+<span class="k">if</span> <span class="nb">test</span> -z <span class="s2">"</span><span class="nv">$DBUS_SESSION_BUS_ADDRESS</span><span class="s2">"</span> <span class="p">;</span> <span class="k">then</span>
+  <span class="nb">eval</span> <span class="sb">`</span>dbus-launch --sh-syntax<span class="sb">`</span>
+<span class="k">fi</span>
+
+<span class="c1">#  show dialog to save the file</span>
+<span class="nv">nfile</span><span class="o">=</span><span class="sb">`</span>zenity --file-selection --save --confirm-overwrite --filename<span class="o">=</span><span class="s2">"</span><span class="nv">$nfile</span><span class="s2">"</span><span class="sb">`</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> -eq <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+  <span class="c1"># add watermarks and delete the original file</span>
+  <span class="k">if</span> <span class="o">[</span> <span class="nv">$wmfile</span> -eq <span class="s2">""</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    mv <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$nfile</span><span class="s2">"</span>
+  <span class="k">else</span>
+    pdftk <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span> background <span class="s2">"</span><span class="nv">$wmfile</span><span class="s2">"</span> output <span class="s2">"</span><span class="nv">$nfile</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> rm <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span>
+  <span class="k">fi</span>
+  <span class="c1"># show dialog for sending the file by e-mail</span>
+  <span class="k">if</span> zenity --question --text <span class="s2">"Willst Du die PDF per E-Mail mit Thunderbird versenden?"</span><span class="p">;</span> <span class="k">then</span> 
+    <span class="c1"># escape the ","</span>
+    <span class="nb">export</span> <span class="nv">pseudouri</span><span class="o">=</span><span class="s2">"file://"</span><span class="sb">`</span><span class="nb">echo</span> <span class="nv">$nfile</span> <span class="p">|</span> sed <span class="s1">'s/,/%2C/g'</span><span class="sb">`</span>
+    <span class="nb">export</span> <span class="nv">subject</span><span class="o">=</span><span class="sb">`</span>basename <span class="s2">"</span><span class="nv">$nfile</span><span class="s2">"</span> <span class="p">|</span> sed <span class="s1">'s/,/%2C/g'</span><span class="sb">`</span>
+    <span class="c1"># send file via thunderbird</span>
+    thunderbird -compose <span class="s2">"subject=</span><span class="nv">$subject</span><span class="s2">,attachment='</span><span class="nv">$pseudouri</span><span class="s2">'"</span>
+  <span class="k">fi</span>
+<span class="k">fi</span>
+</pre></div>
+</td></tr></table></div><p>In dem Skript wird zur Interaktion mit dem Anwender zenity verwendet. Wem es vom Layout her besser gefällt, der kann auch zenity durch yad ersetzen.</p></div><div class="section_2"><h3 id="Anpassung-von-AppArmor">Anpassung von AppArmor<a class="headerlink" href="#Anpassung-von-AppArmor">¶</a></h3><p>
+Da CUPS von AppArmor überwacht wird, ist es nun noch nötig die neuen Backends AppArmor bekanntzugeben und die Ausführung der PostProcessing-Skripts zu erlauben. Hierzu editiert man die zuständige Konfigurations-Datei mit einem Texteditor seiner Wahl:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo vi /etc/apparmor.d/usr.sbin.cupsd </pre></div></div><p>Die angepassten Stellen wurden mit # Modifikation MD markiert:
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="c1"># vim:syntax=apparmor</span>
+<span class="c1"># Last Modified: Thu Aug  2 12:54:46 2007</span>
+<span class="c1"># Author: Martin Pitt &lt;martin.pitt@ubuntu.com&gt;</span>
+
+<span class="c1">#include &lt;tunables/global&gt;</span>
+
+/usr/sbin/cupsd <span class="nv">flags</span><span class="o">=(</span>attach_disconnected<span class="o">)</span> <span class="o">{</span>
+  <span class="c1">#include &lt;abstractions/base&gt;</span>
+  <span class="c1">#include &lt;abstractions/bash&gt;</span>
+  <span class="c1">#include &lt;abstractions/authentication&gt;</span>
+  <span class="c1">#include &lt;abstractions/dbus&gt;</span>
+  <span class="c1">#include &lt;abstractions/fonts&gt;</span>
+  <span class="c1">#include &lt;abstractions/nameservice&gt;</span>
+  <span class="c1">#include &lt;abstractions/perl&gt;</span>
+  <span class="c1">#include &lt;abstractions/user-tmp&gt;</span>
+
+  capability chown,
+  capability fowner,
+  capability fsetid,
+  capability kill,
+  capability net_bind_service,
+  capability setgid,
+  capability setuid,
+  capability audit_write,
+  deny capability block_suspend,
+
+  <span class="c1"># nasty, but we limit file access pretty tightly, and cups chowns a</span>
+  <span class="c1"># lot of files to 'lp' which it cannot read/write afterwards any</span>
+  <span class="c1"># more</span>
+  capability dac_override,
+
+  <span class="c1"># the bluetooth backend needs this</span>
+  network bluetooth,
+
+  <span class="c1"># the dnssd backend uses those</span>
+  network x25 seqpacket,
+  network ax25 dgram,
+  network netrom seqpacket,
+  network rose dgram,
+  network ipx dgram,
+  network appletalk dgram,
+  network econet dgram,
+  network ash dgram,
+
+  /bin/bash ixr,
+  /bin/dash ixr,
+  /bin/hostname ixr,
+  /dev/lp* rw,
+  deny /dev/tty rw,  <span class="c1"># silence noise</span>
+  /dev/ttyS* rw,
+  /dev/ttyUSB* rw,
+  /dev/usb/lp* rw,
+  /dev/bus/usb/ r,
+  /dev/bus/usb/** rw,
+  /dev/parport* rw,
+  /etc/cups/ rw,
+  /etc/cups/** rw,
+  /etc/cups/interfaces/* ixrw,
+  /etc/foomatic/* r,
+  /etc/gai.conf r,
+  /etc/papersize r,
+  /etc/pnm2ppa.conf r,
+  /etc/printcap rwl,
+  /etc/ssl/** r,
+  @<span class="o">{</span>PROC<span class="o">}</span>/net/ r,
+  @<span class="o">{</span>PROC<span class="o">}</span>/net/* r,
+  @<span class="o">{</span>PROC<span class="o">}</span>/sys/dev/parport/** r,
+  @<span class="o">{</span>PROC<span class="o">}</span>/*/net/ r,
+  @<span class="o">{</span>PROC<span class="o">}</span>/*/net/** r,
+  @<span class="o">{</span>PROC<span class="o">}</span>/*/auxv r,
+  @<span class="o">{</span>PROC<span class="o">}</span>/sys/crypto/** r,
+  /sys/** r,
+  /usr/bin/* ixr,
+  /usr/sbin/* ixr,
+  /bin/* ixr,
+  /sbin/* ixr,
+  /usr/lib/** rm,
+
+  <span class="c1"># backends which come with CUPS can be confined</span>
+  /usr/lib/cups/backend/bluetooth ixr,
+  /usr/lib/cups/backend/dnssd ixr,
+  /usr/lib/cups/backend/http ixr,
+  /usr/lib/cups/backend/ipp ixr,
+  /usr/lib/cups/backend/lpd ixr,
+  /usr/lib/cups/backend/parallel ixr,
+  /usr/lib/cups/backend/serial ixr,
+  /usr/lib/cups/backend/snmp ixr,
+  /usr/lib/cups/backend/socket ixr,
+  /usr/lib/cups/backend/usb ixr,
+  <span class="c1"># we treat cups-pdf specially, since it needs to write into /home</span>
+  <span class="c1"># and thus needs extra paranoia</span>
+  /usr/lib/cups/backend/cups-pdf Px,
+  /usr/lib/cups/backend/cups-pdf-md1 Px, <span class="c1"># Modifikation MD</span>
+  /usr/lib/cups/backend/cups-pdf-md2 Px, <span class="c1"># Modifikation MD</span>
+  /usr/lib/cups/backend/cups-pdf-md3 Px, <span class="c1"># Modifikation MD</span>
+  /usr/lib/cups/backend/cups-pdf-md4 Px, <span class="c1"># Modifikation MD</span>
+  <span class="c1"># third party backends get no restrictions as they often need high</span>
+  <span class="c1"># privileges and this is beyond our control</span>
+  /usr/lib/cups/backend/* Cx -&gt; third_party,
+
+  /usr/lib/cups/cgi-bin/* ixr,
+  /usr/lib/cups/daemon/* ixr,
+  /usr/lib/cups/monitor/* ixr,
+  /usr/lib/cups/notifier/* ixr,
+  <span class="c1"># filters and drivers (PPD generators) are always run as non-root,</span>
+  <span class="c1"># and there are a lot of third-party drivers which we cannot predict</span>
+  /usr/lib/cups/filter/** Cxr -&gt; third_party,
+  /usr/lib/cups/driver/* Cxr -&gt; third_party,
+  /usr/local/** rm,
+  /usr/local/lib/cups/** rix,
+  /usr/share/** r,
+  /<span class="o">{</span>,var/<span class="o">}</span>run/** rm,
+  /<span class="o">{</span>,var/<span class="o">}</span>run/avahi-daemon/socket rw,
+  deny /<span class="o">{</span>,var/<span class="o">}</span>run/samba/ rw,
+  /<span class="o">{</span>,var/<span class="o">}</span>run/samba/** rw,
+  /var/cache/samba/*.tdb r,
+  /var/<span class="o">{</span>cache,lib<span class="o">}</span>/samba/printing/printers.tdb r,
+  /<span class="o">{</span>,var/<span class="o">}</span>run/cups/ rw,
+  /<span class="o">{</span>,var/<span class="o">}</span>run/cups/** rw,
+  /var/cache/cups/ rw,
+  /var/cache/cups/** rwk,
+  /var/log/cups/ rw,
+  /var/log/cups/* rw,
+  /var/spool/cups/ rw,
+  /var/spool/cups/** rw,
+
+  <span class="c1"># third-party printer drivers; no known structure here</span>
+  /opt/** rix,
+
+  <span class="c1"># FIXME: no policy ATM for hplip and Brother drivers</span>
+  /usr/bin/hpijs Cx -&gt; third_party,
+  /usr/Brother/** Cx -&gt; third_party,
+
+  <span class="c1"># Kerberos authentication</span>
+  /etc/krb5.conf r,
+  deny /etc/krb5.conf w,
+  /etc/krb5.keytab rk,
+  /etc/cups/krb5.keytab rwk,
+  /tmp/krb5cc* k,
+
+  <span class="c1"># likewise authentication</span>
+  /etc/likewise r,
+  /etc/likewise/* r,
+
+  <span class="c1"># silence noise</span>
+  deny /etc/udev/udev.conf r,
+
+  signal <span class="nv">peer</span><span class="o">=</span>/usr/sbin/cupsd//third_party,
+  unix <span class="nv">peer</span><span class="o">=(</span><span class="nv">label</span><span class="o">=</span>/usr/sbin/cupsd//third_party<span class="o">)</span>,
+  profile third_party <span class="nv">flags</span><span class="o">=(</span>attach_disconnected<span class="o">)</span> <span class="o">{</span>
+    <span class="c1"># third party backends, filters, and drivers get relatively no restrictions</span>
+    <span class="c1"># as they often need high privileges, are unpredictable or otherwise beyond</span>
+    <span class="c1"># our control</span>
+    file,
+    capability,
+    audit deny capability mac_admin,
+    network,
+    dbus,
+    signal,
+    ptrace,
+    unix,
+  <span class="o">}</span>
+
+  <span class="c1"># Site-specific additions and overrides. See local/README for details.</span>
+  <span class="c1">#include &lt;local/usr.sbin.cupsd&gt;</span>
+<span class="o">}</span>
+
+<span class="c1"># separate profile since this needs to write into /home</span>
+/usr/lib/cups/backend/cups-pdf <span class="o">{</span>
+  <span class="c1">#include &lt;abstractions/base&gt;</span>
+  <span class="c1">#include &lt;abstractions/fonts&gt;</span>
+  <span class="c1">#include &lt;abstractions/nameservice&gt;</span>
+  <span class="c1">#include &lt;abstractions/user-tmp&gt;</span>
+
+  capability chown,
+  capability fowner,
+  capability fsetid,
+  capability setgid,
+  capability setuid,
+
+  <span class="c1"># unfortunate, but required for when $HOME is 700</span>
+  capability dac_override,
+  capability dac_read_search,
+
+  @<span class="o">{</span>PROC<span class="o">}</span>/*/auxv r,
+
+  /bin/dash ixr,
+  /bin/bash ixr,
+  /bin/cp ixr,
+  /etc/papersize r,
+  /etc/cups/cups-pdf.conf r,
+  @<span class="o">{</span>HOME<span class="o">}</span>/PDF/ rw,
+  @<span class="o">{</span>HOME<span class="o">}</span>/PDF/* rw,
+  /usr/bin/gs ixr,
+  /usr/lib/cups/backend/cups-pdf mr,
+  /usr/lib/ghostscript/** mr,
+  /usr/share/** r,
+  /var/log/cups/cups-pdf_log w,
+  /var/spool/cups/** r,
+  /var/spool/cups-pdf/** rw,
+  /etc/cups/cups-pdf.sh uxr, <span class="c1"># Modifikation MD</span>
+<span class="o">}</span>
+
+/usr/lib/cups/backend/cups-pdf-md1 <span class="o">{</span>
+  <span class="c1">#include &lt;abstractions/base&gt;</span>
+  <span class="c1">#include &lt;abstractions/fonts&gt;</span>
+  <span class="c1">#include &lt;abstractions/nameservice&gt;</span>
+  <span class="c1">#include &lt;abstractions/user-tmp&gt;</span>
+
+  capability chown,
+  capability fowner,
+  capability fsetid,
+  capability setgid,
+  capability setuid,
+
+  <span class="c1"># unfortunate, but required for when $HOME is 700</span>
+  capability dac_override,
+  capability dac_read_search,
+
+  @<span class="o">{</span>PROC<span class="o">}</span>/*/auxv r,
+
+  /bin/dash ixr,
+  /bin/bash ixr,
+  /bin/cp ixr,
+  /etc/papersize r,
+  /etc/cups/cups-pdf-md1.conf r, <span class="c1"># Modifikation MD</span>
+  @<span class="o">{</span>HOME<span class="o">}</span>/PDF/ rw,
+  @<span class="o">{</span>HOME<span class="o">}</span>/PDF/* rw,
+  /usr/bin/gs ixr,
+  /usr/lib/cups/backend/cups-pdf mr,
+  /usr/lib/ghostscript/** mr,
+  /usr/share/** r,
+  /var/log/cups/cups-pdf_log w,
+  /var/spool/cups/** r,
+  /var/spool/cups-pdf/** rw,
+  /etc/cups/cups-pdf-md1.sh uxr, <span class="c1"># Modifikation MD</span>
+<span class="o">}</span>
+
+/usr/lib/cups/backend/cups-pdf-md2 <span class="o">{</span>
+  <span class="c1">#include &lt;abstractions/base&gt;</span>
+  <span class="c1">#include &lt;abstractions/fonts&gt;</span>
+  <span class="c1">#include &lt;abstractions/nameservice&gt;</span>
+  <span class="c1">#include &lt;abstractions/user-tmp&gt;</span>
+
+  capability chown,
+  capability fowner,
+  capability fsetid,
+  capability setgid,
+  capability setuid,
+
+  <span class="c1"># unfortunate, but required for when $HOME is 700</span>
+  capability dac_override,
+  capability dac_read_search,
+
+  @<span class="o">{</span>PROC<span class="o">}</span>/*/auxv r,
+
+  /bin/dash ixr,
+  /bin/bash ixr,
+  /bin/cp ixr,
+  /etc/papersize r,
+  /etc/cups/cups-pdf-md2.conf r, <span class="c1"># Modifikation MD</span>
+  @<span class="o">{</span>HOME<span class="o">}</span>/PDF/ rw,
+  @<span class="o">{</span>HOME<span class="o">}</span>/PDF/* rw,
+  /usr/bin/gs ixr,
+  /usr/lib/cups/backend/cups-pdf mr,
+  /usr/lib/ghostscript/** mr,
+  /usr/share/** r,
+  /var/log/cups/cups-pdf_log w,
+  /var/spool/cups/** r,
+  /var/spool/cups-pdf/** rw,
+  /etc/cups/cups-pdf-md2.sh uxr, <span class="c1"># Modifikation MD</span>
+<span class="o">}</span>
+
+/usr/lib/cups/backend/cups-pdf-md3 <span class="o">{</span>
+  <span class="c1">#include &lt;abstractions/base&gt;</span>
+  <span class="c1">#include &lt;abstractions/fonts&gt;</span>
+  <span class="c1">#include &lt;abstractions/nameservice&gt;</span>
+  <span class="c1">#include &lt;abstractions/user-tmp&gt;</span>
+
+  capability chown,
+  capability fowner,
+  capability fsetid,
+  capability setgid,
+  capability setuid,
+
+  <span class="c1"># unfortunate, but required for when $HOME is 700</span>
+  capability dac_override,
+  capability dac_read_search,
+
+  @<span class="o">{</span>PROC<span class="o">}</span>/*/auxv r,
+
+  /bin/dash ixr,
+  /bin/bash ixr,
+  /bin/cp ixr,
+  /etc/papersize r,
+  /etc/cups/cups-pdf-md3.conf r, <span class="c1"># Modifikation MD</span>
+  @<span class="o">{</span>HOME<span class="o">}</span>/PDF/ rw,
+  @<span class="o">{</span>HOME<span class="o">}</span>/PDF/* rw,
+  /usr/bin/gs ixr,
+  /usr/lib/cups/backend/cups-pdf mr,
+  /usr/lib/ghostscript/** mr,
+  /usr/share/** r,
+  /var/log/cups/cups-pdf_log w,
+  /var/spool/cups/** r,
+  /var/spool/cups-pdf/** rw,
+  /etc/cups/cups-pdf-md3.sh uxr, <span class="c1"># Modifikation MD</span>
+<span class="o">}</span>
+
+/usr/lib/cups/backend/cups-pdf-md4 <span class="o">{</span>
+  <span class="c1">#include &lt;abstractions/base&gt;</span>
+  <span class="c1">#include &lt;abstractions/fonts&gt;</span>
+  <span class="c1">#include &lt;abstractions/nameservice&gt;</span>
+  <span class="c1">#include &lt;abstractions/user-tmp&gt;</span>
+
+  capability chown,
+  capability fowner,
+  capability fsetid,
+  capability setgid,
+  capability setuid,
+
+  <span class="c1"># unfortunate, but required for when $HOME is 700</span>
+  capability dac_override,
+  capability dac_read_search,
+
+  @<span class="o">{</span>PROC<span class="o">}</span>/*/auxv r,
+
+  /bin/dash ixr,
+  /bin/bash ixr,
+  /bin/cp ixr,
+  /etc/papersize r,
+  /etc/cups/cups-pdf-md4.conf r, <span class="c1"># Modifikation MD</span>
+  @<span class="o">{</span>HOME<span class="o">}</span>/PDF/ rw,
+  @<span class="o">{</span>HOME<span class="o">}</span>/PDF/* rw,
+  /usr/bin/gs ixr,
+  /usr/lib/cups/backend/cups-pdf mr,
+  /usr/lib/ghostscript/** mr,
+  /usr/share/** r,
+  /var/log/cups/cups-pdf_log w,
+  /var/spool/cups/** r,
+  /var/spool/cups-pdf/** rw,
+  /etc/cups/cups-pdf-md4.sh uxr, <span class="c1"># Modifikation MD</span>
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div><p>Zum Abschluss der Arbeiten muss man nun nur noch Cups und AppArmor neu starten
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo service apparmor restart
+sudo service cups restart </pre></div></div></div><div class="section_2"><h3 id="Hinzufuegen-der-virtuellen-Drucker">Hinzufügen der virtuellen Drucker<a class="headerlink" href="#Hinzufuegen-der-virtuellen-Drucker">¶</a></h3><p>
+Im folgenden kann man nun die virtuellen Drucker über die Druckerverwaltung mit hinzufügen. Als Geräteadresse kann man nun eines unserer Backends verwenden:
+</p><pre class="notranslate">cups-pdf:/
+cups-pdf-md1:/
+cups-pdf-md2:/
+cups-pdf-md3:/
+cups-pdf-md4:/</pre></div></div><div class="section_1"><h2 id="Fazit">Fazit<a class="headerlink" href="#Fazit">¶</a></h2><p>
+Dies ist eine alternative Lösung zu dem Windows Programm FreePDF XP unter Linux.</p></div><div class="section_1"><h2 id="Problembehebung">Problembehebung<a class="headerlink" href="#Problembehebung">¶</a></h2><p>
+</p><ul><li><p>Bei der Entwicklung des Skripts /etc/cups/PDF2Mail.sh fiel auf, dass Thunderbird ohne sinnvolle Werte in den folgenden Umgebungsvariablen nicht startet bzw. mit Fehlermeldungen startet. </p><pre class="notranslate">  DISPLAY
+  XAUTHORITY
+  HOME
+  DBUS_SESSION_BUS_ADDRESS</pre><p> Dies hat auch schon jemand im Forum unter <a class="external" href="http://ubuntuforums.org/showthread.php?t=1275505" rel="nofollow" title="http://ubuntuforums.org/showthread.php?t=1275505">http://ubuntuforums.org/showthread.php?t=1275505</a> vor mir im Jahr 2009 festgestellt. Durch die Erzeugung der D-BUS Session sollte das dort geschilderte Problem behoben sein.</p></li><li><p>Außerdem mag Thunderbird keine Kommata in Dateinamen die angehangen werden sollen. Ein urlencode des Pfades zur Datei in eine URI mochte Thunderbird auch nicht. Daher wurden lediglich die Kommata (",") durch "%2C" ersetzt.</p></li></ul><p>
+</p></div><div class="section_1"><h2 id="Links">Links<a class="headerlink" href="#Links">¶</a></h2><p>
+</p><ul><li><p><a class="external" href="http://burns.cs.uni-potsdam.de/~mdraeger/cups-pdf/cups-pdf.tar.bz2" rel="nofollow">CUPS-Modifikationen dieses Artikel als tar.bz2</a></p></li><li><p><a class="external" href="https://youtu.be/RLfftoYIdT0" rel="nofollow">Video zum Einrichten der virtuellen Drucker</a></p></li><li><p><a class="internal" href="../cups-pdf.html">CUPS-PDF</a></p></li><li><p><a class="internal" href="../druckwerkzeuge.html">Druckwerkzeuge</a> <img alt="{Übersicht}" src="../_/021d71c30babf2ce4dd27339ba3c55995610945b.png"/> Programmübersicht</p></li><li><p><a class="internal" href="../drucker.html">Drucker</a> <img alt="{Übersicht}" src="../_/021d71c30babf2ce4dd27339ba3c55995610945b.png"/> Übersicht zum Thema</p></li></ul><p>
+</p></div></div>
+<p class="meta">
+<a href="../howto/cups-pdf_mit_wasserzeichen_und_e-mailversand_via_thunderbird/a/revision/938307.html">Diese Revision</a> wurde am 25. April 2017 10:09 von <a href="https://ubuntuusers.de/user/Manuel%40eteddy/">Manuel@eteddy</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="../startseite.html">Wiki</a></li>
+<li><a href="../howto.html">Howto</a></li>
+<li><a href="../howto/cups-pdf_mit_wasserzeichen_und_e-mailversand_via_thunderbird.html">CUPS-PDF mit Wasserzeichen und E-Mailversand via Thunderbird</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="../_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="../_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="../_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="../_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

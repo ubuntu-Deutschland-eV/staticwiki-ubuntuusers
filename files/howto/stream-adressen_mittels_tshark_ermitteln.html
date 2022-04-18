@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Howto/Stream-Adressen_mittels_tshark_ermitteln › ubuntuusers statisches Wiki</title>
+<link href="../_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="../_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="../_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="../_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="../_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="../_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="../startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="../howto/stream-adressen_mittels_tshark_ermitteln.html">Stream-Adressen mittels tshark ermitteln</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/Howto/Stream-Adressen_mittels_tshark_ermitteln">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="../wiki/index.html">Index</a></li>
+<li><a href="../wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="../wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="../wiki.html">Übersicht</a></li>
+<li><a href="../wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="../wiki/benutzung.html">Benutzung</a></li>
+<li><a href="../kategorien.html">Kategorie</a></li>
+<li><a href="../wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="../wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="../howto.html">Howto anlegen</a></li>
+<li><a href="../wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="../wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="../baustelle.html">Baustellen</a></li>
+<li><a href="../wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="../wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="../wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="../wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="../howto/stream-adressen_mittels_tshark_ermitteln/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="../howto/stream-adressen_mittels_tshark_ermitteln/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="../howto/stream-adressen_mittels_tshark_ermitteln/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="../howto/stream-adressen_mittels_tshark_ermitteln/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="../howto/stream-adressen_mittels_tshark_ermitteln/a/backlinks.html">Stream-Adressen mittels tshark ermitteln</a></h1>
+<div id="page"><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Die Verwendung dieses Howto geschieht auf eigene Gefahr. Bei Problemen mit der Anleitung melde dies bitte in der dazugehörigen Diskussion und wende dich zusätzlich an den Verfasser des Howtos.
+</p></div></div><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Diese Howto-Anleitung wurde zuletzt von <a class="crosslink user" href="https://ubuntuusers.de/user/linux_joy/">linux_joy</a> am 15.07.2017 unter <strong>Lubuntu 14.04</strong> erfolgreich getestet.
+</p></div></div><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="../terminal.html">Ein Terminal öffnen</a> </p></li></ol></div></div><p>
+</p><div class="toc toc-depth-4"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a class="crosslink" href="#Voraussetzungen">Voraussetzungen
+</a></li><li><a class="crosslink" href="#Ausfuehrung">Ausführung
+</a></li><li><a class="crosslink" href="#Beispiele">Beispiele
+</a><ol class="arabic"><li><a class="crosslink" href="#HTTP-Streams">HTTP-Streams
+</a></li></ol></li><li><a class="crosslink" href="#Links">Links
+</a></li></ol></div><p><a class="internal" href="../wireshark.html#tshark">tshark</a> ist die Kommandozeilenversion des Paket-Sniffers <a class="internal" href="../wireshark.html">Wireshark</a>. Mit tshark kann man auch <a class="internal" href="../howto/stream-adressen_ermitteln.html">Stream-Adressen ermitteln</a>, z.B. um Streams <a class="internal" href="../streams_speichern.html">zu speichern</a>. Für diesen Zweck wird der Befehl so gestaltet, dass tshark u.a. Paket-Details liefert, seine Ausgabe wird dann aber an <a class="internal" href="../grep.html">grep</a> umgeleitet, welches sie dann nach einschlägigen Multimedia- und Streaming-Schlüsselbegriffen filtert und alle betreffenden Zeilen (mitsamt einer Zeile davor und dahinter) danach an die Standardausgabe des verwendeten Terminals <sup><a href="#source-1">[1]</a></sup> weiterleitet.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p>Das Vorgehen in der im Folgenden dargestellten Weise funktioniert nur mit unverschlüsselten HTTP-Verbindungen. Bei HTTPS kann tshark lediglich die Header-Zeilen anzeigen und NICHT das Innere der HTTP-Pakete darstellen. Falls man das letztere Feature unbedingt braucht und nicht stattdessen eine von den im Howto <a class="internal" href="../howto/stream-adressen_ermitteln.html">Stream-Adressen ermitteln</a> vorgestellten Alternativen einsetzt, so kann man es mit einem <a class="internal" href="../proxyserver.html#Lokaler-Proxy">lokalen Proxyserver</a> probieren.</p></li><li><p>Außerdem ist das in diesem Artikel vorgestellte Verfahren erheblich mühsamer als beispielsweise die <a class="internal" href="../howto/stream-adressen_ermitteln.html#Netzwerkanalyse">Netzwerkanalyse</a>, welche im Howto <a class="internal" href="../howto/stream-adressen_ermitteln.html">Stream-Adressen ermitteln</a> vorgestellt wird. Deswegen sollte die nachfolgend vorgestellte tshark-Methode lediglich als Notlösung in Betracht gezogen werden.</p></li></ol></div></div><div class="section_1"><h2 id="Voraussetzungen">Voraussetzungen<a class="headerlink" href="#Voraussetzungen">¶</a></h2><p>
+</p><ul><li><p>tshark sollte wegen Sicherheitsrisiken nicht als Root, sondern als normaler Benutzer mit Root-Privilegien via Setuid-Bit ausgeführt werden. Wie man das einrichtet, steht im <a class="internal" href="../wireshark.html#Programmstart">entsprechenden Abschnitt</a> des Artikels <a class="internal" href="../wireshark.html">Wireshark</a>.</p></li><li><p>Die Profileinstellungen des verwendeten Terminals <sup><a href="#source-1">[1]</a></sup> müssen so eingestellt sein, dass der Rollbalken auf "unbegrenzt" steht, also NICHT zurückrollen kann! Sonst wird nämlich ein Großteil der Ausgabe des Duos tshark / grep vom Terminal gleich wieder ins Nirwana geschickt!</p></li><li><p>Man muss die korrekte Bezeichnung der Netzwerkschnittstelle wissen, welche tshark überwachen soll. Um diese zu ermitteln, ruft man ein Terminal <sup><a href="#source-1">[1]</a></sup> auf und gibt dort den folgenden Befehl ein: </p><div class="bash"><div class="contents"><pre class="notranslate">tshark -D </pre></div></div></li></ul></div><div class="section_1"><h2 id="Ausfuehrung">Ausführung<a class="headerlink" href="#Ausfuehrung">¶</a></h2><p>
+</p><ol class="arabic"><li><p>Man ruft wieder ein Terminal <sup><a href="#source-1">[1]</a></sup> auf und gibt dort den folgenden Befehl ein: </p><div class="bash"><div class="contents"><pre class="notranslate">tshark -i &lt;Netzwerkschnittstelle&gt; -s 0 -B 50 -V -P -l | grep -E --context=1 "GET|POST|URI|baseURL|statuscode|/type|/title|content|detail|assetId|originChannelId|originChannelTitle|/channel|duration|/length|airtime|timetolive|/fsk|hasCaption|vcmsUrl|formitaet|/quality|url|/ratio|height|width|videoBitrate|audioBitrate|filesize|facet|mms|rtsp|rtmp|llnwd.net|core-cdn.net|beitragsDetails|[Hh]ost|socks|protocol|playpath|path|playlist|tcUrl|pageUrl|app|hexstring|days|[Aa]uth|string|conn|:data|flashVer|[Ss]ubscri|resume|timeout|start|stop|[Ss]ecure|[Tt]oken|[Kk]ey|[Ii]dentifier|jtv|JSON|[Hh]ash|buffer|skip|conndata|output|SOCKS4|proxy|connection attempt|version|set_playlist|src|edgefcs.net|dataURL|cdn-vod-fc|vars_player.videorefFileUrl|video lang|url quality=|arte_vp_url=|videothek|json|m3u8|manifest|f4m|\.meta|asx|mov|smil|\.avi|3gp|aac|flac|flv|h264|mkv|mp2|mp3|mp4|ogg|SWF|swf|\.ts|vorbis|vp8|webm|wma|wmv|image/x-icon|stream|videoplayback|annotations_invideo|TCP Retransmission|Application Data|Client Hello|deleteStream|User Control Message|[Hh]and[Ss]hake|client|[Ss]ignature|connect|Window Acknowledgement Size|Set Peer Bandwidth|Set Chunk Size|NetConnection|createStream|FCSubscribe|onBWCheck|_result|Stream Begin|NetStream|RtmpSampleAccess|onBWDone|Set Buffer Length|Stream Is Recorded|[Mm]eta[Dd]ata|Video Data|Audio Data|Aggregate|setBandwidthLimit|Acknowledgement|LIVE|server|mediaType|mimeType|videoPlayerUrl|/play|liveUrl|/live|play.'|[Ss]tarted|[Pp]laying" </pre></div></div></li><li><p>Gleich danach stoppt man tshark und grep jedoch mit der Tastenkombination 
+<span class="key">Strg</span>  + 
+<span class="key">C</span> .</p></li><li><p>Durch das Schließen des Terminal-Fensters findet der vorgenannte Befehl Eingang in die Datei <strong>~/.bash_history</strong>.</p></li><li><p>Danach ruft man wieder ein Terminal <sup><a href="#source-1">[1]</a></sup> auf und gibt dort erneut den vorgenannten Befehl ein bzw. blättert einfach mit 
+<span class="key">↑</span>  zur letzten Befehlseingabe zurück und bestätigt mit 
+<span class="key">⏎</span> .</p></li><li><p>Nun ruft man eine Streaming-Seite auf bzw. lädt sie mit 
+<span class="key">Strg</span>  + 
+<span class="key">R</span>  neu (ggf. leert man mit 
+<span class="key">Strg</span>  + 
+<span class="key">⇧</span>  + 
+<span class="key">R</span>  zuvor auch den Webseiten-Cache des Browsers).</p></li><li><p>Dann stoppt man tshark und grep mit der Tastenkombination 
+<span class="key">Strg</span>  + 
+<span class="key">C</span> .</p></li><li><p>Danach ruft man wieder ein Terminal <sup><a href="#source-1">[1]</a></sup> auf und gibt dort erneut den vorgenannten Befehl ein bzw. blättert einfach mit 
+<span class="key">↑</span>  zur letzten Befehlseingabe zurück und bestätigt mit 
+<span class="key">⏎</span> .</p></li><li><p>Jetzt erst startet man den Stream.</p></li><li><p>Ca. 5 Sekunden, nachdem die Übertragung des Streams begonnen hat, stoppt man tshark und grep mit der Tastenkombination 
+<span class="key">Strg</span>  + 
+<span class="key">C</span> .</p></li><li><p>Ggf. beendet man abschließend den Stream.</p></li></ol><p>
+In die beiden Terminal-Tabs bzw. -Fenster wurden jetzt sowohl Elemente des Seiten-Quelltextes als auch – hoffentlich – alle relevanten Daten des abgespielten Streams geschrieben. Diese Daten lassen sich mithilfe der im <a class="internal" href="../terminal.html">Terminal</a> eingebauten <a class="internal" href="../terminal.html#Suchfunktionen">Suchfunktion</a> durchsuchen, siehe dazu auch den Abschnitt <a class="crosslink" href="#Beispiele">Beispiele</a>.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p>Man kann – sofern einem die Unterscheidung zwischen Seiten-Quelltext- und Stream-Daten nicht so wichtig ist – auch mit nur einem einzigen Terminal arbeiten (die Schritte 6 u. 7 werden dabei also ausgelassen).</p></li><li><p>Falls einem die Ausgabe im Terminal zu detailarm oder aber zu umfangreich vorkommen sollte, so kann man den Befehl selbstverständlich auch modifizieren, indem man etwa:</p><ul><li><p>bei tshark die <code class="notranslate">-V</code> -Option weglässt, oder</p></li><li><p>bei grep die Schlüsselbegriffe oder ihre Anzahl verändert, oder</p></li><li><p>die <code class="notranslate">--context</code> -Angabe von grep verändert.</p></li></ul></li></ol></div></div></div><div class="section_1"><h2 id="Beispiele">Beispiele<a class="headerlink" href="#Beispiele">¶</a></h2><p>
+</p><div class="section_2"><h3 id="HTTP-Streams">HTTP-Streams<a class="headerlink" href="#HTTP-Streams">¶</a></h3><p>
+Beispiel-Seite ARD: <code class="notranslate">http://www.ardmediathek.de/tv/Tagesschau-in-100-Sek/26-06-2017-05-06-Uhr-Tagesschau-in-100/Das-Erste/Video-Podcast?bcastId=767970&amp;documentId=43790230</code> , Quelltext von <a class="crosslink paste" href="https://paste.ubuntuusers.de/423667/">26.06.2017 05:06 Uhr - Tagesschau in100s</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/></p><ul><li><p>Zunächst rückwärts suchen im Stream-Daten-Terminal nach <code class="notranslate">h264</code> oder auch nach <code class="notranslate">mp4</code>.</p></li></ul><p>
+In der Ausgabe findet sich unter anderem die folgende Zeile:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span> <span class="m">44</span>   <span class="m">1</span>.275290 <span class="m">192</span>.168.28.20 -&gt; <span class="m">80</span>.228.47.66 HTTP <span class="m">923</span> GET /9.gif?a<span class="o">=</span>H~b<span class="o">=</span>5730cbbe943034646~c<span class="o">=</span>f756901c-5115-528e-0a2a-7db77e258bf7~d<span class="o">=</span>ardmediathek.de~e<span class="o">=</span><span class="m">3</span>~g<span class="o">=</span><span class="m">0</span>~w<span class="o">=</span><span class="m">60198</span>~ac<span class="o">=</span>TV-100s-0506.podm.h264.mp4~ag<span class="o">=</span>ardmediathek.de~ah<span class="o">=</span>ardmediathek.de~al<span class="o">=</span>Linux~am<span class="o">=</span>P~aw<span class="o">=</span>http://media.tagesschau.de/video/100s/2017/0626/TV-100s-0506.podm.h264.mp4~cm<span class="o">=</span>Akamai~dx<span class="o">=</span><span class="m">55</span>.063~en<span class="o">=</span><span class="m">26</span>.06.2017%2005:06%20Uhr%20-%20Tagesschau%20in%20100%20Sekunden~pd<span class="o">=</span>ardplayer-v3.7.5~sa<span class="o">=</span>Others~ay<span class="o">=</span>HTML5-3.15.2~ak<span class="o">=</span>HTML5~ap<span class="o">=</span><span class="m">109</span>~ HTTP/1.1 
+</pre></div>
+</td></tr></table></div><ul><li><p>Die gesuchte URL ist also <code class="notranslate">http://media.tagesschau.de/video/100s/2017/0626/TV-100s-0506.podm.h264.mp4</code>.</p></li></ul></div></div><div class="section_1"><h2 id="Links">Links<a class="headerlink" href="#Links">¶</a></h2><p>
+</p><ul><li><p><a class="internal" href="../streaming.html">Streaming</a> <img alt="{Übersicht}" src="../_/021d71c30babf2ce4dd27339ba3c55995610945b.png"/> Grundlegendes zum Thema; Audio- und Videostreams mit Browser-Plugins oder eigenständigen Programmen abspielen</p></li><li><p><a class="internal" href="../streams_speichern.html">Streams speichern</a> <img alt="{Übersicht}" src="../_/021d71c30babf2ce4dd27339ba3c55995610945b.png"/> Übersichtsartikel</p><ul><li><p><a class="internal" href="../howto/stream-adressen_ermitteln.html">Howto/Stream-Adressen ermitteln</a></p></li><li><p><a class="internal" href="../howto/streaming-inhalte_herunterladen.html">Howto/Streaming-Inhalte herunterladen</a></p></li></ul></li><li><p><a class="internal" href="../internetradio.html">Internetradio</a> <img alt="{Übersicht}" src="../_/021d71c30babf2ce4dd27339ba3c55995610945b.png"/> Übersichtsartikel</p><ul><li><p><a class="internal" href="../internetradio_aufzeichnen.html">Internetradio aufzeichnen</a></p></li></ul></li><li><p><a class="internal" href="../internet-tv.html">Internet-TV</a> <img alt="{Übersicht}" src="../_/021d71c30babf2ce4dd27339ba3c55995610945b.png"/> Übersichtsartikel</p></li><li><p><a class="internal" href="../wireshark.html">Wireshark</a></p></li></ul><p></p></div></div>
+<p class="meta">
+<a href="../howto/stream-adressen_mittels_tshark_ermitteln/a/revision/943123.html">Diese Revision</a> wurde am 20. August 2017 17:25 von <a href="https://ubuntuusers.de/user/Heinrich_Schwietering/">Heinrich_Schwietering</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="../startseite.html">Wiki</a></li>
+<li><a href="../howto.html">Howto</a></li>
+<li><a href="../howto/stream-adressen_mittels_tshark_ermitteln.html">Stream-Adressen mittels tshark ermitteln</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="../_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="../_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="../_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="../_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

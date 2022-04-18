@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Shell/Bash-Skripting-Guide_für_Anfänger › ubuntuusers statisches Wiki</title>
+<link href="../_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="../_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="../_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="../_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="../_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="../_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="../startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="../shell/bash-skripting-guide_für_anfänger.html">Bash-Skripting-Guide für Anfänger</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/Shell/Bash-Skripting-Guide_für_Anfänger">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="../wiki/index.html">Index</a></li>
+<li><a href="../wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="../wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="../wiki.html">Übersicht</a></li>
+<li><a href="../wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="../wiki/benutzung.html">Benutzung</a></li>
+<li><a href="../kategorien.html">Kategorie</a></li>
+<li><a href="../wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="../wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="../howto.html">Howto anlegen</a></li>
+<li><a href="../wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="../wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="../baustelle.html">Baustellen</a></li>
+<li><a href="../wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="../wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="../wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="../wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="../shell/bash-skripting-guide_für_anfänger/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="../shell/bash-skripting-guide_für_anfänger/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="../shell/bash-skripting-guide_für_anfänger/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="../shell/bash-skripting-guide_für_anfänger/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="../shell/bash-skripting-guide_für_anfänger/a/backlinks.html">Bash-Skripting-Guide für Anfänger</a></h1>
+<div id="page"><p>
+</p><div class="box tested_for"><h3 class="box tested_for">Dieser Artikel wurde für die folgenden
+Ubuntu-Versionen getestet:</h3><div class="contents"><p> 
+Dieser Artikel ist größtenteils für alle Ubuntu-Versionen gültig.
+</p></div></div><p>
+</p><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="../terminal.html">Ein Terminal öffnen</a></p></li><li><p><a class="crosslink anchor" href="#source-2" id="source-2"></a> <a class="internal" href="../shell.html">Grundsätzlicher Umgang mit der Shell</a></p></li><li><p><a class="crosslink anchor" href="#source-3" id="source-3"></a> <a class="internal" href="../programme_starten.html">Ein Programm starten</a></p></li></ol></div></div><p>
+</p><div class="toc toc-depth-2"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a class="crosslink" href="#Einsatzgebiete-von-Bash-Skripten">Einsatzgebiete von Bash-Skripten
+</a></li><li><a class="crosslink" href="#Vorbereitung">Vorbereitung
+</a><ol class="arabic"><li><a class="crosslink" href="#Editor">Editor
+</a></li><li><a class="crosslink" href="#Name-des-Skriptes">Name des Skriptes
+</a></li><li><a class="crosslink" href="#Ausfuehrbar-machen-und-aufrufen">Ausführbar machen und aufrufen
+</a></li><li><a class="crosslink" href="#Zu-den-Beispielen">Zu den Beispielen
+</a></li></ol></li><li><a class="crosslink" href="#Das-erste-Skript">Das erste Skript
+</a><ol class="arabic"><li><a class="crosslink" href="#Die-Shebang">Die Shebang
+</a></li><li><a class="crosslink" href="#Kommentare-einfuegen">Kommentare einfügen
+</a></li><li><a class="crosslink" href="#Variablen-Teil-1">Variablen – Teil 1
+</a></li><li><a class="crosslink" href="#Quoting">Quoting
+</a></li><li><a class="crosslink" href="#Variablen-Teil-2">Variablen – Teil 2
+</a></li><li><a class="crosslink" href="#Rechnen-mit-der-Shell">Rechnen mit der Shell
+</a></li><li><a class="crosslink" href="#Arrays">Arrays
+</a></li><li><a class="crosslink" href="#Interaktion-mit-dem-Benutzer">Interaktion mit dem Benutzer
+</a></li><li><a class="crosslink" href="#Umleitungen">Umleitungen
+</a></li><li><a class="crosslink" href="#Das-Test-Kommando">Das Test-Kommando
+</a></li><li><a class="crosslink" href="#Programmfuehrung">Programmführung
+</a></li><li><a class="crosslink" href="#Grafische-Menues">Grafische Menüs
+</a></li></ol></li><li><a class="crosslink" href="#Literaturhinweise">Literaturhinweise
+</a></li><li><a class="crosslink" href="#Links">Links
+</a></li></ol></div><p><img alt="Wiki/Icons/terminal.png" class="image-left" src="../_/e81889fd6e485dd32e1cde611eabc18abced7993.png"/>
+Dieser Artikel soll Interessierten die grundlegenden Möglichkeiten des Bash-Skriptens nahebringen. So werden hier kurz die wichtigsten Konstrukte angesprochen und diese mit einigen praktischen Beispielen etwas vertieft.</p><div class="section_1"><h2 id="Einsatzgebiete-von-Bash-Skripten">Einsatzgebiete von Bash-Skripten<a class="headerlink" href="#Einsatzgebiete-von-Bash-Skripten">¶</a></h2><p>
+Bash-Skripte sind geeignet um Programme, gemäß der eigenen Bedürfnisse, miteinander zu kombinieren und sie spielen eine zentrale Rolle im Alltag der Systemadministration. Hier im Wiki findet man bereits einige <a class="internal" href="../skripte.html">Beispiele</a>, welche die breite Anwendbarkeit von Bashskripten ein wenig illustrieren.</p></div><div class="section_1"><h2 id="Vorbereitung">Vorbereitung<a class="headerlink" href="#Vorbereitung">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Editor">Editor<a class="headerlink" href="#Editor">¶</a></h3><p>
+Standardmäßig sind in den verschiedenen Ubuntu-Versionen folgende <a class="internal" href="../editor.html">Editoren</a> installiert:
+</p><ul><li><p><a class="internal" href="../ubuntu.html">Ubuntu</a> (<a class="internal" href="../gnome.html">GNOME</a>) : <a class="internal" href="../gedit.html">gedit</a></p></li><li><p><a class="internal" href="../kubuntu.html">Kubuntu</a> (<a class="internal" href="../kde.html">KDE</a>) : <a class="internal" href="../kate.html">Kate</a></p></li><li><p><a class="internal" href="../xubuntu.html">Xubuntu</a> (<a class="internal" href="../xfce.html">XFCE</a>) : <a class="internal" href="../mousepad.html">Mousepad</a></p></li><li><p><a class="internal" href="../lubuntu.html">Lubuntu</a> (<a class="internal" href="../lxde.html">LXDE</a>) : <a class="internal" href="../leafpad.html">Leafpad</a></p></li><li><p><a class="internal" href="../ubuntu_mate.html">Ubuntu MATE</a> (<a class="internal" href="../mate.html">MATE</a>) : <a class="internal" href="../pluma.html">Pluma</a></p></li></ul><p>Außer Leafpad beherrschen alle genannten die farbliche Hervorhebung von Befehlsstrukturen (Syntax-Hervorhebung), was Übersichtlichkeit sowie Fehlervermeidung und -suche erheblich verbessert. Sollte man mit dem vorinstallierten Editor unzufrieden sein, gibt es aber viele mindestens ebenso gute <a class="internal" href="../editor.html">Alternativen</a>, die teilweise auf spezielle Aufgaben hin gestaltet sind.</p><p>Für die Kommandozeile empfehlenswert sind:
+</p><ul><li><p><a class="internal" href="../nano.html">Nano</a></p></li><li><p><a class="internal" href="../vim.html">Vim</a> (nicht leicht für Anfänger, aber trotzdem sehr empfehlenswert)</p></li></ul><p>
+</p></div><div class="section_2"><h3 id="Name-des-Skriptes">Name des Skriptes<a class="headerlink" href="#Name-des-Skriptes">¶</a></h3><p>
+Es ist sinnvoll, dass der Name des Skriptes dessen Funktion andeutet. Dabei wäre zu beachten, dass man keine Sonderzeichen verwendet, und es sollte nicht schon einen gängigen Systembefehl mit diesem Namen geben. Man sollte sein Skript z.B. nicht <strong>cp</strong> nennen, da es diesen Befehl schon gibt. Das Ganze lässt sich vermeiden, indem man einfach testet, ob es schon ein Programm mit dem gewünschten Skriptnamen gibt, und das geht folgendermaßen:</p><div class="bash"><div class="contents"><pre class="notranslate">type Skriptname </pre></div></div><p>Erhält man hier ein Resultat, ist der Name bereits vorhanden, und man sollte sich einen anderen ausdenken.</p></div><div class="section_2"><h3 id="Ausfuehrbar-machen-und-aufrufen">Ausführbar machen und aufrufen<a class="headerlink" href="#Ausfuehrbar-machen-und-aufrufen">¶</a></h3><p>
+Damit ein Skript ohne Angabe des Interpreters ausgeführt werden kann, muss es zuerst ausführbar gemacht werden. Dies geschieht z.B. in der Konsole durch folgenden Befehl.</p><div class="bash"><div class="contents"><pre class="notranslate">chmod +x /pfad/zu/mein_Skript </pre></div></div><p>Mehr Informationen dazu findet man auch in <a class="internal" href="../rechte.html">Rechte</a>.</p><p>Ist das Skript nun ausführbar gemacht, lässt es sich durch den Befehl.:</p><div class="bash"><div class="contents"><pre class="notranslate">./skriptname </pre></div></div><p>aus dem selben Verzeichnis heraus ausführen <sup><a href="#source-3">[3]</a></sup>.
+Dabei sollte nicht vergessen werden, dass sich Skripte auch ausführen lassen, wenn sie selbst nicht ausführbar gemacht sind. Ein Aufruf des Interpreters mit dem Skriptnamen als Argument führt den Skriptinhalt ebenfalls aus:</p><div class="bash"><div class="contents"><pre class="notranslate">bash skriptname </pre></div></div><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Man kann das Skript, nachdem es ausführbar gemacht wurde, in einen Ordner (z.B. <strong>~/bin/</strong>) verlinken oder verschieben, welchen man der Umgebungsvariablen <a class="internal" href="../umgebungsvariable.html">$PATH</a> bekannt macht. Dies ist vor allem dann sinnvoll, wenn ein fertiges Skript von überall her einfach durch die Eingabe des Skriptnamens aufrufbar sein soll. 
+In Ubuntu sorgt ein Mechanismus in der Datei <strong>~/.profile</strong> dafür, dass <strong>~/bin/</strong> automatisch an den Anfang von <a class="internal" href="../umgebungsvariable.html">$PATH</a> gesetzt wird, sobald dieses Verzeichnis existiert.</p><p>Es sollte (insbesondere bei von mehreren Personen benutzten Rechnern und Servern) darauf geachtet werden, dass Skripte, die in globalen Verzeichnissen wie <strong>/usr/local/bin/</strong> abgelegt werden, dem Benutzer <em>root</em> gehören und nur dieser in die Datei schreiben darf, ansonsten öffnet man eine Sicherheitslücke.</p><p>Auch Skripte in <strong>~/bin/</strong> können ein Sicherheitsproblem sein, wenn sie den gleichen Namen wie Systemprogramme haben. So könnte ein Angreifer mit einfachen Nutzerrechten beispielsweise ein Skript in diesen Ordner legen, das einfach <strong>sudo</strong> heißt und damit das Passwort des Nutzers abfangen. 
+</p></div></div></div><div class="section_2"><h3 id="Zu-den-Beispielen">Zu den Beispielen<a class="headerlink" href="#Zu-den-Beispielen">¶</a></h3><p>
+Es gibt zwei verschiedene Typen von Beispielen in diesem Artikel. Zum einen kann man interaktive Beispiele finden, welche dann folgendermaßen aussehen.</p><div class="bash"><div class="contents"><pre class="notranslate">Befehl... </pre></div></div><p>
+</p><pre class="notranslate">Ausgabe...</pre><p>Dies bedeutet nichts anderes, als dass man dieses Beispiel einfach durch Eintippen in eine Konsole, Zeile für Zeile, nachvollziehen kann. Der zweite Typ ist der eines Skriptes. Diese beginnen immer mit einer Shebang <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Shebang">Shebang</a>, welche gleich noch erklärt wird, und sind zudem in einer Box mit Syntax-Highlighting gesetzt, damit man die Konstrukte besser erkennen kann. Diese sollten dann in eine Skriptdatei kopiert werden, um sie auszuprobieren.</p></div></div><div class="section_1"><h2 id="Das-erste-Skript">Das erste Skript<a class="headerlink" href="#Das-erste-Skript">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Die-Shebang">Die Shebang<a class="headerlink" href="#Die-Shebang">¶</a></h3><p>
+Prinzipiell wird ein Skript über seinen Interpreter gestartet. Das Skript selbst erzeugt keinen <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Prozess_(Informatik)">Prozess</a>, sondern nur der ausführende Interpreter – zum Beispiel die Bash. Das heißt, zur Ausführung eines Skriptes muss der Interpreter gestartet und ihm mitgeteilt werden, welches Skript er abarbeiten soll. Ein solcher Aufruf hätte diese Form:</p><div class="bash"><div class="contents"><pre class="notranslate">bash mein_skript.sh </pre></div></div><p>Natürlich ist es möglich, bei jedem Aufruf seines Skriptes die ausführende <a class="internal" href="../shell.html">Shell</a> erneut festzulegen, doch diesen Aufwand möchte man oft nicht treiben. Die übliche Vorgehensweise ist, die zu verwendende Shell direkt im Skript anzugeben. Dies wird durch den Shebang ermöglicht, welcher in die erste Zeile eines Skriptes gehört. Hier gibt man an, welche Shell das Skript bearbeiten soll. Dies ist wichtig, da das Skript in der Syntax einer bestimmten Shell verfasst wird, von welcher es dann auch ausgeführt werden sollte.</p><p>Die Struktur ist folgende:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+</pre></div>
+</td></tr></table></div><p>In diesem Fall legt man also fest, dass für die Ausführung des Skriptes die Bash verwendet werden soll.</p><p>Die Raute zu Beginn der Zeile legt lediglich fest, dass der Rest der Zeile ein <a class="crosslink" href="#Kommentare-einfuegen">Kommentar</a> ist. Die ausführende Shell beachtet den Shebang also gar nicht weiter. Der <a class="internal" href="../kernel.html">Kernel</a> hingegen erkennt beim Start der Datei durch diese Raute gefolgt vom Ausrufezeichen, dass dieses Skript von einem bestimmten Interpreter ausgeführt werden soll. Der Pfad dieses Interpreters folgt nach <code class="notranslate">#!</code>, hier also <strong>/bin/bash</strong>.</p><p>Hat das derart vorbereitete Skript Ausführungsrechte und wird es dann über
+</p><div class="bash"><div class="contents"><pre class="notranslate">./mein_skript.sh </pre></div></div><p>
+aufgerufen, dann ist dieser Aufruf äquivalent hierzu:
+</p><div class="bash"><div class="contents"><pre class="notranslate">/bin/bash ./mein_skript.sh </pre></div></div><p>Im Shebang muss ein absoluter oder relativer Pfad angegeben werden, da die <code class="notranslate">$PATH</code>-Umgebungsvariable nicht beachtet wird. Es genügt also nicht, hier nur <code class="notranslate">#!bash</code> zu schreiben.</p><p>Benutzt man eine andere Shell, so ändert man den Shebang entsprechend ab, etwa zu  <code class="notranslate">#!/bin/zsh</code>. Dieser Artikel bezieht sich aber nur auf die Bash, weshalb <strong>/bin/bash</strong> verwendet wird. Damit wird deutlich die Aussage getroffen: „Dies ist ein Bash-Skript.“</p><p>In vielen anderen Anleitungen findet sich jedoch <strong>/bin/sh</strong> in der Shebang. Was hat es damit auf sich? Die Bash ist eine komplexere Shell, die nicht auf allen unixoiden Systemen zur Verfügung steht. <strong>/bin/sh</strong> hingegen ist laut <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/POSIX">POSIX-Standard</a> ein Muss. Hinsichtlich des Funktionsumfangs stimmen die von POSIX geforderte sh und die Bash aber nicht überein, denn die Bash kann wesentlich mehr als sh. Verwendet man <strong>/bin/sh</strong> in der Shebang, wird also eine andere Aussage gemacht: „Dieses Skript entspricht dem POSIX-Standard.“</p><p>Grundsätzlich gilt: Der Shebang muss einen Interpreter angeben, der alle im Skript benutzten Funktionen beherrscht. Man kann nicht allgemein sagen, „Shellskripte können <strong>/bin/sh</strong> verwenden“. Man muss sich stattdessen darüber im Klaren sein, dass man einen zur gewählten Syntax passenden Interpreter wählen muss. Ein falsch gewählter Shebang ist ein häufiger Fehler.</p><p>Ein Bash-Skript, das <strong>/bin/sh</strong> als Shebang verwendet, funktioniert lediglich in den Ausnahmefällen, in denen nur Kommandos der Schnittmenge der beiden Shells verwendet werden.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Unter Ubuntu ist <strong>/bin/sh</strong> ein <a class="internal" href="../ln.html#Symbolische-Verknuepfungen">symbolischer Link</a> auf die <a class="internal" href="../dash.html">Dash</a>. Welche Konsequenzen das hat, wird unter anderem im <a class="external" href="http://wiki.ubuntu.com/DashAsBinSh" rel="nofollow">englischen Ubuntu-Wiki Eintrag zur DASH</a> <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> erklärt.
+</p></div></div></div><div class="section_2"><h3 id="Kommentare-einfuegen">Kommentare einfügen<a class="headerlink" href="#Kommentare-einfuegen">¶</a></h3><p>
+Kommentare sind wichtig, und man sollte regen Gebrauch davon machen. An schwierigen Passagen sollte man kleine Notizen hinterlegen, um festzuhalten, was man sich dabei gedacht hat und wie das Konstrukt funktioniert. So erleichtert man sich selbst, z.B. nach längeren Pausen, oder aber auch anderen, welche das Skript bearbeiten möchten, das Verständnis.</p><p>Kommentare beginnen mit dem Hash-Zeichen (#). Dies kann überall in einer Zeile stehen; außer innerhalb von Quotes. Die Bash ignoriert alles, was dahinter steht. Allgemein sieht das dann so aus:</p><pre class="notranslate"># Dies ist ein Kommentar
+
+kein Kommentar # Dies ist ein Kommentar.
+
+echo "auch # kein Kommentar innerhalb" # , wohl aber außerhalb
+
+...</pre></div><div class="section_2"><h3 id="Variablen-Teil-1">Variablen – Teil 1<a class="headerlink" href="#Variablen-Teil-1">¶</a></h3><p>
+Variablen sind symbolische Namen für Werte und verleihen einem Skript große Flexibilität. Sie erlauben es, einen Wert an nur einer Stelle zu ändern und den Wert überhaupt zu ändern.</p><div class="section_3"><h4 id="Variablen-belegen">Variablen belegen<a class="headerlink" href="#Variablen-belegen">¶</a></h4><p>
+ Variablen werden folgendermaßen belegt:
+</p><div class="bash"><div class="contents"><pre class="notranslate">message=hallo </pre></div></div><p>In diesem Beispiel wird der Variablen mit dem Namen <code class="notranslate">message</code> der Wert <code class="notranslate">hallo</code> zugewiesen.</p><p>Wenn die Zuweisung Leerzeichen oder andere Sonderzeichen enthält, sind Anführungszeichen notwendig:
+</p><div class="bash"><div class="contents"><pre class="notranslate">message="hallo Welt" </pre></div></div><p>
+oder das maskieren mittels Backslash:
+</p><div class="bash"><div class="contents"><pre class="notranslate">message=hello\ world </pre></div></div></div><div class="section_3"><h4 id="Variablen-lesen">Variablen lesen<a class="headerlink" href="#Variablen-lesen">¶</a></h4><p>
+Variablen werden mit echo ausgegeben. Dabei muss man ein Dollarzeichen <code class="notranslate">$</code> vor den Namen der Variablen setzen. Für die oben mit der Zuweisung <code class="notranslate">hallo</code> versehene Variable <code class="notranslate">message</code> würde sich also Folgendes ergeben:
+</p><div class="bash"><div class="contents"><pre class="notranslate">echo "$message" </pre></div></div><p>
+</p><pre class="notranslate">hallo Welt</pre></div><div class="section_3"><h4 id="Variablen-loeschen">Variablen löschen<a class="headerlink" href="#Variablen-loeschen">¶</a></h4><p>
+Man kann Variablen, die nicht mehr gebraucht werden, einfach mit dem Befehl <code class="notranslate">unset</code> wieder löschen. Dies wird am vorherigen Beispiel mit der Variable <code class="notranslate">message</code> weiterverfolgt.</p><div class="bash"><div class="contents"><pre class="notranslate">echo "$message" </pre></div></div><p>
+</p><pre class="notranslate">hallo Welt</pre><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">unset message
+echo "$message" </pre></div></div><p>
+</p><pre class="notranslate"></pre></div><div class="section_3"><h4 id="Variablen-abgrenzen">Variablen abgrenzen<a class="headerlink" href="#Variablen-abgrenzen">¶</a></h4><p>
+Gelegentlich kann es der Fall sein, dass man Variablen innerhalb einer Zeichenkette verwenden möchte. Dabei kommt es zu Schwierigkeiten, da die Konsole dann die Variable nicht mehr von dem sie umgebenden Zeichenkette unterscheiden kann. Um dieses Problem zu umgehen, verwendet man eine Schreibweise mit geschweiften Klammern. Ein Beispiel zeigt das Problem.</p><div class="bash"><div class="contents"><pre class="notranslate">echo "$message" </pre></div></div><pre class="notranslate">hallo</pre><div class="bash"><div class="contents"><pre class="notranslate">echo "$messagelolo" </pre></div></div><pre class="notranslate"></pre><p>Hier wird nach dem Anhängen einer beliebigen Zeichenkette an die Variable <code class="notranslate">$message</code> eine leere Variable ausgegeben. Dies liegt daran, dass die Bash versucht, die Variable mit dem Namen <code class="notranslate">$messagelolo</code> auszugeben, welche nicht belegt und daher eben leer ist. Grenzt man die Variable jedoch durch die Schreibweise mit geschweiften Klammern ab, bekommt man folgendes Ergebnis.</p><div class="bash"><div class="contents"><pre class="notranslate">echo "${message}lolo" </pre></div></div><p>
+</p><pre class="notranslate">hallololo</pre><p>Wie man sehen kann, wird hier die angehängte Zeichenkette <code class="notranslate">lolo</code> an die Variable angehängt, ohne sich mit der Zeichenkette der Variablen zu vermischen, und man erhält das gewünschte Ergebnis.</p></div></div><div class="section_2"><h3 id="Quoting">Quoting<a class="headerlink" href="#Quoting">¶</a></h3><p>
+Erklärung des Quotings im Video <a class="interwiki interwiki-youtube" href="https://www.youtube.com/watch?v=6kVEIiPaNR4#t=11m05s">Axel Beckert (Ubucon 2010)</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/></p><div class="section_3"><h4 id="Befehle">Befehle<a class="headerlink" href="#Befehle">¶</a></h4><p>
+Einige Sonderzeichen, Zeilenumbrüche und Leerzeichen haben in Shellskripten eine besondere Bedeutung. Bei einem einfachen Beispiel wird dies vielleicht noch nicht deutlich:</p><div class="bash"><div class="contents"><pre class="notranslate">echo Hallo, Welt </pre></div></div><p>
+</p><pre class="notranslate">Hallo, Welt</pre><p>Doch spätestens, wenn dieser Befehl mit einigen Leerzeichen „geschmückt“ wird, zeigt sich sonderbares Verhalten:</p><div class="bash"><div class="contents"><pre class="notranslate">echo Hallo,                   Welt </pre></div></div><p>
+</p><pre class="notranslate">Hallo, Welt</pre><p>Die zusätzlichen Leerzeichen gehen in der Ausgabe also verloren. Möchte man sie erhalten, muss die auszugebende Zeichenkette in Anführungszeichen gesetzt werden:</p><div class="bash"><div class="contents"><pre class="notranslate">echo "Hallo,                   Welt" </pre></div></div><p>
+</p><pre class="notranslate">Hallo,                   Welt</pre><p>Die Anführungszeichen (engl. „Quotes“) haben hier folgende Bedeutung: Sie entbinden die Leerzeichen zwischen den beiden Worten von ihrer Funktion als Worttrenner. Dieser Vorgang, also das Entbinden eines bestimmten Zeichens von einer Sonderfunktion, wird auch Maskierung genannt.</p><p>Ein oder mehrere aufeinander folgende Leerzeichen haben im Normalfall die Funktion, Argumente für Befehle voneinander abzugrenzen. In der Vorverarbeitungsphase des Befehls würden ohne Anführungszeichen dadurch die beiden Zeichenketten „Hallo,“ und „Welt“ zu zwei eigenständigen Argumenten für den <code class="notranslate">echo</code>-Befehl werden. Bei anderen Befehlen ist dies ein ganz natürliches und gewünschtes Verhalten:</p><div class="bash"><div class="contents"><pre class="notranslate">ls -al /usr /tmp </pre></div></div><p>Hier sorgen die Leerzeichen dafür, dass <code class="notranslate">ls</code> die drei Argumente <code class="notranslate">-al</code>, <code class="notranslate">/usr</code> und <code class="notranslate">/tmp</code> erhält. Die Shell übernimmt also die Aufgabe, derlei Zeichenkettenverarbeitung an zentraler Stelle zu erledigen. Dadurch braucht <code class="notranslate">ls</code> dies nicht selbst zu tun – andere Programme wie <code class="notranslate">cp</code>, <code class="notranslate">mv</code> oder <code class="notranslate">rm</code> müssten es dann nämlich auch selbst vornehmen. Das heißt auch, dass Programme keine Dateinamensmuster zu sehen bekommen:</p><div class="bash"><div class="contents"><pre class="notranslate">ls -al *.ogg </pre></div></div><p>Die <em>ausführende Shell</em> löst das Muster <code class="notranslate">*.ogg</code> auf und <code class="notranslate">ls</code> sieht nur noch die resultierende Liste an Dateinamen. Analog wird beispielsweise mit Variablennamen oder Umleitungen verfahren.</p><p>Derartige Vorverarbeitungen von der Shell wie die Auflösung von Mustern oder die Auftrennung in einzelne Worte werden durch Anführungszeichen verhindert. Das heißt, man könnte bei „Hallo, Welt“ genauso gut Folgendes schreiben:</p><div class="bash"><div class="contents"><pre class="notranslate">echo Hallo,"                   "Welt </pre></div></div><p>Dieses Beispiel soll noch einmal verdeutlichen, dass Anführungszeichen <em>nicht</em> – wie in anderen Sprachen üblich – zur Kennzeichnung von Zeichenketten verwendet werden. Stattdessen heben sie die Sonderbedeutung von bestimmten Zeichen auf.</p><p>Möchte man also zum Beispiel den Stern von seiner Bedeutung „passe auf alle Zeichenketten“ (was im folgenden Beispiel auf „alle nicht-versteckten Dateien im aktuellen Verzeichnis“ hinausläuft) entbinden, dann muss man Anführungszeichen um ihn herum setzen. Man vergleiche:</p><div class="bash"><div class="contents"><pre class="notranslate">echo * </pre></div></div><p>
+</p><pre class="notranslate">bin include lib local man sbin share src var</pre><p>Und:</p><div class="bash"><div class="contents"><pre class="notranslate">echo "*" </pre></div></div><p>
+</p><pre class="notranslate">*</pre><p>Auch Zeilenumbrüche können wörtlich übernommen werden, wenn sie innerhalb von Anführungszeichen stehen – sie verlieren also ihre Bedeutung als „Ende des Befehls“:
+</p><div class="bash"><div class="contents"><pre class="notranslate">echo "Dies ist eine
+mehrzeilige Ausgabe.
+Man hält es nicht für möglich." </pre></div></div><p>
+</p><pre class="notranslate">Dies ist eine                                                      
+mehrzeilige Ausgabe.                                                     
+Man hält es nicht für möglich.</pre></div><div class="section_3"><h4 id="Variablen">Variablen<a class="headerlink" href="#Variablen">¶</a></h4><p>
+Bisher wurden lediglich Befehle betrachtet. Bei der Verwendung von Variablen findet jedoch ein vergleichbarer Prozess statt. Dies gilt einerseits für die Variablenzuweisung und andererseits auch für das Auslesen von Variablen:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="nv">foo</span><span class="o">=</span><span class="s2">"Hallo,     Welt"</span>
+<span class="nb">echo</span> <span class="s2">"</span><span class="nv">$foo</span><span class="s2">"</span>
+</pre></div>
+</td></tr></table></div><p>Ohne Anführungszeichen bei <code class="notranslate">echo</code> würden wieder nur die Leerzeichen verlorengehen:</p><div class="bash"><div class="contents"><pre class="notranslate">echo $foo </pre></div></div><p>
+</p><pre class="notranslate">Hallo, Welt</pre><p>Bei der Zuweisung jedoch handelt es sich um einen Sonderfall. Ohne Maskierung erhält man einen Fehler:</p><div class="bash"><div class="contents"><pre class="notranslate">foo=Hallo, Welt </pre></div></div><p>
+</p><pre class="notranslate">-bash: Welt: command not found</pre><p>Dies passiert deshalb, weil Variablenzuweisungen auch nur für einen einzelnen Befehl gelten können, nämlich sofern sie unmittelbar vor ihm aufgeschrieben werden. Genau das ist hier der Fall. Die Zuweisung ist <code class="notranslate">foo=Hallo,</code> und der Befehl wäre dann <code class="notranslate">Welt</code>. Da es ein solches Programm nicht gibt, erhält man einen Fehler.</p><p>Der Vollständigkeit zuliebe sei hier ein „echtes“ Beispiel erwähnt, das korrekten Gebrauch von dieser Funktionalität macht. Mit <code class="notranslate">date</code> kann der aktuelle Wochentag ausgegeben werden:</p><div class="bash"><div class="contents"><pre class="notranslate">date +%A </pre></div></div><p>
+</p><pre class="notranslate">Montag</pre><p>Auf einem deutschen System ist diese Ausgabe wie erwartet auf Deutsch. Man kann nun die Variable <code class="notranslate">$LC_ALL</code> vorübergehend nur für den Aufruf von <code class="notranslate">date</code> umbelegen, sodass eine andere <a class="internal" href="../spracheinstellungen.html">locale</a> (Lokalisation: Sprache, Datumsformat, ...) benutzt wird. Hier wird die besondere „C“-Locale verwendet, welche eine englische Ausgabe bewirkt:</p><div class="bash"><div class="contents"><pre class="notranslate">LC_ALL=C date +%A </pre></div></div><p>
+</p><pre class="notranslate">Monday</pre><p>Doppelte Anführungszeichen reichen jedoch nicht in allen Situationen aus, denn sie heben nicht die Bedeutung <em>aller</em> Sonderzeichen auf. Wie bereits am letzten Beispiel ersichtlich, behält das Dollarzeichen seine Sonderbedeutung. Was kann man nun tun, wenn man tatsächlich die Zeichenkette „$foo“ ausgeben möchte?</p><p>Hierzu gibt es einfache Anführungszeichen. Sie entbinden alle Zeichen von ihren Sonderfunktionen, bis auf das einfache Anführungszeichen selbst.</p><div class="bash"><div class="contents"><pre class="notranslate">echo '$foo' </pre></div></div><p>
+</p><pre class="notranslate">$foo</pre><p><br/>
+</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Variablen, die mit Dateinamen belegt sein können, sollten in doppelten Anführungszeichen stehen. In Dateinamen sind alle Zeichen erlaubt außer der binären Null (\0) und dem Pfadtrenner '/', insbesondere also auch solche, die von der Shell ausgewertet werden würden wie '*' und '?'. Dies kann unerwünschte Folgen haben.</p><p>Insbesondere gilt dies natürlich für Dateinamen, die Leerzeichen enthalten, die leicht als Ende des Dateinamens missverstanden werden.
+</p></div></div></div><div class="section_3"><h4 id="Maskierung-mit-Backslashes">Maskierung mit Backslashes<a class="headerlink" href="#Maskierung-mit-Backslashes">¶</a></h4><p>
+Eine Alternative zum Setzen von Anführungszeichen stellt der Rückwärtsstrich ("backslash") dar. Das ihm folgende Zeichen wird wörtlich übernommen:</p><div class="bash"><div class="contents"><pre class="notranslate">echo \$foo </pre></div></div><p>
+</p><pre class="notranslate">$foo</pre><p>Backslashes werden bei längeren Zeichenketten oder Befehlen jedoch schnell unübersichtlich. Deshalb sind in den meisten Fällen Anführungszeichen die bessere Wahl. Ein Backslash kann allerdings genutzt werden, um (doppelte) Anführungszeichen zu schachteln:</p><div class="bash"><div class="contents"><pre class="notranslate">echo "Er sprach: \"Hallo, Welt\"" </pre></div></div><p>
+</p><pre class="notranslate">Er sprach: "Hallo, Welt"</pre><p>Aber Vorsicht: Einfache Anführungszeichen lassen sich nicht schachteln. Dies liegt daran, dass sie, wie bereits erwähnt, alle Zeichen außer sich selbst wörtlich übernehmen. Folglich verliert auch der Backslash seine Funktion. Im folgenden Beispiel haben also die einfachen Anführungszeichen Vorrang gegenüber dem Backslash – sie heben seine Wirkung auf und nicht er ihre.</p><div class="bash"><div class="contents"><pre class="notranslate">echo 'Dies ist ein Backslash: \' </pre></div></div><p>
+</p><pre class="notranslate">Dies ist ein Backslash: \</pre><p>Möchte man ein einfaches Anführungszeichen in einer solchen Situation ausgeben, so muss man zuerst den von ihnen umschlossenen Bereich beenden und danach einen neuen Bereich beginnen, der von <em>doppelten</em> Anführungszeichen umschlossen ist:</p><div class="bash"><div class="contents"><pre class="notranslate">echo 'So sprach'"'"'s und ging ohne einen Backslash (\) weiter.' </pre></div></div><p>
+</p><pre class="notranslate">So sprach's und ging ohne einen Backslash (\) weiter.</pre><p>Noch einmal im Detail:
+</p><pre class="notranslate">echo 'So sprach'"'"'s und ging ohne einen Backslash (\) weiter.'
+     └────┬────┘└┬┘└─────────────────────┬─────────────────────┘
+          │      │                       │
+          │      │                       └ Dritter Bereich: Wieder von '
+          │      │                         umschlossen, der Backlash
+          │      │                         verliert seine Sonderbedeutung.
+          │      │
+          │      └ Zweiter Bereich: Von " umschlossen, enthält ein
+          │        einzelnes '.
+          │
+          └ Erster Bereich: Von ' umschlossen.</pre><p>Einfacher ist natürlich der Verzicht auf die überflüssigen Anführungsstriche:
+</p><div class="bash"><div class="contents"><pre class="notranslate">echo So sprach"'"s und ging ohne einen Backslash '(\)' weiter. </pre></div></div><p>Alternative Wege <span class="underline">mit</span> Quoting:</p><div class="bash"><div class="contents"><pre class="notranslate">echo 'So sprach'\''s und ging ohne einen Backslash (\) weiter.'
+echo "So sprach's und ging ohne einen Backslash (\) weiter." </pre></div></div></div></div><div class="section_2"><h3 id="Variablen-Teil-2">Variablen – Teil 2<a class="headerlink" href="#Variablen-Teil-2">¶</a></h3><p>
+</p><div class="section_3"><h4 id="Ausgaben-in-eine-Variable-schreiben">Ausgaben in eine Variable schreiben<a class="headerlink" href="#Ausgaben-in-eine-Variable-schreiben">¶</a></h4><p>
+Durch eine Befehlssubstitution ist es möglich, die Textausgaben eines beliebigen Befehls in eine Variable zu schreiben. Ein Beispiel soll hier zeigen, wie man die Liste der Player im System anzeigt.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1">#Ausgaben in Variable schreiben</span>
+
+<span class="c1">#Variablendefinition</span>
+<span class="nv">suchwort</span><span class="o">=</span>player
+
+<span class="nv">liste</span><span class="o">=</span><span class="k">$(</span>apropos <span class="nv">$suchwort</span><span class="k">)</span>
+<span class="nb">echo</span> <span class="s2">"      Player-Liste:"</span>
+<span class="nb">echo</span> <span class="s2">"</span><span class="nv">$liste</span><span class="s2">"</span>
+</pre></div>
+</td></tr></table></div><p>Wie man sieht, wird alles zwischen <code class="notranslate">$(</code> und <code class="notranslate">)</code> stehende als Befehl ausgeführt und die Ausgabe in die Variable <code class="notranslate">$liste</code> gespeichert. Danach werden die so gewonnenen Daten im Falle dieses Beispiels auf einmal durch <code class="notranslate">echo</code> ausgegeben. Sie lassen sich so aber auch sehr gut über eine Schleife abarbeiten, dazu aber später mehr.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Es gibt eine alternative Schreibweise zu diesem Operator, die Backticks <strong>`</strong>: <code class="notranslate">NAME=`whoami`</code>. Der Einsatz empfiehlt sich aber nicht, da sie sich nicht ohne kompliziertes Maskieren schachteln lassen und, je nach Schriftart, schlecht vom Apostroph zu unterscheiden sind. 
+</p></div></div><p>Einfache und doppelte Gänsefüßchen unterscheiden sich beim Einschließen von Variablen darin, dass bei <code class="notranslate">"..."</code> Variablen expandiert werden, bei <code class="notranslate">'...'</code> nicht.</p><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Es ist verführerisch, die Ausgabe des Befehls <code class="notranslate">ls</code> im Skript zu verarbeiten. Das wäre aber gleich in mehrerer Hinsicht gefährlich:
+</p><ul><li><p>Leerzeichen und Zeilenwechsel in Dateinamen verursachen oft Probleme, da sie als Ende des Dateinamens interpretiert werden oder weil man die Eingabe zeilenweise verarbeitet und so den Dateinamen durchschneidet.</p></li><li><p>Abhängig vom <em>locale</em> und einigen anderen Einstellungen ersetzt <code class="notranslate">ls</code> manche Zeichen durch ein oder mehrere "?". Dies ist aber bei <em>bash</em> der Platzhalter für "jedes Zeichen" und führt leicht zu Mehrdeutigkeiten, ebenso wie der '*', sofern er im Dateinamen vorkommt.</p></li></ul><p>
+Entsprechend wird man auch die Ausgabe von <code class="notranslate">find</code> nicht <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Parser">parsen</a>, sondern die entsprechenden Befehle mit der Option <code class="notranslate">-exec</code> in einem Unterskript ausführen. Beispiele dazu findet man im Artikel <a class="internal" href="../find.html#exec-und-dessen-Varianten">find</a>.  
+</p></div></div><p>Dateien und Verzeichnisse lassen sich gefahrlos mit den <em>bash</em>-eigenen Funktionen abfragen (<a class="internal" href="../basename.html">basename</a> und <a class="internal" href="../dirname.html">dirname</a> sind eigenständige Befehle):</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="k">for</span> file in ./*/*.png <span class="p">;</span> <span class="k">do</span> 
+	<span class="nb">echo</span> <span class="s2">"Diese Datei: </span><span class="nv">$file</span><span class="s2">"</span>
+	<span class="nv">fname</span><span class="o">=</span><span class="k">$(</span>basename <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span><span class="k">)</span>
+	<span class="nb">echo</span> <span class="s2">"hat den Namen: </span><span class="nv">$fname</span><span class="s2">"</span>
+	<span class="nv">fdir</span><span class="o">=</span><span class="k">$(</span>dirname <span class="s2">"</span><span class="nv">$file</span><span class="s2">"</span><span class="k">)</span>
+	<span class="nb">echo</span> <span class="s2">"und steht im Verzeichnis: </span><span class="nv">$fdir</span><span class="s2">"</span>
+<span class="k">done</span>
+</pre></div>
+</td></tr></table></div></div><div class="section_3"><h4 id="Abschneiden-von-Mustern">Abschneiden von Mustern<a class="headerlink" href="#Abschneiden-von-Mustern">¶</a></h4><p>
+Eine gewöhnungsbedürftige, aber doch sehr nette Funktion ist das Herausschneiden bestimmter Muster aus der Zeichenkette einer Variablen.</p><table><tr><td colspan="4" style="text-align: center; background-color: #E2C890"> <strong>Schnitt-Funktionen</strong> </td></tr><tr style="background-color: #F9EAAF"><td> <strong>Funktion</strong> </td><td> <strong>Erklärung</strong> </td></tr><tr><td> <code class="notranslate">${variable%muster}</code> </td><td> Entfernt rechts das kleinste passende Stück.  </td></tr><tr style="background-color: #EEEEEE"><td> <code class="notranslate">${variable%%muster}</code> </td><td> Entfernt rechts das größte passende Stück </td></tr><tr><td> <code class="notranslate">${variable#muster}</code> </td><td> Entfernt links das kleinste passende Stück. </td></tr><tr style="background-color: #EEEEEE"><td> <code class="notranslate">${variable##muster}</code> </td><td> Entfernt links das größte passende Stück </td></tr></table><p>
+An einem kleinen Beispiel soll nun eine Anwendungsmöglichkeit erläutert werden.</p><div class="bash"><div class="contents"><pre class="notranslate">pfadname="/var/www/index.html"
+
+echo $pfadname </pre></div></div><pre class="notranslate">/var/www/index.html</pre><div class="bash"><div class="contents"><pre class="notranslate">echo "Pfad: ${pfadname%/*}" </pre></div></div><pre class="notranslate">Pfad: /var/www</pre><div class="bash"><div class="contents"><pre class="notranslate">echo "Dateiname: ${pfadname##*/}" </pre></div></div><pre class="notranslate">Dateiname: index.html</pre><p>Hier sieht man, wie leicht man an Teile einer Variablen herankommt, ohne die ursprüngliche Variable zu verändern. Ergänzend sei hier noch gesagt, dass ein Metazeichen (*) zum Einsatz gekommen ist, welches für eine beliebige Zeichenkette an dieser Stelle steht. Dies ist natürlich nicht die einzige Möglichkeit. Hier kann jedes Zeichen oder beliebige Folge von Metazeichen zum Einsatz kommen.</p></div><div class="section_3"><h4 id="Umgebungsvariablen">Umgebungsvariablen<a class="headerlink" href="#Umgebungsvariablen">¶</a></h4><p>
+Es gibt diverse von der Shell selbst verwaltete Variablen. Diese Umgebungsvariablen lassen sich gut für verschiedene Aufgaben in Skripten verwenden, wie z.B. einer Fehlerkontrolle von Programmen, indem man den Rückgabewert ("exit status") prüft. In der folgenden Liste werden nur ein paar dieser Variablen aufgeführt, für weitere Informationen ist bitte der Artikel <a class="internal" href="../umgebungsvariablen.html">Umgebungsvariablen</a> zu bemühen.</p><table><tr><td colspan="4" style="text-align: center; background-color: #E2C890"> <strong>Umleitungen</strong> </td></tr><tr style="background-color: #F9EAAF"><td> <strong>Variable</strong> </td><td> <strong>Erklärung</strong> </td></tr><tr><td> <code class="notranslate">HOME</code> </td><td> Enthält das Homeverzeichnis des Benutzers.  </td></tr><tr style="background-color: #EEEEEE"><td> <code class="notranslate">PATH</code> </td><td> Suchpfad für Kommandos. </td></tr><tr><td> <code class="notranslate">PWD</code> </td><td> Enthält das Aktuelle Verzeichnis. </td></tr><tr style="background-color: #EEEEEE"><td> <code class="notranslate">?</code> </td><td> Enthält den Exitstatus des letzten Kommandos </td></tr></table></div></div><div class="section_2"><h3 id="Rechnen-mit-der-Shell">Rechnen mit der Shell<a class="headerlink" href="#Rechnen-mit-der-Shell">¶</a></h3><p>
+Die Shell kann durch die interne Funktion <strong>$(<span style="color: #000000">(</span> ... ))</strong> auch Integer-Berechnungen ausführen:
+</p><div class="bash"><div class="contents"><pre class="notranslate">pingu@ubuntu:~$ echo $((100 / 3))
+33
+pingu@ubuntu:~$ x="62"
+pingu@ubuntu:~$ echo $(($x + 12))
+74
+pingu@ubuntu:~$ ((x++))
+pingu@ubuntu:~$ echo "$x"
+63 </pre></div></div><p>Es gilt hier auch Punkt vor Strich:
+</p><div class="bash"><div class="contents"><pre class="notranslate">pingu@ubuntu:~$ a=$((3 + 4 * 2))
+pingu@ubuntu:~$ echo "$a"
+11
+pingu@ubuntu:~$ b=$(((3 + 4) * 2))
+pingu@ubuntu:~$ echo "$b"
+14 </pre></div></div><p>Eine Aufstellung der verfügbaren Rechenarten in ihrer Vorrang-Reihenfolge findet sich im Abschnitt <a class="external" href="http://www.gnu.org/software/bash/manual/bashref.html#Shell-Arithmetic" rel="nofollow">Shell Arithmetic</a> <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> des <a class="external" href="http://www.gnu.org/software/bash/manual/bashref.html" rel="nofollow">Bash-Skripting-Guide</a> <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/>.</p><p>Man kann abhängig vom System durchaus sehr große Zahlen berechnen, irgendwann erfolgt allerdings kommentarlos der Überlauf. Beim 32-bit-Hardy z.B.:
+</p><div class="bash"><div class="contents"><pre class="notranslate">pingu@ubuntu:~$ echo $((10 ** 18))
+1000000000000000000
+pingu@ubuntu:~$ echo $((10 ** 19))
+-8446744073709551616 </pre></div></div><p>Für weitergehende Berechnungen müsste man dann auf die Rechenfunktionen externer Programme zurückgreifen, z.B. auf <a class="internal" href="../taschenrechner.html#bc">bc</a> oder <a class="internal" href="../awk.html">awk</a>.</p></div><div class="section_2"><h3 id="Arrays">Arrays<a class="headerlink" href="#Arrays">¶</a></h3><p>
+Feldvariablen werden englisch als "Arrays" bezeichnet. Sie ermöglichen es, mehrere Werte innerhalb einer Variablen abzuspeichern. Die einzelnen Werte stehen dabei in Feldern des Arrays und können über den Index des Feldes einzeln angesprochen werden. Arrays lassen sich hervorragend über Schleifen verarbeiten, was etwas weiter unten noch beschrieben wird.</p><div class="section_3"><h4 id="Arrays-belegen">Arrays belegen<a class="headerlink" href="#Arrays-belegen">¶</a></h4><p>
+Um einen Wert in ein Array zu schreiben, ist es nötig, den Index mit anzugeben. Allgemein sieht das folgendermaßen aus:</p><div class="bash"><div class="contents"><pre class="notranslate">Arrayname[i]=Wert </pre></div></div><p>Ganz vorne steht der Name des Arrays, gefolgt vom Index, welcher durch eine Zahl in eckigen Klammern angegeben wird. Dann folgt wie auch schon bei den Variablen eine Zuweisung. In diesem Beispiel wird also der zugewiesene Wert „Wert“ in das i-te Feld des Arrays „Arrayname“ geschrieben.</p><p>Soll ein neues Array mit mehreren Werten auf einmal belegt werden, dann bietet sich folgende Schreibweise an:</p><div class="bash"><div class="contents"><pre class="notranslate">Arrayname=(Dies sind vier Werte) </pre></div></div><p>Die innerhalb der Klammern angegebenen Werte werden dabei implizit bei 0 beginnenden Indizes zugewiesen. Dieses Array enthielte also die vier Werte „Dies“, „sind“, „vier“ und „Werte“, wobei zum Beispiel „sind“ den Index 1 hätte.</p><p>Arrays können „Löcher“ haben, das heißt, Indizes müssen keine aufeinanderfolgenden Zahlen sein, und es müssen auch nicht alle Indizes ab 0 belegt sein.</p><p>Es können auch Elemente an das Ende eines Arrays angefügt werden. Das Ende ist dabei der höchste bereits existierende Index:</p><div class="bash"><div class="contents"><pre class="notranslate">Arrayname+=(all diese sieben Elemente werden einzeln angefügt) </pre></div></div><p><a class="crosslink" href="#Quoting">Quoting</a> ist notwendig, falls Elemente Leer- oder andere Sonderzeichen enthalten sollen.</p></div><div class="section_3"><h4 id="Arrays-auslesen">Arrays auslesen<a class="headerlink" href="#Arrays-auslesen">¶</a></h4><p>
+Arrays lassen sich genau wie die Variablen mit Hilfe des Befehls <code class="notranslate">echo</code> auslesen. Hierbei sind jedoch verschiedene Möglichkeiten gegeben. Es können gezielt Elemente mit einem bestimmten Index angesprochen werden:</p><div class="bash"><div class="contents"><pre class="notranslate">echo ${array[2]} </pre></div></div><p>Wird als Index ein „<code class="notranslate">@</code>“ oder „<code class="notranslate">*</code>“ angegeben, so kann auf das gesamte Array zugegriffen werden. In diesen Fällen gibt es allerdings Besonderheiten bezüglich doppelter Anführungszeichen um das Array herum:</p><ol class="arabic"><li><p><code class="notranslate">${array[*]}</code> oder <code class="notranslate">${array[@]}</code>: Alle Elemente mit Nachbearbeitung wie Globbing oder Word-Splitting.</p></li><li><p><code class="notranslate">"${array[*]}"</code>: Kein Globbing, Elemente getrennt durch erstes Zeichen aus <code class="notranslate">$IFS</code>, Endergebnis ist <em>ein</em> Argument.</p></li><li><p><code class="notranslate">"${array[@]}"</code>: Kein Globbing, jedes Element wird ein eigenes Argument.</p></li></ol><p>
+Hierzu einige verdeutlichende Beispiele. Angenommen, das Array wurde mit den folgenden drei Elementen belegt:
+</p><div class="bash"><div class="contents"><pre class="notranslate">array=('Hallo, Welt!' '*' '             Noch ein paar Worte und Leerzeichen.') </pre></div></div><p>Im Fall 1 expandiert das Element, das nur den Stern enthält, zu allen Dateien im aktuellen Verzeichnis, ebenso werden Worte an Leerzeichen getrennt:
+</p><div class="bash"><div class="contents"><pre class="notranslate">echo ${array[*]} </pre></div></div><p>
+</p><pre class="notranslate"><strong class="highlighted">Hallo,</strong> <strong class="highlighted">Welt!</strong> <strong class="highlighted">bin</strong> <strong class="highlighted">boot</strong> <strong class="highlighted">dev</strong> <strong class="highlighted">etc</strong> <strong class="highlighted">home</strong> <strong class="highlighted">lib</strong> <strong class="highlighted">lost+found</strong> <strong class="highlighted">media</strong> <strong class="highlighted">mnt</strong> <strong class="highlighted">opt</strong> <strong class="highlighted">proc</strong> <strong class="highlighted">root</strong> <strong class="highlighted">run</strong> <strong class="highlighted">sbin</strong> <strong class="highlighted">srv</strong> <strong class="highlighted">sys</strong> <strong class="highlighted">tmp</strong> <strong class="highlighted">usr</strong> <strong class="highlighted">var</strong> <strong class="highlighted">Noch</strong> <strong class="highlighted">ein</strong> <strong class="highlighted">paar</strong> <strong class="highlighted">Worte</strong> <strong class="highlighted">und</strong> <strong class="highlighted">Leerzeichen.</strong></pre><p>Die gelben Markierungen sollen zeigen, dass die resultierende Ausgabe keine zusammengehörige Zeichenkette ist, sondern aus mehreren Argumenten besteht. Ebenfalls ist zu beachten, dass die zusätzlichen Leerzeichen im dritten Element weggefallen sind.</p><p>Im Fall 2 hingegen entsteht ein einziges Argument, es findet keine Expansion statt, und die Leerzeichen bleiben erhalten:</p><div class="bash"><div class="contents"><pre class="notranslate">echo "${array[*]}" </pre></div></div><p>
+</p><pre class="notranslate"><strong class="highlighted">Hallo, Welt! *              Noch ein paar Worte und Leerzeichen.</strong></pre><p>Als „Verbindungsstück“ zwischen den Elementen wird hier das erste Zeichen der Variablen <code class="notranslate">$IFS</code> verwendet. Belegt man diese Variable um, so kann man auch das Verbindungsstück ändern:</p><div class="bash"><div class="contents"><pre class="notranslate">IFS=';'
+echo "${array[*]}" </pre></div></div><p>
+</p><pre class="notranslate">Hallo, Welt!<strong class="highlighted">;</strong>*<strong class="highlighted">;</strong>             Noch ein paar Worte und Leerzeichen.</pre><p>Das Ergebnis ist immernoch <em>ein</em> Argument, doch zwischen den Elementen steht jetzt kein Leerzeichen mehr, sondern ein Semikolon.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Die Variable <code class="notranslate">$IFS</code> erfüllt noch weitere Zwecke, zum Beispiel wird ihr Inhalt beim Wordsplitting verwendet. Sie sollte nur mit Vorsicht umbelegt werden. Im Zweifelsfalle sollte man sich den Inhalt vorher in eine andere Variable sichern und diesen Wert später wiederherstellen.
+</p></div></div><p>Fall 3 stellt den reinen Zugriff auf das Array dar. Änderungen an der Variablen <code class="notranslate">$IFS</code> spielen keine Rolle mehr, da <em>getrennte</em> Argumente entstehen:</p><div class="bash"><div class="contents"><pre class="notranslate">echo "${array[@]}" </pre></div></div><p>
+</p><pre class="notranslate"><strong class="highlighted">Hallo, Welt!</strong> <strong class="highlighted">*</strong> <strong class="highlighted">             Noch ein paar Worte und Leerzeichen.</strong></pre><p>Übung für den Leser: Verwende testweise <code class="notranslate">ls</code> statt <code class="notranslate">echo</code> und existierende Dateinamen als Arrayinhalt. Das sollte noch einmal herausstellen, was der Unterschied zwischen einem und mehreren Argumenten ist.</p><p>Wer sich nur die Anzahl der in einem Array enthaltenen Elemente ausgeben lassen will, kann dies mit dem folgenden Befehl tun:</p><div class="bash"><div class="contents"><pre class="notranslate">echo ${#array[@]} </pre></div></div><p>
+</p><pre class="notranslate">3</pre><p>
+</p></div><div class="section_3"><h4 id="Arrays-loeschen">Arrays löschen<a class="headerlink" href="#Arrays-loeschen">¶</a></h4><p>
+Arrays lassen sich genau wie Variablen mit dem Befehl <code class="notranslate">unset</code> löschen.</p><div class="bash"><div class="contents"><pre class="notranslate">unset array </pre></div></div></div><div class="section_3"><h4 id="Beispiel-fuer-ein-Array">Beispiel für ein Array<a class="headerlink" href="#Beispiel-fuer-ein-Array">¶</a></h4><p>
+Das folgende Beispiel zeigt etwas ausführlicher den Umgang mit einem Array.</p><div class="bash"><div class="contents"><pre class="notranslate">array[1]=Hallo
+
+echo ${array[@]} </pre></div></div><pre class="notranslate">Hallo</pre><div class="bash"><div class="contents"><pre class="notranslate">array[2]=Pingu
+
+echo ${array[@]} </pre></div></div><pre class="notranslate">Hallo Pingu</pre><div class="bash"><div class="contents"><pre class="notranslate">array[1]=Bye
+
+echo ${array[@]} </pre></div></div><pre class="notranslate">Bye Pingu</pre><div class="bash"><div class="contents"><pre class="notranslate">unset array
+
+echo ${array[@]} </pre></div></div><pre class="notranslate"></pre><p>An diesem Beispiel kann man ganz gut verschiedene Aspekte des Umgangs mit einem Array erkennen. Es zeigt wie ein Array angelegt wird, wie neue Felder belegt oder diese einfach verändert werden können. Schlussendlich wird das Array dann mit <code class="notranslate">unset</code> gelöscht.</p><p><img alt="Wiki/Icons/users.png" class="image-right" src="../_/b77ce8484875ef100c35a46a30ddc08c6290af80.png"/>
+</p></div></div><div class="section_2"><h3 id="Interaktion-mit-dem-Benutzer">Interaktion mit dem Benutzer<a class="headerlink" href="#Interaktion-mit-dem-Benutzer">¶</a></h3><p>
+Oft ist es notwendig, dem Benutzer des Skriptes während dem Durchlauf mitzuteilen, was gerade passiert oder ihn aufzufordern, gewisse Angaben zu machen, die für die weitere Arbeit des Skriptes notwendig sind. Den Möglichkeiten, dies umzusetzen, widmet sich der folgende Abschnitt.</p><div class="section_3"><h4 id="Ausgabe-von-Text">Ausgabe von Text<a class="headerlink" href="#Ausgabe-von-Text">¶</a></h4><p>
+<code class="notranslate">echo</code> kann man verwenden, um den Benutzer des Skriptes wissen zu lassen, was gerade passiert, oder um ihn aufzufordern, eine Eingabe zu machen.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1">#Hallo Welt Skript</span>
+
+<span class="nb">echo</span> <span class="s2">"Hallo Welt"</span>
+</pre></div>
+</td></tr></table></div><p>Die Shebang wurde bereits beschrieben, ebenso Kommentare. Mit <code class="notranslate">echo</code> gibt man Nachrichten auf der Standardausgabe aus, welche somit also am Bildschirm angezeigt werden. Dieses Beispiel würde folgende Ausgabe generieren.</p><pre class="notranslate">Hallo Welt</pre></div><div class="section_3"><h4 id="Einlesen-von-Eingaben">Einlesen von Eingaben<a class="headerlink" href="#Einlesen-von-Eingaben">¶</a></h4><p>
+Mit <code class="notranslate">read</code> kann man Eingaben von der Standardeingabe einlesen und somit Benutzereingaben verarbeiten.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1">#Begrüßung</span>
+
+<span class="nb">read</span> -p <span class="s2">"Geben sie ihren Namen ein:"</span> name
+<span class="nb">echo</span> Hallo: <span class="nv">$name</span>
+</pre></div>
+</td></tr></table></div><p>In diesem Beispiel fordert man den Benutzer des Skriptes dazu auf, eine Eingabe zu machen. <code class="notranslate">read</code> liest die Eingabe in die hinter <code class="notranslate">read</code> stehende Variable <code class="notranslate">$name</code> ein. Der Schalter <code class="notranslate">-p</code> legt einen Prompt fest, der angezeigt wird. Die Ausgabe des Skriptes sieht dann wie folgt aus:</p><div class="bash"><div class="contents"><pre class="notranslate">./begruessung.sh </pre></div></div><pre class="notranslate">Geben sie ihren Namen ein: Sab
+
+Hallo: Sab.</pre><p>Man kann das auch in eine einzige Zeile packen, falls man die Kommandos direkt auf der Kommandozeile verwenden muss. Ein Beispiel:</p><pre class="notranslate">read -p "Programm A (a) oder B (b) starten? Geben Sie a oder b ein und die Eingabetaste, Abbruch mit jeder anderen Taste ...  " kommando; if [ $kommando == 'a' ]; then starte_programm_a; elif [ $kommando == 'b' ]; then starte_programm_b; else echo "Abbruch."; fi</pre><p>Hier wird der Benutzer aufgefordert a oder b einzugeben, dann wird das jeweilige Programm ausgeführt. Die Eingabeaufforderung und die if-Verzweigung werden in einer Zeile abgesetzt. Man muss zwischen die einzelnen Befehle hier dann immer einen ";" setzen, um sie zu trennen.</p></div></div><div class="section_2"><h3 id="Umleitungen">Umleitungen<a class="headerlink" href="#Umleitungen">¶</a></h3><p>
+Umleitungen werden zu verschiedenen Zwecken verwendet. Hier werden nun ein paar dieser Möglichkeiten aufgelistet. Mehr zum Thema Umleitungen findet sich im Wiki unter dem Artikel <a class="internal" href="../shell/umleitungen.html">Umleitungen</a>.</p><table><tr><td colspan="4" style="text-align: center; background-color: #E2C890"> <strong>Umleitungen</strong> </td></tr><tr style="background-color: #F9EAAF"><td> <strong>Operator</strong> </td><td> <strong>Erklärung</strong> </td></tr><tr><td> <code class="notranslate">&gt;</code> </td><td> Dient der Umleitung der Standardausgabe in eine Datei.  </td></tr><tr style="background-color: #EEEEEE"><td> <code class="notranslate">&gt;&gt;</code> </td><td> Dient ebenfalls der Umleitung in eine Datei, hängt jedoch die Ausgabe an eine bereits bestehende Datei an anstatt diese zu überschreiben.</td></tr><tr><td> <code class="notranslate">|</code> </td><td> Mit dem Pipeoperator lässt sich die Ausgabe eines Kommandos als Eingabe für ein anderes verwenden. </td></tr><tr style="background-color: #EEEEEE"><td> <code class="notranslate">&lt;</code> </td><td> Statt von der Standardeingabe (Tastatur) wird aus einer Datei gelesen </td></tr></table><p>
+</p></div><div class="section_2"><h3 id="Das-Test-Kommando">Das Test-Kommando<a class="headerlink" href="#Das-Test-Kommando">¶</a></h3><p>
+Das Testkommando wird benötigt, um diverse Bedingungen zu testen. Es wird oft in Zusammenhang mit programmführenden Konstrukten verwendet. Test kennt verschiedene Operatoren, welche die Bedingungen des Testes beeinflussen. In der folgenden Tabelle sind die Möglichkeiten von Test aufgelistet.</p><table><tr><td colspan="4" style="text-align: center; background-color: #E2C890"> <strong>Die Optionen des Test-Kommandos</strong> </td></tr><tr style="background-color: #F9EAAF"><td> <strong>Operator</strong> </td><td> <strong>Erklärung</strong> </td></tr><tr><td> <code class="notranslate">-d Verzeichnis</code> </td><td> Ist wahr, wenn "Verzeichnis" existiert. </td></tr><tr style="background-color: #EEEEEE"><td> <code class="notranslate">-e Datei</code> </td><td> Ist wahr, wenn Datei existiert. </td></tr><tr><td><code class="notranslate">-f Datei</code> </td><td> Ist wahr, wenn reguläre Datei existiert. </td></tr><tr style="background-color: #EEEEEE"><td> <code class="notranslate">-w Datei</code> </td><td> Ist wahr, wenn die Datei existiert und Schreibzugriff erlaubt ist. </td></tr><tr><td><code class="notranslate">-x Datei</code> </td><td> Ist wahr, wenn Datei existiert und Ausführbar ist. </td></tr><tr style="background-color: #EEEEEE"><td> <code class="notranslate">-n String</code> </td><td> Ist wahr, wenn String nicht leer ist. (Bsp. eine Variable) </td></tr><tr><td><code class="notranslate">-z String</code> </td><td> Ist wahr, wenn String leer ist. (Bsp. eine Variable) </td></tr><tr style="background-color: #EEEEEE"><td> <code class="notranslate">String1 = String2</code> </td><td> Ist wahr, wenn String1 gleich String2 ist. </td></tr><tr><td><code class="notranslate">Zahl1 -eq Zahl2</code> </td><td> Ist wahr, wenn Zahl1 gleich Zahl2 ist. (-eq = equal) </td></tr><tr style="background-color: #EEEEEE"><td> <code class="notranslate">Zahl1 -lt Zahl2</code> </td><td> Ist wahr, wenn Zahl1 kleiner Zahl2 ist. (-lt = less than) </td></tr><tr><td><code class="notranslate">Zahl1 -gt Zahl2</code> </td><td> Ist wahr, wenn Zahl1 größer Zahl2 ist. (-gt = greater than) </td></tr><tr style="background-color: #EEEEEE"><td> <code class="notranslate">Zahl1 -le Zahl2</code> </td><td> Ist wahr, wenn Zahl1 kleiner oder gleich Zahl2 ist. (-le = less or equal) </td></tr><tr><td><code class="notranslate">Zahl1 -ge Zahl2</code> </td><td> Ist wahr, wenn Zahl1 größer oder gleich Zahl2 ist. (-ge = greater or equal) </td></tr><tr style="background-color: #EEEEEE"><td> <code class="notranslate">Zahl1 -ne Zahl2</code> </td><td> Ist wahr, wenn Zahl1 nicht gleich Zahl2 ist. (-ne = not equal) </td></tr><tr><td><code class="notranslate">! foo</code> </td><td> Ist wahr, wenn foo falsch ist, also eine Negation.</td></tr></table><p>
+Strings und Stringvariablen sollten stets gequotet werden, sonst kann es zu unerwarteten Ergebnissen führen (beispielsweise werden unmaskierte, leere Variablen mit dem Ausdruck <code class="notranslate">-n</code> nicht erkannt). Wie man das Testkommando nun richtig anwendet, wird gleich im Abschnitt Programmführung noch gezeigt.</p></div><div class="section_2"><h3 id="Programmfuehrung">Programmführung<a class="headerlink" href="#Programmfuehrung">¶</a></h3><p>
+Wie die Überschrift schon vermuten lässt, geht es hier darum, die Programmführung zu organisieren. Dabei nimmt man mit verschiedenen Konstrukten Einfluss auf den Ablauf des Skriptes.</p><div class="section_3"><h4 id="If-Else-Anweisung">If-Else-Anweisung<a class="headerlink" href="#If-Else-Anweisung">¶</a></h4><p>
+Die Verzweigung macht es möglich, nach einem Test auf eine Bedingung hin eine entsprechende Maßnahme zu ergreifen. Das Konstrukt ist folgendermaßen aufgebaut.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">if</span> <span class="o">[</span> Test-Bedingung <span class="o">]</span>
+  <span class="k">then</span>
+    Befehl...
+<span class="k">fi</span>
+</pre></div>
+</td></tr></table></div><p>In den eckigen Klammern kann man jetzt jede der zuvor kennengelernten Option des Testbefehls benutzen. Der Anweisungsblock wird mit <code class="notranslate">fi</code> geschlossen. Man kann dieses Konstrukt auch noch etwas erweitern, um eine alternative Reaktion auf einen Test hinzuzufügen.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">if</span> <span class="o">[</span> Test-Bedingung <span class="o">]</span>
+  <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">"Ok, alles in Ordnung."</span>
+  <span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">"Ahrg...Fehler."</span>
+<span class="k">fi</span>
+</pre></div>
+</td></tr></table></div><p>Dies wird durch den Zusatz <code class="notranslate">else</code> ermöglicht. Zudem lässt sich dieses Konstrukt noch beliebig durch weitere Test-Bedingungen mit dem Zusatz <code class="notranslate">elif</code> erweitern. Dies sieht üblicherweise folgendermaßen aus.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">if</span> <span class="o">[</span> Test-Bedingung <span class="o">]</span>
+  <span class="k">then</span>
+    Befehl...
+  <span class="k">elif</span> <span class="o">[</span> Test-Bedingung <span class="o">]</span>
+    <span class="k">then</span>
+      Befehl...
+  <span class="k">else</span>
+    Befehl...
+<span class="k">fi</span>
+</pre></div>
+</td></tr></table></div><p>Ein Beispiel zeigt, wie man zwei Zeichenketten miteinander vergleicht und dem Ergebnis entsprechend eine Meldung dazu ausgibt.
+Wichtig zu beachten sind hier die Leerzeichen vor und hinter dem Vergleichsoperator.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash </span>
+<span class="nb">echo</span> <span class="s2">"Wie ist Ihr Name?"</span>
+<span class="nb">read</span> ANTWORT
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$ANTWORT</span><span class="s2">"</span> <span class="o">==</span> <span class="s2">"root"</span> <span class="o">]</span>
+    <span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">"Hallo, Administrator."</span>
+    <span class="k">else</span>
+        <span class="nb">echo</span> <span class="s2">"Hallo, Anwender."</span>
+<span class="k">fi</span>
+</pre></div>
+</td></tr></table></div><p>Ein Beispiel zeigt, wie man auf die Existenz einer Datei hin prüft und entsprechend dem Ergebnisse eine Meldung dazu ausgibt.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1">#Dateitest</span>
+
+<span class="k">if</span> <span class="o">[</span> -f /home/Pingu/test.txt <span class="o">]</span>
+  <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">"Die Datei test.txt in Pingus Home ist da."</span>
+  <span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">"Die Datei test.txt in Pingus Home fehlt."</span>
+<span class="k">fi</span>
+</pre></div>
+</td></tr></table></div><p>Oder das ganze wird mit einer <code class="notranslate">elif</code>-Konstruktion erweitert.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># Dateitest</span>
+
+<span class="k">if</span> <span class="o">[</span> -f /home/Pingu/test.txt <span class="o">]</span>
+  <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">"Die Datei test.txt in Pingus Home ist da."</span>
+  <span class="k">elif</span> <span class="o">[</span> -d /home/Pingu/test.txt <span class="o">]</span>
+    <span class="k">then</span>
+      <span class="nb">echo</span> <span class="s2">"test.txt ist ein Verzeichnis"</span>
+  <span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">"Die Datei test.txt in Pingus Home fehlt"</span>
+<span class="k">fi</span>
+</pre></div>
+</td></tr></table></div></div><div class="section_3"><h4 id="Case-Anweisungen">Case-Anweisungen<a class="headerlink" href="#Case-Anweisungen">¶</a></h4><p>
+Die case-Anweisung ist ein wichtiges Konstrukt, um nach dem Test einer Variable entsprechend auf deren Inhalt zu reagieren. Sie ist auch eine elegante Alternative zu verschachtelten If-Else-Konstrukten, mit welchen prinzipiell dasselbe Ergebnis erzielt wird. Üblicherweise sieht eine <code class="notranslate">case</code>-Anweisung folgendermaßen aus.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">case</span> <span class="s2">"</span><span class="nv">$variable</span><span class="s2">"</span> in
+        wert1<span class="o">)</span> Befehl...
+            <span class="p">;;</span>
+        wert2<span class="o">)</span> Befehl...
+               Befehl...
+               Befehl...
+            <span class="p">;;</span>
+        wert3<span class="o">)</span> Befehl...
+               Befehl...
+            <span class="p">;;</span>
+        wert4<span class="o">)</span> Befehl...
+            <span class="p">;;</span>
+            *<span class="o">)</span> Befehl...
+               Befehl...
+            <span class="p">;;</span>
+<span class="k">esac</span>
+</pre></div>
+</td></tr></table></div><p>Hier wird die Variable <code class="notranslate">variable</code> auf verschiedene Werte überprüft, welche mit <code class="notranslate">wert1</code> bis <code class="notranslate">wert4</code> definiert werden. Andere als die vorgegebenen Muster für den Variablenwert können in dem speziellen Abschnitt <code class="notranslate">*)</code> abgefangen werden. Jeder Abschnitt wird durch ein doppeltes Semikolon <code class="notranslate">;;</code> beendet. Hat ein Abschnitt kein doppeltes Semikolon, wird nach seiner Abarbeitung der unmittelbar folgende Abschnitt ebenfalls abgearbeitet. Das ist im Normalfall jedoch nicht gewünscht.</p><p>Ein Beispiel zeigt dies nochmal etwas deutlicher.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># namenstest</span>
+
+<span class="nb">read</span> -p <span class="s2">"Bitte geben sie ihren Namen ein:"</span> name
+
+<span class="k">case</span> <span class="s2">"</span><span class="nv">$name</span><span class="s2">"</span> in
+        Frank<span class="o">)</span> <span class="nb">echo</span> Hallo, Frank
+            <span class="p">;;</span>
+        Werner<span class="o">)</span> <span class="nb">echo</span> Hallo, Werner
+            <span class="p">;;</span>
+        <span class="s2">"Mario Kevin Fritz"</span><span class="o">)</span> <span class="nb">echo</span> Hallo, Mario Kevin Fritz
+            <span class="p">;;</span>
+        *<span class="o">)</span> <span class="nb">echo</span> <span class="s2">"Hallo, Fremder!"</span>
+            <span class="p">;;</span>
+<span class="k">esac</span>
+</pre></div>
+</td></tr></table></div><p>Es lassen sich auch Alternativen für eine Testbedingung angeben. Dazu wird der Pipe-Operator "|" verwendet, was folgendermaßen aussehen könnte:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># installer</span>
+
+<span class="nb">read</span> -p <span class="s2">"Installer: Adminrechte werden benötigt. Wollen Sie fortfahren?:"</span> answer
+
+<span class="k">case</span> <span class="s2">"</span><span class="nv">$answer</span><span class="s2">"</span> in
+        Yes<span class="p">|</span>yes<span class="p">|</span>Y<span class="p">|</span>y<span class="p">|</span><span class="s2">""</span><span class="o">)</span> <span class="nb">echo</span> <span class="s2">"Ok los geht's"</span>
+            <span class="p">;;</span>
+        No<span class="p">|</span>no<span class="p">|</span>N<span class="p">|</span>n<span class="o">)</span> <span class="nb">echo</span> <span class="s2">"Abbruch."</span>
+                   <span class="nb">exit</span> <span class="m">1</span>
+            <span class="p">;;</span>
+            *<span class="o">)</span> <span class="nb">echo</span> <span class="s2">"Unbekannter Parameter"</span> 
+            <span class="p">;;</span>
+<span class="k">esac</span>
+</pre></div>
+</td></tr></table></div><p>Der erste Eintrag wird ausgeführt, wenn <code class="notranslate">Yes, yes, Y, y</code> oder eine leere Zeichenkette, der zwei aufeinanderfolgenden Anführungszeichen entspricht, eingegeben wurde. Die leere Zeichenkette definiert eine Art Standardeingabe, die angenommen wird, wenn nur die Eingabetaste betätigt wird, ohne vorher eine andere Eingabe zu tätigen.</p></div><div class="section_3"><h4 id="Schleifen">Schleifen<a class="headerlink" href="#Schleifen">¶</a></h4><p>
+Es gibt in der Bash drei verschiedene Arten von Schleifen, welche unterschiedlich gut für einen jeweiligen Typ von Aufgabe verwendet werden können. Grundsätzlich wird es durch sie möglich, einen Befehl mehrmals auszuführen, bis eine Bedingung eintritt oder solange eine Bedingung erfüllt ist. Diese drei Typen sind unten aufgezeigt, im Folgenden wird jedoch nur auf die <code class="notranslate">for</code>- und <code class="notranslate">while</code>-Schleife näher eingegangen.  Weitere Beispiele, insbesondere für eine <code class="notranslate">until</code>-Schleife, findet man z. B. in <a class="external" href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-7.html" rel="nofollow">diesem How-To zur Bash-Programmierung</a> <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/>.</p><ul><li><p><code class="notranslate">for</code>-Schleife</p></li><li><p><code class="notranslate">while</code>-Schleife</p></li><li><p><code class="notranslate">until</code>-Schleife</p></li></ul><p>
+Die Syntax für die <code class="notranslate">for</code>-Schleife sieht folgendermaßen aus.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">for</span> variable in <span class="s2">"Parameterliste"</span>
+  <span class="k">do</span>
+    Befehl1
+    Befehl2
+    usw.
+<span class="k">done</span>
+</pre></div>
+</td></tr></table></div><p>Diese Schleife beendet sich, sobald das letzte Element der Übergebenen Parameterliste abgearbeitet ist. Ein Beispiel soll ihre Arbeitsweise
+verdeutlichen.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># for-schleife</span>
+<span class="k">for</span> wort in <span class="s2">"Hallo"</span> <span class="s2">"du"</span> <span class="s2">"Welt"</span> <span class="s2">"da"</span> <span class="s2">"draußen"</span>
+  <span class="k">do</span>
+    <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$wort</span><span class="s2">"</span>
+<span class="k">done</span>
+</pre></div>
+</td></tr></table></div><p>Dieses Beispiel erzeugt die folgenden Ausgabe:</p><div class="bash"><div class="contents"><pre class="notranslate">./forschleife </pre></div></div><pre class="notranslate">Hallo
+du
+Welt
+da
+draußen</pre><p>Der nachfolgende Code bezieht sich noch einmal auf das Beispiel, bei dem eine Variable mit Hilfe der Ausgabe eines Befehls gefüllt wurde. Dies kann sehr gut mit einer <code class="notranslate">for</code>-Schleife verbunden werden:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># Variablendefinition</span>
+<span class="nv">inputdir</span><span class="o">=</span><span class="s2">"/home/foo/Bilder/ZuBearbeiten"</span>
+<span class="nv">outputdir</span><span class="o">=</span><span class="s2">"/home/foo/Bilder/Bearbeitet"</span>
+
+<span class="c1"># Abarbeiten der eingelesenen Bilder mit Hilfe einer For-Schleife</span>
+<span class="c1"># und dem Programm ImageMagick.</span>
+
+<span class="k">for</span> pic in <span class="s2">"</span><span class="nv">$inputdir</span><span class="s2">"</span>/*.png <span class="p">;</span> <span class="k">do</span> 
+    <span class="nv">picname</span><span class="o">=</span><span class="k">$(</span>basename <span class="s2">"</span><span class="nv">$pic</span><span class="s2">"</span><span class="k">)</span>
+    <span class="nb">echo</span> <span class="s2">"Bearbeite Bild:    </span><span class="nv">$picname</span><span class="s2">"</span>
+    convert <span class="s2">"</span><span class="nv">$pic</span><span class="s2">"</span> -colorspace Gray <span class="s2">"</span><span class="nv">$outputdir</span><span class="s2">/</span><span class="nv">$picname</span><span class="s2">"</span>
+<span class="k">done</span>
+</pre></div>
+</td></tr></table></div><p>Dieses Skript schreibt zuerst einmal alle Namen der <strong>png</strong>-Bilddateien im Ordner <strong>inputdir</strong> in die Variable <code class="notranslate">pic</code>.  Die Bilddateien werden dann über die <code class="notranslate">for</code>-Schleife abgearbeitet, wobei das Programm <a class="internal" href="../imagemagick.html">ImageMagick</a> zum Einsatz kommt. Hierbei werden alle Farbbilder in ihre Grauwerte umgerechnet und dann im Ordner <strong>outputdir</strong> gespeichert. Man kann hieran ganz gut erkennen, wie eine <code class="notranslate">for</code>-Schleife arbeitet. Jedes Element in der Liste wird einzeln herangezogen und abgearbeitet. Dazu bedient man sich einer weiteren Variable, welche diese jeweils aufnimmt. Die Schleife endet nach der Bearbeitung des letzten Listeneintrages.</p><p>Diese Methode lässt sich auch auf Arrays übertragen, jedoch sieht das Konstrukt etwas anders aus. Hier zunächst in allgemeiner Form:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">for</span> wert in <span class="s2">"</span><span class="si">${</span><span class="nv">array</span><span class="p">[@]</span><span class="si">}</span><span class="s2">"</span>
+  <span class="k">do</span>
+    Befehl...
+<span class="k">done</span>
+</pre></div>
+</td></tr></table></div><p>Mit der <code class="notranslate">for</code>-Schleife lassen sich auch Berechnungen durchführen. Dies ist praktisch, wenn die Schleife eine festgelegte Anzahl von Durchgängen durchlaufen soll oder wenn für einen Befehl eine Zahlenreihe benötigt wird. Die Syntax hierzu lautet:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">for</span> <span class="o">((</span>Anfangswert<span class="p">;</span>Bedingung<span class="p">;</span>Operation<span class="o">))</span>
+<span class="k">do</span>
+    Befehl1
+    Befehl2
+    usw.
+<span class="k">done</span>
+</pre></div>
+</td></tr></table></div><p>So kann man zum Beispiel Jahresarchivordner für die letzten zehn Jahre in einem Rutsch erstellen:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">for</span> <span class="o">((</span><span class="nv">z</span><span class="o">=</span><span class="m">2004</span><span class="p">;</span>z&lt;<span class="o">=</span><span class="m">2014</span><span class="p">;</span>z++<span class="o">))</span>
+<span class="k">do</span>
+     mkdir Archiv_<span class="s2">"</span><span class="nv">$z</span><span class="s2">"</span>
+<span class="k">done</span>
+</pre></div>
+</td></tr></table></div><p>Für die Zahlenreihen kann man auch größere Abstände wählen. Will man für die Zahlenreihe Fünferschritte haben, dann muss die erste Zeile zum Beispiel</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">for</span> <span class="o">((</span><span class="nv">z</span><span class="o">=</span><span class="m">5</span><span class="p">;</span>z&lt;<span class="o">=</span><span class="m">50</span><span class="p">;</span><span class="nv">z</span><span class="o">+=</span><span class="m">5</span><span class="o">))</span>
+</pre></div>
+</td></tr></table></div><p>lauten.</p><p>Die <code class="notranslate">while</code>-Schleife sieht allgemein folgendermaßen aus.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">while</span> <span class="o">[</span> Test-Bedingung <span class="o">]</span>
+<span class="k">do</span>
+    Befehl1
+    Befehl2
+    usw.
+<span class="k">done</span>
+</pre></div>
+</td></tr></table></div><p>Die <code class="notranslate">while</code>-Schleife wird solange ausgeführt, wie eine Bedingung zutrifft. Im nachfolgenden Beispiel wartet eine <code class="notranslate">while</code>-Schleife, bis eine bestimmte Benutzereingabe stattgefunden hat. Das geschieht durch eine Kombination einer Endlosschleife (<code class="notranslate">while true</code>) mit einer <code class="notranslate">case</code>-Anweisung, die ein <code class="notranslate">break</code> enthält.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># Warten auf das richtige Ergebnis.</span>
+
+<span class="nb">echo</span> <span class="s2">"Frage: Was ergibt 2 + 2"</span>
+<span class="nb">echo</span> <span class="s2">""</span>
+<span class="k">while</span> <span class="nb">true</span>
+  <span class="k">do</span>
+    <span class="nb">read</span> -p <span class="s2">"Bitte ihre Eingabe:"</span> answer
+    <span class="k">case</span> <span class="s2">"</span><span class="nv">$answer</span><span class="s2">"</span> in
+      <span class="m">4</span><span class="o">)</span> <span class="nb">echo</span> richtig
+          <span class="nb">break</span>
+          <span class="p">;;</span>
+      *<span class="o">)</span> <span class="nb">echo</span> falsch
+          <span class="p">;;</span>
+    <span class="k">esac</span>
+<span class="k">done</span>
+</pre></div>
+</td></tr></table></div></div><div class="section_3"><h4 id="Parameter-an-ein-Skript-uebergeben">Parameter an ein Skript übergeben<a class="headerlink" href="#Parameter-an-ein-Skript-uebergeben">¶</a></h4><p>
+Ein Skript kann bei seinem Start Parameter übernehmen, indem diese, durch Leerzeichen oder Tabulator (engl.: "whitespaces") getrennt, bei seinem Aufruf übergeben werden. Die Parameter befinden sich zur Laufzeit des Skripts in den Variablen $1 bis $9 und können dazu genutzt werden, das Skript in seiner Arbeit zu beeinflussen. Ein Beispiel soll hier zeigen, wie dies generell funktioniert.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># willkommen</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$1</span> <span class="o">==</span> <span class="s2">"Pingu"</span> <span class="o">]</span>
+  <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">"Hallo, kleiner Pingu!"</span>
+  <span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">"Hallo, </span><span class="nv">$1</span><span class="s2">"</span>
+<span class="k">fi</span>
+</pre></div>
+</td></tr></table></div><p>Und jetzt der Aufruf des Skriptes:</p><div class="bash"><div class="contents"><pre class="notranslate">./willkommen.sh Pingu </pre></div></div><pre class="notranslate">Hallo, kleiner Pingu!</pre><div class="bash"><div class="contents"><pre class="notranslate">./willkommen.sh Peter </pre></div></div><pre class="notranslate">Hallo, Peter</pre><p>Mit Hilfe des Befehls <code class="notranslate">shift</code> kann das Skript auf mehr als neun Parameter zugreifen. Shift verschiebt dabei alle Parameter, die auf der Kommandozeile übergeben wurden, eine Position nach links. In dem kurzen Beispiel werden kurzschließende Tests durchgeführt, die im Prinzip wie <code class="notranslate">if</code> arbeiten.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="k">while</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> !<span class="o">=</span> <span class="s1">''</span> <span class="o">]</span>
+  <span class="k">do</span>
+    <span class="o">[</span> <span class="nv">$1</span> <span class="o">==</span> <span class="s2">"-b"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nv">BACKUP</span><span class="o">=</span><span class="s2">"yes"</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"Ok. Do a backup!"</span> <span class="o">&amp;&amp;</span> <span class="nb">shift</span>
+    <span class="o">[</span> <span class="nv">$1</span> <span class="o">==</span> <span class="s2">"-r"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nv">RESTORE</span><span class="o">=</span><span class="s2">"yes"</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"Ok. Do a restore!"</span> <span class="o">&amp;&amp;</span> <span class="nb">shift</span>
+    <span class="o">[</span> <span class="nv">$1</span> <span class="o">==</span> <span class="s2">"-c"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nv">CLEAN</span><span class="o">=</span><span class="s2">"yes"</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">"Ok. Tidy up!"</span> <span class="o">&amp;&amp;</span> <span class="nb">shift</span>
+<span class="k">done</span>
+</pre></div>
+</td></tr></table></div><p>Die Bedingung, mit der die <code class="notranslate">while</code>-Schleife initiiert wird, bedeutet soviel wie: Fahre fort, solange "$1" nicht leer ist. Werden nun mehrere Parameter an das Skript übergeben, so wird immer der an Position eins liegende und in "$1" gespeicherte bearbeitet. Ist dies geschehen, wird durch <code class="notranslate">shift</code> der Parameter, welcher sich an der zweiten Position befindet und in "$2" gespeichert ist, an die erste Position gerückt, und die Schleife beginnt von vorne. Mehrere Befehle können durch doppelte Und-Zeichen "&amp;&amp;" zu kurzschließenden Tests verbunden werden, d.h. bei mehreren, mit &amp;&amp; verbundenen Tests wird die Auswertung abgebrochen, sobald ein Teilausdruck falsch ist, weil dann der Gesamtausdruck falsch ist; umgekehrt wird bei mehreren veroderten Tests (||) abgebrochen, sobald einer <em>wahr</em> ergibt, da dann der Gesamtausdruck <em>wahr</em> ergibt. Dies kann Zeit sparen, wenn spätere Tests ignoriert werden können, aber mit Überraschungen verbunden sein, wenn man nicht berücksichtigt, dass spätere Tests Nebenwirkungen (engl. "side effects") haben sollen, die dann auch übersprungen werden.</p><p>In diesem Zusammenhang ist die Option <code class="notranslate">extglob</code> interessant, mit der die übergebenen Parameter komplexen Tests unterzogen werden können. Einfacher, schneller und komfortabler können Parameter mit dem Befehl <code class="notranslate">getopts</code> ausgewertet werden. Ein Beispiel soll zeigen, wie <code class="notranslate">getopts</code> arbeitet.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># Getopttest</span>
+
+<span class="k">while</span> <span class="nb">getopts</span> <span class="s1">':brcp:'</span> OPTION <span class="p">;</span> <span class="k">do</span>
+  <span class="k">case</span> <span class="s2">"</span><span class="nv">$OPTION</span><span class="s2">"</span> in
+    b<span class="o">)</span>   <span class="nb">echo</span> <span class="s2">"Ok, do a backup"</span><span class="p">;;</span>
+    p<span class="o">)</span>   <span class="nb">echo</span> <span class="s2">"Backup path is: </span><span class="nv">$OPTARG</span><span class="s2">"</span><span class="p">;;</span>
+    r<span class="o">)</span>   <span class="nb">echo</span> <span class="s2">"Ok, do a restore"</span><span class="p">;;</span>
+    c<span class="o">)</span>   <span class="nb">echo</span> <span class="s2">"Ok, tidy up afterwards"</span><span class="p">;;</span>
+    *<span class="o">)</span>   <span class="nb">echo</span> <span class="s2">"Unknown parameter"</span>
+  <span class="k">esac</span>
+<span class="k">done</span>
+</pre></div>
+</td></tr></table></div><p>Der Befehl <code class="notranslate">getopts</code> arbeitet mit bereits vertrauten Konstrukten. Es kommen eine <code class="notranslate">while</code>-Schleife und eine <code class="notranslate">case</code>-Anweisung zum Einsatz. Zu beachten ist die spezielle Notation in der Parameterliste von <code class="notranslate">getopts</code>: Der erste Doppelpunkt ist optional und schaltet die Anzeige von Fehlermeldungen ab. Dahinter stehen die Parameter als aufeinanderfolgende Buchstaben. Folgt einem Parameter ein Doppelpunkt, bedeutet dies, dass er ein Argument benötigt. Im oben dargestellten Beispiel ist das bei <code class="notranslate">p</code> der Fall. Der Parameter <code class="notranslate">p</code> nimmt als Argument einen Pfad auf. Auf diesen kann über die Variable "${OPTARG}" zugegriffen werden.</p></div><div class="section_3"><h4 id="Funktionen">Funktionen<a class="headerlink" href="#Funktionen">¶</a></h4><p>
+Funktionen helfen, die Übersichtlichkeit zu verbessern. Sie können mehrere Befehle zu semantischen Gruppen zusammenfassen. Wurden sie einmal definiert, können sie im Skript durch ihren Namen aufgerufen werden. Wichtig ist, dass die Definition der Funktion vor ihrem ersten Aufruf stattgefunden haben muss. Es ist also ratsam, zunächst die Funktionen zu definieren:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>funktionsname<span class="o">(){</span>
+Befehle...
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div><p>Das Beispielskript <code class="notranslate">zaehledateien</code> zeigt eine konkrete Funktion.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="nv">PFAD</span><span class="o">=</span><span class="s2">"/home/pingu/"</span>
+
+<span class="c1"># Funktionsdefinitionen</span>
+wievieledateien<span class="o">()</span> <span class="o">{</span>
+	<span class="nv">anzahl</span><span class="o">=</span><span class="m">0</span>
+	<span class="k">for</span> file in <span class="s2">"</span><span class="nv">$PFAD</span><span class="s2">"</span>/* <span class="p">;</span> <span class="k">do</span> 
+		<span class="o">((</span> anzahl++ <span class="o">))</span>
+	<span class="k">done</span>
+	<span class="nb">echo</span> <span class="s2">"Es befinden sich </span><span class="nv">$anzahl</span><span class="s2"> Dateien und Ordner in </span><span class="nv">$PFAD</span><span class="s2">"</span>
+<span class="o">}</span>
+
+<span class="c1"># Hauptteil</span>
+wievieledateien
+</pre></div>
+</td></tr></table></div><p>Das Skript liefert nach seinem Aufruf:</p><div class="bash"><div class="contents"><pre class="notranslate">./zaehledateien </pre></div></div><p>folgende Ausgabe:</p><pre class="notranslate">Es befinden sich 90 Dateien und Ordner in /home/pingu/</pre><p>
+Die Kommentare <code class="notranslate">#Hauptteil, #Funktionsdefinitionen, </code> usw. macht man in richtigen Skripten nicht - sie dienen nur hier der Verdeutlichung für Anfänger.</p><p>Nicht nur an das Skript, sondern auch an Funktionen können Parameter übergeben werden. Dies funktioniert wie die Übergabe von Skriptparametern, indem die Parameter an den Funktionsaufruf, zumeist durch Leerzeichen voneinander getrennt, angehängt werden. Das folgende Beispiel ergänzt das vorhergehende um Funktionsparameter. Wichtig ist auch, dass die an das Skript übergebenen Parameter in den Funktionen nicht "direkt" in Form <code class="notranslate">${X}</code> verwendet werden können, sondern "neu definiert" werden müssen (hier <code class="notranslate">zaehlpfad=${1}</code>). Das kann vor Definition der Funktion oder auch erst in der Funktion selbst erfolgen.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+wievieledateien<span class="o">()</span> <span class="o">{</span>
+	<span class="nv">zaehlpfad</span><span class="o">=</span><span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>
+	<span class="k">for</span> file in <span class="s2">"</span><span class="nv">$zaehlpfad</span><span class="s2">"</span>/* <span class="p">;</span> <span class="k">do</span> 
+		<span class="o">((</span> anzahl++ <span class="o">))</span>
+	<span class="k">done</span>
+	<span class="nb">echo</span> <span class="s2">"Es befinden sich </span><span class="nv">$anzahl</span><span class="s2"> Dateien und Ordner in </span><span class="nv">$zaehlpfad</span><span class="s2">"</span>
+<span class="o">}</span>
+wievieledateien /home/pingu
+wievieledateien /home/edit
+</pre></div>
+</td></tr></table></div></div></div><div class="section_2"><h3 id="Grafische-Menues">Grafische Menüs<a class="headerlink" href="#Grafische-Menues">¶</a></h3><p>
+Ein Skript kann ein Hilfsprogramm nutzen, um GUI-Elemente wie Auswahllisten, Datei-öffnen-Dialoge, Auswahlbuttons usw. zu erzeugen. Entweder entscheidet man sich für ein spezielles Hilfsprogramm, das günstigerweise automatisch mit einer Oberfläche installiert wird (z.B. GNOME: <a class="internal" href="../zenity.html">Zenity</a>, KDE: <a class="internal" href="../kdialog.html">KDialog</a>, Textkonsole: dialog, etc.), oder man nutzt ein universelles Hilfsskript wie <a class="external" href="http://sites.google.com/site/easybashgui/" rel="nofollow">easybashgui</a> <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/>, das automatisch das jeweils passende, installierte Text- oder Grafik-Hilfsprogramm nutzt.</p><p>Der folgende Abschnitt soll erklären wie die Erstellung grafischer Dialoge mit Bash-Skripten prinzipiell funktioniert. Hauptsächlich wird dabei auf das Programm dialog (textbasiert) eingegangen.</p><div class="section_3"><h4 id="Menues-mit-Dialog">Menüs mit Dialog<a class="headerlink" href="#Menues-mit-Dialog">¶</a></h4><p>
+<a class="internal" href="../dialog.html">Dialog</a> bietet eine konsolenbasierte Aufbereitung der darzustellenden Daten. Dabei reicht das Repertoire von einfachen Entscheidungsfenstern (Ja/Nein) über verschiedene Auswahlmenüs bis hin zur Möglichkeit der Darstellung einer Dateiauswahlliste. Ein einfaches Beispiel soll die Arbeit mit Dialog illustrieren.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># Ja oder Nein</span>
+
+dialog --yesno <span class="s2">"Bist du ein Linuxfan?"</span> <span class="m">15</span> <span class="m">60</span>
+</pre></div>
+</td></tr></table></div><p>Dieses Beispiel erzeugt eine Box von 60 Zeichen Breite und 15 Zeilen Höhe mit dem in Anführungsstrichen stehenden Fragentext und zwei Schaltflächen für <em>"Yes"</em> und <em>"No"</em>. Dialog speichert den Rückgabewert für die getroffene Auswahl in der allgemeinen Rückgabevariable <code class="notranslate">$?</code> – im Fall dieser Yes/No-Box stehen die Rückgabewerte <code class="notranslate">0</code> für ja, <code class="notranslate">1</code> für nein und <code class="notranslate">255</code> für Abbruch ohne Auswahl. Im nächsten Schritt soll dieses Beispiel ausgebaut werden.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># erweiterter Dialog</span>
+
+dialog --backtitle Umfrage --title <span class="s2">"Erste Frage"</span> --yesno <span class="s2">"Sind sie ein Linuxfan?"</span> <span class="m">15</span> <span class="m">60</span>
+<span class="nv">antwort</span><span class="o">=</span><span class="si">${</span><span class="p">?</span><span class="si">}</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$antwort</span><span class="s2">"</span> -eq <span class="s2">"255"</span> <span class="o">]</span>
+  <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">"Abgebrochen"</span>
+    <span class="nb">exit</span> <span class="m">255</span>
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$antwort</span><span class="s2">"</span> -eq <span class="s2">"1"</span> <span class="o">]</span>
+  <span class="k">then</span>
+    dialog --backtitle Umfrage --title Kritikbox --msgbox <span class="s2">"Na, dann wird es aber allerhöchste Zeit!"</span> <span class="m">15</span> <span class="m">40</span>
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$antwort</span><span class="s2">"</span> -eq <span class="s2">"0"</span> <span class="o">]</span>
+  <span class="k">then</span>
+    dialog --backtitle Umfrage --title Schmeichelbox --msgbox <span class="s2">"Hm, das habe ich mir fast schon gedacht!"</span> <span class="m">15</span> <span class="m">40</span>
+<span class="k">fi</span>
+</pre></div>
+</td></tr></table></div><p>Im Beispiel wurden zusätzliche Optionen eingesetzt. So setzt <code class="notranslate">--backtitle</code> den Titel des Hintergrundes, <code class="notranslate">--title</code> setzt die Überschrift der Box. Zur <code class="notranslate">--yesno</code>-Box kommen zwei Messageboxen (<code class="notranslate">--msgbox</code>) hinzu, die nur eine Nachricht darstellen und dann über einen OK-Button geschlossen werden können. Diese Messageboxen erscheinen in Abhängigkeit von der Antwort, die im ersten Fenster gegeben wurde. Dieser Dialog soll nun weiter verfeinert werden.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># erweiterter Dialog</span>
+
+dialog --backtitle Umfrage --title <span class="s2">"Erste Frage"</span> --yesno <span class="s2">"Sind sie ein Linuxfan?"</span> <span class="m">15</span> <span class="m">60</span>
+<span class="nv">antwort</span><span class="o">=</span><span class="si">${</span><span class="p">?</span><span class="si">}</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$antwort</span><span class="s2">"</span> -eq <span class="s2">"255"</span> <span class="o">]</span>
+  <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">"Abgebrochen"</span>
+    <span class="nb">exit</span> <span class="m">255</span>
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$antwort</span><span class="s2">"</span> -eq <span class="s2">"1"</span> <span class="o">]</span>
+  <span class="k">then</span>
+    dialog --backtitle Umfrage --title Kritikbox --msgbox <span class="s2">"Na, dann wird es aber allerhöchste Zeit!"</span> <span class="m">15</span> <span class="m">40</span>
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$antwort</span><span class="s2">"</span> -eq <span class="s2">"0"</span> <span class="o">]</span>
+  <span class="k">then</span>
+    dialog --backtitle Umfrage --title Lobbox --msgbox <span class="s2">"Hm, das hab ich mir fast schon gedacht!"</span> <span class="m">15</span> <span class="m">40</span>
+
+<span class="nv">auswahl</span><span class="o">=</span><span class="k">$(</span>dialog --stdout --backtitle Umfrage --title Details --radiolist <span class="s2">"Welche Desktop-Umgebung bevorzugen Sie? Sie können nur eine wählen."</span> <span class="m">16</span> <span class="m">60</span> <span class="m">5</span> <span class="se">\</span>
+     <span class="s2">"GNOME"</span> <span class="s2">"Die GNOME Desktop Umgebung"</span> off <span class="se">\</span>
+     <span class="s2">"KDE"</span> <span class="s2">"Die KDE Desktopumgebung"</span> on <span class="se">\</span>
+     <span class="s2">"Sonstige"</span> <span class="s2">"Eine andere hier nicht gelistete"</span> off<span class="k">)</span>
+<span class="k">fi</span>
+
+<span class="k">case</span> <span class="s2">"</span><span class="nv">$auswahl</span><span class="s2">"</span> in
+  GNOME<span class="o">)</span>
+    dialog --backtitle Umfrage --title Reaktion --msgbox <span class="s2">"Sehr schön Gnome!"</span> <span class="m">15</span> <span class="m">40</span>
+    <span class="p">;;</span>
+  KDE<span class="o">)</span>
+    dialog --backtitle Umfrage --title Reaktion --msgbox <span class="s2">"Sehr schön KDE!"</span> <span class="m">15</span> <span class="m">40</span>
+    <span class="p">;;</span>
+  Sonstige<span class="o">)</span>
+    dialog --backtitle Umfrage --title Reaktion --msgbox <span class="s2">"Hm Sonstige!"</span> <span class="m">15</span> <span class="m">40</span>
+    <span class="p">;;</span>
+<span class="k">esac</span>
+</pre></div>
+</td></tr></table></div><p>Dieses Beispiel geht nach einer positiven Antwort noch etwas weiter. Mit Hilfe einer Radioliste <code class="notranslate">--radiolist</code> wird die bevorzugte Desktopumgebung erfragt. Eine Radioliste zeichnet sich dadurch aus, dass nur ein Eintrag aktiv sein kann. Sollen mehrere aktive Einträge erlaubt sein, sollte stattdessen <code class="notranslate">--checklist</code> verwendet werden. Die Antwort aus der Radioliste wird in eine Variable geschrieben, um sie danach weiterverarbeiten zu können. Dies geschieht durch eine <code class="notranslate">case</code>-Anweisung. Wichtig: Die Option <code class="notranslate">--stdout</code> darf beim Schreiben in eine Variable nicht vergessen werden, sie sorgt für eine Ausgabe auf dem Bildschirm. Wäre sie nicht gesetzt, würde der Dialog nicht erscheinen.</p></div></div></div><div class="section_1"><h2 id="Literaturhinweise">Literaturhinweise<a class="headerlink" href="#Literaturhinweise">¶</a></h2><p>
+</p><ul><li><p><a class="external" href="http://openbook.rheinwerk-verlag.de/shell_programmierung/" rel="nofollow">Shell-Programmierung – Einführung, Praxis, Referenz</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/> - von Jürgen Wolf, Rheinwerk &lt;openbook&gt;</p></li></ul></div><div class="section_1"><h2 id="Links">Links<a class="headerlink" href="#Links">¶</a></h2><p>
+</p><ul><li><p><a class="internal" href="../shell.html">Shell</a> <img alt="{Übersicht}" src="../_/021d71c30babf2ce4dd27339ba3c55995610945b.png"/> Hauptartikel zur Shell mit vielen weiteren Links (intern + extern)</p><ul><li><p><a class="internal" href="../bash.html">Bash</a> - spezielles zur <strong>B</strong>ourne <strong>a</strong>gain <strong>sh</strong>ell</p></li><li><p><a class="internal" href="../shell/tipps_und_tricks.html">Tipps &amp; Tricks</a>, um Fehler zu vermeiden</p></li></ul></li><li><p>extern</p><ul><li><p>Shellscripts: <a class="external" href="http://www.bin-bash.de/scripts.php" rel="nofollow" title="http://www.bin-bash.de/scripts.php">http://www.bin-bash.de/scripts.php</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/></p></li></ul></li></ul><p>
+</p></div></div>
+<p class="meta">
+<a href="../shell/bash-skripting-guide_für_anfänger/a/revision/945293.html">Diese Revision</a> wurde am 7. Dezember 2017 10:19 von <a href="https://ubuntuusers.de/user/Berlin_1946/">Berlin_1946</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="../startseite.html">Wiki</a></li>
+<li><a href="../shell.html">Shell</a></li>
+<li><a href="../shell/bash-skripting-guide_für_anfänger.html">Bash-Skripting-Guide für Anfänger</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="../_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="../_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="../_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="../_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

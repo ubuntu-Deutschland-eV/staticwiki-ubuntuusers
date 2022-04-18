@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>ZFS_on_Linux › ubuntuusers statisches Wiki</title>
+<link href="./_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="./_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="./_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="./_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="./_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="./_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="./startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="./zfs_on_linux.html">ZFS on Linux</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/ZFS_on_Linux">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="./wiki/index.html">Index</a></li>
+<li><a href="./wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="./wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="./wiki.html">Übersicht</a></li>
+<li><a href="./wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="./wiki/benutzung.html">Benutzung</a></li>
+<li><a href="./kategorien.html">Kategorie</a></li>
+<li><a href="./wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="./wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="./howto.html">Howto anlegen</a></li>
+<li><a href="./wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="./wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="./baustelle.html">Baustellen</a></li>
+<li><a href="./wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="./wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="./wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="./wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="./zfs_on_linux/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="./zfs_on_linux/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="./zfs_on_linux/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="./zfs_on_linux/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="./zfs_on_linux/a/backlinks.html">ZFS on Linux</a></h1>
+<div id="page"><p>
+</p><div class="box tested_for"><h3 class="box tested_for">Dieser Artikel wurde für die folgenden
+Ubuntu-Versionen getestet:</h3><div class="contents"><p>
+</p><ul><li><p><a class="internal" href="./trusty_tahr.html">Ubuntu 14.04</a> Trusty Tahr</p></li></ul></div></div><p>
+</p><div class="box advanced"><h3 class="box advanced">Artikel für fortgeschrittene Anwender</h3><div class="contents"><p>
+Dieser Artikel erfordert mehr Erfahrung im Umgang mit
+Linux und ist daher nur für fortgeschrittene Benutzer
+gedacht.
+</p></div></div><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="./paketquellen_freischalten/ppa.html">Aktivieren eines PPAs</a></p></li><li><p><a class="crosslink anchor" href="#source-2" id="source-2"></a> <a class="internal" href="./pakete_installieren.html">Installation von Programmen</a></p></li><li><p><a class="crosslink anchor" href="#source-3" id="source-3"></a> <a class="internal" href="./terminal.html">Ein Terminal öffnen</a> </p></li></ol></div></div><p>
+</p><div class="toc toc-depth-1"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a class="crosslink" href="#Grundlagen">Grundlagen
+</a></li><li><a class="crosslink" href="#Voraussetzungen">Voraussetzungen
+</a></li><li><a class="crosslink" href="#Installation">Installation
+</a></li><li><a class="crosslink" href="#Nutzung">Nutzung
+</a></li><li><a class="crosslink" href="#Warnungen">Warnungen
+</a></li><li><a class="crosslink" href="#Beispiele">Beispiele
+</a></li><li><a class="crosslink" href="#Problembehebung">Problembehebung
+</a></li><li><a class="crosslink" href="#Links">Links
+</a></li></ol></div><p><img alt="./zol_logo.png" class="image-left" src="./_/c394be0b3687f057aacf19944ca921644cc45b3b.png"/>
+<a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/ZFS_(Dateisystem)">ZFS</a> (ursprünglich <strong>Z</strong>ettabyte <strong>F</strong>ile <strong>S</strong>ystem) wird oft als Dateisystem angesehen, was im Grunde genommen ein Missverständnis darstellt. ZFS kann ein Dateisystem sein, aber beherrscht auch noch einiges mehr. Es vereint die Funktionalität eines <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Logical_Volume_Manager">Logical Volume Managers</a> und eines Software-<a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/RAID">RAID</a> mit einem <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Copy-On-Write">Copy-on-Write</a>-Dateisystem (COW). Das heißt, dass es (aufgrund seiner Kenntnisse der Festplattenbelegung) effizienter als jedes Hardware-RAID arbeitet, Daten-Integrität per <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Transaktion_(Informatik)">Transaktionen</a> ähnlich wie bei relationalen Datenbanken sichert und im Falle von Daten-Redundanz (Mehrfachspeicherung) sogar selbständig Daten repariert.</p><p>ZFS ist ein 128-bit-Dateisystem, das die Adressierung von 1.000.000.000.000.000.000.000 (10<sup>21</sup>) Bytes erlaubt (zum Vergleich siehe <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Bin%C3%A4rpr%C3%A4fix#Vergleich">Binärpräfix</a>). Es ist wahrscheinlich das fortschrittlichste Dateisystem, das es derzeit gibt. Abschließend noch ein Zitat von Jeff Bonwick, dem Chefentwickler von ZFS:
+</p><blockquote><p>"Ein 128-bit-Dateisystem zu füllen, würde die quantenmechanische Grenze irdischer Datenspeicherung übersteigen. Man könnte einen 128-bit-Speicher-Pool nicht füllen, ohne die Ozeane zu verdampfen."</p></blockquote><p>
+</p><div class="section_1"><h2 id="Grundlagen">Grundlagen<a class="headerlink" href="#Grundlagen">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Konzepte">Konzepte<a class="headerlink" href="#Konzepte">¶</a></h3><p>
+ZFS verfolgt seit seinem Entwurf äußerst ehrgeizige Ziele. Als Beispiele seien genannt:</p><ul><li><p>Integrität und Sicherheit der Daten gegenüber Datenverlusten standen immer an erster Stelle.</p></li><li><p>Ein Dateisystem für beliebig viele Daten. Selbst überirdische Größenordnungen wären ohne Weiteres möglich, sofern die Hardware mitspielt.</p></li><li><p>Bedienbarkeit, Administration und Benutzerschnittstelle sollen einfach sein. ZFS kommt mit nur zwei Befehlen aus: <strong>zpool</strong> für Festplatten-orientiertes Management und <strong>zfs</strong> für den Rest (also was man früher womöglich Partitionieren genannt haben würde).</p></li><li><p>Einfachstes Konzept: Man gebe der Verwaltung Plattenplatz in Form von Festplatten, Partitionen oder Dateien – gut zum Kennenlernen/Testen – und teile ZFS mit, wie es damit umgehen soll: als Bereiche für Datenspiegelung/Redundanz/RAID, für Transaktionslogs und/oder als Zwischenspeicher (Cache; bevorzugt auf schnellen Medien wie SSDs) usw. Dann wird alles als sogenannter Speicherpool zusammengefasst. Daraus kann man dann beliebige Teile belegen/reservieren, um darauf Dateien zu speichern oder auch ganze "Volumes" bereit stellen zu lassen. Ergebnis: Man muss nicht mehr wissen, wo genau der Speicherplatz dafür physikalisch herkommt. Die Eigenschaften jedes Dateisystems lassen sich auch später noch dynamisch verändern, ihre Größe könnte sogar annähernd den gesamten Pool einnehmen. </p></li><li><p>Wer – etwa für viele Benutzer – viele Dateisysteme und Volumes zu verwalten hat, wird es zu schätzen wissen, dass sie hierarchisch strukturiert werden können und ihre Eigenschaften vererbbar sind. So kann man z.B. für Nutzergruppen, Datenarten oder -verwendungszwecke sinnvolle Voreinstellungen treffen, die über solche Dinge entscheiden wie Speicherplatzhöchstgrenzen (Quota), -mindestbedarf (Reservation), Kompression, Schreibschutz, Empfindlichkeit für Klein/Großbuchstaben bei Dateinamen und Cachingverhalten. Alle Möglichkeiten aufzuzählen würde den Rahmen dieses Artikels sprengen.</p></li><li><p>Ein weiterer Nutzen der COW-Arithmetik: Das Festhalten/Einfrieren von Zuständen des Dateisystems (<a class="crosslink" href="#ZFS-Snapshots">Snapshots</a>), die auch im laufenden System stabile Marken für Backups/Replikation schaffen, ist sehr einfach. Sie erlauben es, auf andere Zustände/Zeitpunkte eines Dateisystems zuzugreifen, als wären davon Kopien erstellt worden.</p></li><li><p>ZFS überwacht die Integrität der verwalteten Daten, erkennt also auftretende Fehler selbst. Liegen die Daten in redundanter Form vor, wird es beim Erkennen von Fehlern selbständig deren Reparatur auslösen. Deswegen hat es den Ruf, Datenschäden selbstständig zu erkennen und zu reparieren, die in den darunter liegenden Schichten entstehen können. Es wurde sogar eine Technologie entwickelt, die das <a class="external" href="http://www.raid-recovery-guide.com/raid5-write-hole.aspx" rel="nofollow">Write-hole-Problem</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> bei RAID-5 umgeht und die <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/RAID-Z#RAID-Z_im_Dateisystem_ZFS">RAID-Z</a> genannt wird.</p></li></ul><p>
+</p></div><div class="section_2"><h3 id="Geschichte">Geschichte<a class="headerlink" href="#Geschichte">¶</a></h3><p>
+ZFS wurde seit 2001 ursprünglich für das Betriebssystem Solaris entwickelt. Ende 2005 wurde der ZFS-Code dann unter der <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/CDDL">CDDL</a>-Lizenz frei gegeben. Einige Unix-Derivate übernahmen ihn und es entstand u.a. auch der Ableger "zfs-fuse" (siehe unten). Allerdings läuft <a class="internal" href="./fuse.html">FUSE</a> (Filesystem in Userspace) weder so sicher noch so schnell wie die neueste Entwicklung <a class="external" href="http://zfsonlinux.org/" rel="nofollow">ZFS on Linux</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> (im weiteren Verlauf als ZoL abgekürzt). An dieser wurde bis Anfang 2013 gearbeitet, um die Integration in den Linux-Kernel voranzutreiben. Aus lizenzrechtlichen Gründen ist letzteres leider gescheitert. Erlaubt ist aber das Einbinden eines selbst kompilierten Kernel-Moduls, was unter Ubuntu über ein PPA sehr einfach zu bewerkstelligen ist. Federführend bei der Entwicklung war/ist das <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Lawrence_Livermore_National_Laboratory">Lawrence Livermore National Laboratory</a> (LLNL) im Auftrag des amerikanischen Verteidigungsministeriums.</p><p>Grundlage der Portierung war ZFS-Version 28 (bei zfs-fuse noch Version 23). Damit ist die Kompatibilität mit Solaris 10, OpenSolaris, OpenIndiana und FreeBSD gegeben. Solaris 11 als Nachfolger von Solaris 10 verwendet dagegen Version 34 (Stand: April 2012). ZoL und OpenIndiana haben sich auf eine architektonische Veränderung verständigt, die es erlaubt, nur wirklich benötigte Funktionen einzuschalten, als "Feature-Flag-Version" bezeichnet wird und sich als Version 5000 ausgibt (siehe dazu auch den <a class="interwiki interwiki-wikipedia_en" href="https://en.wikipedia.org/wiki/ZFS#Comparisons">ZFS Versionsvergleich</a>).</p><p>Anfang April 2013 hat ZoL offiziell das Entwicklungsstadium verlassen und wird nun auch für den Einsatz auf Produktivsystemen empfohlen. Heute entwickeln Oracle (als Bestandteil von Solaris) und OpenIndiana ZFS unabhängig voneinander weiter (siehe auch <a class="external" href="http://www.pro-linux.de/news/1/21509/aktualisierung-der-stand-von-zfs-fuer-linux.html" rel="nofollow">Der Stand von ZFS für Linux</a> <img alt="{de}" src="./_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/>, Pro-Linux.de, 09/2014).</p><div class="section_3"><h4 id="zfs-fuse">zfs-fuse<a class="headerlink" href="#zfs-fuse">¶</a></h4><p>
+Bevor ZoL Form angenommen hat, existierte mit <a class="external" href="http://zfs-on-fuse.blogspot.de/" rel="nofollow">zfs-fuse</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> (ZFS in Userspace) bereits ein Versuch, ZFS-Funktionalität für 32-Bit-Prozessoren unter Linux zur Verfügung zu stellen. Diese Variante ist in den offiziellen Paketquellen enthalten (es wird die ZFS-Version 23 angeboten). Allerdings hat es hier seit ZFS-Version 26 keine Wartung mehr gegeben. Für Interessierte existiert ein Quellpaket der letzten zfs-fuse-Version im RPM-Format zum Herunterladen: <a class="external" href="http://ftp.redsleeve.org/pub/yum/SRPMS/extra/zfs-fuse-0.7.0.20121023-5.el6.src.rpm" rel="nofollow">zfs-fuse-0.7.0.20121023-5.el6.src.rpm</a> <img alt="{dl}" src="./_/8e630211d0f5f5cb7c6424055f9c9aa15a420fab.png"/>. Es scheint, dass das Projekt seine Arbeit eingestellt hat.</p></div></div><div class="section_2"><h3 id="Fertigprodukte">Fertigprodukte<a class="headerlink" href="#Fertigprodukte">¶</a></h3><p>
+Es gibt – insbesondere für den Bereich der Netzwerkspeicher (NAS) – auch für den privaten Anwender inzwischen einige Anbieter, die von ZFS Gebrauch machen: <a class="external" href="http://www.lacie.com/at/more/?id=10124:LaCie" rel="nofollow">MyNAS</a> <img alt="{de}" src="./_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/>, <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/FreeNAS">FreeNAS</a> (ab Version 8.x) und <a class="external" href="http://www.nas4free.org/" rel="nofollow">NAS4Free</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> (die beiden letzten verwenden FreeBSD als Basis).</p></div></div><div class="section_1"><h2 id="Voraussetzungen">Voraussetzungen<a class="headerlink" href="#Voraussetzungen">¶</a></h2><p>
+</p><div class="section_2"><h3 id="64-Bit-Prozessor-umfangreicher-Hauptspeicher">64-Bit-Prozessor, umfangreicher Hauptspeicher<a class="headerlink" href="#64-Bit-Prozessor-umfangreicher-Hauptspeicher">¶</a></h3><p>
+Die Vorteile von ZFS kommen auf einem normalen Desktop-System womöglich nicht voll zur Geltung. Es werden beispielsweise 4 GiB oder mehr freier Arbeitsspeicher empfohlen (Faustregel: 1 GiB Arbeitsspeicher pro TiB Speicherplatz in den Pools). Bestimmte Funktionen (insbesondere <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Deduplizierung">Deduplizierung</a>) erfordern noch mehr (ab 16 GiB). Erst der Einsatz im Server-Bereich und in Rechenzentren liefert sinnvolle Nutzungsmöglichkeiten zur effizienten Verwaltung sehr großer Datenmengen.</p><p>Verfügt man aber über angemessene Hardware (64-Bit-Prozessor, viel RAM, genügend Festplattenanschlüsse), dann macht sich die Erleichterung im Bereich Festplatten-Speichermanagement auch für den privaten Nutzer schnell bemerkbar. Empfehlenswert ist außerdem die Lektüre von <a class="external" href="http://distrowatch.com/weekly.php?issue=20150420#myth" rel="nofollow">Myths and Misunderstandings: ZFS</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/>, die einige häufige Missverständnisse ausräumt.</p></div><div class="section_2"><h3 id="Abhaengigkeiten">Abhängigkeiten<a class="headerlink" href="#Abhaengigkeiten">¶</a></h3><p>
+Folgende Pakete sind zwingende Voraussetzung, damit die Fremdquelle eingebunden und das Kernelmodul kompiliert werden kann:</p><ul><li><p><strong>software-properties-common</strong></p></li><li><p><strong>linux-headers</strong></p></li><li><p><strong>dkms</strong></p></li></ul><p><img alt="Wiki/Vorlagen/Installbutton/button.png" class="image-default" src="./_/fd60ccb86c4d96df2f4518df2936cc7d038467aa.png"/>
+mit <a class="internal" href="./apturl.html">apturl</a>
+</p><div class="package-list"><div class="contents"><p>
+Paketliste zum Kopieren:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo apt-get install software-properties-common linux-headers dkms </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo aptitude install software-properties-common linux-headers dkms </pre></div></div><p>
+</p></div></div></div></div><div class="section_1"><h2 id="Installation">Installation<a class="headerlink" href="#Installation">¶</a></h2><p>
+ZoL war bis April 2016 kein offizieller Bestandteil von Ubuntu und damit auch nicht in den offiziellen Paketquellen enthalten. Stattdessen kann man bis einschließlich <a class="internal" href="./wily.html">Ubuntu 15.10</a> die "Personal Package Archive" (PPAs) des Launchpad-Projekts <a class="interwiki interwiki-launchpad" href="https://launchpad.net/zfs">zfs</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> nutzen oder den Quelltext selbst kompilieren (zu Letzterem siehe <a class="crosslink" href="#Links">Links</a>). Für Erläuterungen zur Installation sei auch auf die sehr gute <a class="external" href="http://zfsonlinux.org/faq.html" rel="nofollow">FAQ</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> des ZoL-Projekts verwiesen.</p><p>Erst ab <a class="internal" href="./xenial.html">Ubuntu 16.04</a> sind die entsprechenden ZFS-Komponenten in den offiziellen Paketquellen enthalten (siehe auch <a class="interwiki interwiki-ubuntu" href="https://wiki.ubuntu.com/ZFS">ZFS</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/>):</p><ul><li><p><strong>zfsutils-linux</strong></p></li></ul><p><img alt="Wiki/Vorlagen/Installbutton/button.png" class="image-default" src="./_/fd60ccb86c4d96df2f4518df2936cc7d038467aa.png"/>
+mit <a class="internal" href="./apturl.html">apturl</a>
+</p><div class="package-list"><div class="contents"><p>
+Paketliste zum Kopieren:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo apt-get install zfsutils-linux </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo aptitude install zfsutils-linux </pre></div></div><p>
+</p></div></div><div class="section_2"><h3 id="PPA">PPA<a class="headerlink" href="#PPA">¶</a></h3><p>
+Es gibt zwei "Personal Package Archive" (PPA) <sup><a href="#source-1">[1]</a></sup> für ZFS. Das "stable"-PPA ist für die reine Nutzung von ZFS ausreichend.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Bitte niemals beide PPAs gleichzeitig aktivieren.
+</p></div></div><div class="section_3"><h4 id="stable">stable<a class="headerlink" href="#stable">¶</a></h4><p>
+</p><p>Adresszeile zum <a class="internal" href="./paketquellen_freischalten/ppa.html#PPA-hinzufuegen">Hinzufügen</a> des PPAs:
+</p><ul><li><p><strong>ppa:zfs-native/stable</strong> </p></li></ul><div class="box warning"><h3 class="box warning">Hinweis!</h3><div class="contents"><p>
+Zusätzliche <a class="internal" href="./fremdquellen.html">Fremdquellen</a> können das System gefährden. 
+</p><hr/><p>Ein PPA unterstützt nicht zwangsläufig alle Ubuntu-Versionen. Weitere Informationen sind der <img alt="Wiki/Vorlagen/PPA/ppa.png" class="image-default" src="./_/237f3a0f00c3091056c1a912d81e924e8391ed6b.png"/> <a class="external" href="https://launchpad.net/~zfs-native/+archive/stable" rel="nofollow">PPA-Beschreibung</a> des Eigentümers/Teams <a class="interwiki interwiki-lpuser" href="https://launchpad.net/~zfs-native">zfs-native</a> zu entnehmen.
+</p></div></div><p>
+Damit Pakete aus dem PPA genutzt werden können, müssen die Paketquellen <a class="internal" href="./paketquellen_freischalten.html">neu eingelesen</a> werden.</p><p>Nach dem Aktualisieren der Paketquellen kann das folgende Paket installiert <sup><a href="#source-2">[2]</a></sup> werden:</p><ul><li><p><strong>ubuntu-zfs</strong> (<em>ppa</em>)</p></li></ul><p><img alt="Wiki/Vorlagen/Installbutton/button.png" class="image-default" src="./_/fd60ccb86c4d96df2f4518df2936cc7d038467aa.png"/>
+mit <a class="internal" href="./apturl.html">apturl</a>
+</p><div class="package-list"><div class="contents"><p>
+Paketliste zum Kopieren:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo apt-get install ubuntu-zfs </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo aptitude install ubuntu-zfs </pre></div></div><p>
+</p></div></div><p>Nun wird automatisch:
+</p><ol class="arabic"><li><p>der aktuelle Quellcode heruntergeladen und</p></li><li><p>mit Hilfe von <a class="internal" href="./dkms.html">DKMS</a> kompiliert (der Vorgang dauert ein wenig)</p></li></ol><p>
+</p></div><div class="section_3"><h4 id="daily">daily<a class="headerlink" href="#daily">¶</a></h4><p>
+Speziell für Entwickler gedacht war das PPA <a class="interwiki interwiki-launchpad" href="https://launchpad.net/~zfs-native/+archive/daily">zfs-native/daily</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/>. Die Installation erfolgt wie oben angegeben.</p></div></div></div><div class="section_1"><h2 id="Nutzung">Nutzung<a class="headerlink" href="#Nutzung">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Dokumentation-lesen">Dokumentation lesen<a class="headerlink" href="#Dokumentation-lesen">¶</a></h3><p>
+Über die Nutzung von ZFS mit seinen zahlreichen Möglichkeiten lassen sich ganze Bücher schreiben. Wer sich für die Materie interessiert, sei auf die sehr gute ZFS-Dokumentation verwiesen (siehe <a class="crosslink" href="#Links">Links</a>). Diese liegt allerdings durchgehend auf Englisch vor, Quellen auf Deutsch sind extrem selten. Grafische Konfigurationswerkzeuge sind ebenfalls nicht vorhanden.</p></div><div class="section_2"><h3 id="Test">Test<a class="headerlink" href="#Test">¶</a></h3><p>
+Es hat sich für Umsteiger bewährt, ZFS zunächst nur (große, idealerweise unfragmentierte) Dateien als Speichermedium anzubieten, um die Funktionalität kennen zu lernen, sie erforschen und erproben zu können. Siehe dazu auch das <a class="crosslink" href="#Beispiele">Beispiel</a>. Wer möchte, kann ZFS stattdessen Partitionen anbieten.</p></div><div class="section_2"><h3 id="Planung">Planung<a class="headerlink" href="#Planung">¶</a></h3><p>
+Weiterhin hat es sich bewährt, einige Überlegungen vor der Datenmigration anzustellen, aus welcher der ZFS-Funktionen, insbesondere der Vererbung, im konkreten Anwendungsfall bestmöglicher Nutzen gewonnen werden kann.</p></div></div><div class="section_1"><h2 id="Warnungen">Warnungen<a class="headerlink" href="#Warnungen">¶</a></h2><p>
+Dies ist eine (ergänzte) Übersetzung der hervorragenden Seite "Best Practives and Caveats" (siehe <a class="crosslink" href="#Links">Links</a>).</p><div class="section_2"><h3 id="Best-Practices">Best Practices<a class="headerlink" href="#Best-Practices">¶</a></h3><p>
+Wie mit allen Empfehlungen haben manche großes Gewicht, während andere das möglicherweise nicht haben. Vielleicht wird es nicht einmal möglich sein, ihnen so strikt zu folgen, wie man das möchte. Doch sollte man sich ihrer bewusst sein. Es wird versucht, eine Begründung für jede Empfehlung zu geben. Sie haben keine besondere Reihenfolge. Die Ziele dieser "Best Practices" sind Speichereffizienz, Performance sowie maximale Datenintegrität.</p><ul><li><p>Man erzeuge (reale) Pools immer mit den Optionen <code class="notranslate">-o ashift=12 -d /dev/disk/by-id</code>. Da neuere Festplatten mit Sektoren von 4096 Bytes arbeiten, werden mit <code class="notranslate">ashift=12</code> die Sektoren des ZFS ebenfalls auf diese Größe festgelegt, um Performance-Einbußen zu vermeiden. Durch die Identifizierung der Platten mittels <code class="notranslate">/dev/by-id</code> wird erreicht, dass ZFS die Platten richtig ins System einbindet, unabhängig davon, an welchem Port sie angeschlossen sind, d.h. das System funktioniert weiter, auch wenn <strong>/dev/sda</strong> und <strong>/dev/sdb</strong> vertauscht wurden.</p></li></ul><p>
+</p><ul><li><p>Wenn ein Pool zu über 80% gefüllt ist, wird er langsamer. In der Praxis wird empfohlen, diesen Wert nicht zu überschreiten. Man bedenke, dass in einem Pool, der zu 100% gefüllt ist, auch keine Löschung auf Dateiebene mehr möglich ist, weil kein Platz mehr für das "neue" leere Verzeichnis mehr vorhanden ist, der aber wegen der Copy-on-Write-Semantik benötigt wird.</p></li></ul><p>
+</p><ul><li><p>Obwohl es möglich ist, alle Festplatten in einem einzigen Pool zusammen zu fassen, sollte man sich gut überlegen, ob das auch langfristig sinnvoll ist. Merke: Man kann einen Pool immer vergrößern. Das Verkleinern (Herausnehmen von Platten) geht nur in Ausnahmefällen, etwa wenn ein Festplattenspiegel (mirror) aus dem Pool entfernt werden soll. Die ZFS-Foren sind voll mit Einträgen von Anwendern, die das "vergessen hatten" oder "aus Versehen" den falschen Befehl, nämlich <code class="notranslate">zpool add ...</code> statt <code class="notranslate">zpool attach ...</code> verwendet haben, nur um dann zu erfahren, dass alle Daten wieder raus müssen, um den Pool korrekt strukturieren zu können. Siehe dazu auch das Beispiel <a class="crosslink" href="#Erweitern-des-bestehenden-Pools">Erweitern des Pools</a>. </p><div class="box experts"><h3 class="box experts">Experten-Info:</h3><div class="contents"><p>Mitunter kann es durchaus sinnvoll sein, mehrere Pools zu verwenden.
+</p></div></div></li></ul><p>
+</p><ul><li><p>Benutze immer Kompression. Mit an Sicherheit grenzender Wahrscheinlichkeit gibt es keinen Grund, sie auszuschalten. Es kostet die CPU wenig, die Übertragungszeiten zur Platte ebensowenig, aber der Nutzeffekt ist erstaunlich.</p></li></ul><p>
+</p><ul><li><p><a class="crosslink" href="#ZFS-Snapshots">ZFS Snapshots</a> kann man gut regelmäßig und häufig erstellen. Sie sind problemlos erzeug- und nutzbar, und dieses Vorgehen ermöglicht es, eine Menge an Dateiversionen über längere Zeiträume zu bewahren. Es gibt ein Paket <strong>zfs-auto-snapshot</strong>, dessen Einsatz man erwägen sollte.</p></li></ul><p>
+</p><ul><li><p>Snapshots sind kein Backup! Man benutze <code class="notranslate">zfs send/recv</code>, um die Snapshots auf einem externen Speicher zu sichern.</p></li></ul><p>
+</p><ul><li><p>Wer NFS benutzt, der ziehe ZFS NFS exports den in NFS integrierten exports vor. Das stellt sicher, dass ein Dateisystem eingehängt und online ist, bevor NFS-Clients Daten senden.</p></li></ul><p>
+</p><ul><li><p>NFS kernel exports und ZFS NFS exports möglichst nicht mischen. Dies ist schwierig zu administrieren und zu warten.</p></li></ul><p>
+</p><ul><li><p>Für ZFS-<strong>/home/</strong>-Installationen lege man für jeden Benutzer ein eigenes ZFS-Dateisystem an (etwa <strong>/home/bob</strong> und <strong>/home/alice</strong>) und erwäge den Einsatz von Quotas (Beschränkung der Datenmenge pro Nutzer).</p></li></ul><p>
+</p><ul><li><p>Wenn ZFS <code class="notranslate">send/recv</code> eingesetzt wird, bedenke man die Verwendung des <code class="notranslate">-i</code> Schalters (inkrementell). Das kann einen höchst erstaunlichen Zeitgewinn mit sich bringen. </p></li></ul><p>
+</p><ul><li><p><code class="notranslate">zfs send</code> ist einem <code class="notranslate">rsync</code>-basierten Ansatz überlegen, weil <code class="notranslate">zfs send</code> die Eigenschaften eines Dateisystems bewahren kann.</p></li></ul><p>
+</p><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Die beiden folgenden Empfehlungen stammen nicht aus der Feder von Aaron Toponce, sondern aus der Diskussion (siehe <a class="crosslink" href="#Links">Links</a>), in der sich die Entwickler mit den frühen Anwendern ausgetauscht haben.</p><ul><li><p>Booten von ZFS als Hauptdateisystem sollte auf GNU/Linux vorerst noch vermieden werden (Anm.: Viele Hinweise/Anleitungen im Netz zeigen, dass dies möglich ist. Dennoch...). Diese Konfiguration ist noch zu sehr experimentell, auch die GRUB-2-Unterstützung ist nur für bestimmte Konfigurationen vorhanden. Wer das versuchen will, sollte schon ein extrem versierter Linuxianer sein, am besten mit solidem Entwicklungswissen. Und er sollte in der Lage sein, die Rettung eines unbootbaren Systems mit <code class="notranslate">grub-rescue</code>, <code class="notranslate">Initramfs-shell</code> usw. zu bewerkstelligen. Denn es kann vorkommen, dass die gegenwärtigen Ubuntu-Systemaktualisierungen die Systeminstallation im ZFS-Hauptdateisystem beschädigen. Da heraus zu kommen ist nicht trivial! Wer hiermit Erfolg haben will, sollte sich gut informieren. Empfehlenswert ist zu diesem Zweck die Lektüre der bereits erwähnten Diskussion. Die Entwickler selbst gehen im Übrigen davon aus, dass es noch mehrere Jahre dauern wird, bis diese Architektur in GNU/Linux (Upstream) genügend gut integriert und unterstützt wird.<br/><br/>Aber für Ordner wie <strong>/home/</strong>, <strong>/var/log/</strong> und <strong>/var/cache/</strong> kann man gut ZFS verwenden.</p></li></ul><p>
+</p><ul><li><p>Niemals <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Deduplizierung">Deduplizierung</a> einschalten! Zum einen verlangt Dedup sehr viel Hauptspeicher, mehr als sich in normalen privaten Computern befindet. Außerdem löst es – selbst, wenn nur ein Teil, z.B. ein Dateisystem, betroffen ist – eine bleibende Veränderung in der Funktionsweise des gesamten Pools aus, die nicht rückgängig gemacht werden kann, und die diesen hohen Ressourcenverbrauch permanent macht (überdies gibt es wohl nur wenige, die das schon getestet haben).</p></li></ul></div></div></div><div class="section_2"><h3 id="Warnungen-Vorbehalte">Warnungen/Vorbehalte<a class="headerlink" href="#Warnungen-Vorbehalte">¶</a></h3><p>
+Der Sinn dieser Warnungen ist es keinesfalls, von der Verwendung von ZFS abzuschrecken. Als Systemadministrator, der einen ZFS-Speicher-Server plant, muss man sich dieser Dinge jedoch bewusst sein, damit es einen nicht kalt erwischt und man hinterher ohne Daten dasteht. Wer diese Warnungen nicht beherzigt, muss mit Datenverlust rechnen.</p><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>
+</p><ul><li><p>Ein <code class="notranslate">zfs destroy</code> kann eine Unterbrechung des Zugriffs auf andere Dateisysteme verursachen. Ein <code class="notranslate">zfs destroy</code> wird jede Datei in einem Dateisystem dieses Speicherpools berühren. Je größer das Dateisystem ist, umso länger wird dies dauern, und es wird alle möglichen IOPS der Platten nutzen, um dies auszuführen. Demzufolge wird, wenn das Zerstören des Dateisystems beispielsweise zwei Stunden dauert, potentiell zwei Stunden lang kein Zugriff auf die anderen Dateisysteme möglich sein (Anm.: Mit der Feature-Flag-Version wurde die Option <code class="notranslate">async-destroy</code> eingeführt, um dem zu begegnen). </p></li></ul><p>
+</p><ul><li><p>Debian und Ubuntu starten den NFS-Daemon nicht ohne einen gültigen "export" in <strong>/etc/exports</strong>. Also muss man entweder einen Dummy-export anlegen oder das <strong>/etc/init.d/nfs</strong>-Skript anpassen.</p></li></ul><p>
+</p><ul><li><p>Debian und Ubuntu nutzen einen parallelisierten Bootprozess. Dadurch ist die Reihenfolge, in der die Init-Skripte ausgeführt werden, nicht vorhersehbar. Dies führt zu Problemen beim Einbinden von ZFS-Dateisystemen zum Bootzeitpunkt. In Debian und Ubuntu muss die Datei <strong>/etc/init.d/.legacy-bootordering</strong>-Datei dahingehend geändert werden, dass <strong>/etc/init.d/zfs</strong> als erstes Skript in diesem Runlevel gestartet wird (Anm.: höchstwahrscheinlich nicht mehr aktuell, seit ZFS jetzt ein eigenes Paket <strong>mountall</strong> mitinstalliert).</p></li></ul><p>
+</p><ul><li><p>Man sollte niemals einen Pool bauen, der Dateien/Volumes eines anderen Pools benutzt. Dies verursacht alle möglichen Schwierigkeiten (Anm.: Angeblich auch nicht mehr wahr... was die Idee aber nicht besser macht!). </p></li></ul><p>
+</p><ul><li><p>Wenn man ZVOLs erzeugt, sollte deren Blocksize identisch oder ein Vielfaches der Blocksize sein, mit der man später formatieren will. Sonst kann dies zu Performance-Problemen führen.</p></li></ul><p>
+</p><ul><li><p>Die in der Oracle-Dokumentation zu ZFS (siehe <a class="crosslink" href="#Links">Links</a>) angegebene Möglichkeit, Festplatten als "Hot Spare" zu konfigurieren, damit sie automatisch bei einem eingetretenen Festplattenausfall einspringen können, wird derzeit von ZoL (noch) nicht unterstützt. Manuell lässt sich die Funktionalität des Austauschens einer defekten Platte in einem Pool aber auslösen. </p></li></ul><p>
+</p><ul><li><p>Es ist eine gute Idee, einen Maximalwert für den "Advanced Recovery Cache" (ARC) festzulegen, bevor das Kernelmodul <code class="notranslate">zfs</code> geladen wird. Wenn viele <code class="notranslate">zfs-send</code>-Befehle oder Snapshots ausgeführt werden, werden diese Daten im ARC zwischengespeichert. Ist kein Maximalwert festgelegt, wird das RAM nach und nach gefüllt, bis der Kernel "OOM Killer" ausführt, damit das System wieder reagieren kann.<br/><br/>Abhilfe zum letzten Punkt: Beispielsweise führt der Eintrag </p><pre class="notranslate">options zfs zfs_arc_max=2147483648</pre><p> in der Datei <strong>/etc/modprobe.d/zfs.conf</strong> zu einer Beschränkung auf 2 GiB RAM für ARC (Anm: Aufgrund von RAM-Fragmentierung kann dennoch Speicher bis zum Doppelten dieses Wertes benötigt werden!). Die Angabe erfolgt in Bytes, weitere mögliche Werte wären <code class="notranslate">17179869184</code> für 16 GiB, <code class="notranslate">8589934592</code> für 8 GiB, <code class="notranslate">4294967296</code> für 4 GiB oder <code class="notranslate">1073741824</code> für 1 GiB. Da der ARC beim Laden des Kernelmoduls gesetzt wird, wird anschließend ein Neustart empfohlen.</p></li></ul><p>
+Trotz Maximalwert für ARC kann es zu Speicherproblemen kommen. Da ZFS aus seiner Ursprungsumgebung (Solaris) portiert wurde, mussten Anpassungen vorgenommen werden, die speziell Unterschiede in der Behandlung von virtuellem Speicher im Kernel betreffen. Die Unterschiede zwischen der "Solaris-Sicht" und der "Linux-Realität" verursachen u.a. unerwünschte Speicherverschwendung, für die es kein einfaches Heilmittel gibt.
+</p></div></div></div></div><div class="section_1"><h2 id="Beispiele">Beispiele<a class="headerlink" href="#Beispiele">¶</a></h2><p>
+Die folgenden Beispiele sind eigentlich ein einziges langes Beispiel, unterbrochen von Erläuterungen. Diesem Beispiel auf dem eigenen Rechner zu folgen, dürfte mindestens eine Zeitstunde in Anspruch nehmen. Und kann nicht annähernd die Lektüre der ZFS Dokumentation – ergänzt um eigene Tests – ersetzen (siehe <a class="crosslink" href="#Nutzung">Nutzung</a>).</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Grundlage dieser Anleitung ist die Version 0.6.3 der Pakete <strong>zfs</strong> und <strong>spl</strong> (beide werden vom <a class="internal" href="./metapakete.html">Metapaket</a> <strong>ubuntu-zfs</strong> installiert).
+</p></div></div><div class="section_2"><h3 id="Test-mit-Live-CD-DVD">Test mit Live-CD/-DVD<a class="headerlink" href="#Test-mit-Live-CD-DVD">¶</a></h3><p>
+Es ist möglich, den Computer von einer Ubuntu-Live-CD zu starten und das Beispiel ausschließlich im Hauptspeicher ablaufen zu lassen, falls dieser über wenigstens 4 GiB RAM verfügt.</p><div class="box experts"><h3 class="box experts">Experten-Info:</h3><div class="contents"><p>Empfohlen werden Ubuntu 12.04 oder 12.04.1 mit Kernel 3.2, die im <a class="external" href="http://old-releases.ubuntu.com/releases/" rel="nofollow">historischen Archiv</a> <img alt="{dl}" src="./_/8e630211d0f5f5cb7c6424055f9c9aa15a420fab.png"/> zu finden sind. Spätere Ausgaben wie 12.04.2, 12.04.3 usw. enthalten neuere Kernel, die für Probleme sorgen und auch nicht den gleichen Unterstützungszeitraum wie der Kernel 3.2 (bis April 2017) besitzen. Das Gleiche gilt prinzipiell auch für Ubuntu 14.04 mit dem Kernel 3.13.
+</p></div></div><div class="section_3"><h4 id="Root-Shell">Root-Shell<a class="headerlink" href="#Root-Shell">¶</a></h4><p>
+Da die folgenden Befehle (fast) alle Root-Rechte benötigen, wird zuerst eine Root-Shell geöffnet:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo -i </pre></div></div><p>
+Bitte nicht vergessen, diese am Ende wieder zu <a class="crosslink" href="#Root-Shell-schliessen">schließen</a>.</p></div><div class="section_3"><h4 id="ZFS-Installation">ZFS-Installation<a class="headerlink" href="#ZFS-Installation">¶</a></h4><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">apt-add-repository --yes ppa:zfs-native/stable
+apt-get update
+apt-get install --yes ubuntu-zfs </pre></div></div><p>
+Da nun mehrere Kernel-Module kompiliert werden, dauert das eine Weile.</p></div></div><div class="section_2"><h3 id="Erzeugen-des-Testpools">Erzeugen des Testpools<a class="headerlink" href="#Erzeugen-des-Testpools">¶</a></h3><p>
+</p><div class="section_3"><h4 id="Erzeugung-von-Dateien-zum-Aufbau-des-Testpools">Erzeugung von Dateien (zum Aufbau des Testpools)<a class="headerlink" href="#Erzeugung-von-Dateien-zum-Aufbau-des-Testpools">¶</a></h4><p>
+Dies ist nur als Demonstration gedacht, es handelt sich nicht um ein wirklichkeitsnahes Szenario. Um zeigen zu können, wie ein Pool erstellt wird (und eines der häufigsten Missverständnisse vorzuführen), werden als Erstes ein paar (sparse) Dateien als "Festplatten-Ersatz" erzeugt, aus denen der Pool später bestehen wird:</p><div class="bash"><div class="contents"><pre class="notranslate">## der Speicherort dieser Festplatten-Simulationen
+mkdir -p /mnt/free-space
+cd /mnt/free-space/
+## natürlich würden größere Dateien mehr Spielraum für Experimente geben (etwa -s 1G)
+for disk in simulate.disk{1,2,3,4};do truncate -s 100M $disk;done
+la -lhs </pre></div></div><p>
+</p><pre class="notranslate">insgesamt 0
+0 -rw-r--r-- 1 root root 100M Nov 26 21:17 simulate.disk1
+0 -rw-r--r-- 1 root root 100M Nov 26 21:17 simulate.disk2
+0 -rw-r--r-- 1 root root 100M Nov 26 21:17 simulate.disk3
+0 -rw-r--r-- 1 root root 100M Nov 26 21:17 simulate.disk4</pre></div><div class="section_3"><h4 id="Erzeugen-des-Pools-aus-Dateien">Erzeugen des Pools aus Dateien<a class="headerlink" href="#Erzeugen-des-Pools-aus-Dateien">¶</a></h4><p>
+Nun wird bewusst ein Umweg eingeschlagen, um verschiedene Konzepte zu verdeutlichen (und einem weit verbreiteten Missverständnis vorzubeugen).</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Wer es eilig hat, kann diesen Umweg abkürzen, indem er direkt zum Abschnitt <a class="crosslink" href="#Abkuerzung">Abkürzung</a> vor geht. 
+</p></div></div><p>Aller Anfang ist klein:</p><div class="bash"><div class="contents"><pre class="notranslate">## Bei diesen Experimenten ist `-o ashift=12` überflüssig. Würde es um reale Partitionen/Festplatten gehen, sähe das schon anders aus.
+zpool create mypool /mnt/free-space/simulate.disk1
+zpool status </pre></div></div><p>
+</p><pre class="notranslate">  pool: mypool
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME                              STATE     READ WRITE CKSUM
+	mypool                            ONLINE       0     0     0
+	  /mnt/free-space/simulate.disk1  ONLINE       0     0     0
+
+errors: No known data errors</pre><div class="bash"><div class="contents"><pre class="notranslate">zpool list </pre></div></div><p>
+</p><pre class="notranslate">NAME     SIZE  ALLOC   FREE    CAP  DEDUP  HEALTH  ALTROOT
+mypool  95.5M   520K  95.0M     0%  1.00x  ONLINE  -</pre></div><div class="section_3"><h4 id="Erweitern-des-bestehenden-Pools">Erweitern des bestehenden Pools<a class="headerlink" href="#Erweitern-des-bestehenden-Pools">¶</a></h4><p>
+Angenommen, dieser Pool soll erweitert werden (eine weitere "Platte" hinzugefügt werden), so gibt es verschiedene Möglichkeiten, dies zu tun. Man könnte einfach den Platz auf der nächsten Platte dem Pool hinzufügen wollen. Oder man könnte die zweite Platte als Medium für Redundanz, also als Spiegel der bereits bestehenden Festplatte hinzufügen. Das Ergebnis wäre sehr verschieden! Im ersten Fall vergrößert sich der Speicherplatz im Pool, im zweiten Fall vergrößert sich die Datensicherheit (und im Falle von realen Festplatten) im Allgemeinen auch die Lese-/Schreibgeschwindigkeit. Hier sei also die Absicht, den Pool sicherer zu machen und einen Spiegel hinzuzufügen.</p><p>Der prinzipielle Befehl würde <code class="notranslate">zpool add ...</code> lauten, aber ohne die Option <code class="notranslate">-f</code> (force) erlaubt zpool dies nicht, weil <code class="notranslate">add</code> und <code class="notranslate">attach</code> schon so häufig von Anwendern verwechselt worden ist:</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Der folgende Befehl macht nicht das, was in diesem Fall tatsächlich erforderlich wäre. Siehe auch <a class="crosslink" href="#Abkuerzung">Abkürzung</a>.
+</p></div></div><div class="bash"><div class="contents"><pre class="notranslate">zpool add -f mypool /mnt/free-space/simulate.disk2 </pre></div></div><p>Mit dem Befehl:
+</p><div class="bash"><div class="contents"><pre class="notranslate">zpool status </pre></div></div><p>
+kontrolliert man den Status:</p><pre class="notranslate">  pool: mypool
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME                              STATE     READ WRITE CKSUM
+	mypool                            ONLINE       0     0     0
+	  /mnt/free-space/simulate.disk1  ONLINE       0     0     0
+	  /mnt/free-space/simulate.disk2  ONLINE       0     0     0
+
+errors: No known data errors</pre><div class="bash"><div class="contents"><pre class="notranslate">zpool list </pre></div></div><p>
+</p><pre class="notranslate">NAME     SIZE  ALLOC   FREE    CAP  DEDUP  HEALTH  ALTROOT
+mypool   191M   612K   190M     0%  1.00x  ONLINE  -</pre><p>
+Unter Anderem kann man an der Vergrößerung des Wertes für SIZE erkennen, dass etwas Anderes als beabsichtigt passiert ist.</p></div><div class="section_3"><h4 id="Fehlerhafte-Pool-Konfiguration">Fehlerhafte Pool-Konfiguration<a class="headerlink" href="#Fehlerhafte-Pool-Konfiguration">¶</a></h4><p>
+Das war es nicht, was bezweckt worden ist. Was nun? Merke: Man kann den Speicherplatz eines Pool immer erweitern, aber es gibt keine Umkehrung dazu! Deshalb bieten sich hier die folgenden Möglichkeiten an:</p><ul><li><p>Weil (in diesem Fall) noch keine Daten im Pool sind, wäre eine einfache Möglichkeit, den Pool zu beseitigen und von vorn zu beginnen, diesmal richtig. (Also <code class="notranslate">zpool destroy mypool</code> gefolgt von einem etwas komplexeren <code class="notranslate">zpool create ...</code>)</p></li><li><p>Man könnte alle Daten aus dem Pool extern sichern, dann den Pool zerstören und (korrekt) neu aufbauen, und schließlich die gesicherten Daten wieder zurückspielen. Verfügt man nicht über ausreichenden Ausweichspeicher, käme diese Alternative einer mittleren Katastrophe gleich.</p></li><li><p>Man könnte weitere Platten besorgen und nun beide Teile des Pools spiegeln.</p></li></ul><p>
+Hier soll letzterer Weg eingeschlagen werden, weil er auch dann Erfolg haben würde, wenn sich bereits Daten im Pool befänden.</p></div><div class="section_3"><h4 id="Reparatur">Reparatur<a class="headerlink" href="#Reparatur">¶</a></h4><p>
+Dafür lohnt es sich, zu wissen, dass jeder Pool tatsächlich nicht direkt aus Geräten (also Platten, Partitionen oder Dateien) aufgebaut ist, sondern aus virtuellen Geräten ("vdevs"). Solche vdevs können ihrerseits einfache Geräte, Spiegel ("mirrors") oder RAID-Verbünde sein (verschiedene Möglichkeiten sind in der ZFS-Dokumentation beschrieben). Was hier entstehen soll, ist ein Pool <code class="notranslate">mypool</code> bestehend aus 2 vdevs, die ihrerseits jeweils aus 2 Geräten bestehen, die als Spiegel konfiguriert sein sollen.</p><p>Zur Erinnerung: Derzeit besteht der Pool aus 2 (unsichtbaren, namenlosen) vdevs mit jeweils einem Gerät darin. Nun werden die korrekten Befehle zur Erweiterung dieser vdevs ausgeführt:</p><div class="bash"><div class="contents"><pre class="notranslate">zpool attach mypool /mnt/free-space/simulate.disk1 /mnt/free-space/simulate.disk3
+zpool attach mypool /mnt/free-space/simulate.disk2 /mnt/free-space/simulate.disk4
+zpool status </pre></div></div><p>
+</p><pre class="notranslate">  pool: mypool
+ state: ONLINE
+  scan: resilvered 15K in 0h0m with 0 errors on Tue Nov 26 21:17:43 2013
+config:
+
+NAME                                STATE     READ WRITE CKSUM
+mypool                              ONLINE       0     0     0
+  mirror-0                          ONLINE       0     0     0
+    /mnt/free-space/simulate.disk1  ONLINE       0     0     0
+    /mnt/free-space/simulate.disk3  ONLINE       0     0     0
+  mirror-1                          ONLINE       0     0     0
+    /mnt/free-space/simulate.disk2  ONLINE       0     0     0
+    /mnt/free-space/simulate.disk4  ONLINE       0     0     0
+
+errors: No known data errors</pre><p>
+Man beachte, dass die vdevs hier <code class="notranslate">mirror-0</code> und <code class="notranslate">mirror-1</code> heißen und jeweils redundant den Speicherplatz eines Gerätes bereitstellen. Deshalb hat sich der benutzbare Speicher durch diesen letzten Schritt nicht weiter vergrößert.</p><div class="bash"><div class="contents"><pre class="notranslate">zpool list </pre></div></div><p>
+</p><pre class="notranslate">NAME     SIZE  ALLOC   FREE    CAP  DEDUP  HEALTH  ALTROOT
+mypool   191M   711K   190M     0%  1.00x  ONLINE  -</pre></div><div class="section_3"><h4 id="Abkuerzung">Abkürzung<a class="headerlink" href="#Abkuerzung">¶</a></h4><p>
+Dieselbe Konfiguration kann (und sollte!) idealerweise direkt mittels des Befehls:</p><div class="bash"><div class="contents"><pre class="notranslate">zpool create mypool mirror /mnt/free-space/simulate.disk{1,3} mirror /mnt/free-space/simulate.disk{2,4} </pre></div></div><p>
+erzeugt werden.</p></div><div class="section_3"><h4 id="Anlegen-von-Dateisystemen">Anlegen von Dateisystemen<a class="headerlink" href="#Anlegen-von-Dateisystemen">¶</a></h4><p>
+Es gibt Einstellungen, die sich auf den gesamten Pool beziehen (wie <code class="notranslate">failmode</code>, <code class="notranslate">ashift</code>, <code class="notranslate">cachefile</code>, ...). Davon können manche nur zum Zeitpunkt der Erzeugung gesetzt werden (z.B. <code class="notranslate">ashift</code>). Und es gibt Einstellungen, die sich auf die "Teile" (meistens Dateisysteme) beziehen, die in einem Pool bereitgestellt werden. Dabei handelt es sich um eine verzeichnisbaum-artig organisierte Hierarchie von Dateisystemen, in der Einstellungen vom "parent"-Knoten standardmäßig an die "child"-Knoten vererbt werden. Somit ist es (auch später noch) einfach, Dateisysteme, die in einem Sub-Tree zusammengefasst wurden, auf einen Schlag die gleichen Eigenschaften zuzuweisen (deswegen macht es Sinn, die Organisation dieser Dateisysteme vorauszuplanen).</p><p>Ohne dass eine Aktion dafür erforderlich gewesen wäre, wurde bereits ein Dateisystem (Die Wurzel) von ZFS erzeugt, dessen Eigenschaften auf die folgenden übertragen werden. Nun ist es zwar jederzeit möglich, die Einstellung <code class="notranslate">compression</code> zu verändern, aber sie beschreibt nur, auf welche Weise zukünftig Daten abgelegt werden sollen. Bereits gespeicherte Daten werden nicht neu geschrieben oder konvertiert. Darum ist es eine gute Idee, diese Einstellung jetzt zu treffen:</p><div class="bash"><div class="contents"><pre class="notranslate">## Dateisystem-bezogene Operationen werden mit dem zfs-Befehl durchgeführt
+zfs set compression=lz4 mypool </pre></div></div><p>
+Darüber hinaus ist es nicht ratsam, Dateien in diesem Wurzel-Dateisystem anzulegen. Man bewahrt sich viel mehr Flexibilität, wenn man dieses eine leer lässt. In diesem Beispiel wird deswegen ein Dateisystem erzeugt, in dem tatsächlich auch einmal etwas gespeichert werden wird:</p><div class="bash"><div class="contents"><pre class="notranslate">zfs create mypool/testarea 
+cd /mypool/testarea </pre></div></div><p>
+Man beachte, dass es nicht erforderlich war, dieses neue Datesystem einzuhängen. Das hat ZFS bereits erledigt. Und würde es an einer anderen Stelle im Verzeichnisbaum benötigt, so genügte die Veränderung der Einstellung <code class="notranslate">mountpoint</code> eben dieses Dateisystems.</p><p>Ebenso beachtenswert: Es wurde keine Größe für das Dateisystem angegeben. Dieses könnte geschehen, muss es aber nicht, weil sie auch im laufenen Betrieb noch dynamisch verändert werden kann. Ohne Größenangabe kann jedes Dateisystem den verbliebenen freien Platz in Anspruch nehmen.</p></div></div><div class="section_2"><h3 id="ZFS-Snapshots">ZFS Snapshots<a class="headerlink" href="#ZFS-Snapshots">¶</a></h3><p>
+Snapshots sind schreibgeschützte Kopien eines Dateisystems (oder Volumes). Sie zu erzeugen geschieht nahezu augenblicklich. Sie belegen (zunächst) kaum eigenen Speicherplatz. Erst, wenn sich der Inhalt des Dateisystems ändert, benötigen sie Speicherplatz, indem sie weiterhin auf ehemalige Dateizustände verweisen, die sich im aktuellen Dateisystem bereits verändert haben. Dadurch verhindern Snapshots, dass der ihnen zugeordnete Speicherplatz freigegeben wird. Sie reduzieren dabei den dem Dateisystem zugeordneten freien Platz. Snapshots können betrachtet oder geklont werden (dadurch verhalten sie sich dann wie ein änderbares Dateisystem), man kann sie verwerfen, oder auch als Wiederherstellungspunkt verwenden. Es gibt noch weitere Operationen mit Snapshots.</p><p>Da es aber nicht Sinn und Zweck dieses Artikels ist, alle Möglichkeiten von ZFS zu erklären, werden nun einige Beispiele folgen. Erst werden mehrere Zustände des Dateisystems erzeugt, dann wird davon einer geclont, zum Schluss werden andere Zustände nur betrachtet. Zunächst werden einige Dateien im Dateisystem <strong>/mypool/testarea</strong> erzeugt:</p><div class="bash"><div class="contents"><pre class="notranslate">cp -R /var/log .
+## Filter, um nur interessante Größenangaben anzuzeigen
+zfs get all mypool/testarea | awk '$3 ~ /[GEKMx]$/' </pre></div></div><p>
+</p><pre class="notranslate">NAME             PROPERTY              VALUE                  SOURCE
+mypool/testarea  used                  236K                   -
+mypool/testarea  available             159M                   -
+mypool/testarea  referenced            236K                   -
+mypool/testarea  compressratio         5.68x                  -
+mypool/testarea  recordsize            128K                   default
+mypool/testarea  usedbydataset         236K                   -
+mypool/testarea  refcompressratio      5.68x                  -
+mypool/testarea  written               236K                   -</pre><p>
+Der hohe Kompressionsfaktor in diesem Beispiel hängt von den vorhandenen Daten ab.</p><div class="bash"><div class="contents"><pre class="notranslate">zfs snap mypool/testarea@varlog-importiert
+for i in `seq 1 5`;do echo Dies ist Datei "file$i.txt" &gt; file$i.txt;done
+ll </pre></div></div><p>
+</p><pre class="notranslate">drwxr-xr-x  3 root root  8 Nov 26 21:18 ./
+drwxr-xr-x  3 root root  3 Nov 26 21:18 ../
+-rw-r--r--  1 root root 25 Nov 26 21:18 file1.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file2.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file3.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file4.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file5.txt
+drwxr-xr-x 15 root root 39 Nov 26 21:18 log/</pre><p>
+Nun noch ein weiterer Snapshot, gefolgt von Änderung, Snapshot, Löschung (einzelner Dateien):</p><div class="bash"><div class="contents"><pre class="notranslate">zfs snap mypool/testarea@file1-5.txt-erzeugt
+echo "Dies ist Datei drei (nach einer Änderung)" &gt;&gt; file3.txt
+zfs snap mypool/testarea@file3.txt-geaendert
+rm -v file{2,5}* </pre></div></div><p>
+</p><pre class="notranslate">»file2.txt“ wurde entfernt
+»file5.txt“ wurde entfernt</pre><div class="section_3"><h4 id="Rollback">Rollback<a class="headerlink" href="#Rollback">¶</a></h4><p>
+Zeige Verzeichnis, gehe auf den letzten Snapshot zurück und zeige erneut:</p><div class="bash"><div class="contents"><pre class="notranslate">ll
+zfs rollback mypool/testarea@file3.txt-geaendert
+ll </pre></div></div><p>
+</p><pre class="notranslate">insgesamt 9
+drwxr-xr-x  3 root root  6 Nov 26 21:18 ./
+drwxr-xr-x  3 root root  3 Nov 26 21:18 ../
+-rw-r--r--  1 root root 25 Nov 26 21:18 file1.txt
+-rw-r--r--  1 root root 68 Nov 26 21:18 file3.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file4.txt
+drwxr-xr-x 15 root root 39 Nov 26 21:18 log/
+
+insgesamt 11
+drwxr-xr-x  3 root root  8 Nov 26 21:18 ./
+drwxr-xr-x  3 root root  3 Nov 26 21:18 ../
+-rw-r--r--  1 root root 25 Nov 26 21:18 file1.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file2.txt
+-rw-r--r--  1 root root 68 Nov 26 21:18 file3.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file4.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file5.txt
+drwxr-xr-x 15 root root 39 Nov 26 21:18 log/</pre><p>
+Da sind die Dateien wieder.</p></div><div class="section_3"><h4 id="Clone">Clone<a class="headerlink" href="#Clone">¶</a></h4><p>
+Nun werden noch mehr Dateien erzeugt und im Anschluss daran ein Clone (beschreibbare Kopie eines früheren Zustandes) erzeugt:</p><div class="bash"><div class="contents"><pre class="notranslate">for i in `seq 6 8`;do echo Dies ist Datei "file$i.txt" &gt; file$i.txt;done
+zfs list -t snap
+ll </pre></div></div><p>
+</p><pre class="notranslate">NAME                                  USED  AVAIL  REFER  MOUNTPOINT
+mypool/testarea@varlog-importiert      26K      -   394K  -
+mypool/testarea@file1-5.txt-erzeugt  18.5K      -   396K  -
+mypool/testarea@file3.txt-geaendert     1K      -   396K  -
+
+insgesamt 12
+drwxr-xr-x  3 root root  8 Nov 26 21:18 ./
+drwxr-xr-x  3 root root  3 Nov 26 21:18 ../
+-rw-r--r--  1 root root 25 Nov 26 21:18 file1.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file2.txt
+-rw-r--r--  1 root root 68 Nov 26 21:18 file3.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file4.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file5.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file6.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file7.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file8.txt
+drwxr-xr-x 15 root root 39 Nov 26 21:18 log/</pre><div class="bash"><div class="contents"><pre class="notranslate">zfs clone mypool/testarea@file1-5.txt-erzeugt mypool/clonedemo
+echo "Diese Dateien sind beschreibbar" &gt; /mypool/clonedemo/file3.txt
+ll /mypool/clonedemo/ </pre></div></div><p>
+</p><pre class="notranslate">insgesamt 11
+drwxr-xr-x  3 root root  8 Nov 26 21:18 ./
+drwxr-xr-x  3 root root  3 Nov 26 21:18 ../
+-rw-r--r--  1 root root 25 Nov 26 21:18 file1.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file2.txt
+-rw-r--r--  1 root root 32 Nov 26 21:18 file3.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file4.txt
+-rw-r--r--  1 root root 25 Nov 26 21:18 file5.txt
+drwxr-xr-x 15 root root 39 Nov 26 21:18 log/</pre><div class="bash"><div class="contents"><pre class="notranslate">cat file3.txt;echo;cat /mypool/clonedemo/file3.txt </pre></div></div><p>
+</p><pre class="notranslate">Dies ist Datei file3.txt
+Dies ist Datei drei (nach einer Änderung)
+
+Diese Dateien sind beschreibbar</pre></div><div class="section_3"><h4 id="Zustand-alter-Snapshots-betrachten">Zustand alter Snapshots betrachten<a class="headerlink" href="#Zustand-alter-Snapshots-betrachten">¶</a></h4><p>
+In Gegensatz zur Möglichkeit, einen Clone anzulegen (der ja eine änderbare Kopie eines Snapshots bereit stellt), gibt es eine einfachere Möglichkeit, Snapshots schreibgeschützt einzuhängen. Das macht ZFS automatisch, wenn auf das <strong>.zfs/snapshot</strong>-Verzeichnis im betroffenen Dateisystem zugegriffen wird. Das ist auch dann möglich, wenn das <strong>.zfs</strong>-Verzeichnis nicht durch die Einstellung <code class="notranslate">zfs set snapdir=visible &lt;Dateisystem&gt;</code> ausdrücklich zugänglich gemacht wurde.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Diese den Snapshots zugeordneten Unterverzeichnisse werden auch dynamisch wieder ausgehängt!
+</p></div></div><div class="bash"><div class="contents"><pre class="notranslate">for fs in /mypool/*;do find $fs -name "file3.txt";for sn in `ls -1 $fs/.zfs/snapshot`;do find $fs/.zfs/snapshot/$sn -name "file3.txt";done;done | sort | xargs ls -l </pre></div></div><pre class="notranslate">-rw-r--r-- 1 root root 32 Nov 26 21:18 /mypool/clonedemo/file3.txt
+-rw-r--r-- 1 root root 68 Nov 26 21:18 /mypool/testarea/file3.txt
+-rw-r--r-- 1 root root 25 Nov 26 21:18 /mypool/testarea/.zfs/snapshot/file1-5.txt-erzeugt/file3.txt
+-rw-r--r-- 1 root root 68 Nov 26 21:18 /mypool/testarea/.zfs/snapshot/file3.txt-geaendert/file3.txt</pre><p>
+Auf diese Art und Weise kann auf sämtliche referenzierbaren Stände der Datei <strong>file3.txt</strong> zugegriffen werden.</p></div><div class="section_3"><h4 id="Automatische-Snapshots">Automatische Snapshots<a class="headerlink" href="#Automatische-Snapshots">¶</a></h4><p>
+Das script <a class="external" href="https://github.com/zfsonlinux/zfs-auto-snapshot" rel="nofollow">zfs-auto-snapshot</a> erstellt <a class="internal" href="./cron.html">Cronjobs</a>, die automatisch Snapshots erstellen und alte Snapshots löschen. Das geschieht mit folgender Häufigkeit:</p><ul><li><p>Alle 15 Minuten, die 4  neuesten Snapshots werden behalten</p></li><li><p>Jede Stunde,     die 24 neuesten Snapshots werden behalten</p></li><li><p>Jeden Tag,       die 31 neuesten Snapshots werden behalten</p></li><li><p>Jede Woche,      die 8  neuesten Snapshots werden behalten</p></li><li><p>Jeden Monat,     die 12 neuesten Snapshots werden behalten</p></li></ul><p>
+Diese Parameter können verändert werden, indem man die Befehle in <code class="notranslate">/etc/cron.*/zfs-auto-snapshot</code> anpasst.  Will man zum Beispiel die Snapshots der letzten zwölf Wochen behalten, ändert man den Wert für <code class="notranslate">--keep</code> in <code class="notranslate">/etc/cron.weekly/zfs-auto-snapshot</code> auf 12:
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/sh</span>
+<span class="nb">exec</span> zfs-auto-snapshot --quiet --syslog --label<span class="o">=</span>weekly --keep<span class="o">=</span><span class="m">12</span> //
+</pre></div>
+</td></tr></table></div><p>Die Benschreibung der Optionen liefert <code class="notranslate">man zfs-auto-snapshot</code>.</p></div></div><div class="section_2"><h3 id="send-recv">send/recv<a class="headerlink" href="#send-recv">¶</a></h3><p>
+</p><div class="section_3"><h4 id="Vollstaendige-Datensicherung">Vollständige Datensicherung<a class="headerlink" href="#Vollstaendige-Datensicherung">¶</a></h4><p>
+<code class="notranslate">zfs send</code> ist dazu imstande, die Daten eines Dateisystems (eines Snapshots, um genau zu sein) und optional mit allen Vorgänger-Snapshots und sogar rekursiv mit allen hierarchisch untergeordneten Dateisystemen in einen Datenstrom (oder eine Datei) zu schreiben, die von <code class="notranslate">zfs receive</code>, das auch mit <code class="notranslate">zfs recv</code> abgekürzt werden kann, wieder eingelesen werden kann, um diesen Snapshot (normalerweise in einem anderen Pool) wiederherstellen zu können. Dies wird im folgenden beispielhaft an einem Dateisystem vorgeführt.</p><div class="bash"><div class="contents"><pre class="notranslate">## Bei der hier vorgeführten Methode muss das Zieldateisystem bereits vorhanden sein
+zfs create mypool/receivedemo
+zfs send -R mypool/testarea@file1-5.txt-erzeugt | zfs recv -F mypool/receivedemo
+zfs list -t all </pre></div></div><pre class="notranslate">NAME                                     USED  AVAIL  REFER  MOUNTPOINT
+mypool                                  1.50M   157M    33K  /mypool
+mypool/clonedemo                           1K   157M   423K  /mypool/clonedemo
+mypool/receivedemo                       466K   157M   422K  /mypool/receivedemo
+mypool/receivedemo@varlog-importiert      26K      -   420K  -
+mypool/receivedemo@file1-5.txt-erzeugt  18.5K      -   422K  -
+mypool/testarea                          500K   157M   426K  /mypool/testarea
+mypool/testarea@varlog-importiert         27K      -   420K  -
+mypool/testarea@file1-5.txt-erzeugt     18.5K      -   423K  -
+mypool/testarea@file3.txt-geaendert     19.5K      -   424K  -</pre><p>
+Man beachte bitte, dass das Dateisystem <strong>clonedemo</strong> zwar aus einem Snapshot erzeugt worden ist, aber (noch) keine eigenen Snapshots aufweist, während <strong>receivedemo</strong> die Snapshots von <strong>testarea</strong> aufweist, die dem kopierten Zustand vorausgingen.</p></div><div class="section_3"><h4 id="Inkrementelle-Sicherung">Inkrementelle Sicherung<a class="headerlink" href="#Inkrementelle-Sicherung">¶</a></h4><p>
+Nun befinden sich in <strong>/mypool/testarea</strong> und in <strong>/mypool/receivedemo</strong> unterschiedliche Stände:</p><div class="bash"><div class="contents"><pre class="notranslate">find /mypool/ -maxdepth 2 | sort </pre></div></div><pre class="notranslate">/mypool/
+/mypool/clonedemo
+/mypool/clonedemo/file1.txt
+/mypool/clonedemo/file2.txt
+/mypool/clonedemo/file3.txt
+/mypool/clonedemo/file4.txt
+/mypool/clonedemo/file5.txt
+/mypool/clonedemo/log
+/mypool/receivedemo
+/mypool/receivedemo/file1.txt
+/mypool/receivedemo/file2.txt
+/mypool/receivedemo/file3.txt
+/mypool/receivedemo/file4.txt
+/mypool/receivedemo/file5.txt
+/mypool/receivedemo/log
+/mypool/testarea
+/mypool/testarea/file1.txt
+/mypool/testarea/file2.txt
+/mypool/testarea/file3.txt
+/mypool/testarea/file4.txt
+/mypool/testarea/file5.txt
+/mypool/testarea/file6.txt
+/mypool/testarea/file7.txt
+/mypool/testarea/file8.txt
+/mypool/testarea/log</pre><p>
+Diese nun zu synchronisieren, ist sehr einfach. Es bedarf nur eines aktuellen Snapshots von testarea. Ist der aktuell letzte Snapshot noch aktuell?</p><div class="bash"><div class="contents"><pre class="notranslate">zfs diff  mypool/testarea@file3.txt-geaendert </pre></div></div><p>
+</p><pre class="notranslate">M	/mypool/testarea/
+M	/mypool/testarea/file3.txt
++	/mypool/testarea/file6.txt
++	/mypool/testarea/file7.txt
++	/mypool/testarea/file8.txt</pre><p>
+Also nicht! Zwecks Aktualisierung also noch einen anlegen:</p><div class="bash"><div class="contents"><pre class="notranslate">zfs snap mypool/testarea@aktuell
+## -F ist hier notwendig, weil in receivedemo eine Änderung zuvor zurück gefahren werden muss (rollback)
+zfs send -R -I @file1-5.txt-erzeugt mypool/testarea@aktuell  | zfs recv -Fv mypool/receivedemo
+zfs list -t all
+for fs in /mypool/*;do find $fs -name "*.txt";for sn in `ls -1 $fs/.zfs/snapshot`;do find $fs/.zfs/snapshot/$sn -name "*.txt" ;done;done | sort | xargs ls -l </pre></div></div><pre class="notranslate">NAME                                     USED  AVAIL  REFER  MOUNTPOINT
+mypool                                  1.35M   158M    33K  /mypool
+mypool/clonedemo                        31.5K   158M   396K  /mypool/clonedemo
+mypool/receivedemo                       476K   158M   399K  /mypool/receivedemo
+mypool/receivedemo@varlog-importiert      26K      -   394K  -
+mypool/receivedemo@file1-5.txt-erzeugt  18.5K      -   396K  -
+mypool/receivedemo@file3.txt-geaendert    18K      -   396K  -
+mypool/receivedemo@aktuell                  0      -   399K  -
+mypool/testarea                          476K   158M   399K  /mypool/testarea
+mypool/testarea@varlog-importiert         26K      -   394K  -
+mypool/testarea@file1-5.txt-erzeugt     18.5K      -   396K  -
+mypool/testarea@file3.txt-geaendert       18K      -   396K  -
+mypool/testarea@aktuell                     0      -   399K  -
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/clonedemo/file1.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/clonedemo/file2.txt
+-rw-r--r-- 1 root root 32 Nov 26 22:31 /mypool/clonedemo/file3.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/clonedemo/file4.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/clonedemo/file5.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/file1.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/file2.txt
+-rw-r--r-- 1 root root 68 Nov 26 22:30 /mypool/receivedemo/file3.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/file4.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/file5.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/file6.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/file7.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/file8.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/.zfs/snapshot/aktuell/file2.txt
+-rw-r--r-- 1 root root 68 Nov 26 22:30 /mypool/receivedemo/.zfs/snapshot/aktuell/file3.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/.zfs/snapshot/aktuell/file5.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/.zfs/snapshot/file1-5.txt-erzeugt/file2.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/.zfs/snapshot/file1-5.txt-erzeugt/file3.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/.zfs/snapshot/file1-5.txt-erzeugt/file5.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/.zfs/snapshot/file3.txt-geaendert/file2.txt
+-rw-r--r-- 1 root root 68 Nov 26 22:30 /mypool/receivedemo/.zfs/snapshot/file3.txt-geaendert/file3.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/receivedemo/.zfs/snapshot/file3.txt-geaendert/file5.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/file1.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/file2.txt
+-rw-r--r-- 1 root root 68 Nov 26 22:30 /mypool/testarea/file3.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/file4.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/file5.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/file6.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/file7.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/file8.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/.zfs/snapshot/aktuell/file2.txt
+-rw-r--r-- 1 root root 68 Nov 26 22:30 /mypool/testarea/.zfs/snapshot/aktuell/file3.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/.zfs/snapshot/aktuell/file5.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/.zfs/snapshot/file1-5.txt-erzeugt/file1.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/.zfs/snapshot/file1-5.txt-erzeugt/file2.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/.zfs/snapshot/file1-5.txt-erzeugt/file3.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/.zfs/snapshot/file1-5.txt-erzeugt/file4.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/.zfs/snapshot/file1-5.txt-erzeugt/file5.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/.zfs/snapshot/file3.txt-geaendert/file1.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/.zfs/snapshot/file3.txt-geaendert/file2.txt
+-rw-r--r-- 1 root root 68 Nov 26 22:30 /mypool/testarea/.zfs/snapshot/file3.txt-geaendert/file3.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/.zfs/snapshot/file3.txt-geaendert/file4.txt
+-rw-r--r-- 1 root root 25 Nov 26 22:30 /mypool/testarea/.zfs/snapshot/file3.txt-geaendert/file5.txt</pre></div></div><div class="section_2"><h3 id="Festplattenschaden-vortaeuschen">Festplattenschaden vortäuschen<a class="headerlink" href="#Festplattenschaden-vortaeuschen">¶</a></h3><p>
+Nach diesem Ausflug in einige Operationen an/mit Dateisystemen soll noch einmal auf Pool-bezogene Aktionen hingewiesen werden, damit die Selbstheilungskräfte von ZFS gezeigt werden können. Zur Erinnerung: Der Pool besteht derzeit aus 2 vdevs, die jeweils redundant (als Spiegel) ausgelegt sind. Zunächst wird gezeigt, dass der Pool auch ohne Redundanz funktioniert.</p><div class="section_3"><h4 id="Festplatten-vom-Pool-trennen">Festplatten vom Pool trennen<a class="headerlink" href="#Festplatten-vom-Pool-trennen">¶</a></h4><p>
+</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p><code class="notranslate">zpool offline</code> nimmt die "Platte" nicht aus dem Pool, sondern erlaubt es, sie zeitweilig vom Rechner zu trennen. Um die Redundanz permanent aufzuheben, gibt es <code class="notranslate">zpool detach</code>.
+</p></div></div><div class="bash"><div class="contents"><pre class="notranslate">zpool status </pre></div></div><p>
+</p><pre class="notranslate">zpool status
+  pool: mypool
+ state: ONLINE
+  scan: none requested
+config:
+
+	NAME                                STATE     READ WRITE CKSUM
+	mypool                              ONLINE       0     0     0
+	  mirror-0                          ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk1  ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk3  ONLINE       0     0     0
+	  mirror-1                          ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk2  ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk4  ONLINE       0     0     0</pre><div class="bash"><div class="contents"><pre class="notranslate">zpool offline mypool /mnt/free-space/simulate.disk{3,4}
+zpool status </pre></div></div><p>
+</p><pre class="notranslate">  pool: mypool
+ state: DEGRADED
+status: One or more devices has been taken offline by the administrator.
+	Sufficient replicas exist for the pool to continue functioning in a
+	degraded state.
+action: Online the device using 'zpool online' or replace the device with
+	'zpool replace'.
+  scan: none requested
+config:
+
+	NAME                                STATE     READ WRITE CKSUM
+	mypool                              DEGRADED     0     0     0
+	  mirror-0                          DEGRADED     0     0     0
+	    /mnt/free-space/simulate.disk1  ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk3  OFFLINE      0     0     0
+	  mirror-1                          DEGRADED     0     0     0
+	    /mnt/free-space/simulate.disk2  ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk4  OFFLINE      0     0     0</pre><p>
+Dieser Pool steht nach wie vor zur Verfügung, auch wenn ihm eine Platte fehlt:</p><div class="bash"><div class="contents"><pre class="notranslate">cp -R /var/log /mypool/testarea
+zfs list -t snapshot </pre></div></div><pre class="notranslate">NAME                                     USED  AVAIL  REFER  MOUNTPOINT
+mypool/receivedemo@varlog-importiert      26K      -   420K  -
+mypool/receivedemo@file1-5.txt-erzeugt  18.5K      -   422K  -
+mypool/receivedemo@file3.txt-geaendert  18.5K      -   422K  -
+mypool/receivedemo@aktuell                  0      -   426K  -
+mypool/testarea@varlog-importiert         27K      -   420K  -
+mypool/testarea@file1-5.txt-erzeugt     18.5K      -   423K  -
+mypool/testarea@file3.txt-geaendert     19.5K      -   424K  -
+mypool/testarea@aktuell                   34K      -   426K  -</pre><p>
+Deutlich wird hier, dass <strong>mypool/receivedemo@aktuell</strong> keine Daten referenziert, weil das Dateisystem noch synchron mit diesem Snapshot ist. Demgegenüber referenziert <strong>mypool/testarea@aktuell</strong> 34K (von 426K), die sich im Dateisystem durch das erneute Kopieren von <strong>/var/log</strong> verändert haben.</p><p>Nun wird eine "Platte" wieder angeschlossen, und ZFS synchronisiert diese Unterschiede selbständig:</p><div class="bash"><div class="contents"><pre class="notranslate">zpool online mypool /mnt/free-space/simulate.disk3
+zpool status </pre></div></div><pre class="notranslate">  pool: mypool
+ state: DEGRADED
+status: One or more devices has been taken offline by the administrator.
+	Sufficient replicas exist for the pool to continue functioning in a
+	degraded state.
+action: Online the device using 'zpool online' or replace the device with
+	'zpool replace'.
+  scan: resilvered 15K in 0h0m with 0 errors on Tue Nov 26 21:17:43 2013
+config:
+
+	NAME                                STATE     READ WRITE CKSUM
+	mypool                              DEGRADED     0     0     0
+	  mirror-0                          ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk1  ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk3  ONLINE       0     0     0
+	  mirror-1                          DEGRADED     0     0     0
+	    /mnt/free-space/simulate.disk2  ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk4  OFFLINE      0     0     0
+
+errors: No known data errors</pre><p>
+Eine Platte fehlt noch im Pool, die andere ist wieder synchron (siehe die Zeile "resilvered 15K ...:" Daten und Metadaten).</p></div><div class="section_3"><h4 id="Festplatten-ersetzen">Festplatten ersetzen<a class="headerlink" href="#Festplatten-ersetzen">¶</a></h4><p>
+Die "andere Platte" sei inzwischen "herunter gefallen" oder völlig defekt. Wenn man ein Austauschgerät besorgt hat, kann man ZFS dieses als Ersatz anbieten:</p><div class="bash"><div class="contents"><pre class="notranslate">truncate /mnt/free-space/simulate.disk5 -s 100M
+zpool replace mypool /mnt/free-space/simulate.disk4 /mnt/free-space/simulate.disk5
+zpool status </pre></div></div><pre class="notranslate">  pool: mypool
+ state: ONLINE
+  scan: resilvered 15K in 0h0m with 0 errors on Tue Nov 26 21:17:43 2013
+config:
+
+	NAME                                STATE     READ WRITE CKSUM
+	mypool                              ONLINE       0     0     0
+	  mirror-0                          ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk1  ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk3  ONLINE       0     0     0
+	  mirror-1                          ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk2  ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk5  ONLINE       0     0     0
+
+errors: No known data errors</pre><p>
+Auch hier: resilvered 1.1 M...</p><p>Selbstverständlich sind unzählige alternative Szenarien denkbar. Hier wurde gezeigt, wie einfach es ist, solche Vorfälle zu "simulieren" und eigene Erfahrungen und Vertrauen zu sammeln.</p></div><div class="section_3"><h4 id="Festplatten-verwechseln">Festplatten verwechseln<a class="headerlink" href="#Festplatten-verwechseln">¶</a></h4><p>
+Zum Schluss noch eine Kleinigkeit: Aufgrund des bei Ubuntu vorhandenem parallelisiertem Bootvorgang mittels Upstart kann die Reihenfolge, in der Festplatten im System auftauchen, nicht vorhergesagt werden. Dies wird hier dadurch simuliert, dass den simulate.disk-Dateien willkürlich andere Namen zugewiesen werden:</p><div class="bash"><div class="contents"><pre class="notranslate">## Falls das Arbeitsverzeichnis noch "im Pool" liegen sollte
+cd /
+## hängt alle Dateisysteme und Volumes aus und lässt die Geräte los, die zu dem Pool gehören
+zpool export mypool
+cd /mnt/free-space
+mv simulate.disk1 simulate.disk9a
+mv simulate.disk2 simulate.disk8a
+mv simulate.disk3 simulate.disk9b
+mv simulate.disk5 simulate.disk8b
+zpool import -d /mnt/free-space/ mypool
+zpool status </pre></div></div><p>
+</p><pre class="notranslate">  pool: mypool
+ state: ONLINE
+  scan: resilvered 15K in 0h0m with 0 errors on Tue Nov 26 21:17:43 2013
+config:
+
+	NAME                                 STATE     READ WRITE CKSUM
+	mypool                               ONLINE       0     0     0
+	  mirror-0                           ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk9a  ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk9b  ONLINE       0     0     0
+	  mirror-1                           ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk8a  ONLINE       0     0     0
+	    /mnt/free-space/simulate.disk8b  ONLINE       0     0     0
+
+errors: No known data errors</pre><p>
+ZFS hat also selbständig erkannt, welche "Platte" wohin gehört und den Pool wieder bereit gestellt.</p></div><div class="section_3"><h4 id="Root-Shell-schliessen">Root-Shell schließen<a class="headerlink" href="#Root-Shell-schliessen">¶</a></h4><p>
+Nicht vergessen: Zum Abschluss die Root-Shell, die oben mit <code class="notranslate">sudo -i</code> geöffnet wurde, verlassen:</p><div class="bash"><div class="contents"><pre class="notranslate">exit </pre></div></div></div></div></div><div class="section_1"><h2 id="Problembehebung">Problembehebung<a class="headerlink" href="#Problembehebung">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Verschluesselung">Verschlüsselung<a class="headerlink" href="#Verschluesselung">¶</a></h3><p>
+Die ZFS on Linux zugrundeliegende ZFS-Version 28 kennt keine Verschlüsselung, die proprietäre Weiterentwicklung Oracle ZFS dagegen schon.</p></div><div class="section_2"><h3 id="Live-CD-mit-ZFS">Live-CD mit ZFS<a class="headerlink" href="#Live-CD-mit-ZFS">¶</a></h3><p>
+Für Ubuntu bisher nicht vorhanden, aber der Debian-Entwickler John Goerzen bietet eine <a class="external" href="http://wiki.complete.org/ZFSRescueDisc" rel="nofollow">Debian GNU/Linux ZFS Rescue Disc</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> an. Mehr Informationen und interessante Beiträge zu ZFS sind im <a class="external" href="http://changelog.complete.org/archives/tag/zfs" rel="nofollow">Blog</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> von John zu finden, z.B. <a class="external" href="http://changelog.complete.org/archives/9152-why-and-how-to-run-zfs-on-linux" rel="nofollow">Why and how to run ZFS on Linux</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/>.</p></div></div><div class="section_1"><h2 id="Links">Links<a class="headerlink" href="#Links">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Intern">Intern<a class="headerlink" href="#Intern">¶</a></h3><p>
+</p><ul><li><p><a class="internal" href="./btrfs-dateisystem.html">Btrfs-Dateisystem</a> - Neuentwicklung, die einige der Fähigkeiten von ZFS beherrscht; siehe auch</p></li><li><p><a class="internal" href="./dateisystem.html">Dateisystem</a> <img alt="{Übersicht}" src="./_/021d71c30babf2ce4dd27339ba3c55995610945b.png"/> Übersichtsartikel</p></li></ul><p>
+<img alt="./openzfs_logo.png" class="image-right" src="./_/5d0fe7dc384a224428dccf573604a0a1a8829380.png"/>
+</p></div><div class="section_2"><h3 id="Extern">Extern<a class="headerlink" href="#Extern">¶</a></h3><p>
+</p><ul><li><p><a class="external" href="http://zfsonlinux.org/" rel="nofollow">ZFS on Linux</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/></p><ul><li><p><a class="external" href="http://zfsonlinux.org/faq.html" rel="nofollow">FAQ</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> - häufige Fragen und Antworten</p></li><li><p><a class="external" href="http://groups.google.com/a/zfsonlinux.org/group/zfs-discuss/topics" rel="nofollow">ZFS Google Group</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> - mit Beteiligung der ZoL-Entwickler</p></li><li><p><a class="external" href="http://users.soe.ucsc.edu/~scott/courses/Fall04/221/zfs_overview.pdf" rel="nofollow">The Zettabyte File System</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> <img alt="{dl}" src="./_/8e630211d0f5f5cb7c6424055f9c9aa15a420fab.png"/> - interessanter Grundlagen-Artikel der ZFS-Entwickler im PDF-Format, 2004</p></li><li><p><a class="external" href="http://open-zfs.org/wiki/History" rel="nofollow">Eckdaten zur ZFS-Entwicklung</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/></p></li></ul></li><li><p><a class="external" href="http://arstechnica.com/information-technology/2014/02/ars-walkthrough-using-the-zfs-next-gen-filesystem-on-linux/" rel="nofollow">Using the ZFS next-gen filesystem on Linux</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> - Blogbeitrag, 02/2014</p></li><li><p>18-teilige Artikelserie von <a class="external" href="http://pthree.org/category/zfs/" rel="nofollow">Aaron Toponce</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> zur ZPOOL- und ZFS-Administration:</p><ul><li><p><a class="external" href="http://pthree.org/2012/04/17/install-zfs-on-debian-gnulinux/" rel="nofollow">Part 0: Install ZFS on Debian GNU/Linux</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> - 04/2012 ff.</p></li><li><p><a class="external" href="http://pthree.org/2013/01/03/zfs-administration-part-xvii-best-practices-and-caveats/" rel="nofollow">Part XVII: Best Practices and Caveats</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> - 01/2013</p></li></ul></li><li><p><a class="interwiki interwiki-wikipedia_en" href="https://en.wikipedia.org/wiki/ZFS">ZFS</a></p></li><li><p><a class="external" href="http://open-zfs.org/" rel="nofollow">OpenZFS</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> (siehe auch <a class="external" href="http://heise.de/-1960413" rel="nofollow">heise Open Source</a> <img alt="{de}" src="./_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/>, 09/2013)</p></li></ul><p>
+</p><ul><li><p><a class="external" href="http://docs.oracle.com/cd/E26505_01/html/E37384/index.html" rel="nofollow">Oracle Solaris 10 ZFS Administration Guide</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> </p></li><li><p><a class="external" href="https://java.net/projects/solaris-zfs/pages/Home" rel="nofollow">ältere Linksammlung zum Thema ZFS</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/></p></li><li><p><a class="external" href="http://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs" rel="nofollow">How ZFS continues to be better than btrfs</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> - Blogbeitrag, 06/2013</p></li><li><p><a class="external" href="http://heise.de/-1833105" rel="nofollow">Dateisystem ZFS on Linux bereit für Alltagseinsatz</a> <img alt="{de}" src="./_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/> - heise Open Source 04/2013</p></li><li><p><a class="external" href="http://www.hack-job.org/how-tos/zfs-unter-ubuntu/" rel="nofollow">ZFS unter Ubuntu</a> <img alt="{de}" src="./_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/> - Installation aus dem Quelltext und Nutzungsbeispiele, Blogbeitrag 08/2011</p></li><li><p><a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/RAID-Z#RAID-Z_im_Dateisystem_ZFS">RAID-Z</a></p><ul><li><p><a class="external" href="http://constantin.glez.de/blog/2010/06/closer-look-zfs-vdevs-and-performance#raidzperformance" rel="nofollow">RAID-Z Performance Considerations</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> - Blogbeitrag 06/2010</p></li><li><p><a class="external" href="http://utcc.utoronto.ca/~cks/space/blog/solaris/ZFSRaidzReadPerformance" rel="nofollow">A read performance surprise with ZFS's raidz and raidz2</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> - Blogbeitrag 09/2008</p></li></ul></li></ul><p>
+</p></div></div></div>
+<p class="meta">
+<a href="./zfs_on_linux/a/revision/941320.html">Diese Revision</a> wurde am 16. Mai 2017 13:45 von <a href="https://ubuntuusers.de/user/Lode_Runner/">Lode_Runner</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="./startseite.html">Wiki</a></li>
+<li><a href="./zfs_on_linux.html">ZFS on Linux</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="./_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="./_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="./_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="./_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

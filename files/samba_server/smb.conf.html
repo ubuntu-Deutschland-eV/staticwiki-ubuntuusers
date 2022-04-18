@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Samba_Server/smb.conf › ubuntuusers statisches Wiki</title>
+<link href="../_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="../_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="../_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="../_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="../_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="../_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="../startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="../samba_server/smb.conf.html">smb.conf</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/Samba_Server/smb.conf">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="../wiki/index.html">Index</a></li>
+<li><a href="../wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="../wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="../wiki.html">Übersicht</a></li>
+<li><a href="../wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="../wiki/benutzung.html">Benutzung</a></li>
+<li><a href="../kategorien.html">Kategorie</a></li>
+<li><a href="../wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="../wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="../howto.html">Howto anlegen</a></li>
+<li><a href="../wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="../wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="../baustelle.html">Baustellen</a></li>
+<li><a href="../wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="../wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="../wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="../wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="../samba_server/smb.conf/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="../samba_server/smb.conf/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="../samba_server/smb.conf/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="../samba_server/smb.conf/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="../samba_server/smb.conf/a/backlinks.html">smb.conf</a></h1>
+<div id="page"><p>
+</p><div class="box tested_for"><h3 class="box tested_for">Dieser Artikel wurde für die folgenden
+Ubuntu-Versionen getestet:</h3><div class="contents"><p>
+</p><ul><li><p><a class="internal" href="../trusty_tahr.html">Ubuntu 14.04</a> Trusty Tahr</p></li></ul></div></div><p>
+</p><p>
+</p><div class="box advanced"><h3 class="box advanced">Artikel für fortgeschrittene Anwender</h3><div class="contents"><p>
+Dieser Artikel erfordert mehr Erfahrung im Umgang mit
+Linux und ist daher nur für fortgeschrittene Benutzer
+gedacht.
+</p></div></div><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="../terminal.html">Ein Terminal öffnen</a></p></li><li><p><a class="crosslink anchor" href="#source-2" id="source-2"></a> <a class="internal" href="../editor.html">Einen Editor öffnen</a></p></li><li><p><a class="crosslink anchor" href="#source-3" id="source-3"></a> <a class="internal" href="../sudo.html">Mit Root-Rechten arbeiten</a></p></li><li><p><a class="crosslink anchor" href="#source-4" id="source-4"></a> <a class="internal" href="../samba.html">Samba - Überblick und Grundbegriffe</a></p></li></ol></div></div><div class="toc toc-depth-3"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a class="crosslink" href="#Aufbau-der-Datei-smb-conf">Aufbau der Datei smb.conf
+</a><ol class="arabic"><li><a class="crosslink" href="#Globale-Einstellungen">Globale Einstellungen
+</a><ol class="arabic"><li><a class="crosslink" href="#Grundeinstellungen">Grundeinstellungen
+</a></li><li><a class="crosslink" href="#WINS-Support">WINS Support
+</a></li><li><a class="crosslink" href="#Benutzerauthentifizierung">Benutzerauthentifizierung
+</a></li><li><a class="crosslink" href="#Gast-Zugang">Gast-Zugang
+</a></li><li><a class="crosslink" href="#cifs-UNIX-Extensions">cifs UNIX Extensions
+</a></li><li><a class="crosslink" href="#Windows-ACLs">Windows-ACLs
+</a></li><li><a class="crosslink" href="#Zeit-Synchronisation">Zeit-Synchronisation
+</a></li><li><a class="crosslink" href="#Usershare-Vorgaben">Usershare-Vorgaben
+</a></li></ol></li><li><a class="crosslink" href="#Druckerfreigaben">Druckerfreigaben
+</a><ol class="arabic"><li><a class="crosslink" href="#Automatische-Druckerfreigabe">Automatische Druckerfreigabe
+</a></li></ol></li><li><a class="crosslink" href="#Dateifreigaben">Dateifreigaben
+</a><ol class="arabic"><li><a class="crosslink" href="#Heimatverzeichnisse">Heimatverzeichnisse
+</a></li><li><a class="crosslink" href="#Einzelne-Freigaben">Einzelne Freigaben
+</a></li><li><a class="crosslink" href="#Netzwerk-Papierkorb">Netzwerk-Papierkorb
+</a></li></ol></li><li><a class="crosslink" href="#Syntax-Kontrolle">Syntax-Kontrolle
+</a></li></ol></li><li><a class="crosslink" href="#Links">Links
+</a><ol class="arabic"><li><a class="crosslink" href="#Verwandte-Seiten">Verwandte Seiten
+</a></li><li><a class="crosslink" href="#Ergaenzende-und-weiterfuehrende-Informationen">Ergänzende und weiterführende Informatio...</a></li></ol></li></ol></div><p><img alt="Samba_Server/samba-logo.png" class="image-left" src="../_/a8ef26a0d93a67702ef6b8f48761da6a0e0a2c2d.png"/>
+Das Kernstück jeder Samba-Installation ist die Konfigurationsdatei <strong>/etc/samba/smb.conf</strong>. Über diese lässt sich Samba <sup><a href="#source-4">[4]</a></sup> sehr umfangreich und detailliert einrichten. Die meisten der Einträge beziehen sich auf einen Samba-Server; einige davon sind aber auch für Samba-Clients von Bedeutung.</p><p>Die Datei <strong>smb.conf</strong> teilt sich in mehrere Sektionen und muss mit einem Editor <sup><a href="#source-2">[2]</a></sup> mit Root-Rechten <sup><a href="#source-3">[3]</a></sup> bearbeitet werden. Auch die graphischen Werkzeuge <a class="internal" href="../samba_client_gnome.html">system-config-samba</a> und  <a class="external" href="http://dalalven.dtdns.net/linux/gadmintools-webpage/" rel="nofollow">gadmin-samba</a> <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> nehmen Veränderungen an <strong>smb.conf</strong> vor, und das (inzwischen leider veraltete) Web-Interface <a class="internal" href="../archiv/samba_server_swat.html">Swat</a> legt eine neue Datei (ohne Kommentarzeilen) an. Deshalb sollte man vor der Verwendung eines dieser Hilfsprogramme unbedingt eine Kopie der vorhandenen Datei <strong>smb.conf</strong> anlegen.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Bei der Installation von Samba wird automatisch eine Kopie der Standard-Konfigurationsdatei unter <strong>/usr/share/samba/smb.conf</strong> abgelegt. Diese kann bei Bedarf von dort zurück kopiert werden, um den Ausgangszustand wieder herzustellen.
+</p></div></div><p>Im Folgenden werden die wichtigsten Optionen - die man normalerweise anpassen muss, um einen Samba-Server einzurichten - erklärt. Grundlagen sind dem Artikel <a class="internal" href="../samba_server.html">Samba Server</a> zu entnehmen, weitere Details zu den verfügbaren Optionen sind über den Abschnitt <a class="crosslink" href="#Links">Links</a> zu finden.</p><div class="section_1"><h2 id="Aufbau-der-Datei-smb-conf">Aufbau der Datei smb.conf<a class="headerlink" href="#Aufbau-der-Datei-smb-conf">¶</a></h2><p>
+</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Kommentare in der <strong>/etc/samba/smb.conf</strong> sind Zeilen, welche mit "<code class="notranslate">#</code>" oder "<code class="notranslate">;</code>" beginnen; was hinter diesem Zeichen steht, wird von Samba ignoriert. Viele Einstellungen sind unter Ubuntu standardmäßig auskommentiert; es genügt in der Regel, diese Kommentarzeichen zu entfernen, um eine bestimmte Funktion zu nutzen.
+</p></div></div><div class="section_2"><h3 id="Globale-Einstellungen">Globale Einstellungen<a class="headerlink" href="#Globale-Einstellungen">¶</a></h3><p>
+In der globalen Sektion werden die allgemeinen Einstellungen und Sicherheitsoptionen festgelegt. Üblicherweise müssen nur wenige Werte angepasst werden. Die globale Sektion beginnt mit</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">[global]</span>
+</pre></div>
+</td></tr></table></div><div class="section_3"><h4 id="Grundeinstellungen">Grundeinstellungen<a class="headerlink" href="#Grundeinstellungen">¶</a></h4><p>
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>  <span class="na">workgroup</span> <span class="o">=</span> <span class="s">Arbeitsgruppe</span>
+<span class="s">  server string = %h server (Samba, Ubuntu)</span>
+</pre></div>
+</td></tr></table></div><p>Hierbei gibt der Parameter <code class="notranslate">workgroup</code> die Arbeitsgruppe bzw. Domäne an. Prinzipiell ist er frei wählbar, aber bei der Benennung sollte auf deutsche Umlaute und Leerzeichen verzichtet sowie nicht mehr als 11 Zeichen verwendet werden. Der Parameter <code class="notranslate">server string</code> steht für den Rechnernamen und ist ebenfalls frei wählbar. Allerdings sollte auch hier auf deutsche Umlaute verzichtet werden. Die Länge des über die Variable <code class="notranslate">%h</code> übergebenen Rechnernamens darf höchstens 15 Zeichen betragen.</p><p>Falls Windows XP den so gesetzten Rechnernamen als Kommentar anzeigt, hilft ein Registry-Patch: <a class="crosslink topic" href="https://forum.ubuntuusers.de/topic/aendern-von-name-und-kommentar-des-servers-er/">Ändern von Name und Kommentar des Servers erfolglos (netbios name, server string)</a></p></div><div class="section_3"><h4 id="WINS-Support">WINS Support<a class="headerlink" href="#WINS-Support">¶</a></h4><p>
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>  <span class="na">wins support</span> <span class="o">=</span> <span class="s">no</span>
+<span class="s">  wins server = 192.168.1.1</span>
+</pre></div>
+</td></tr></table></div><p>Wichtig ist auch die Angabe, ob der Rechner als <em>"WINS-Server"</em> fungiert oder einen anderen Rechner als WINS-Server nutzen soll. <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Windows_Internet_Naming_Service">WINS</a> (Windows Internet Name Service) ist ein von Microsoft entwickeltes System zur dynamischen Auflösung von NetBIOS-Namen.</p><p>Standardmäßig ist die WINS-Unterstützung von Samba unter Ubuntu deaktiviert.</p><p>Um Samba als WINS-Server zu betreiben, genügt es <code class="notranslate">wins support</code> auf <code class="notranslate">yes</code> zu setzen. Soll Samba ein WINS-Client sein, müssen <code class="notranslate">wins support</code> auf <code class="notranslate">no</code> sowie <code class="notranslate">wins server</code> auf die IP vom WINS-Server gesetzt werden.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Besitzt man einen Rechner mit einem Windows-Server-Betriebssystem (also z.B. Windows 2000 bzw. 2003 Server), so sollte man diesen als WINS-Server nutzen. Ist der Samba-Server jedoch der einzige Rechner im Netz, der permanent betrieben wird, so sollte man die Funktion als WINS-Server mit <code class="notranslate">wins support = yes</code> aktivieren.</p><p>Es ist dringend angeraten, in einem Netzwerk nur <span class="underline">einen</span> WINS-Server zu betreiben. Die Einstellung <code class="notranslate">wins support = yes</code> sollte daher nur auf einem Rechner gesetzt werden!
+</p></div></div><p>Mehr zum Thema Samba als WINS-Server findet sich in der <a class="interwiki interwiki-sourceforge" href="http://sourceforge.net/projects/projects/gertranssmb3.berlios/files">Dokumentation</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/> .</p><p>Auch wenn im Netzwerk kein WINS-Server aktiv ist, versuchen Samba-Clients schrittweise auf verschiedenen Wegen, Netbios-Namen aufzulösen. Eventuell ist es nötig, auf den einzelnen Clients die Reihenfolge, in der dies geschieht, über die Option <code class="notranslate">name resolve order</code> anzupassen. Standardmäßig ist
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>  <span class="na">name resolve order</span> <span class="o">=</span> <span class="s">lmhosts host wins bcast</span>
+</pre></div>
+</td></tr></table></div><p>
+eingestellt.</p></div><div class="section_3"><h4 id="Benutzerauthentifizierung">Benutzerauthentifizierung<a class="headerlink" href="#Benutzerauthentifizierung">¶</a></h4><p>
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>  <span class="na">security</span> <span class="o">=</span> <span class="s">user</span>
+<span class="s">  encrypt passwords = true</span>
+<span class="s">  invalid users = root</span>
+</pre></div>
+</td></tr></table></div><p>Der Parameter <code class="notranslate">security</code> gibt an, wie eine Benutzeranmeldung geprüft wird; mögliche Werte:</p><p>
+</p><table><tr><td><code class="notranslate">user</code> </td><td> Dies ist die Standardeinstellung. Üblicherweise sollte User-Level-Sicherheit am besten für heterogene Windows-Linux-Netzwerke funktionieren. </td></tr><tr><td> <code class="notranslate">share</code> </td><td> Bei der Share-Level-Sicherheit authentifiziert sich der Client selbst bei jedem Aufruf einer Freigabe mit einem Passwort. Es wird nicht explizit ein Benutzername vom Client zum Server gesendet. Eventuell haben aktuelle Windows-Betriebssysteme Probleme mit dieser Einstellung. Dieses Problem kann mit <code class="notranslate">force user = &lt;username&gt;</code> behoben werden. </td></tr><tr><td> <code class="notranslate">domain</code> </td><td> Wenn Samba in diesem Modus betrieben wird, hat der Server einen "Trust Account" (Maschinen-Account) und reicht alle Authentifizierungsanfragen an die Domänencontroller weiter. Mit anderen Worten: Diese Konfiguration macht den Samba-Server zu einem Domänen-Mitglied. </td></tr></table><p>Verschlüsselte Passwörter sind durch <code class="notranslate">encrypt passwords = true</code> standardmäßig aktiviert; nur für einige wenige Clients (z.B. Windows 95) ist es erforderlich, diesen Parameter auf <code class="notranslate">false</code> zu setzen.</p><p>Mit <code class="notranslate">invalid users</code> wird festgelegt, welche Benutzer sich nicht bei Samba anmelden dürfen.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Es dürfen sich bei Samba nur Benutzer anmelden, für welche auch ein Samba-Account mittels <code class="notranslate">smbpasswd</code> eingerichtet wurde!
+</p></div></div></div><div class="section_3"><h4 id="Gast-Zugang">Gast-Zugang<a class="headerlink" href="#Gast-Zugang">¶</a></h4><p>
+Auf durch eine der folgenden Zeilen gekennzeichnete Freigaben kann auch ohne Anmeldung mit Benutzername und Passwort zugegriffen werden (Gast-Zugang):
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>  <span class="na">public</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="s">  guest ok = yes</span>
+</pre></div>
+</td></tr></table></div><p>
+Welchen Benutzern der Gast-Zugang erlaubt ist, legt die Option <code class="notranslate">map to guest</code> fest. Die Zeile
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>  <span class="na">map to guest</span> <span class="o">=</span> <span class="s">bad user</span>
+</pre></div>
+</td></tr></table></div><p>
+bewirkt, dass jeder Benutzer, der auf dem Server einen System-Account, aber keinen eigenen Samba-Account hat, als Gast zugreifen darf. Die Zeile
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>  <span class="na">guest account</span> <span class="o">=</span> <span class="s">nobody</span>
+</pre></div>
+</td></tr></table></div><p>
+legt fest, mit welcher Identität Gäste dann zugreifen. Der Schein-Benutzer <code class="notranslate">nobody</code> ist auf jedem Ubuntu-System standardmäßig eingerichtet und wird auch von Windows verwendet.</p><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Der Gast-Zugang stellt immer ein gewisses Sicherheitsrisiko dar und sollte <span class="underline">ausschließlich</span> in Netzwerken geschehen, bei denen man sicher ist, dass kein Missbrauch mit den freigegebenen Daten möglich ist.
+</p></div></div><p>Bei Rechnern, die abwechselnd mit verschiedenen Netzwerken verbunden werden (z.B. Laptops) wird dringend empfohlen, auf den Gast-Zugang zu verzichten.</p></div><div class="section_3"><h4 id="cifs-UNIX-Extensions">cifs UNIX Extensions<a class="headerlink" href="#cifs-UNIX-Extensions">¶</a></h4><p>
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>  <span class="na">unix extensions</span> <span class="o">=</span> <span class="s">yes</span>
+</pre></div>
+</td></tr></table></div><p>Dieser Parameter ermöglicht es, mittels <a class="internal" href="../samba_client_cifs.html">cifs-vfs</a> oder <a class="internal" href="../samba_client_smbclient.html">smbclient</a> auch auf dem Client die Original Dateirechte und Zeitstempel des Servers zu sehen, zu verwenden und ggf. auch zu verändern. Standardmäßig ist diese Option aktiviert; sie sollte nur bei Problemen mit diesen Extensions deaktiviert werden.</p><p>Die Einstellung kann nur für den gesamten Server geändert werden; unterschiedliche Einstellungen für einzelne Freigaben sind vom Server aus nicht möglich.</p><p>Auch wenn sie aktiviert sind, bleiben die UNIX Extensions weitgehend unwirksam für Freigaben auf FAT-Partitionen, da diese keine UNIX-Dateirechte speichern können. Für Freigaben auf <a class="internal" href="../ntfs.html">NTFS</a>-Partitionen sind sie nur dann voll wirksam, wenn diese auf dem Server mit der Option <code class="notranslate">permissions</code> eingebunden sind. Von Windows-Clients werden die UNIX-Extensions ganz ignoriert.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Die cifs UNIX Extensions haben Vorrang vor anderen Direktiven, die UNIX-Dateirechte festlegen. Deshalb funktionieren bei aktivierten UNIX Extensions z.B. die Direktiven <code class="notranslate">force user</code> und <code class="notranslate">force group</code> sowie <code class="notranslate">force directory mode</code> und <code class="notranslate">force create mode</code> nicht!
+</p></div></div></div><div class="section_3"><h4 id="Windows-ACLs">Windows-ACLs<a class="headerlink" href="#Windows-ACLs">¶</a></h4><p>
+Seit der Version 4.0 erlaubt es Samba nun auch, die Konfiguration von Freigaben größtenteils von einem Windows-Client aus vorzunehmen. Dies wird sogar empfohlen, denn es ist oft der einfachste Weg, die Zugriffsrechte für neu erstellte Dateien und Ordner gleich auf dem Windows-Client mittels <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Access_Control_List">Windows-ACLs</a> festzulegen. Diese werden dann mittels Samba auf dem Server in <a class="internal" href="../acl.html">POSIX-ACLs</a> übertragen. Natürlich funktioniert dies nur dann, wenn das Dateisystem des Servers die POSIX-ACLs unterstützt (Mount-Option <code class="notranslate">acl</code>, seit <a class="internal" href="../precise.html">Ubuntu 12.04</a> bei ext3 und ext4 Standard).
+</p><div class="box experts"><h3 class="box experts">Experten-Info:</h3><div class="contents"><p>Da sich POSIX- und Windows-ACL nicht völlig deckungsgleich ineinander abbilden lassen, ist eine vollständige Berücksichtigung sämtlicher in Windows-ACL möglicher Angaben durch Samba nur dann möglich, wenn das Linux-Dateisystem mit der zusätzlichen Mount-Option <code class="notranslate">user_xattr</code> eingebunden ist und im Teil <code class="notranslate">[global]</code> von <strong>smb.conf</strong> die Zeilen <code class="notranslate">vfs objects = acl_xattr</code> und <code class="notranslate">map acl inherit = Yes</code> eingetragen sind.
+</p></div></div><p>Die auf diese Weise festgelegten ACLs können die über die Optionen <code class="notranslate">directory mask</code>, <code class="notranslate">create mask</code>, <code class="notranslate">force directory mode</code> und <code class="notranslate">force create mode</code> festgelegten UNIX-Dateirechte überdecken.</p><p>Alternativ lassen sich die Zugriffsrechte nach wie vor in klassischer Weise auf dem Server über POSIX-ACLs und mit smb.conf-Parametern festlegen.</p></div><div class="section_3"><h4 id="Zeit-Synchronisation">Zeit-Synchronisation<a class="headerlink" href="#Zeit-Synchronisation">¶</a></h4><p>
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>  <span class="na">time server</span> <span class="o">=</span> <span class="s">yes</span>
+</pre></div>
+</td></tr></table></div><p>Damit ist es möglich das Windows Clients ihre Zeit mit der vom Samba Server abgleichen. (Ähnlich dem 
+<a class="internal" href="../systemzeit.html#Zeitsynchronisation-NTP">NTP Verfahren</a>)</p><p>Testen kann man es unter Windows mit:
+</p><div class="bash"><div class="contents"><pre class="notranslate">net time \\192.168.xxx.xxx /set /yes </pre></div></div><p>
+(IP Adresse muss natürlich angepasst werden.)</p></div><div class="section_3"><h4 id="Usershare-Vorgaben">Usershare-Vorgaben<a class="headerlink" href="#Usershare-Vorgaben">¶</a></h4><p>
+Seit der Version 3.0.23 erlaubt Samba auch gewöhnlichen Benutzern, die der <a class="internal" href="../benutzer_und_gruppen.html">Gruppe</a> sambashare angehören, über <a class="internal" href="../samba_server/net_usershare.html">net usershare</a> ihre eigenen Dateien ohne Root-Rechte freizugeben.</p><p>Mit <code class="notranslate">net usershare</code> erstellte persönliche Freigaben erscheinen nicht in der Datei <strong>smb.conf</strong> und werden dort auch nicht konfiguriert. Die allgemeinen Bedingungen für solche persönlichen Freigaben werden aber hier festgelegt:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="c1"># Der Eigentümer darf auch Anderen den Zugriff auf seine Freigaben gestatten.</span>
+  <span class="na">usershare allow guests</span> <span class="o">=</span> <span class="s">Yes</span>
+<span class="c1"># Maximalzahl für persönliche Freigaben (100 = Default; 0 = gar keine).</span>
+  <span class="na">usershare max shares</span> <span class="o">=</span> <span class="s">100</span>
+<span class="c1"># Der Benutzer darf nur Dateien freigeben, deren Eigentümer er ist.</span>
+  <span class="na">usershare owner only</span> <span class="o">=</span> <span class="s">Yes</span>
+<span class="c1"># In diesem Ordner werden persönliche Freigaben eingetragen.</span>
+  <span class="na">usershare path</span> <span class="o">=</span> <span class="s">/var/lib/samba/usershares</span>
+</pre></div>
+</td></tr></table></div><p>
+Mit folgenden Optionen können bestimmte Pfade für persönliche Freigaben zugelassen bzw. von diesen ausgeschlossen werden:
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>  usershare prefix allow list
+  usershare prefix deny list
+</pre></div>
+</td></tr></table></div><p>
+Die Pfade müssen absolut angegeben werden. Durch die Angabe <code class="notranslate">null</code> als Pfad werden die Optionen deaktiviert (Default).</p><p>Da die möglichen Parameter beim Erstellen persönlicher Freigaben bei Weitem nicht alle in Samba möglichen Optionen abdecken, kann in der Datei <strong>smb.conf</strong> eine Muster-Freigabe für persönliche Freigaben festgelegt werden. Diese wird dann durch folgende Zeile als für alle persönlichen Freigaben sämtlicher Benutzer verbindliche Vorgabe festgelegt:
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>  <span class="na">usershare template share</span> <span class="o">=</span> <span class="s">VORLAGE</span>
+</pre></div>
+</td></tr></table></div><p>
+<code class="notranslate">VORLAGE</code> kann entweder eine wirklich vorhandene, in <strong>smb.conf</strong> eingetragene Freigabe sein, oder eine mit der Option <code class="notranslate">-valid = no</code> deaktivierte "Schein-Freigabe". Ist für <code class="notranslate">VORLAGE</code> der Wert <code class="notranslate">null</code> eingetragen (Default), so wird keine Muster-Freigabe verwendet.</p></div></div><div class="section_2"><h3 id="Druckerfreigaben">Druckerfreigaben<a class="headerlink" href="#Druckerfreigaben">¶</a></h3><p>
+</p><div class="section_3"><h4 id="Automatische-Druckerfreigabe">Automatische Druckerfreigabe<a class="headerlink" href="#Automatische-Druckerfreigabe">¶</a></h4><p>
+Neuere Windows-Versionen können über das IPP-Protokoll auf einen Linux-Drucker über <a class="internal" href="../cups.html">CUPS</a> zugreifen. Man kann aber  mit Samba auch Drucker für Windows-Clients zur Verfügung stellen. Die nötigen Optionen sind im Abschnitt <code class="notranslate">[printers]</code> definiert:
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">[printers]</span>
+   <span class="na">comment</span> <span class="o">=</span> <span class="s">All Printers</span>
+<span class="s">   browseable = no</span>
+<span class="s">   path = /tmp</span>
+<span class="s">   printable = yes</span>
+<span class="s">   public = no</span>
+<span class="s">   writable = no</span>
+<span class="s">   create mode = 0700</span>
+</pre></div>
+</td></tr></table></div><p>Dieser Abschnitt ist nach der Installation des Servers automatisch aktiv. Möchte man keine Drucker freigeben, so sollte man den Eintrag auskommentieren. Ausführliche Dokumentationen zum Thema Samba und Druckerfreigaben finden sich wieder in der <a class="interwiki interwiki-sourceforge" href="http://sourceforge.net/projects/projects/gertranssmb3.berlios/files">Dokumentation</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/> .</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Laut <a class="crosslink post" href="https://forum.ubuntuusers.de/post/2151676/">diesem</a> Forenbeitrag kann es zu Problemen mit manchen Windowsprogrammen kommen, welche eine andere Zugriffsmethode auf den Drucker verwenden; insbesondere sei hier der Adobe Reader genannt. Als provisorische Lösung kann man den Parameter <code class="notranslate">browseable</code> auf <code class="notranslate">yes</code> setzen.
+</p></div></div></div></div><div class="section_2"><h3 id="Dateifreigaben">Dateifreigaben<a class="headerlink" href="#Dateifreigaben">¶</a></h3><p>
+</p><div class="section_3"><h4 id="Heimatverzeichnisse">Heimatverzeichnisse<a class="headerlink" href="#Heimatverzeichnisse">¶</a></h4><p>
+Sind auf dem Server im Systemordner <strong>/home/</strong> Heimatverzeichnisse für die einzelnen Benutzer eingerichtet, so können alle diese durch einen einzigen Eintrag in der Sektion <code class="notranslate">[homes]</code> freigegeben werden. Die dafür nötigen Einstellungen sind schon vorbereitet. Um diese kollektive Freigabe aller Heimatverzeichnisse zu aktivieren, muss man nur alle Semikolons <em>";"</em> vor den Einträgen entfernen.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">[homes]</span>
+  <span class="na">comment</span> <span class="o">=</span> <span class="s">Home Directories</span>
+<span class="s">  browseable = no</span>
+<span class="s">  valid users = %S</span>
+<span class="s">  writeable = yes</span>
+<span class="s">  create mode = 0600</span>
+<span class="s">  directory mode = 0700</span>
+</pre></div>
+</td></tr></table></div><p>Die Heimverzeichnisse werden unter dem Namen des jeweiligen Benutzers freigegeben, aber wegen <code class="notranslate">browseable = no</code> nicht im Netzwerk angezeigt. Wegen <code class="notranslate">valid users = %S</code> hat nur der Benutzer mit dem passenden Namen Zugriff; andere Benutzer können die Freigabe weder sehen, noch lesen, noch schreiben. Wegen <code class="notranslate">create mode = 0600</code> und <code class="notranslate">directory mode = 0700</code> hat bei neu angelegten Dateien und Ordnern auch auf dem Server selbst nur der betreffende Benutzer Zugriffsrechte.</p><p>Die Sektion <code class="notranslate">[homes]</code> stellt vor allem für Systeme mit vielen Benutzern gegenüber einzelnen Freigaben eine erhebliche Vereinfachung dar.</p></div><div class="section_3"><h4 id="Einzelne-Freigaben">Einzelne Freigaben<a class="headerlink" href="#Einzelne-Freigaben">¶</a></h4><p>
+Anschließend werden die einzelnen Freigaben eingetragen. Eine Freigabe setzt sich aus dem Freigabenamen in eckigen Klammern - also <code class="notranslate">[Beispielfreigabe]</code> - und den danach folgenden Optionen zusammen. Die graphischen Oberflächen zu Samba tragen hier ebenfalls die Freigaben ein.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Oft wird vergessen, dass die Zugriffsrechte in der Freigabe <span class="underline">und</span> im lokalen Dateisystem stimmen müssen. Erlaubt man z.B. den Zugriff von Gästen auf ein Verzeichnis, so muss der Benutzer <code class="notranslate">nobody</code> bzw. die Gruppe <code class="notranslate">nogroup</code> auch die entsprechenden lokalen <a class="internal" href="../rechte.html">Lese-/Schreibrechte</a> in dem Verzeichnis haben.
+</p></div></div><div class="section_4"><h5 id="Beispiel-1">Beispiel 1<a class="headerlink" href="#Beispiel-1">¶</a></h5><p>
+Beispiel für eine Freigabe, auf die nur angemeldete Benutzer zugreifen dürfen, wobei diese nur lesen aber nicht schreiben können. Die mit <code class="notranslate">(Default)</code> gekennzeichneten Einträge entsprechen den Standard-Einstellungen. Sie dienen nur zur Erläuterung und dürfen auch weggelassen werden:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">[beispiel1]</span>
+<span class="c1"># Pfad zu Verzeichnis</span>
+  <span class="na">path</span> <span class="o">=</span> <span class="s">/pfad/zu/daten1</span>
+<span class="c1"># Kommentar zur Freigabe</span>
+  <span class="na">comment</span> <span class="o">=</span> <span class="s">Testfreigabe 1</span>
+<span class="c1"># Freigabe ist aktiv (Default)</span>
+  <span class="na">available</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="c1"># Freigabe ist direkt sichtbar (Default)</span>
+  <span class="na">browseable</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="c1"># Gäste dürfen nicht auf die Freigabe zugreifen (Default)</span>
+  <span class="na">guest ok</span> <span class="o">=</span> <span class="s">no</span>
+<span class="c1"># Angemeldete Benutzer dürfen lesen aber nicht schreiben (Default).</span>
+  <span class="na">writeable</span> <span class="o">=</span> <span class="s">no</span>
+</pre></div>
+</td></tr></table></div></div><div class="section_4"><h5 id="Beispiel-2">Beispiel 2<a class="headerlink" href="#Beispiel-2">¶</a></h5><p>
+Beispiel für eine Freigabe, auf die jeder - auch Gäste - sowohl lesend als auch schreibend zugreifen können. Des Weiteren wird auf die Daten lokal mit den Benutzerrechten <code class="notranslate">otto</code> und den Gruppenrechten <code class="notranslate">users</code> zugegriffen:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">[beispiel2]</span>
+<span class="c1"># Pfad zu Verzeichnis</span>
+  <span class="na">path</span> <span class="o">=</span> <span class="s">/pfad/zu/daten2</span>
+<span class="c1"># Auch Gäste dürfen auf die Freigabe zugreifen.</span>
+  <span class="na">guest ok</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="c1"># Angemeldete Benutzer dürfen auch schreiben.</span>
+  <span class="na">writeable</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="c1"># Freigabe ist direkt sichtbar (Default)</span>
+  <span class="na">browseable</span> <span class="o">=</span> <span class="s">yes</span>
+<span class="c1"># Rechte bei neuen Dateien/Verzeichnissen beschränken ("maskieren")</span>
+  <span class="na">create mask</span> <span class="o">=</span> <span class="s">0664</span>
+<span class="s">  directory mask = 0775</span>
+<span class="c1"># Benutzer und Gruppenzugehörigkeit (nur wirksam bei "unix extensions = no")</span>
+<span class="c1"># Egal mit welchen Daten sich ein Benutzer am Server anmeldet,</span>
+<span class="c1"># die Daten werden lokal mit diesen Dateizugehörigkeiten abgelegt.</span>
+  <span class="na">force user</span> <span class="o">=</span> <span class="s">otto</span>
+<span class="s">  force group = users</span>
+</pre></div>
+</td></tr></table></div></div><div class="section_4"><h5 id="Beispiel-3">Beispiel 3<a class="headerlink" href="#Beispiel-3">¶</a></h5><p>
+Beispiel für eine Freigabe, deren Werte von der Freigabe <code class="notranslate">beispiel2</code> kopiert werden, wobei alle weiteren Angaben von den folgenden Optionen überschrieben werden. Prinzipiell darf niemand schreiben, bis auf den Benutzer <code class="notranslate">paul</code> und die Mitglieder der Gruppe <code class="notranslate">beispiel</code>:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="k">[beispiel3]</span>
+<span class="c1"># Die Einstellungen dieser Freigabe werden übernommen</span>
+  <span class="na">copy</span> <span class="o">=</span> <span class="s">beispiel2</span>
+<span class="s">  path = /pfad/zu/daten3</span>
+<span class="c1"># Keine Schreibrechte für alle (Default)</span>
+  <span class="na">writeable</span> <span class="o">=</span> <span class="s">no</span>
+<span class="c1"># Benutzer, Gruppen die trotzdem schreiben dürfen</span>
+  <span class="na">write list</span> <span class="o">=</span> <span class="s">paul,@beispiel</span>
+</pre></div>
+</td></tr></table></div><p>Mehr zu dem Thema "Zugriffskontrollen für Freigabedefinitionen" findet sich in der <a class="interwiki interwiki-sourceforge" href="http://sourceforge.net/projects/projects/gertranssmb3.berlios/files">Dokumentation</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/> .</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Werden die Zugriffsrechte durch eine der Optionen <code class="notranslate">valid users</code> bzw. <code class="notranslate">invalid users</code> eingeschränkt, so sind ab Samba 4 für die Option <code class="notranslate">force user</code> nur noch zugriffsberechtigte Benutzer zulässig. Andernfalls wird der Zugriff verwehrt. 
+</p></div></div></div></div><div class="section_3"><h4 id="Netzwerk-Papierkorb">Netzwerk-Papierkorb<a class="headerlink" href="#Netzwerk-Papierkorb">¶</a></h4><p>
+Das einfache Verschieben von Dateien in den Papierkorb des jeweiligen Desktop ist über Samba nicht möglich. Abhilfe kann jedoch der in Samba (ab Version 3) enthaltene Netzwerk-Papierkorb schaffen. Ist dieser eingerichtet, so werden beim Löschen von Dateien oder Ordnern diese nicht gleich endgültig gelöscht, sondern in einen (ggf. versteckten) Ordner verschoben, aus dem sie dann in einem zweiten Arbeitsgang endgültig gelöscht werden können. Diese wenig bekannte Möglichkeit benötigt zwar zusätzlichen Speicherplatz auf dem Server, erhöht aber die Datensicherheit nicht unerheblich.</p><p>Der Netzwerk-Papierkorb kann entweder im Abschnitt [global] generell für alle Freigaben, oder aber für jede Freigabe einzeln eingerichtet werden. Hierfür fügt man einfach die Zeile
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>  <span class="na">vfs object</span> <span class="o">=</span> <span class="s">recycle</span>
+</pre></div>
+</td></tr></table></div><p>
+hinzu. Durch weitere Optionen kann man noch den Pfad zum Papierkorb-Ordner und dessen Eigenschaften festlegen:
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="c1"># Ein Papierkorb wird eingerichtet:</span>
+  <span class="na">vfs object</span> <span class="o">=</span> <span class="s">recycle</span>
+<span class="c1"># Der Pfad zum Papierkorb relativ zur Freigabe (".recyclebin" ist Default).</span>
+  <span class="na">recycle:repository</span> <span class="o">=</span> <span class="s">.recyclebin</span>
+<span class="c1"># Im Papierkorb bleiben Pfad-Angaben erhalten.</span>
+  <span class="na">recycle:keeptree</span> <span class="o">=</span> <span class="s">Yes</span>
+<span class="c1"># Beim Verschieben wird der Zeitstempel angepasst.</span>
+  <span class="na">recycle:touch</span> <span class="o">=</span> <span class="s">Yes</span>
+<span class="c1"># Gleichnamige Dateien werden nicht überschrieben.</span>
+  <span class="na">recycle:versions</span> <span class="o">=</span> <span class="s">Yes</span>
+<span class="c1"># Keine Begrenzung der Dateigröße.</span>
+  <span class="na">recycle:maxsize</span> <span class="o">=</span> <span class="s">0</span>
+</pre></div>
+</td></tr></table></div><p>
+Der Ordner <strong>.recyclebin</strong> bzw. der mittels <code class="notranslate">recycle:repository</code> festgelegte Papierkorb-Ordner wird dann beim ersten Löschvorgang automatisch angelegt. Weitere Einzelheiten siehe <a class="external" href="http://www.samba.org/samba/docs/man/manpages-3/vfs_recycle.8.html" rel="nofollow">hier</a> <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/>.</p></div></div><div class="section_2"><h3 id="Syntax-Kontrolle">Syntax-Kontrolle<a class="headerlink" href="#Syntax-Kontrolle">¶</a></h3><p>
+Nach jeder Veränderung der Datei <strong>smb.conf</strong> sollte in einem Terminal der Befehl <code class="notranslate">testparm</code> ausgeführt werden um sicherzustellen, dass die Einträge keine grundlegenden Syntax-Fehler enthalten. Wird der Befehl <code class="notranslate">testparm</code> ohne Parameter ausgeführt, so werden nur die durch Einträge in der Datei <strong>smb.conf</strong> veränderten Optionen angezeigt. Der Befehl <code class="notranslate">testparm -v</code> bewirkt, dass außerdem auch die Default-Einstellungen angezeigt werden.</p></div></div><div class="section_1"><h2 id="Links">Links<a class="headerlink" href="#Links">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Verwandte-Seiten">Verwandte Seiten<a class="headerlink" href="#Verwandte-Seiten">¶</a></h3><p>
+</p><ul><li><p><a class="internal" href="../samba_server.html">Samba Server</a> - Grundsätzliches zum Einrichten eines Samba-Servers</p><ul><li><p><a class="internal" href="../samba_server/net_usershare.html">net usershare</a> - Mittels Kommandozeile persönliche Freigaben erstellen und administrieren</p></li><li><p><a class="internal" href="../samba_server_gnome.html">Samba Server GNOME</a> - Die graphische Konfiguration von Freigaben mit GNOME oder Unity. Diese Seite enthält auch eine Beschreibung des Konfigurations-Tools "system-config-samba", das sich auch mit anderen graphischen Oberflächen verwenden lässt, und ist so in Teilen auch für Xfce (Xubuntu) und Lxde (Lubuntu) gültig.</p></li><li><p><a class="internal" href="../samba_server_kde.html">Samba Server KDE</a> - Die graphische Konfiguration von Freigaben mit KDE (Kubuntu)</p></li></ul></li><li><p><a class="internal" href="../samba_server_pdc.html">Samba Server PDC</a> - Eine Beschreibung, wie man Samba als Primary Domain Controller (PDC) nutzen kann</p></li><li><p><a class="internal" href="../samba_winbind.html">Samba Winbind</a> - Ubuntu an einer Windows Domäne anmelden und die Benutzer am "Active Directory" authentifizieren</p></li></ul></div><div class="section_2"><h3 id="Ergaenzende-und-weiterfuehrende-Informationen">Ergänzende und weiterführende Informationen<a class="headerlink" href="#Ergaenzende-und-weiterfuehrende-Informationen">¶</a></h3><p>
+</p><ul><li><p><a class="external" href="http://samba.org/" rel="nofollow">Projektseite</a> <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/></p><ul><li><p><a class="external" href="https://wiki.samba.org/index.php/Main_Page" rel="nofollow" title="https://wiki.samba.org/index.php/Main_Page">https://wiki.samba.org/index.php/Main_Page</a> – Das offizielle Samba-Wiki <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/></p></li><li><p><a class="external" href="http://samba.org/samba/docs/man/manpages-3/smb.conf.5.html" rel="nofollow">Manpage zu <strong>smb.conf</strong> in lesbarer Form</a> <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/></p></li><li><p><a class="external" href="http://www.samba.org/samba/docs/man/Samba-HOWTO-Collection/" rel="nofollow">The Official Samba 3.5.x HOWTO and Reference Guide</a> <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/></p></li><li><p><a class="external" href="http://www.unifix.de/tutorial/samba/DE-Samba-HOWTO-1.html" rel="nofollow">Samba-Tutorial deutsch</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/> </p></li></ul></li><li><p><a class="external" href="http://www.loggn.de/linux-samba-geloschte-dateien-in-einen-papierkorb-verschieben/" rel="nofollow">Samba – gelöschte Dateien in einen Papierkorb verschieben</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/> </p></li><li><p><a class="external" href="http://ctaas.de/linux-install.htm#Linux_Samba_Netzwerk_Dateiserver_einrichten_mit_Papierkorb" rel="nofollow">Samba Datei-Server mit Papierkorb auf den Netzwerkfreigaben (Netzwerklaufwerken)</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/> - Tutorial zur Einrichtung eines Samba Dateiservers mit Papierkorb (mit automatischer Papierkorb-Bereinigung).</p></li><li><p><a class="external" href="http://linuxwiki.de/Samba" rel="nofollow">Viele weitere Tipps und Links in "linuxwiki.de"</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/></p></li><li><p><a class="external" href="http://www.oreilly.de/german/freebooks/samba2ger/" rel="nofollow">Open Book "Samba"</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/> - 2. Auflage, O'Reilly-Verlag, 2003.</p></li><li><p><a class="external" href="http://support.microsoft.com/kb/909264/de" rel="nofollow">Namenskonventionen in Active Directory</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/> – Diese müssen auch in Samba beachtet werden.</p></li></ul><p>
+</p></div></div></div>
+<p class="meta">
+<a href="../samba_server/smb.conf/a/revision/945862.html">Diese Revision</a> wurde am 30. Dezember 2017 20:05 von <a href="https://ubuntuusers.de/user/webby/">webby</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="../startseite.html">Wiki</a></li>
+<li><a href="../samba_server.html">Samba Server</a></li>
+<li><a href="../samba_server/smb.conf.html">smb.conf</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="../_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="../_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="../_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="../_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

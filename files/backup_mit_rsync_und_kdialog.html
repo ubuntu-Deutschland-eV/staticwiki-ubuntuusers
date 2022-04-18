@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Backup_mit_rsync_und_KDialog › ubuntuusers statisches Wiki</title>
+<link href="./_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="./_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="./_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="./_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="./_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="./_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="./startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="./backup_mit_rsync_und_kdialog.html">Backup mit rsync und KDialog</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/Backup_mit_rsync_und_KDialog">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="./wiki/index.html">Index</a></li>
+<li><a href="./wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="./wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="./wiki.html">Übersicht</a></li>
+<li><a href="./wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="./wiki/benutzung.html">Benutzung</a></li>
+<li><a href="./kategorien.html">Kategorie</a></li>
+<li><a href="./wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="./wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="./howto.html">Howto anlegen</a></li>
+<li><a href="./wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="./wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="./baustelle.html">Baustellen</a></li>
+<li><a href="./wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="./wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="./wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="./wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="./backup_mit_rsync_und_kdialog/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="./backup_mit_rsync_und_kdialog/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="./backup_mit_rsync_und_kdialog/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="./backup_mit_rsync_und_kdialog/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="./backup_mit_rsync_und_kdialog/a/backlinks.html">Backup mit rsync und KDialog</a></h1>
+<div id="page"><p>
+</p><div class="box tested_for"><h3 class="box tested_for">Dieser Artikel wurde für die folgenden
+Ubuntu-Versionen getestet:</h3><div class="contents"><p>
+</p><ul><li><p><a class="internal" href="./xenial_xerus.html">Ubuntu 16.04</a> Xenial Xerus</p></li></ul></div></div><p>
+</p><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="./pakete_installieren.html">Installation von Programmen</a></p></li><li><p><a class="crosslink anchor" href="#source-2" id="source-2"></a> <a class="internal" href="./editor.html">Einen Editor öffnen</a></p></li><li><p><a class="crosslink anchor" href="#source-3" id="source-3"></a> <a class="internal" href="./datensicherung.html">Eine Datensicherung erstellen</a></p></li></ol></div></div><div class="toc toc-depth-1"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a class="crosslink" href="#Strategie-von-KDE-Backup-sh">Strategie von KDE-Backup.sh
+</a></li><li><a class="crosslink" href="#Zusaetzliche-Pakete">Zusätzliche Pakete
+</a></li><li><a class="crosslink" href="#Bedienung">Bedienung
+</a></li><li><a class="crosslink" href="#Dateisysteme">Dateisysteme
+</a></li><li><a class="crosslink" href="#Das-Skript">Das Skript
+</a></li><li><a class="crosslink" href="#Skript-Anpassen">Skript Anpassen
+</a></li><li><a class="crosslink" href="#Drag-Drop">Drag &amp; Drop
+</a></li><li><a class="crosslink" href="#Daten-wieder-herstellen">Daten wieder herstellen
+</a></li></ol></div><p>Das Backupskript für <a class="internal" href="./rsync.html">rsync</a> benutzt <a class="internal" href="./kdialog.html">KDE-Dialoge</a>, damit man mausgesteuert ein <a class="internal" href="./datensicherung.html">Backup</a> von den angegebenen Quellpfaden in dem angegebenen Zielverzeichnis erstellen kann. Dabei werden im <a class="internal" href="./homeverzeichnis.html">Homeverzeichnis</a> im Ordner <em>"Backup Infos"</em> für jeden Quellpfad zwei Textdateien erstellt:</p><ul><li><p>eine Textdatei mit der Auflistung der Dateien, die gesichert wurden.</p></li><li><p>eine Textdatei, die eventuell aufgetretene Fehler enthält.</p></li></ul><p>
+Dieses Backupskript ist nur für die Sicherung von Dateien im Homeverzeichnis gedacht, also alles, was man so im Laufe der Zeit an Dateien erstellt und gesammelt hat. Im Backupskript sind die von <a class="internal" href="./kde.html">KDE 4.3.2</a> angelegten Ordner als Quellpfade eingetragen, das Zielverzeichnis setzt sich wie folgt zusammen:</p><ul><li><p><strong>$HOME/Backup</strong> vom MONAT.JAHR</p></li></ul><p>
+</p><div class="section_1"><h2 id="Strategie-von-KDE-Backup-sh">Strategie von KDE-Backup.sh<a class="headerlink" href="#Strategie-von-KDE-Backup-sh">¶</a></h2><p>
+Betriebssysteme und Programme kann man nach einem Crash mit etwas Zeitaufwand wieder herstellen, bei Dateien, die man erstellt bzw. gesammelt hat, ist es ohne ein Backup im Extremfall nicht möglich, darum sollte man ein Backup von wichtigen Dateien auf einem externen Medium erstellen.</p><ul><li><p>Für ein schnelles Backup wird das Skript einfach mit Mausklick gestartet, die Quellpfade werden dann auf der internen Festplatte im Zielpfad gesichert. Diese Art ist gedacht für ein Backup zu jeder Zeit in kurzen Abständen auf der internen Festplatte, so kann man schnell versehentlich gelöschte Dateien wieder herstellen.</p></li></ul><p>
+</p><ul><li><p>Ein Backup auf externe Medien ist auch kein Problem, einfach den ersten Dialog mit <em>"Nein"</em> beantworten. In der dann erscheinenden Datei Auswahlbox das externe Medium auswählen und mit <em>"OK"</em> bestätigen, die Quellpfade werden nun auf dem externen Medium gesichert. Diese Art sollte je nach Datenaufkommen z.B. monatlich gemacht werden.</p></li></ul><p>
+</p></div><div class="section_1"><h2 id="Zusaetzliche-Pakete">Zusätzliche Pakete<a class="headerlink" href="#Zusaetzliche-Pakete">¶</a></h2><p>
+Folgende Pakete müssen vorhanden sein, damit das Skript funktioniert <sup><a href="#source-1">[1]</a></sup>:</p><ul><li><p><strong>rsync</strong></p></li><li><p><strong>kdebase-bin</strong></p></li></ul><p><img alt="Wiki/Vorlagen/Installbutton/button.png" class="image-default" src="./_/fd60ccb86c4d96df2f4518df2936cc7d038467aa.png"/>
+mit <a class="internal" href="./apturl.html">apturl</a>
+</p><div class="package-list"><div class="contents"><p>
+Paketliste zum Kopieren:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo apt-get install rsync kdebase-bin </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo aptitude install rsync kdebase-bin </pre></div></div><p>
+</p></div></div></div><div class="section_1"><h2 id="Bedienung">Bedienung<a class="headerlink" href="#Bedienung">¶</a></h2><p>
+Wenn das Backupskript gestartet wird, erscheint zuerst ein Dialog mit Informationen, was wohin gesichert wird. Bestätigt man diesen Dialog mit <em>"Ja"</em>, werden die vorgegebenen Quellpfade zum vorgegebenen Zielpfad gesichert.</p><p>Bei <em>"Nein"</em> wird eine Datei-Auswahlbox geöffnet, in der man einen anderen Zielpfad auswählen kann. Die Quellpfade, die gesichert werden, bleiben dabei unverändert.</p><p>Bei <em>"Abbruch"</em> wird das Backupskript abgebrochen.</p><p>Wurde das Backupskript nicht abgebrochen, erscheint ein Dialog, wenn das Backupskript mit dem Sichern der Quellpfade fertig ist.</p></div><div class="section_1"><h2 id="Dateisysteme">Dateisysteme<a class="headerlink" href="#Dateisysteme">¶</a></h2><p>
+Das Skript wurde / wird mit den <a class="internal" href="./dateisystem.html">Dateisystemen</a> ext2, ext3, ext4 auf internen Festplatten, externen Festplatten und USB-Sticks getestet / benutzt.</p></div><div class="section_1"><h2 id="Das-Skript">Das Skript<a class="headerlink" href="#Das-Skript">¶</a></h2><p>
+Zuerst öffnet man einen Texteditor <sup><a href="#source-2">[2]</a></sup> und kopiert den folgenden Text hinein:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1">#</span>
+<span class="c1"># --- Infos -----------------------------------------------------------------------------------</span>
+<span class="c1">#</span>
+<span class="c1">#	Scriptname		KDE-Backup.sh</span>
+<span class="c1">#	Funktion		Backup mit rsync &amp; kdialog (KDE-Dialoge)</span>
+<span class="c1">#</span>
+<span class="c1">#	Beschreibung		Es wird ein Backup von den Ordnern, die in den Variablen</span>
+<span class="c1">#				$quelle_1 bis $quelle_9 angegeben sind, nach Ziel, welches in der</span>
+<span class="c1">#				Variablen $ziel steht, erstellt.</span>
+<span class="c1">#				Wenn dem Skript Ordner übergeben wurden, werden diese im</span>
+<span class="c1">#				Bereich "--- Ordner wurden übergeben ---" in die Variablen</span>
+<span class="c1">#				übernommen, das Ziel kann in diesem Fall ein anderes sein.</span>
+<span class="c1">#</span>
+<span class="c1">#	benötigt		bash, rsync &amp; kdialog</span>
+<span class="c1">#</span>
+<span class="c1">#	Autor			Naubaddi</span>
+<span class="c1">#</span>
+<span class="c1">#	Status			noch in Arbeit ( wer wird schon fertig??? )</span>
+<span class="c1">#	Fehler			keine, oder??? ( Naubadi is pörfekt )</span>
+<span class="c1">#</span>
+<span class="c1">#	Start			25.07.2003</span>
+<span class="c1">#	Stand			30.11.2009</span>
+<span class="c1">#</span>
+<span class="c1"># --- Variablen -------------------------------------------------------------------------------</span>
+<span class="c1">#</span>
+<span class="c1"># $HOME				# der Home-Ordner (vom System)</span>
+<span class="c1"># $USER				# der User-Name (vom System)</span>
+<span class="nv">$1</span>				<span class="c1"># Aufrufparameter, wurden Ordner übergeben?</span>
+<span class="nv">log_datei</span><span class="o">=</span><span class="s2">""</span>			<span class="c1"># Textdatei mit einer Auflistung der gesicherten Dateien</span>
+<span class="nv">error_datei</span><span class="o">=</span><span class="s2">""</span>			<span class="c1"># Textdatei für eventuelle Fehlermeldungen</span>
+<span class="nv">le_ordner</span><span class="o">=</span><span class="s2">""</span>			<span class="c1"># ein Ordner für die log/error Dateien</span>
+<span class="nv">fehler</span><span class="o">=</span><span class="s2">""</span>			<span class="c1"># für aufgetretene Fehler</span>
+<span class="nv">backup_x</span><span class="o">=</span><span class="s2">"1"</span>			<span class="c1"># Zähler für die while-Schleife</span>
+<span class="nv">quelle</span><span class="o">=</span><span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>			<span class="c1"># Quelle, die gesichert werden soll (Pfad &amp; Ordner)</span>
+<span class="nv">quelle_ordner</span><span class="o">=</span><span class="s2">""</span>		<span class="c1"># nur der Ordner von quelle</span>
+<span class="nv">max_quellen</span><span class="o">=</span><span class="s2">"9"</span>			<span class="c1"># max. Anzahl der Quellen, die gesichert werden können</span>
+<span class="c1">#</span>
+<span class="c1"># --- Parameter für rsync hier eintragen ------------------------------------------------------</span>
+<span class="c1">#</span>
+<span class="nv">para</span><span class="o">=</span><span class="s2">"-av"</span>
+<span class="c1">#</span>
+<span class="c1"># --- ab hier die Ordner, die gesichert werden sollen, eintragen --------------------------------</span>
+<span class="c1">#</span>
+<span class="nv">quelle_1</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/Bilder"</span>
+<span class="nv">quelle_2</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/Desktop"</span>
+<span class="nv">quelle_3</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/Dokumente"</span>
+<span class="nv">quelle_4</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/Downloads"</span>
+<span class="nv">quelle_5</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/Musik"</span>
+<span class="nv">quelle_6</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/Öffentlich"</span>
+<span class="nv">quelle_7</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/Videos"</span>
+<span class="nv">quelle_8</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/Vorlagen"</span>
+<span class="nv">quelle_9</span><span class="o">=</span><span class="s2">""</span>
+<span class="c1">#</span>
+<span class="c1"># --- das Standard Ziel für die Ordner hier eintragen -----------------------------------------</span>
+<span class="c1">#</span>
+<span class="nv">ziel</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/Backup vom `date +'%m.%y'`"</span>
+<span class="c1">#</span>
+<span class="c1"># --- es wurden Ordner übergeben ------------------------------------------------------------</span>
+<span class="c1">#</span>
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$quelle</span><span class="s2">"</span> <span class="o">]</span>
+  <span class="k">then</span>
+  <span class="c1">#</span>
+  <span class="nv">quelle_1</span><span class="o">=</span><span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>
+  <span class="nv">quelle_2</span><span class="o">=</span><span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span>
+  <span class="nv">quelle_3</span><span class="o">=</span><span class="s2">"</span><span class="nv">$3</span><span class="s2">"</span>
+  <span class="nv">quelle_4</span><span class="o">=</span><span class="s2">"</span><span class="nv">$4</span><span class="s2">"</span>
+  <span class="nv">quelle_5</span><span class="o">=</span><span class="s2">"</span><span class="nv">$5</span><span class="s2">"</span>
+  <span class="nv">quelle_6</span><span class="o">=</span><span class="s2">"</span><span class="nv">$6</span><span class="s2">"</span>
+  <span class="nv">quelle_7</span><span class="o">=</span><span class="s2">"</span><span class="nv">$7</span><span class="s2">"</span>
+  <span class="nv">quelle_8</span><span class="o">=</span><span class="s2">"</span><span class="nv">$8</span><span class="s2">"</span>
+  <span class="nv">quelle_9</span><span class="o">=</span><span class="s2">"</span><span class="nv">$9</span><span class="s2">"</span>
+  <span class="c1">#</span>
+  <span class="c1"># --- das Standard-Ziel für die übergebenen Ordner hier eintragen ---------------------------</span>
+  <span class="c1">#</span>
+  <span class="nv">ziel</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/Backup vom `date +'%m.%y'`"</span>
+  <span class="c1">#</span>
+<span class="k">fi</span>
+<span class="c1">#</span>
+<span class="c1"># --- Text für die Datei-Auswahlbox -----------------------------------------------------------</span>
+<span class="c1">#</span>
+<span class="nv">alle_quellen</span><span class="o">=</span><span class="s2">"</span><span class="nv">$quelle_1</span><span class="s2"> </span><span class="nv">$quelle_2</span><span class="s2"> </span><span class="nv">$quelle_3</span><span class="s2"> </span><span class="nv">$quelle_4</span><span class="s2"> </span><span class="nv">$quelle_5</span><span class="s2"> </span><span class="nv">$quelle_6</span><span class="s2"> </span><span class="nv">$quelle_7</span><span class="s2"> </span><span class="nv">$quelle_8</span><span class="s2"> </span><span class="nv">$quelle_9</span><span class="s2">"</span>
+<span class="c1">#</span>
+<span class="c1"># --- Nach Ziel fragen und dann das Backup von X nach Y starten -------------------------------</span>
+<span class="c1">#</span>
+kdialog --title <span class="s2">"Backup mit rsync"</span> --yesnocancel <span class="s2">"von Quelle:\n</span><span class="nv">$alle_quellen</span><span class="s2">\n\nnach Ziel:\n</span><span class="nv">$ziel</span><span class="s2">\n\nMit \"Nein\" kann ein anderes Ziel gewählt werden!\n"</span>
+<span class="c1">#</span>
+<span class="k">case</span> <span class="nv">$?</span> in
+  <span class="m">0</span><span class="o">)</span> <span class="p">;;</span>				<span class="c1"># es ist nix zu tun, das Standard-Ziel wird benutzt</span>
+  <span class="m">1</span><span class="o">)</span> <span class="nv">ziel</span><span class="o">=</span><span class="sb">`</span>kdialog --title <span class="s2">"Ziel für das Backup auswählen"</span> --getexistingdirectory <span class="s2">"</span><span class="nv">$HOME</span><span class="s2">"</span> <span class="s2">"*"</span><span class="sb">`</span><span class="p">;;</span>
+  <span class="m">2</span><span class="o">)</span> <span class="nv">ziel</span><span class="o">=</span><span class="s2">""</span><span class="p">;;</span>			<span class="c1"># es ist gar nix zu tun, das Backup wurde abgebrochen</span>
+<span class="k">esac</span>
+<span class="c1">#</span>
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$ziel</span><span class="s2">"</span> <span class="o">]</span>
+  <span class="k">then</span>
+  <span class="c1">#</span>
+  <span class="nv">le_ordner</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/Backup Infos"</span>
+  <span class="c1">#</span>
+  <span class="k">if</span> <span class="o">[</span> ! -d <span class="s2">"</span><span class="nv">$le_ordner</span><span class="s2">"</span> <span class="o">]</span>
+    <span class="k">then</span>
+    mkdir <span class="s2">"</span><span class="nv">$le_ordner</span><span class="s2">"</span>
+  <span class="k">fi</span>
+  <span class="c1">#</span>
+  <span class="k">while</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$backup_x</span><span class="s2">"</span> -le <span class="s2">"</span><span class="nv">$max_quellen</span><span class="s2">"</span> <span class="o">]</span>
+    <span class="k">do</span>
+    <span class="c1">#</span>
+    <span class="k">case</span> <span class="s2">"</span><span class="nv">$backup_x</span><span class="s2">"</span> in
+      <span class="c1">#</span>
+      <span class="m">1</span><span class="o">)</span> <span class="nv">quelle</span><span class="o">=</span><span class="s2">"</span><span class="nv">$quelle_1</span><span class="s2">"</span><span class="p">;;</span>
+      <span class="m">2</span><span class="o">)</span> <span class="nv">quelle</span><span class="o">=</span><span class="s2">"</span><span class="nv">$quelle_2</span><span class="s2">"</span><span class="p">;;</span>
+      <span class="m">3</span><span class="o">)</span> <span class="nv">quelle</span><span class="o">=</span><span class="s2">"</span><span class="nv">$quelle_3</span><span class="s2">"</span><span class="p">;;</span>
+      <span class="m">4</span><span class="o">)</span> <span class="nv">quelle</span><span class="o">=</span><span class="s2">"</span><span class="nv">$quelle_4</span><span class="s2">"</span><span class="p">;;</span>
+      <span class="m">5</span><span class="o">)</span> <span class="nv">quelle</span><span class="o">=</span><span class="s2">"</span><span class="nv">$quelle_5</span><span class="s2">"</span><span class="p">;;</span>
+      <span class="m">6</span><span class="o">)</span> <span class="nv">quelle</span><span class="o">=</span><span class="s2">"</span><span class="nv">$quelle_6</span><span class="s2">"</span><span class="p">;;</span>
+      <span class="m">7</span><span class="o">)</span> <span class="nv">quelle</span><span class="o">=</span><span class="s2">"</span><span class="nv">$quelle_7</span><span class="s2">"</span><span class="p">;;</span>
+      <span class="m">8</span><span class="o">)</span> <span class="nv">quelle</span><span class="o">=</span><span class="s2">"</span><span class="nv">$quelle_8</span><span class="s2">"</span><span class="p">;;</span>
+      <span class="m">9</span><span class="o">)</span> <span class="nv">quelle</span><span class="o">=</span><span class="s2">"</span><span class="nv">$quelle_9</span><span class="s2">"</span><span class="p">;;</span>
+      <span class="c1">#</span>
+    <span class="k">esac</span>
+    <span class="nv">backup_x</span><span class="o">=</span><span class="s2">"</span><span class="k">$((</span>backup_x+1<span class="k">))</span><span class="s2">"</span>
+    <span class="c1">#</span>
+    <span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$quelle</span><span class="s2">"</span> <span class="o">]</span>
+      <span class="k">then</span>
+      <span class="nv">quelle_ordner</span><span class="o">=</span><span class="s2">"</span><span class="si">${</span><span class="nv">quelle</span><span class="p">##*/</span><span class="si">}</span><span class="s2">"</span>
+      <span class="c1">#</span>
+      <span class="nv">log_datei</span><span class="o">=</span><span class="s2">"</span><span class="nv">$le_ordner</span><span class="s2">/Backup von </span><span class="nv">$quelle_ordner</span><span class="s2"> vom `date +'%d.%m.%y - %H:%M:%S'`.txt"</span>
+      <span class="nv">error_datei</span><span class="o">=</span><span class="s2">"</span><span class="nv">$le_ordner</span><span class="s2">/ERROR bei </span><span class="nv">$quelle_ordner</span><span class="s2"> vom `date +'%d.%m.%y - %H:%M:%S'`.txt"</span>
+      <span class="c1">#</span>
+      <span class="nb">echo</span> <span class="s2">"Backup von </span><span class="nv">$quelle</span><span class="s2"> nach </span><span class="nv">$ziel</span><span class="s2">"</span> &gt; <span class="s2">"</span><span class="nv">$log_datei</span><span class="s2">"</span>
+      <span class="nb">echo</span> <span class="s2">""</span> &gt;&gt; <span class="s2">"</span><span class="nv">$log_datei</span><span class="s2">"</span>
+      <span class="c1">#</span>
+      <span class="o">(</span>rsync <span class="s2">"</span><span class="nv">$para</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$quelle</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$ziel</span><span class="s2">"</span> <span class="p">|</span> tee -a <span class="s2">"</span><span class="nv">$log_datei</span><span class="s2">"</span><span class="o">)</span> <span class="m">2</span>&gt;&gt;<span class="s2">"</span><span class="nv">$error_datei</span><span class="s2">"</span>
+      <span class="c1">#</span>
+      <span class="k">if</span> <span class="o">[</span> -s <span class="s2">"</span><span class="nv">$error_datei</span><span class="s2">"</span> <span class="o">]</span>
+        <span class="k">then</span>
+        <span class="nv">fehler</span><span class="o">=</span><span class="s2">"</span><span class="nv">$fehler$quelle</span><span class="s2"> "</span>
+      <span class="k">fi</span>
+      <span class="c1">#</span>
+    <span class="k">fi</span>
+    <span class="c1">#</span>
+  <span class="k">done</span>
+  <span class="c1">#</span>
+  <span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$fehler</span><span class="s2">"</span> <span class="o">]</span>
+    <span class="k">then</span>
+    kdialog --title <span class="s2">"Fehler beim Backup"</span> --msgbox <span class="s2">"von:\n</span><span class="nv">$fehler</span><span class="s2">\n\nnach:\n</span><span class="nv">$ziel</span><span class="s2">\n\nInfos stehen im Ordner \"</span><span class="nv">$le_ordner</span><span class="s2">\" in den \"ERROR bei...\" Dateien.\n"</span>
+  <span class="k">else</span>
+    kdialog --title <span class="s2">"Backup wurde erstellt"</span> --msgbox <span class="s2">"von:\n</span><span class="nv">$alle_quellen</span><span class="s2">\n\nnach:\n</span><span class="nv">$ziel</span><span class="s2">\n\nInfos stehen im Ordner \"</span><span class="nv">$le_ordner</span><span class="s2">\" in den \"Backup vom...\" Dateien.\n"</span>
+  <span class="k">fi</span>
+  <span class="c1">#</span>
+<span class="k">else</span>
+  <span class="c1">#</span>
+  kdialog --msgbox <span class="s2">"Abbruch, durch Benutzer </span><span class="nv">$USER</span><span class="s2">.\n"</span>
+  <span class="c1">#</span>
+<span class="k">fi</span>
+<span class="c1">#</span>
+<span class="c1"># --- Skript Ende -----------------------------------------------------------------------------</span>
+<span class="c1">#</span>
+</pre></div>
+</td></tr></table></div><p>Die  Datei wird z.B. unter dem Namen <strong>/home/BENUTZERNAME/KDE-Backup.sh</strong> gesichert.</p><p>Danach muss das Skript noch <a class="internal" href="./rechte.html">ausführbar</a> gemacht werden, damit es einsatzbereit ist.</p></div><div class="section_1"><h2 id="Skript-Anpassen">Skript Anpassen<a class="headerlink" href="#Skript-Anpassen">¶</a></h2><p>
+Mit einem Editor <sup><a href="#source-2">[2]</a></sup> kann man das Skript den persönlichen Bedürfnissen wie z.B. <em>"rsync Parameter, Quellpfade &amp; Zielpfade"</em> einfach anpassen, die Bereiche, die dafür angepasst werden können, sind:</p><ul><li><p># --- Parameter für rsync hier eintragen ---</p></li><li><p># --- ab hier die Ordner, die gesichert werden sollen, eintragen ---</p></li><li><p># --- das Standard-Ziel für die Ordner hier eintragen ---</p></li><li><p># --- das Standard-Ziel für die übergebenen Ordner hier eintragen ---</p></li></ul><p>
+</p></div><div class="section_1"><h2 id="Drag-Drop">Drag &amp; Drop<a class="headerlink" href="#Drag-Drop">¶</a></h2><p>
+Wenn man auf dem Desktop eine Verknüpfung zum Skript mit <em>"Starter anlegen ..."</em> erstellt, können mit Drag &amp; Drop bis zu neun Ordner auf der Verknüpfung abgelegt werden, das Skript wird dadurch gestartet und übernimmt die Ordner als Quellpfade für das Backup.</p></div><div class="section_1"><h2 id="Daten-wieder-herstellen">Daten wieder herstellen<a class="headerlink" href="#Daten-wieder-herstellen">¶</a></h2><p>
+Die Daten können ohne großen Aufwand mit einem Dateimanager bei Bedarf zurückkopiert werden.</p><p></p></div></div>
+<p class="meta">
+<a href="./backup_mit_rsync_und_kdialog/a/revision/940719.html">Diese Revision</a> wurde am 9. Mai 2017 00:30 von <a href="https://ubuntuusers.de/user/ubot/">ubot</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="./startseite.html">Wiki</a></li>
+<li><a href="./backup_mit_rsync_und_kdialog.html">Backup mit rsync und KDialog</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="./_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="./_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="./_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="./_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

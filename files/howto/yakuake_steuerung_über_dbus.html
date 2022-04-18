@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Howto/Yakuake_Steuerung_über_DBUS › ubuntuusers statisches Wiki</title>
+<link href="../_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="../_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="../_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="../_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="../_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="../_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="../startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="../howto/yakuake_steuerung_über_dbus.html">Yakuake Steuerung über DBUS</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/Howto/Yakuake_Steuerung_über_DBUS">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="../wiki/index.html">Index</a></li>
+<li><a href="../wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="../wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="../wiki.html">Übersicht</a></li>
+<li><a href="../wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="../wiki/benutzung.html">Benutzung</a></li>
+<li><a href="../kategorien.html">Kategorie</a></li>
+<li><a href="../wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="../wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="../howto.html">Howto anlegen</a></li>
+<li><a href="../wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="../wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="../baustelle.html">Baustellen</a></li>
+<li><a href="../wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="../wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="../wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="../wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="../howto/yakuake_steuerung_über_dbus/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="../howto/yakuake_steuerung_über_dbus/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="../howto/yakuake_steuerung_über_dbus/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="../howto/yakuake_steuerung_über_dbus/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="../howto/yakuake_steuerung_über_dbus/a/backlinks.html">Yakuake Steuerung über DBUS</a></h1>
+<div id="page"><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Die Verwendung dieses Howto geschieht auf eigene Gefahr. Bei Problemen mit der Anleitung melde dies bitte in der dazugehörigen Diskussion und wende dich zusätzlich an den Verfasser des Howtos.
+</p></div></div><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Diese Howto-Anleitung wurde zuletzt von <a class="crosslink user" href="https://ubuntuusers.de/user/ChickenLipsRfun2eat/">ChickenLipsRfun2eat</a> am <strong>12.12.2016</strong> unter <strong>Kubuntu 16.04</strong> und <strong>Kubuntu 16.10</strong>, so wie am 08.04.2017 unter <em>Kubuntu 17.04</em> erfolgreich getestet.
+</p><ul><li><p>Höchste getestete Plasma-Version: 5.9.4</p></li><li><p>Höchste getestete Yakuake-Version: 3.0.4</p></li></ul></div></div><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="../yakuake.html">Hauptartikel zu Yakuake</a></p></li><li><p><a class="crosslink anchor" href="#source-2" id="source-2"></a> <a class="internal" href="../d-bus.html">qdbus verwenden</a></p></li><li><p><a class="crosslink anchor" href="#source-3" id="source-3"></a> <a class="internal" href="../shell/bash-skripting-guide_für_anfänger.html">Grundlagen in bash-Scripting</a></p></li></ol></div></div><div class="toc toc-depth-3"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a class="crosslink" href="#Aufbau">Aufbau
+</a><ol class="arabic"><li><a class="crosslink" href="#Einschraenkungen">Einschränkungen
+</a></li><li><a class="crosslink" href="#Windows-Tabs-und-Sessions">Windows, Tabs und Sessions
+</a></li></ol></li><li><a class="crosslink" href="#Fenster-manipulieren">Fenster manipulieren
+</a></li><li><a class="crosslink" href="#Tabs-manipulieren">Tabs manipulieren
+</a><ol class="arabic"><li><a class="crosslink" href="#Titel-aendern">Titel ändern
+</a></li><li><a class="crosslink" href="#Titel-ermitteln">Titel ermitteln
+</a></li><li><a class="crosslink" href="#SessionID-ermitteln">SessionID ermitteln
+</a></li></ol></li><li><a class="crosslink" href="#Sessions-manipulieren">Sessions manipulieren
+</a><ol class="arabic"><li><a class="crosslink" href="#Sessions-Informationen">Sessions: Informationen
+</a></li><li><a class="crosslink" href="#Sessions-hinzufuegen-entfernen-wechseln">Sessions: hinzufügen, entfernen, wechsel...</a></li><li><a class="crosslink" href="#Sessions-Befehle-ausfuehren">Sessions: Befehle ausführen
+</a></li><li><a class="crosslink" href="#Sessions-aufteilen-split">Sessions: aufteilen (split)
+</a></li><li><a class="crosslink" href="#Sessions-Tastatureingaben-blockieren">Sessions: Tastatureingaben blockieren
+</a></li><li><a class="crosslink" href="#Sessions-Aktivitaet-ueberwachen">Sessions: Aktivität überwachen
+</a></li></ol></li><li><a class="crosslink" href="#Beispiele">Beispiele
+</a><ol class="arabic"><li><a class="crosslink" href="#Status-des-Sessionschutzes-ermitteln">Status des Sessionschutzes ermitteln
+</a></li><li><a class="crosslink" href="#Tab-mit-ssh-Verbindung-oeffnen">Tab mit ssh-Verbindung öffnen
+</a></li></ol></li><li><a class="crosslink" href="#Links">Links
+</a><ol class="arabic"><li><a class="crosslink" href="#intern">intern
+</a></li><li><a class="crosslink" href="#extern">extern
+</a></li></ol></li></ol></div><p>
+Yakuake bietet sehr viele Möglichkeiten zur Automatisierung und Manipulation durch <a class="internal" href="../d-bus.html">D-BUS</a>-Methoden. Im folgenden werden einzelne Möglichkeiten beschrieben und am Ende einige Beispiele gegeben.</p><div class="section_1"><h2 id="Aufbau">Aufbau<a class="headerlink" href="#Aufbau">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Einschraenkungen">Einschränkungen<a class="headerlink" href="#Einschraenkungen">¶</a></h3><p>
+<code class="notranslate">qdbus org.kde.yakuake</code> gibt eine Übersicht der Möglichkeiten:</p><pre class="notranslate">...
+/Sessions
+/Sessions/1...n
+/Windows
+/Windows/1..n
+...
+/yakuake
+/yakuake/sessions
+/yakuake/tabs
+/yakuake/window</pre><p>Die <em>Sessions</em>, bzw. <em>Windows</em> - Nummern enthalten zwar die aktuell geöffneten Tabs, beziehen sich aber auf das in Yakuake verwendete Terminalprogramm <a class="internal" href="../konsole.html">Konsole</a>. Verwendet man diese Methoden, so erhält man einen Warnhinweis. Im Folgenden werden daher aus Sicherheitsgründen nur Methoden aus dem Pfad <strong>/yakuake</strong> zur Manipulation vorgestellt.</p></div><div class="section_2"><h3 id="Windows-Tabs-und-Sessions">Windows, Tabs und Sessions<a class="headerlink" href="#Windows-Tabs-und-Sessions">¶</a></h3><p>
+Zum besseren Verständnis:
+</p><ul><li><p><em>Window</em> ist Yakuake selbst und beinhaltet alle Tabs, Sessions und Terminals</p></li><li><p>Ein <em>Tab</em> ist ein Reiter in Yakuake, der jeweils mindestens eine Session beinhaltet</p></li><li><p>Eine <em>Session</em> kann mehrere Terminals beinhalten (siehe splitSession/Terminal)</p></li><li><p>Ein <em>Terminal</em> repräsentiert eine Instanz von <a class="internal" href="../konsole.html">Konsole</a> mit all ihren Eigenschaften</p></li></ul><p>
+</p></div></div><div class="section_1"><h2 id="Fenster-manipulieren">Fenster manipulieren<a class="headerlink" href="#Fenster-manipulieren">¶</a></h2><p>
+Hier bietet Yakuake lediglich den Wechsel zwischen Anzeigen und Verstecken an, was die selbe Funktion darstellt, die auch von der eingestellten Taste (Standard:F12) ausgelöst wird.
+</p><div class="bash"><div class="contents"><pre class="notranslate">qdbus org.kde.yakuake /yakuake/window org.kde.yakuake.toggleWindowState  </pre></div></div></div><div class="section_1"><h2 id="Tabs-manipulieren">Tabs manipulieren<a class="headerlink" href="#Tabs-manipulieren">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Titel-aendern">Titel ändern<a class="headerlink" href="#Titel-aendern">¶</a></h3><p>
+Mit
+</p><div class="bash"><div class="contents"><pre class="notranslate">qdbus org.kde.yakuake /yakuake/tabs org.kde.yakuake.setTabTitle SESSION_ID TITEL </pre></div></div><p> lässt sich der Titel eines Tabs ändern.</p></div><div class="section_2"><h3 id="Titel-ermitteln">Titel ermitteln<a class="headerlink" href="#Titel-ermitteln">¶</a></h3><p>
+Den aktuell verwendeten Titel bekommt man mit
+</p><div class="bash"><div class="contents"><pre class="notranslate">qdbus org.kde.yakuake /yakuake/tabs org.kde.yakuake.tabTitle SESSION_ID </pre></div></div><p>Hinweis: Yakuake beginnt beim zählen mit 0. Tab 1 ist also das zweite Register von links.
+</p></div><div class="section_2"><h3 id="SessionID-ermitteln">SessionID ermitteln<a class="headerlink" href="#SessionID-ermitteln">¶</a></h3><p>
+Die SessionID kann man über
+</p><div class="bash"><div class="contents"><pre class="notranslate">qdbus org.kde.yakuake /yakuake/tabs org.kde.yakuake.sessionAtTab TAB_NUMMER </pre></div></div><p> ermitteln.</p></div></div><div class="section_1"><h2 id="Sessions-manipulieren">Sessions manipulieren<a class="headerlink" href="#Sessions-manipulieren">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Sessions-Informationen">Sessions: Informationen<a class="headerlink" href="#Sessions-Informationen">¶</a></h3><p>
+Die Tabelle bietet eine Übersicht der möglichen Befehle und Abfragen. Aus Gründen der Übersichtlichkeit wurde der Pfad <em>org.kde.yakuake.</em> entfernt. Die Befehle können wie folgt ausgeführt werden: </p><div class="bash"><div class="contents"><pre class="notranslate">qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.BEFEHL PARAMETER </pre></div></div><p>
+</p><p>
+</p><table><tr class="kopf"><td>Lese-Befehl(e) </td><td> Rückgabe-Typ </td><td> Parameter </td><td> Beschreibung </td></tr><tr><td> activeSessionId<br/>activeTerminalId </td><td> int </td><td> - </td><td> Gibt die Session- oder Terminal-ID des Tabs an, die sich im Vordergrund befindet. Dies gilt auch, wenn sich Yakuake selbst im Hintergrund befindet. </td></tr><tr class="highlight"><td>hasUnclosableSessions() </td><td> bool </td><td>  - </td><td> Ermittelt, ob in einer der Sessions noch ein Prozess läuft. </td></tr><tr><td> isSessionClosable </td><td> bool </td><td> int sessionID </td><td> Ermittelt, ob eine bestimmte Session einen laufenden Prozess enthält, oder beendet werden kann. </td></tr><tr class="highlight"><td>terminalIdList </td><td> QString </td><td>  - </td><td> Gibt eine Zahlenfolge der verfügbaren Terminal-IDs aus. </td></tr><tr><td> terminalIdsForSessionId </td><td> QString </td><td> int sessionID </td><td> Gibt die Terminal-IDs für eine bestimmte SessionID aus. </td></tr></table><p>
+</p></div><div class="section_2"><h3 id="Sessions-hinzufuegen-entfernen-wechseln">Sessions: hinzufügen, entfernen, wechseln<a class="headerlink" href="#Sessions-hinzufuegen-entfernen-wechseln">¶</a></h3><p>
+Yakuake bietet mehrere Möglichkeiten eine neue Session zu öffnen. Der Rückgabewert ist ein Integer (Ganzzahl), die die hochgezählte Session-Nummer enthält. Diese kann zur weiteren Manipulation verwendet werden. 
+Die Tabelle bietet eine Übersicht der möglichen Befehle und Abfragen. Aus Gründen der Übersichtlichkeit wurde der Pfad <em>org.kde.yakuake.</em> entfernt. Die Befehle können wie folgt ausgeführt werden: </p><div class="bash"><div class="contents"><pre class="notranslate">qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.BEFEHL PARAMETER </pre></div></div><p>
+</p><p>
+</p><table><tr class="edu-kopf"><td>Methode </td><td> Beschreibung </td><td> Screenshot </td></tr><tr class="kopf"><td colspan="3">hinzufügen </td></tr><tr><td> addSession </td><td> Öffnet eine einfache Session </td><td> </td></tr><tr><td> addSessionQuad </td><td> Öffnet eine Session mit vier Konsolenfenstern </td><td> BILD </td></tr><tr><td> addSessionTwoHorizontal </td><td> Session mit zwei Konsolenfenstern nebeneinander </td><td> BILD </td></tr><tr><td> addSessionTwoVertical </td><td> Session mit zwei Konsolenfenstern untereinander </td><td> BILD </td></tr><tr class="kopf"><td colspan="3">entfernen </td></tr><tr><td> removeSession SESSION_ID </td><td> Session mit Hilfe der SessionID entfernen. </td><td> </td></tr><tr><td> removeTerminal TERMINAL_ID </td><td> Ein Terminal innerhalb einer Session entfernen. </td><td> </td></tr><tr class="kopf"><td colspan="3">aktivieren </td></tr><tr><td> raiseSession SESSION_ID </td><td> Session anhand ihrer ID in den Vordergrund holen. </td><td> </td></tr><tr class="kopf"><td colspan="3">Sperren </td></tr><tr><td> setSessionClosable SESSION_ID BOOL </td><td> Eine Session kann vor versehentlichem Schließen geschützt, oder dieser Schutz wieder aufgehoben werden. </td></tr></table></div><div class="section_2"><h3 id="Sessions-Befehle-ausfuehren">Sessions: Befehle ausführen<a class="headerlink" href="#Sessions-Befehle-ausfuehren">¶</a></h3><p>
+Unabhängig vom derzeit aktivierten Yakuake und der aktivierten Session lassen sich Befehle in den vorhandenen Terminals ausführen.
+</p><div class="bash"><div class="contents"><pre class="notranslate">qdbus org.kde.yakuake /yakuake/sessions  org.kde.yakuake.runCommandInTerminal TERMINAL_ID "BEFEHL" </pre></div></div><p>Um Befehle im derzeit aktiven Terminal auszuführen kann </p><div class="bash"><div class="contents"><pre class="notranslate">qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.runCommand "BEFEHL" </pre></div></div><p> verwendet werden.</p></div><div class="section_2"><h3 id="Sessions-aufteilen-split">Sessions: aufteilen (split)<a class="headerlink" href="#Sessions-aufteilen-split">¶</a></h3><p>
+Bestehende Terminals, so wie Sessions können in mehrere Terminals aufgeteilt werden.
+</p><div class="bash"><div class="contents"><pre class="notranslate">#Vertikale Aufteilung
+qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.splitSessionLeftRight SESSION_ID
+qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.splitTerminalLeftRight TERMINAL_ID
+
+#horizontale Aufteilung
+qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.splitSessionTopBottom SESSION_ID
+qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.splitTerminalTopBottom TERMINAL_ID </pre></div></div></div><div class="section_2"><h3 id="Sessions-Tastatureingaben-blockieren">Sessions: Tastatureingaben blockieren<a class="headerlink" href="#Sessions-Tastatureingaben-blockieren">¶</a></h3><p>
+Mit Hilfe dieser Methoden kann man "nur lesen"-Terminals oder Sessions erstellen in denen Tastatureingaben gesperrt sind. Man kann dort aber Befehle mittels <em>runCommand</em> absetzen.</p><p>Die Tabelle bietet eine Übersicht der möglichen Befehle und Abfragen. Aus Gründen der Übersichtlichkeit wurde der Pfad <em>org.kde.yakuake.</em> entfernt. Die Befehle können wie folgt ausgeführt werden: </p><div class="bash"><div class="contents"><pre class="notranslate">qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.BEFEHL PARAMETER </pre></div></div><p>
+</p><p>
+</p><table><tr class="kopf"><td>Befehl(e) </td><td> Rückgabe-Typ </td><td> Parameter </td></tr><tr><td> hasTerminalsWithKeyboardInputDisabled </td><td> bool </td><td> int sessionID </td></tr><tr><td> hasTerminalsWithKeyboardInputEnabled </td><td> bool </td><td> int sessionID </td></tr><tr><td> setSessionKeyboardInputEnabled </td><td> void </td><td> int sessionID, bool enabled </td></tr><tr><td> setTerminalKeyboardInputEnabled </td><td> void </td><td> int sessionID, bool enabled </td></tr></table></div><div class="section_2"><h3 id="Sessions-Aktivitaet-ueberwachen">Sessions: Aktivität überwachen<a class="headerlink" href="#Sessions-Aktivitaet-ueberwachen">¶</a></h3><p>
+Yakuake bietet eine Möglichkeit Terminalprozesse zu überwachen. Dabei ist es möglich, sowohl die Aktivität, als auch die Inaktivität als Auslöser zu definieren. Der Auslöser sendet eine Benachrichtigung über das KDE-Benachrichtigungssystem. Über den DBUS lässt sich dieses Signal abfangen und weiterverarbeiten.</p><p>Die Tabelle bietet eine Übersicht der möglichen Befehle und Abfragen. Aus Gründen der Übersichtlichkeit wurde der Pfad <em>org.kde.yakuake.</em> entfernt. Die Befehle können wie folgt ausgeführt werden: </p><div class="bash"><div class="contents"><pre class="notranslate">qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.BEFEHL PARAMETER </pre></div></div><p>
+</p><p>
+</p><table><tr class="kopf"><td>Lese-Befehl(e) </td><td> Rückgabe-Typ </td><td> Parameter </td><td> Änderungsbefehl </td><td> Parameter </td></tr><tr><td> hasTerminalsWithMonitorActivityEnabled<br/>hasTerminalsWithMonitorActivityDisabled </td><td> bool </td><td> - </td><td> setSessionMonitorActivityEnabled </td><td> int terminalId, bool enabled </td></tr><tr><td> hasTerminalsWithMonitorSilenceEnabled<br/>hasTerminalsWithMonitorSilenceDisabled </td><td> bool </td><td> int sessionID </td><td> setSessionMonitorSilenceEnabled </td><td> int terminalId, bool enabled </td></tr></table></div></div><div class="section_1"><h2 id="Beispiele">Beispiele<a class="headerlink" href="#Beispiele">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Status-des-Sessionschutzes-ermitteln">Status des Sessionschutzes ermitteln<a class="headerlink" href="#Status-des-Sessionschutzes-ermitteln">¶</a></h3><p>
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="nv">IFS</span><span class="o">=</span><span class="s1">','</span> <span class="c1">#Feldtrenner auf Komma setzen</span>
+<span class="k">for</span> i in <span class="k">$(</span>qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.sessionIdList<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nb">echo</span> <span class="s2">"Session:</span><span class="nv">$i</span><span class="s2"> is closable: </span><span class="k">$(</span>qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.isSessionClosable <span class="nv">$i</span><span class="k">)</span><span class="s2">"</span>
+<span class="k">done</span>
+</pre></div>
+</td></tr></table></div></div><div class="section_2"><h3 id="Tab-mit-ssh-Verbindung-oeffnen">Tab mit ssh-Verbindung öffnen<a class="headerlink" href="#Tab-mit-ssh-Verbindung-oeffnen">¶</a></h3><p>
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1">#neue Session hinzufügen und ID in $newSession speichern</span>
+<span class="nv">newSession</span><span class="o">=</span><span class="k">$(</span>qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.addSession<span class="k">)</span>
+
+<span class="c1">#Session schützen</span>
+qdbus org.kde.yakuake /yakuake/tabs org.kde.yakuake.setSessionClosable <span class="nv">$newSession</span> FALSE
+
+<span class="c1">#Titel des Tabs der Session ändern</span>
+qdbus org.kde.yakuake /yakuake/tabs org.kde.yakuake.setTabTitle <span class="nv">$newSession</span> <span class="s2">"SSH-Session"</span>
+
+<span class="c1">#terminalID herausfinden: (ACHTUNG: Erstellt man mit split weitere Terminals, so muss enthält die terminalID eine Liste!</span>
+<span class="nv">terminalID</span><span class="o">=</span><span class="k">$(</span>qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.terminalIdsForSessionId <span class="nv">$newSession</span><span class="k">)</span>
+
+<span class="c1">#Befehl zur Verbindung ins Terminal absetzen</span>
+qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.runCommandInTerminal <span class="nv">$terminalID</span> <span class="s2">"ssh user@server -p22 -i /Pfad/zum/PublicKey"</span>
+</pre></div>
+</td></tr></table></div><p>
+Hinweis: Verwendet man keinen PublicKey, so muss selbstverständlich das Passwort eingegeben werden, bevor die Verbindung hergestellt werden kann.</p></div></div><div class="section_1"><h2 id="Links">Links<a class="headerlink" href="#Links">¶</a></h2><p>
+</p><div class="section_2"><h3 id="intern">intern<a class="headerlink" href="#intern">¶</a></h3><p>
+</p><ul><li><p><a class="internal" href="../yakuake.html">Hauptartikel zu Yakuake</a></p></li><li><p><a class="internal" href="../d-bus.html">qdbus verwenden</a></p></li><li><p><a class="internal" href="../shell/bash-skripting-guide_für_anfänger.html">Grundlagen in bash-Scripting</a></p></li></ul></div><div class="section_2"><h3 id="extern">extern<a class="headerlink" href="#extern">¶</a></h3><p>
+</p><ul><li><p><a class="interwiki interwiki-archwiki" href="https://wiki.archlinux.org/index.php/Yakuake">Yakuake</a></p></li><li><p><a class="external" href="https://www.kde.org/applications/system/yakuake/" rel="nofollow">Yakuake auf KDE.org</a></p></li><li><p><a class="external" href="https://cgit.kde.org/yakuake.git/tree//" rel="nofollow">Yakuake Quellcode</a></p></li></ul><p>
+</p></div></div></div>
+<p class="meta">
+<a href="../howto/yakuake_steuerung_über_dbus/a/revision/937864.html">Diese Revision</a> wurde am 8. April 2017 08:56 von <a href="https://ubuntuusers.de/user/ChickenLipsRfun2eat/">ChickenLipsRfun2eat</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="../startseite.html">Wiki</a></li>
+<li><a href="../howto.html">Howto</a></li>
+<li><a href="../howto/yakuake_steuerung_über_dbus.html">Yakuake Steuerung über DBUS</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="../_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="../_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="../_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="../_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

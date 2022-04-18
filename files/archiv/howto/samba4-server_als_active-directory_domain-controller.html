@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Archiv/Howto/Samba4-Server_als_Active-Directory_Domain-Controller › ubuntuusers statisches Wiki</title>
+<link href="../../_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="../../_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="../../_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="../../_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="../../_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="../../_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="../../startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="../../archiv/howto/samba4-server_als_active-directory_domain-controller.html">Samba4-Server als Active-Directory Domain-Controller</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/Archiv/Howto/Samba4-Server_als_Active-Directory_Domain-Controller">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="../../wiki/index.html">Index</a></li>
+<li><a href="../../wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="../../wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="../../wiki.html">Übersicht</a></li>
+<li><a href="../../wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="../../wiki/benutzung.html">Benutzung</a></li>
+<li><a href="../../kategorien.html">Kategorie</a></li>
+<li><a href="../../wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="../../wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="../../howto.html">Howto anlegen</a></li>
+<li><a href="../../wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="../../wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="../../baustelle.html">Baustellen</a></li>
+<li><a href="../../wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="../../wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="../../wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="../../wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="../../archiv/howto/samba4-server_als_active-directory_domain-controller/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="../../archiv/howto/samba4-server_als_active-directory_domain-controller/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="../../archiv/howto/samba4-server_als_active-directory_domain-controller/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="../../archiv/howto/samba4-server_als_active-directory_domain-controller/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="../../archiv/howto/samba4-server_als_active-directory_domain-controller/a/backlinks.html">Samba4-Server als Active-Directory Domain-Controller</a></h1>
+<div id="page"><div class="box improvable"><h3 class="box improvable">Archivierte Anleitung</h3><div class="contents"><p>
+Dieser Artikel wurde archiviert, da er - oder Teile daraus -
+nur noch unter einer älteren Ubuntu-Version nutzbar ist. Diese
+Anleitung wird vom Wiki-Team weder auf Richtigkeit überprüft
+noch anderweitig gepflegt. Zusätzlich wurde der Artikel für
+weitere Änderungen gesperrt.
+</p></div></div><div class="box advanced"><h3 class="box advanced">Artikel für fortgeschrittene Anwender</h3><div class="contents"><p>
+Dieser Artikel erfordert mehr Erfahrung im Umgang mit
+Linux und ist daher nur für fortgeschrittene Benutzer
+gedacht.
+</p></div></div><p>
+</p><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Die Verwendung dieses Howto geschieht wie üblich auf eigene Gefahr. Bei Problemen mit der Anleitung melde dies bitte in der dazugehörigen Diskussion und wende dich zusätzlich an den Verfasser des Howtos.
+</p></div></div><p>
+</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Diese Howto-Anleitung wurde zuletzt von <a class="crosslink user" href="https://ubuntuusers.de/user/luftpumpe/">luftpumpe</a> am 28.03.2015 unter Xubuntu 14.04 erfolgreich getestet.
+</p></div></div><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="../../pakete_installieren.html">Installation von Programmen</a></p></li><li><p><a class="crosslink anchor" href="#source-2" id="source-2"></a> <a class="internal" href="../../programme_starten.html">Starten von Programmen</a></p></li><li><p><a class="crosslink anchor" href="#source-3" id="source-3"></a> <a class="internal" href="../../terminal.html">Ein Terminal öffnen</a></p></li><li><p><a class="crosslink anchor" href="#source-4" id="source-4"></a> <a class="internal" href="../../sudo.html">Root-Rechte</a></p></li><li><p><a class="crosslink anchor" href="#source-5" id="source-5"></a> <a class="internal" href="../../samba.html">Samba</a>  (Übersichtsartikel)</p></li><li><p><a class="crosslink anchor" href="#source-6" id="source-6"></a> <a class="internal" href="../../samba_server.html">Samba Server</a></p></li><li><p><a class="crosslink anchor" href="#source-7" id="source-7"></a> <a class="internal" href="../../kerberos.html">Kerberos</a></p></li><li><p><a class="crosslink anchor" href="#source-8" id="source-8"></a> <a class="internal" href="../../dnsmasq.html">Dnsmasq</a></p></li></ol></div></div><div class="toc toc-depth-2"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a class="crosslink" href="#Grundlagen">Grundlagen
+</a></li><li><a class="crosslink" href="#Voraussetzungen">Voraussetzungen
+</a><ol class="arabic"><li><a class="crosslink" href="#Daten-des-Testkonfiguration">Daten des Testkonfiguration
+</a></li></ol></li><li><a class="crosslink" href="#Administrationstools">Administrationstools
+</a><ol class="arabic"><li><a class="crosslink" href="#samba-tool">samba-tool
+</a></li><li><a class="crosslink" href="#RSAT-fuer-Windows-Client">RSAT für Windows-Client
+</a></li></ol></li><li><a class="crosslink" href="#Installation-des-1-DCs">Installation des 1. DCs
+</a><ol class="arabic"><li><a class="crosslink" href="#Feste-IP-Adresse-einstellen">Feste IP-Adresse einstellen
+</a></li><li><a class="crosslink" href="#NTP-Dienst-einrichten">NTP-Dienst einrichten
+</a></li><li><a class="crosslink" href="#Anpassung-in-der-fstab">Anpassung in der fstab
+</a></li><li><a class="crosslink" href="#Samba-Version-ueberpruefen">Samba-Version überprüfen
+</a></li><li><a class="crosslink" href="#Samba-installieren">Samba installieren
+</a></li><li><a class="crosslink" href="#DNS-Service-konfigurieren">DNS-Service konfigurieren
+</a></li><li><a class="crosslink" href="#Samba-Server-provisionieren">Samba-Server provisionieren
+</a></li><li><a class="crosslink" href="#Kerberos-installieren">Kerberos installieren
+</a></li></ol></li><li><a class="crosslink" href="#Funktionstests-des-Servers">Funktionstests des Servers
+</a><ol class="arabic"><li><a class="crosslink" href="#Netzwerkports-ueberpruefen">Netzwerkports überprüfen
+</a></li><li><a class="crosslink" href="#Samba-Konfiguration-ueberpruefen">Samba-Konfiguration überprüfen
+</a></li><li><a class="crosslink" href="#Alle-Shares-auflisten">Alle Shares auflisten
+</a></li><li><a class="crosslink" href="#Authentifizierung-testen">Authentifizierung testen
+</a></li><li><a class="crosslink" href="#DNS-testen">DNS testen
+</a></li><li><a class="crosslink" href="#Kerberos-testen">Kerberos testen
+</a></li></ol></li><li><a class="crosslink" href="#Installation-des-2-DCs">Installation des 2. DCs
+</a><ol class="arabic"><li><a class="crosslink" href="#Vorarbeiten-und-Tests">Vorarbeiten und Tests
+</a></li><li><a class="crosslink" href="#Samba-Server-provisionieren-2">Samba-Server provisionieren
+</a></li><li><a class="crosslink" href="#Test-der-Samba-Konfiguration">Test der Samba-Konfiguration
+</a></li><li><a class="crosslink" href="#Anpassen-der-DNS-Einstellung">Anpassen der DNS-Einstellung
+</a></li><li><a class="crosslink" href="#DNS-Eintraege-ueberpruefen">DNS-Einträge überprüfen
+</a></li><li><a class="crosslink" href="#Directory-Replikation-ueberpruefen">Directory Replikation überprüfen
+</a></li><li><a class="crosslink" href="#manuelle-Replikationstests">manuelle Replikationstests
+</a></li><li><a class="crosslink" href="#SYSVOL-Replikation">SYSVOL-Replikation
+</a></li></ol></li></ol></div><div class="section_1"><h2 id="Grundlagen">Grundlagen<a class="headerlink" href="#Grundlagen">¶</a></h2><p>
+<img alt="Samba_Server/samba-logo.png" class="image-left" src="../../_/a8ef26a0d93a67702ef6b8f48761da6a0e0a2c2d.png"/></p><p>Ab Samba Version 4.x kann man Samba im Microsoft-kompatiblen Modus "Active-Directory Domain-Controller" (kurz AD DC) laufen lassen. 
+Dieser Artikel beschreibt die Grundinstallation von zwei Samba-Servern als DC für eine Windows Domäne. Zwei Server, um die Ausfallsicherheit der Domäne zu verbessern, und weil die Installation des zweiten (und weiterer) DCs anders verläuft als beim ersten DC. Natürlich funktioniert der Betrieb auch nur mit einem DC.</p><p>Die Installation basiert auf einem frisch installierten Xubuntu 14.04.02 LTS, benutzt nur offizielle Pakete aus dem Ubuntu-Repo und orientiert sich weitgehend am Artikel im offiziellen Samba-Wiki. Sie berücksichtigt aber die Besonderheiten bei Ubuntu.</p><p>Offizielles Samba-HowTo - <a class="external" href="https://wiki.samba.org/index.php/Samba_AD_DC_HOWTO" rel="nofollow" title="https://wiki.samba.org/index.php/Samba_AD_DC_HOWTO">https://wiki.samba.org/index.php/Samba_AD_DC_HOWTO</a> <img alt="{en}" src="../../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/></p><p>Sämtliche Eingaben setzen voraus, dass man derzeit im root-Modus ist. ("sudo -s")
+</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>WICHTIGER HINWEIS: Dieser Artikel ist nur für den erfahrenen Ubuntu-Benutzer geeignet, der weiß was ein Domaincontroller ist.
+</p></div></div></div><div class="section_1"><h2 id="Voraussetzungen">Voraussetzungen<a class="headerlink" href="#Voraussetzungen">¶</a></h2><p>
+</p><ul><li><p>Ubuntu 14.04 LTS</p></li><li><p>root-Rechte</p></li><li><p>Dateisystem ext4</p></li><li><p>feste IP-Adresse für die Server</p></li><li><p>dnsmasq deaktivieren</p></li><li><p>samba Version &gt;= V4.1.6</p></li><li><p>optionale zweite Maschine für die Einrichtung eines zweiten Servers</p></li></ul><div class="section_2"><h3 id="Daten-des-Testkonfiguration">Daten des Testkonfiguration<a class="headerlink" href="#Daten-des-Testkonfiguration">¶</a></h3><p>
+technische Parameter auf die in dieser Beispielinstallation Bezug genommen wird:
+</p><pre class="notranslate">Name der Domäne: test.dom
+NETBIOS-Name der Domäne: TEST
+Hostname: dc1
+IP-Adresse: 192.168.1.199
+Gateway: 192.168.1.1 (ist auch gleichzeitig DNS-Server fürs Internet)
+Name des ersten Domain-Controllers: DC1
+Samba-Admin: administrator
+
+Hostname: dc2
+IP-Adresse: 192.168.1.198
+Gateway: 192.168.1.1 (ist auch gleichzeitig DNS-Server fürs Internet)
+Name des ersten Domain-Controllers: DC2
+Samba-Admin: administrator</pre></div></div><div class="section_1"><h2 id="Administrationstools">Administrationstools<a class="headerlink" href="#Administrationstools">¶</a></h2><p>
+</p><div class="section_2"><h3 id="samba-tool">samba-tool<a class="headerlink" href="#samba-tool">¶</a></h3><p>
+Endlich gibt´s ein zentrales Boardmittel auf Kommandozeile um alle Funktionen eines Samba-Servers im Active-Directory-Modus zu administrieren.</p><p>Es wird bei der Installation von Samba mit installiert.
+</p><pre class="notranslate">samba-tool --help</pre></div><div class="section_2"><h3 id="RSAT-fuer-Windows-Client">RSAT für Windows-Client<a class="headerlink" href="#RSAT-fuer-Windows-Client">¶</a></h3><p>
+(falls vorhanden, und wenn von dort administriert werden soll)</p><p>Installiere RSAT (Remote Server Administration Tool) auf einem Windows-Client, siehe <a class="external" href="https://wiki.samba.org/index.php/Installing_RSAT_on_Windows_for_AD_Management" rel="nofollow" title="https://wiki.samba.org/index.php/Installing_RSAT_on_Windows_for_AD_Management"><span class="longlink_show">https://wiki.samba.org/index.php/Ins</span><span class="longlink_collapse">talling_RSAT_on_Windows_for</span><span>_AD_Management</span></a></p><p>Für die Administration sollte der Windows-Client in die spätere Samba-Domäne als Mitglied aufgenommen werden, und auch deren DNS-Server benutzen.
+HINWEIS: Dieser Artikel erklärt nicht die Administration von einem Windows-Client aus.</p></div></div><div class="section_1"><h2 id="Installation-des-1-DCs">Installation des 1. DCs<a class="headerlink" href="#Installation-des-1-DCs">¶</a></h2><p>
+Samba kann direkt aus den Quellen installiert werden. Es müssen keine fremden Quellen angezapft werden, es muss nichts compiliert werden.</p><div class="section_2"><h3 id="Feste-IP-Adresse-einstellen">Feste IP-Adresse einstellen<a class="headerlink" href="#Feste-IP-Adresse-einstellen">¶</a></h3><p>
+Es gibt wenig Sinn einen Domain-Controller mit einer dynamischen IP-Adresse zu betreiben.
+Deswegen muss man der Maschine erst eine feste manuelle Netzwerkkonfiguration geben. Dies kann über die graphische Oberfläche in den Netzwerkverbindungen angepasst werden.
+In unserem Beispiel sind es folgende Angaben:
+</p><pre class="notranslate">Methode: manuell
+IPV4-Adresse: 192.168.1.199 
+Netzmaske: 255.255.255.0
+Gateway: 192.168.1.1
+DNS-Server: 192.168.1.1  (ist nur temporär, wird später noch geändert)
+Suchdomänen: bleibt erst mal leer</pre></div><div class="section_2"><h3 id="NTP-Dienst-einrichten">NTP-Dienst einrichten<a class="headerlink" href="#NTP-Dienst-einrichten">¶</a></h3><p>
+Damit eine Domäne korrekt funktioniert, speziell Kerberos, wird auf allen Servern und Clients die gleiche "Zeit" benötigt. Deswegen wird mit der Installation eines NTP-Server auf dem späteren Domaincontroller begonnen.</p><p>siehe auch ntpd - <a class="external" href="https://wiki.samba.org/index.php/Time_Synchronisation" rel="nofollow" title="https://wiki.samba.org/index.php/Time_Synchronisation"><span class="longlink_show">https://wiki.samba.org/index.php/Tim</span><span class="longlink_collapse">e_S</span><span>ynchronisation</span></a></p><p>Installation von ntpd: 
+</p><pre class="notranslate">apt-get install ntp</pre><p>
+(er wird dann auch automatisch gestartet)</p><p>ntp-Daemon testen:
+(jetzt muss der UDP-Port 123 offen sein; dies kann per "netstat -tulpn" gecheckt werden. Dort müssen Zeilen mit dem Text ":123" auftauchen.)</p><p>Eingabe zum überprüfen der ntp-Funktion:
+</p><pre class="notranslate">ntpdate -q 127.0.0.1</pre><p>
+korrekte Beispiel-Ausgabe:
+</p><pre class="notranslate">server 127.0.0.1, stratum 3, offset 2.154217, delay 0.03343</pre><p>
+Falls Probleme auftauchen, dann zur ersten Analyse folgendes mit einem öffentlichen NTP-Server testen:
+</p><pre class="notranslate">ntpdate -u de.pool.ntp.org
+ntpdate -u 0.ubuntu.pool.ntp.org</pre></div><div class="section_2"><h3 id="Anpassung-in-der-fstab">Anpassung in der fstab<a class="headerlink" href="#Anpassung-in-der-fstab">¶</a></h3><p>
+Parameter für die Root-Partition in der Datei /etc/fstab anpassen damit ACLs funktionieren:
+</p><pre class="notranslate">nano /etc/fstab</pre><p>
+hier eine Beispiel für die erforderlichen Parameter, Text hinter "ext4":
+</p><pre class="notranslate">UUID=951801e7-c4bc-464b-9071-6f5b6d065c92   /  ext4    user_xattr,acl,errors=remount-ro,barrier=1     0       1</pre></div><div class="section_2"><h3 id="Samba-Version-ueberpruefen">Samba-Version überprüfen<a class="headerlink" href="#Samba-Version-ueberpruefen">¶</a></h3><p>
+Falls Samba schon installiert ist, kann mit folgenden Befehlen die Version überprüft werden:
+</p><pre class="notranslate">samba -V
+smbclient -V</pre></div><div class="section_2"><h3 id="Samba-installieren">Samba installieren<a class="headerlink" href="#Samba-installieren">¶</a></h3><p>
+(falls es noch fehlt)
+</p><pre class="notranslate">apt-get install samba smbclient</pre><p>
+Hinweis: Der Samba Server wird direkt nach der Installation direkt im Standalone-Modus gestartet.
+Deswegen den Samba Server erst mal wieder beenden mit folgenden Befehlen:
+</p><pre class="notranslate">service smbd stop
+service nmbd stop
+service samba status</pre><p>
+Und dann die vorhandene smb.conf sichern oder löschen:
+</p><pre class="notranslate">mv /etc/samba/smb.conf /etc/samba/smb.conf.vorher</pre><p>
+HINWEIS: Wenn man das nicht macht, scheitert später die korrekte Einrichtung des Domain-Controllers.</p></div><div class="section_2"><h3 id="DNS-Service-konfigurieren">DNS-Service konfigurieren<a class="headerlink" href="#DNS-Service-konfigurieren">¶</a></h3><p>
+Überprüfen ob Port 53 (DNS) schon belegt ist, und bei frei räumen.
+</p><pre class="notranslate">netstat -tlpn</pre><p>
+Unter anderem taucht dort folgende Zeile auf:
+</p><pre class="notranslate">tcp        0      0 127.0.1.1:53            0.0.0.0:*               LISTEN      1241/dnsmasq</pre><p>
+Daran sieht man, dass TCP-Port 53 durch die Anwendung "dnsmasq" belegt ist. Dies verhindert, dass der später intallierte Samba-Server korrekt starten kann, weil er auch den Port 53 belegen will.</p><p>Lösung:
+Ubuntu nutzt den "network-manager" für seine Netzwerkverbindungen. Dieser nutzt wiederrum "dnsmasq" (welcher Port 53 belegt) für die DNS-Namensauflösung des Computers.</p><p>dnsmasq kann man in der Datei "/etc/NetworkManager/NetworkManager.conf" deaktivieren:
+</p><pre class="notranslate">nano /etc/NetworkManager/NetworkManager.conf</pre><p>
+deswegen in der Datei folgende Zeile auskommentieren:
+</p><pre class="notranslate"># dns=dnsmasq </pre><p>
+Und danach den network manager neu starten und den alten dnsmasq killen, oder komplettes System neu booten:
+</p><pre class="notranslate">/etc/init.d/networking restart
+killall dnsmasq</pre><p>
+HINWEIS: Wenn man diesen Arbeitsschritt vergisst, dann kommt beim Start von Sambe folgender Fehlertext.
+(gut zu sehen wenn man Samba im interaktiven Modus gestartet hat "samba -i")
+</p><pre class="notranslate">Failed to bind to 0.0.0.0:53 - NT_STATUS_ADDRESS_ALREADY_ASSOCIATED</pre><p>
+WICHTIG: Sobald man dnsmasq deaktiviert hat, kann der PC keine DNS-Namen mehr auflösen, wenn man vergessen hat in den Netzwerkeinstellungen manuell einen DNS-Server (z.b. die IP seines Routers) einzurichten.</p></div><div class="section_2"><h3 id="Samba-Server-provisionieren">Samba-Server provisionieren<a class="headerlink" href="#Samba-Server-provisionieren">¶</a></h3><p>
+Jetzt kann mit der sogenannten Provisionierung des Domaincontrollers begonnen werden. Dies ist die Erstellung der Active-Directory Domäne. Bei Windows-Servern bekannt als "dcpromo".
+</p><pre class="notranslate">samba-tool domain provision --use-rfc2307 --interactive --use-ntvfs</pre><p>
+Hinweise:</p><ul><li><p>Parameter "-use-rfc2307" für NIS-Servcie (yellowpages) inkl. Schemaerweiterung im AD. Wird nicht zwingend benötigt, aber später eventl. hilfreich für Linux-Clients. siehe auch: <a class="external" href="https://wiki.samba.org/index.php/Using_RFC2307_on_a_Samba_DC#Administer_Unix_Attributes_in_Active_Directory" rel="nofollow" title="https://wiki.samba.org/index.php/Using_RFC2307_on_a_Samba_DC#Administer_Unix_Attributes_in_Active_Directory"><span class="longlink_show">https://wiki.samba.org/index.php/Usi</span><span class="longlink_collapse">ng_RFC2307_on_a_Samba_DC#Administer_Unix_Attributes_in_Ac</span><span>tive_Directory</span></a></p></li><li><p>Parameter "-use-ntvfs" für Ext4-Dateisysteme angeben, weil ohne Angabe des Parameters sonst ein Fehler kommt</p></li></ul><p>Folgende Parameter werden dann im interaktiven Dialog abgefragt:</p><ul><li><p>REALM: Der REALM ist der vollständige Domänenname, er wird auch auch als DNS-Domainname verwendet. Wie im Internet sind die einzelen Wörter durch einen Punkt getrennt. In unserem Beispiel lautet der REALM "test.dom"</p></li></ul><p>
+</p><ul><li><p>Domain: Ist quasi die Kurzform des Domänennamens ohne Punkte und wird für NetBIOS benötigt. Deswegen wird der Parameter auch NETBIOS-Name genannt. Dies ist sinnvollerweise der erste Teil des kompletten REALMs. In unserem Beispiel lautet der NETBIOS-Name "test"</p></li></ul><p>
+</p><ul><li><p>Server Role: Samba kann in ganz unterschiedlichen Modi laufen. In unserem Beispiel ist "dc" anzugeben.</p></li></ul><p>
+</p><ul><li><p>DNS backend: Wer soll die Namensauflösung für den Samba-Server machen. Samba4 beinhaltet auch einen eigenen DNS-Server. Für den bestmöglichen Betrieb der Samba-Domäne ist genau dieser zu verwenden! Somit hier "SAMBA_INTERNAL" bestätigen.</p></li></ul><p>
+</p><ul><li><p>DNS forwarder: Im späteren Betrieb sollten alle Clients der Domäne den/die Samba Server als DNS-Server verwenden. Sollen aber auch DNS-Namen außerhalb der Domäne aufgelöst werden (z.B. Internet DNS-Namen), so muss dem DNS-Server im Samba-Server gesagt werden, welchen anderen DNS-Server er verwenden soll, um diese Namen aufzulösen. Das ist der DNS-Forwarder. In unserem Beispiel wird der heimische Router = 192.168.1.1 angegeben. Er wiederum löst die DNS-Namen über den DNS-Server des Providers auf.</p></li></ul><p>
+</p><ul><li><p>Administrator passwort: Dies ist der mächtigste Account in der Windows-Domäne. Danmit kann man später die Domäne verwalten. HINWEIS: Das Passwort muss der Passwort-Policy entsprechen, 3 aus 4 Komponenten (Kleinschrift, Großschrift, Ziffern, Sonderzeichen)</p></li></ul><p>Erfolgreiche Beispiel-Ausgabe:
+</p><pre class="notranslate">Looking up IPv4 addresses
+Looking up IPv6 addresses
+No IPv6 address will be assigned
+Setting up secrets.ldb
+Setting up the registry
+Setting up the privileges database
+Setting up idmap db
+Setting up SAM db
+Setting up sam.ldb partitions and settings
+Setting up sam.ldb rootDSE
+Pre-loading the Samba 4 and AD schema
+Adding DomainDN: DC=test,DC=dom
+Adding configuration container
+Setting up sam.ldb schema
+Setting up sam.ldb configuration data
+Setting up display specifiers
+Modifying display specifiers
+Adding users container
+Modifying users container
+Adding computers container
+Modifying computers container
+Setting up sam.ldb data
+Setting up well known security principals
+Setting up sam.ldb users and groups
+Setting up self join
+Adding DNS accounts
+Creating CN=MicrosoftDNS,CN=System,DC=test,DC=dom
+Creating DomainDnsZones and ForestDnsZones partitions
+Populating DomainDnsZones and ForestDnsZones partitions
+Setting up sam.ldb rootDSE marking as synchronized
+Fixing provision GUIDs
+A Kerberos configuration suitable for Samba 4 has been generated at /var/lib/samba/private/krb5.conf
+Setting up fake yp server settings
+Once the above files are installed, your Samba4 server will be ready to use
+Server Role:           active directory domain controller
+Hostname:              VM1
+NetBIOS Domain:        TEST
+DNS Domain:            test.dom
+DOMAIN SID:            S-1-5-21-4250222487-2521097371-810615148</pre><p>
+Tipp: Wenn irgendwas schief geht, dann kann man die /etc/samba/smb.conf löschen, und neu versuchen:
+</p><pre class="notranslate">rm /etc/samba/smb.conf</pre><p>Samba-Server versuchen interaktiv zu starten: (kann man mit Strg-c abbrechen)
+</p><pre class="notranslate">samba -i</pre><p>
+Dies sollte mit keiner besonderen Fehlermeldung abbrechen.
+Wenn die Routine nicht abbricht, ist dies ein gutes Zeichen. Dann manuell abbrechen.</p></div><div class="section_2"><h3 id="Kerberos-installieren">Kerberos installieren<a class="headerlink" href="#Kerberos-installieren">¶</a></h3><p>
+dazu fehlt noch ein Instalations-Paket, nachinstallieren:
+</p><pre class="notranslate">apt-get install krb5-user</pre><p>
+Erforderliche Parameter-Eingaben:
+</p><pre class="notranslate">Kerberos-Realm: TEST.DOM
+Kerberos-Server für Ihren Realm: localhost
+Administrations-Server für IhrenKerberos-Realm: localhost</pre><p>HINWEIS: Jetzt ist ein guter Zeitpunkt um den Server neu zu booten!</p></div></div><div class="section_1"><h2 id="Funktionstests-des-Servers">Funktionstests des Servers<a class="headerlink" href="#Funktionstests-des-Servers">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Netzwerkports-ueberpruefen">Netzwerkports überprüfen<a class="headerlink" href="#Netzwerkports-ueberpruefen">¶</a></h3><p>
+Wenn Samba korrekt läuft, sollten etliche zusätzliche Netzwerkports belegt sein.
+"netstat -tlpen" sollte folgende Ausgabe bringen (im Beispiel ist IPV6 deaktiviert):
+</p><pre class="notranslate">root@DC1:~# netstat -tlpen
+Aktive Internetverbindungen (Nur Server)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode       PID/Program name
+tcp        0      0 0.0.0.0:3268            0.0.0.0:*               LISTEN      0          28962       5394/samba      
+tcp        0      0 0.0.0.0:3269            0.0.0.0:*               LISTEN      0          28963       5394/samba      
+tcp        0      0 0.0.0.0:389             0.0.0.0:*               LISTEN      0          28960       5394/samba      
+tcp        0      0 0.0.0.0:135             0.0.0.0:*               LISTEN      0          28932       5391/samba      
+tcp        0      0 0.0.0.0:139             0.0.0.0:*               LISTEN      0          28936       5403/samba      
+tcp        0      0 0.0.0.0:464             0.0.0.0:*               LISTEN      0          28919       5396/samba      
+tcp        0      0 0.0.0.0:53              0.0.0.0:*               LISTEN      0          28947       5402/samba      
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      0          8369        463/cupsd       
+tcp        0      0 0.0.0.0:88              0.0.0.0:*               LISTEN      0          28917       5396/samba      
+tcp        0      0 0.0.0.0:636             0.0.0.0:*               LISTEN      0          28961       5394/samba      
+tcp        0      0 0.0.0.0:445             0.0.0.0:*               LISTEN      0          28935       5403/samba      
+tcp        0      0 0.0.0.0:1024            0.0.0.0:*               LISTEN      0          28926       5391/samba      </pre><p>Aufgaben der Netzwerk-Ports, siehe auch <a class="external" href="https://wiki.samba.org/index.php/Samba_port_usage" rel="nofollow" title="https://wiki.samba.org/index.php/Samba_port_usage">https://wiki.samba.org/index.php/Samba_port_usage</a>
+</p><ul><li><p>53 - DNS</p></li><li><p>88 - Kerberos</p></li><li><p>135 - End Point Mapper (DCE/RPC Locator Service) </p></li><li><p>139 - NetBIOS Session </p></li><li><p>389 - LDAP</p></li><li><p>445 - SMB over TCP / CIFS</p></li><li><p>464 - Kerberos Passwort</p></li><li><p>636 - LDAPS (only if "tls enabled = yes")</p></li><li><p>1024-5000 dynamische RPC-Ports</p></li><li><p>3268 - globaler Katalog</p></li><li><p>3269 - globaler Katalog SSL</p></li></ul><p>
+</p></div><div class="section_2"><h3 id="Samba-Konfiguration-ueberpruefen">Samba-Konfiguration überprüfen<a class="headerlink" href="#Samba-Konfiguration-ueberpruefen">¶</a></h3><p>
+Ausgabe dieses Befehls überprüfen (ersetzt das klassische "testparm", bitte dieses nicht mehr benutzen)
+</p><pre class="notranslate">samba-tool testparm</pre><p>
+Beispielausgabe:
+</p><pre class="notranslate">Press enter to see a dump of your service definitions  (Return drücken)
+
+# Global parameters
+[global]
+	workgroup = TEST
+	realm = TEST.DOM
+	netbios name = DC1
+	server role = active directory domain controller
+	dns forwarder = 192.168.1.1
+	server services = rpc, nbt, wrepl, ldap, cldap, kdc, drepl, winbind, ntp_signd, kcc, dnsupdate, dns, smb
+	dcerpc endpoint servers = epmapper, wkssvc, rpcecho, samr, netlogon, lsarpc, spoolss, drsuapi, dssetup, unixinfo, browser, eventlog6, backupkey, dnsserver, winreg, srvsvc
+	idmap_ldb:use rfc2307 = yes
+
+[netlogon]
+	path = /var/lib/samba/sysvol/test.dom/scripts
+	read only = No
+
+[sysvol]
+	path = /var/lib/samba/sysvol
+	read only = No</pre><p>
+WICHTIG: Die Zeile "dns forwarder" muss vorhanden sein, sonst scheitert die Namensauflösung für Internet-Domains, und man kann keine Pakete mehr installieren!</p></div><div class="section_2"><h3 id="Alle-Shares-auflisten">Alle Shares auflisten<a class="headerlink" href="#Alle-Shares-auflisten">¶</a></h3><p>
+</p><pre class="notranslate">smbclient -L localhost -U%</pre><p>
+Jetzt sollten die drei Shares netlogon, sysvol und IPC$ angezeigt werden.</p></div><div class="section_2"><h3 id="Authentifizierung-testen">Authentifizierung testen<a class="headerlink" href="#Authentifizierung-testen">¶</a></h3><p>
+</p><pre class="notranslate">smbclient //localhost/netlogon -UAdministrator -c 'ls'</pre><p>
+Hier muss man das Passwort des Domänen-Administrators eingeben. 
+Die Ausgabe sollte keine Fehlermeldung enthalten.</p></div><div class="section_2"><h3 id="DNS-testen">DNS testen<a class="headerlink" href="#DNS-testen">¶</a></h3><p>
+Dazu muss man jetzt zuvor die DNS-Einstellung des Network-Managers in der graphischen Oberfläche des Rechners geändert werden.
+Passende Netzwerkschnittstelle auswählen. Dort IPv4-Einstellungen, Feld DNS-Server, und folgendes eintragen:
+</p><pre class="notranslate">nameserver 127.0.0.1</pre><p>Wenn der DNS-Server richtig eingestellt ist, muss ein Ping auf den REALM funktionieren:
+</p><pre class="notranslate">ping test.dom</pre><p>Eingabe:
+</p><pre class="notranslate">host -t SRV _ldap._tcp.test.dom</pre><p>
+Ausgabe:
+</p><pre class="notranslate">_ldap._tcp.test.dom has SRV record 0 100 389 dc1.test.dom.</pre><p>Eingabe:
+</p><pre class="notranslate">host -t SRV _kerberos._udp.test.dom</pre><p>
+Ausgabe:
+</p><pre class="notranslate">_kerberos._udp.test.dom has SRV record 0 100 88 dc1.test.dom.</pre><p>Eingabe:
+</p><pre class="notranslate">host -t A test.dom</pre><p>
+Ausgabe:
+</p><pre class="notranslate">test.dom has address 192.168.1.199</pre><p>Eingabe:
+</p><pre class="notranslate">host -t A dc1.test.dom</pre><p>
+Ausgabe:
+</p><pre class="notranslate">dc1.test.dom has address 192.168.1.199</pre><p>
+Falls hier Fehler kommen, dann bitte das systemlog überprüfen.</p></div><div class="section_2"><h3 id="Kerberos-testen">Kerberos testen<a class="headerlink" href="#Kerberos-testen">¶</a></h3><p>
+Eingabe:
+</p><pre class="notranslate">kinit administrator</pre><p>
+erfolgreiche Ausgabe:
+</p><pre class="notranslate">Password for administrator@TEST.DOM: 
+Warning: Your password will expire in 41 days on Fr 24 Apr 2015 20:31:30 CEST</pre><p>Eingabe um eigene Kerberos-Tickets zu überprüfen:
+</p><pre class="notranslate">klist</pre><p>
+erfolgreiche Ausgabe:
+</p><pre class="notranslate">Ticket cache: FILE:/tmp/krb5cc_0
+Default principal: administrator@TEST.DOM
+
+Valid starting       Expires              Service principal
+14.03.2015 09:23:12  14.03.2015 19:23:12  krbtgt/TEST.DOM@TEST.DOM
+	renew until 15.03.2015 09:23:08</pre><p>Wenn all diese Tests erfolgreich ausgegangen sind, dann läuft der erste Domaincontroller korrekt.</p></div></div><div class="section_1"><h2 id="Installation-des-2-DCs">Installation des 2. DCs<a class="headerlink" href="#Installation-des-2-DCs">¶</a></h2><p>
+Die Installation des zweiten DCs geht genauso wie beim ersten DC. Bis zum Punkt der Provisionierung des Samba-Servers - ab da wird anders, dies beschreibt dieser Abschnitt.</p><div class="section_2"><h3 id="Vorarbeiten-und-Tests">Vorarbeiten und Tests<a class="headerlink" href="#Vorarbeiten-und-Tests">¶</a></h3><p>
+WICHTIG: Für diesen Schritt muss der erste Domaincontroller laufen und netzwerktechnisch erreichbar sein.</p><p>DNS-Server anpassen:</p><p>Der zweite DC muss die Domäne namenstechnisch auflösen können. Deswegen muss zuerst der DNS-Server über die graphische Oberfläche via Network-Manager angepasst werden.
+Passende Netzwerkschnittstelle auswählen. Dort IPv4-Einstellungen, Feld DNS-Server, und folgendes eintragen:
+Man muss im Feld DNS-Server die DNS-IP-Adresse des ersten Samba-Servers eintragen.
+In unserem Beispiel:
+</p><pre class="notranslate">192.168.1.199</pre><p>DNS-Auflösung testen:</p><p>Die folgenden zwei Befehle dürfen keine Fehler ausgeben:
+</p><pre class="notranslate">ping test.dom
+ping dc1.test.dom
+nslookup test.dom &lt;ipadresse des ersten servers&gt;</pre></div><div class="section_2"><h3 id="Samba-Server-provisionieren-2">Samba-Server provisionieren<a class="headerlink" href="#Samba-Server-provisionieren-2">¶</a></h3><p>
+siehe auch <a class="external" href="https://wiki.samba.org/index.php/Samba4/HOWTO/Join_a_domain_as_a_DC" rel="nofollow" title="https://wiki.samba.org/index.php/Samba4/HOWTO/Join_a_domain_as_a_DC"><span class="longlink_show">https://wiki.samba.org/index.php/Sam</span><span class="longlink_collapse">ba4/HOWTO/Join_a_</span><span>domain_as_a_DC</span></a>
+</p><pre class="notranslate">samba-tool domain join test.dom DC --username=administrator --use-ntvfs</pre><p>Beispiel-Ausgabe:
+</p><pre class="notranslate">Finding a writeable DC for domain 'test.dom'
+Found DC dc1.test.dom
+Password for [TEST\administrator]:   (Bemerkung: hier muss Passwort vom ersten DC eingetragen werden)
+workgroup is TEST
+realm is test.dom
+checking sAMAccountName
+Adding CN=DC2,OU=Domain Controllers,DC=test,DC=dom
+Adding CN=DC2,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=test,DC=dom
+Adding CN=NTDS Settings,CN=DC2,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=test,DC=dom
+Adding SPNs to CN=DC2,OU=Domain Controllers,DC=test,DC=dom
+Setting account password for DC2$
+Enabling account
+Calling bare provision
+No IPv6 address will be assigned
+Provision OK for domain DN DC=test,DC=dom
+Starting replication
+Schema-DN[CN=Schema,CN=Configuration,DC=test,DC=dom] objects[402/1550] linked_values[0/0]
+Schema-DN[CN=Schema,CN=Configuration,DC=test,DC=dom] objects[804/1550] linked_values[0/0]
+Schema-DN[CN=Schema,CN=Configuration,DC=test,DC=dom] objects[1206/1550] linked_values[0/0]
+Schema-DN[CN=Schema,CN=Configuration,DC=test,DC=dom] objects[1550/1550] linked_values[0/0]
+Analyze and apply schema objects
+Partition[CN=Configuration,DC=test,DC=dom] objects[402/1620] linked_values[0/0]
+Partition[CN=Configuration,DC=test,DC=dom] objects[804/1620] linked_values[0/0]
+Partition[CN=Configuration,DC=test,DC=dom] objects[1206/1620] linked_values[0/0]
+Partition[CN=Configuration,DC=test,DC=dom] objects[1608/1620] linked_values[0/0]
+Partition[CN=Configuration,DC=test,DC=dom] objects[1620/1620] linked_values[28/0]
+Replicating critical objects from the base DN of the domain
+Partition[DC=test,DC=dom] objects[97/97] linked_values[23/0]
+Partition[DC=test,DC=dom] objects[365/268] linked_values[23/0]
+Done with always replicated NC (base, config, schema)
+Replicating DC=DomainDnsZones,DC=test,DC=dom
+Partition[DC=DomainDnsZones,DC=test,DC=dom] objects[41/41] linked_values[0/0]
+Replicating DC=ForestDnsZones,DC=test,DC=dom
+Partition[DC=ForestDnsZones,DC=test,DC=dom] objects[18/18] linked_values[0/0]
+Partition[DC=ForestDnsZones,DC=test,DC=dom] objects[36/18] linked_values[0/0]
+Committing SAM database
+Sending DsReplicateUpdateRefs for all the replicated partitions
+Setting isSynchronized and dsServiceName
+Setting up secrets database
+Joined domain TEST (SID S-1-5-21-2617678509-903244012-2886946009) as a DC</pre><p>
+Damit ist dann der zweite DC grundsätzlich der Domäne beigetreten.</p></div><div class="section_2"><h3 id="Test-der-Samba-Konfiguration">Test der Samba-Konfiguration<a class="headerlink" href="#Test-der-Samba-Konfiguration">¶</a></h3><p>
+Wenn die Provisionierung korrekt verlaufen ist, sollte man die Konfig testen. Im Prinzip stehen in der "/etc/samba/smb.conf" die gleichen Inhalte wie im ersten DC drin, bis auf die Zeile "netbios name" des Servers.</p><p>Eingabe zum überprüfen:
+</p><pre class="notranslate">samba-tool testparm</pre><p>
+WICHTIG: Vergleiche die Ausgabe beider DCs, oder vergleiche die Inhalte der jeweiligen "/etc/samba/smb.conf". Wenn hier was fehlt, dann läuft der zweite DC nicht korrekt!!!</p></div><div class="section_2"><h3 id="Anpassen-der-DNS-Einstellung">Anpassen der DNS-Einstellung<a class="headerlink" href="#Anpassen-der-DNS-Einstellung">¶</a></h3><p>
+Die beiden Domaincontroller sollten sich gegenseitig als primären DNS-Server eingetragen haben, und als sekundären Server sich selbst.
+Dazu muss man jetzt die DNS-Einstellung des Network-Managers in der graphischen Oberfläche beider Server ändern.
+Passende Netzwerkschnittstelle auswählen. Dort IPv4-Einstellungen, Feld DNS-Server, und folgendes eintragen:</p><p>Desweiteren gibt es Sinn die Suchdomäne auf "test.dom" anzupassen.
+Denn damit muss man dann zur Erreichbarkeit anderer Maschinen in der Domäne nicht immer den vollqualifizierten Namen (Beispiel: client23.test.dom) angeben, sondern es langt der Hostname (Beispiel: client23) zur Namensauflösung.
+Dies sollte über die graphische Oberfläche beider DCs angepasst werden. Nach Reboot beider Server sollten in der "resolv.conf" folgende Inhalte drin stehen:</p><p>passende Einstellung für DC2:
+</p><pre class="notranslate">nameserver 192.168.1.199      # Bemerkung: IP des ersten DCs
+nameserver 127.0.0.1
+search test.dom</pre><p>passende Einstellung für DC1:
+</p><pre class="notranslate"> 
+nameserver 192.168.1.198      # Bemerkung: IP des zweiten DCs
+nameserver 127.0.0.1
+search test.dom</pre></div><div class="section_2"><h3 id="DNS-Eintraege-ueberpruefen">DNS-Einträge überprüfen<a class="headerlink" href="#DNS-Eintraege-ueberpruefen">¶</a></h3><p>
+Die IP und DNS-Konfiguration jedes DNS-Severs ist mit folgendem Befehl anzeigbar:
+</p><pre class="notranslate">nm-tool</pre><p>
+Beispielausgabe:
+</p><pre class="notranslate">NetworkManager Tool
+
+State: connected (global)
+
+- Device: eth0  [Kabelnetzwerkverbindung 1] ------------------------------------
+  Type:              Wired
+  Driver:            r8169
+  State:             connected
+  Default:           yes
+  HW Address:        70:81:AC:AD:53:00
+
+  Capabilities:
+    Carrier Detect:  yes
+    Speed:           1000 Mb/s
+
+  Wired Properties
+    Carrier:         on
+
+  IPv4 Settings:
+    Address:         192.168.1.199
+    Prefix:          24 (255.255.255.0)
+    Gateway:         192.168.1.1
+
+    DNS:             192.168.1.198, 127.0.0.1</pre><p>Die einzelnen DC-Einträge kann man für die DNS-Server getrennt so überprüfen:
+</p><pre class="notranslate">dig dc1 @192.168.1.199
+dig dc1 @192.168.1.198
+dig dc1.test.dom @192.168.1.199
+dig dc1.test.dom @192.168.1.198</pre><p>
+In der Beispielausgabe müssen unter anderem folgende Zeilen erscheinen, und auf jeden Fall hinter dem "A" die richtige IP-Adresse stehen:
+</p><pre class="notranslate">;; ANSWER SECTION:
+dc1.                    9       IN      A       192.168.1.199
+oder
+dc1.test.dom            900     IN      A       192.168.1.199</pre><p>Das gleiche muss man auch für den "DC2"-Eintrag testen:
+</p><pre class="notranslate">dig dc2 @192.168.1.199
+dig dc2 @192.168.1.198
+dig dc2.test.dom @192.168.1.199
+dig dc2.test.dom @192.168.1.198</pre><p>
+Auch dort sollten in den Ausgaben alle 4 Tests folgende Zeilen beinhalten, auf jeden Fall muss hinter dem "A" die richtige IP-Adresse stehen:
+</p><pre class="notranslate">;; ANSWER SECTION:
+dc2.                    9       IN      A       192.168.1.198
+oder
+dc2.test.dom            900     IN      A       192.168.1.198</pre><p>Wenn die Namen nicht korrekt aufgelöst werden, kann es ein Fehler in der DNS-Config sein, oder es kann dieser Bug hier sein:</p><p><a class="external" href="https://wiki.samba.org/index.php/Check_and_fix_DNS_entries_on_DC_joins" rel="nofollow" title="https://wiki.samba.org/index.php/Check_and_fix_DNS_entries_on_DC_joins"><span class="longlink_show">https://wiki.samba.org/index.php/Che</span><span class="longlink_collapse">ck_and_fix_DNS_entri</span><span>es_on_DC_joins</span></a> <img alt="{en}" src="../../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/></p><p>Dann müssen die DNS-Einträge manuell im DNS angelegt werden.</p></div><div class="section_2"><h3 id="Directory-Replikation-ueberpruefen">Directory Replikation überprüfen<a class="headerlink" href="#Directory-Replikation-ueberpruefen">¶</a></h3><p>
+Die Directory-Replikation synchronisiert ständig alle Inhalte des Active Directory (User, Gruppen, Computerobjekte, sowie Passwortänderungen) zwischen den Domain-Controllern. Siehe auch <a class="external" href="https://wiki.samba.org/index.php/Samba4/HOWTO/Join_a_domain_as_a_DC#Directory_replication" rel="nofollow" title="https://wiki.samba.org/index.php/Samba4/HOWTO/Join_a_domain_as_a_DC#Directory_replication"><span class="longlink_show">https://wiki.samba.org/index.php/Sam</span><span class="longlink_collapse">ba4/HOWTO/Join_a_domain_as_a_DC#Directo</span><span>ry_replication</span></a></p><p>Wenige Minuten nach Start des zweiten DCs beginnt die Directory Replikation automatisch. Geduldig sein!</p><p>Befehl zum Überrüfen der Replikation:
+</p><pre class="notranslate">samba-tool drs showrepl</pre><p>
+Hinweis zur Warnung: "Warning: No NC replicated for Connection!“ in der letzten Zeile. Diese Meldung kann ignoriert werden.</p><p>Ansonsten sollte kein Fehler ersichtlich sein.</p><p>Falls die Replikation auch nach Minuten noch nicht beginnt, so kann man sie auch manuell anwerfen:
+</p><pre class="notranslate">samba-tool drs replicate DC1 DC2 dc=test,dc=dom</pre><p>
+Ausgabe:
+</p><pre class="notranslate">Replicate from DC2 to DC1 was successful.</pre><p>
+Bemerkung:</p><p>Wenn die Replikation nicht klappt, ist es sehr wahrscheinlich ein DNS-Problem.</p><p>Dann kommt vermutlich dieser Fehler: "DsReplicaSync failed" (8440, 'WERR_DS_DRA_BAD_NC')</p></div><div class="section_2"><h3 id="manuelle-Replikationstests">manuelle Replikationstests<a class="headerlink" href="#manuelle-Replikationstests">¶</a></h3><p>
+Einfach ein User-Objekt auf dem einen DC anlegen, und danach schauen, ob es weniges Sekunden später auf dem anderen DC angekommen ist.
+Entweder mit dem samba-tool, oder mit der Windows Active-Directory User &amp; Gruppen-Verwaltung (RSAT)</p><p>Beispieleingabe am ersten DC: (Passwort für User muss 3 aus 4 Komponenten enthalten)
+</p><pre class="notranslate">samba-tool user add testuser555</pre><p>
+Ausgabe:
+</p><pre class="notranslate">User 'testuser555' created successfully</pre><p>
+Überprüfen nach wenigen Sekunden am zweiten DC:
+</p><pre class="notranslate">samba-tool user list</pre><p>
+In der Ausgabe muss dann unter anderem der neue Useraccount angezeigt werden.</p></div><div class="section_2"><h3 id="SYSVOL-Replikation">SYSVOL-Replikation<a class="headerlink" href="#SYSVOL-Replikation">¶</a></h3><p>
+Dies geschieht derzeit noch nicht automatisch!</p><p>Wenn man eine Änderung in den Logonscripten oder den GPOs vorgenommen hat, so muss man SYSVOL manuell synchronisieren. Oder man muss sich eine rsync-Routine bauen, welche die Replikation ab nimmt.</p><p>Details hier: <a class="external" href="https://wiki.samba.org/index.php/SysVol_Replication" rel="nofollow" title="https://wiki.samba.org/index.php/SysVol_Replication"><span class="longlink_show">https://wiki.samba.org/index.php/Sys</span><span class="longlink_collapse">V</span><span>ol_Replication</span></a> <img alt="{en}" src="../../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/></p><p></p></div></div></div>
+<p class="meta">
+<a href="../../archiv/howto/samba4-server_als_active-directory_domain-controller/a/revision/916433.html">Diese Revision</a> wurde am 31. Oktober 2016 18:27 von <a href="https://ubuntuusers.de/user/noisefloor/">noisefloor</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="../../startseite.html">Wiki</a></li>
+<li><a href="../../archiv.html">Archiv</a></li>
+<li><a href="../../archiv/howto.html">Howto</a></li>
+<li><a href="../../archiv/howto/samba4-server_als_active-directory_domain-controller.html">Samba4-Server als Active-Directory Domain-Controller</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="../../_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="../../_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="../../_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="../../_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Skripte/Backup_mit_RSYNC › ubuntuusers statisches Wiki</title>
+<link href="../_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="../_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="../_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="../_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="../_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="../_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="../startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="../skripte/backup_mit_rsync.html">Backup mit RSYNC</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/Skripte/Backup_mit_RSYNC">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="../wiki/index.html">Index</a></li>
+<li><a href="../wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="../wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="../wiki.html">Übersicht</a></li>
+<li><a href="../wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="../wiki/benutzung.html">Benutzung</a></li>
+<li><a href="../kategorien.html">Kategorie</a></li>
+<li><a href="../wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="../wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="../howto.html">Howto anlegen</a></li>
+<li><a href="../wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="../wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="../baustelle.html">Baustellen</a></li>
+<li><a href="../wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="../wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="../wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="../wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="../skripte/backup_mit_rsync/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="../skripte/backup_mit_rsync/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="../skripte/backup_mit_rsync/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="../skripte/backup_mit_rsync/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="../skripte/backup_mit_rsync/a/backlinks.html">Backup mit RSYNC</a></h1>
+<div id="page"><p>
+</p><div class="box tested_for"><h3 class="box tested_for">Dieser Artikel wurde für die folgenden
+Ubuntu-Versionen getestet:</h3><div class="contents"><p> 
+Dieser Artikel ist größtenteils für alle Ubuntu-Versionen gültig.
+</p></div></div><p>
+</p><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="../terminal.html">Ein Terminal öffnen</a> </p></li><li><p><a class="crosslink anchor" href="#source-2" id="source-2"></a> <a class="internal" href="../editor.html">Einen Editor öffnen</a> </p></li><li><p><a class="crosslink anchor" href="#source-3" id="source-3"></a> <a class="internal" href="../rechte.html">Rechte für Dateien und Ordner ändern</a> </p></li><li><p><a class="crosslink anchor" href="#source-4" id="source-4"></a> <a class="internal" href="../paketinstallation_deb.html">Ein Paket installieren</a> </p></li><li><p><a class="crosslink anchor" href="#source-5" id="source-5"></a> <a class="internal" href="../programme_starten.html">Ein Programm ohne Menüeintrag starten</a></p></li><li><p><a class="crosslink anchor" href="#source-6" id="source-6"></a> <a class="internal" href="../sudo.html">Root-Rechte</a></p></li></ol></div></div><p>
+</p><div class="toc toc-depth-3"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li style="list-style: none"><ol class="arabic"><li><a class="crosslink" href="#Funktion">Funktion
+</a></li><li><a class="crosslink" href="#Pakete">Pakete
+</a></li><li><a class="crosslink" href="#berpruefen-des-Mountpoints">Überprüfen des Mountpoints
+</a></li><li><a class="crosslink" href="#Automatisches-Loeschen-alter-Backups">Automatisches Löschen alter Backups
+</a></li><li><a class="crosslink" href="#Sichern-ueber-SSH">Sichern über SSH
+</a></li><li><a class="crosslink" href="#Log-Datei-per-E-Mail-versenden">Log-Datei per E-Mail versenden
+</a></li><li><a class="crosslink" href="#Aktuelle-Paketliste-erzeugen-und-sichern">Aktuelle Paketliste erzeugen und sichern...</a></li></ol></li><li><a class="crosslink" href="#Das-Skript">Das Skript
+</a><ol class="arabic"><li><a class="crosslink" href="#Beispiel-tousbplatte-sh">Beispiel tousbplatte.sh
+</a></li><li><a class="crosslink" href="#Beispiel-tossh-sh">Beispiel tossh.sh
+</a></li><li><a class="crosslink" href="#Beispiel-Minimal-Variante">Beispiel Minimal Variante
+</a></li></ol></li><li><a class="crosslink" href="#Installation-und-Ausfuehrung">Installation und Ausführung
+</a><ol class="arabic"><li><a class="crosslink" href="#Optionen-und-Parameter">Optionen und Parameter
+</a></li></ol></li><li><a class="crosslink" href="#Einschraenkungen">Einschränkungen
+</a></li><li><a class="crosslink" href="#Externes-Backup-bei-FAT-Partitionen">Externes Backup bei FAT-Partitionen
+</a></li><li><a class="crosslink" href="#Daten-zuruecksichern">Daten zurücksichern
+</a></li><li><a class="crosslink" href="#Links">Links
+</a></li></ol></div><p>Neben der üblichen, meist sehr aufwendigen und vor allem viel zu selten durchgeführten manuellen Sicherung auf externen Medien bietet sich eine automatische Lösung mit <a class="internal" href="../rsync.html">rsync</a> an. Die Daten können etwa auf eine lokale Festplatte im selben Rechner, aber auch auf extern angeschlossene Festplatten (USB) oder per <a class="internal" href="../ssh.html">SSH</a> über das Netzwerk gesichert werden. Das hier vorgestellte Backup-Skript ist automatisierbar und benötigt nur wenig Ausführungszeit, da es nur Änderungen neu sichert.</p><p>Eine Alternative zu diesem Skript sind <a class="internal" href="../rsnapshot.html">rsnapshot</a> und <a class="internal" href="../dirvish.html">dirvish</a>. Im Gegensatz zu diesem Skript bieten die genannten Programme eine Vielzahl von weiteren Konfigurationsmöglichkeiten. Die Vorteile dieses Backup-Skripts sind jedoch die Einfachheit und Übersichtlichkeit sowie der Verzicht auf weitere Paketinstallationen.</p><div class="section_1"><div class="section_2"><h3 id="Funktion">Funktion<a class="headerlink" href="#Funktion">¶</a></h3><p>
+Das Backup-Skript erstellt für die angegebenen Quellenverzeichnisse identische Kopien in einem Datumsordner im Zielverzeichnis. Als Basis für das inkrementelle Sichern wird die vorherige Sicherung automatisch ausgewählt. Bei mehrmaligen Ausführen am selben Tag wird das "Tagesbackup" aktualisiert. Somit bleibt für einen Tag die letzte Sicherung bestehen. Beliebige "Tagesbackups" können anschließend z.B. per TAR auf externen Medien gesichert werden.</p><p>Zu den technischen Details: Das Programm 'rsync' nutzt Hardlinks, wodurch der Eindruck entsteht, dass in jedem Tagesordner sämtliche Dateien abgelegt sind. Jedoch wird bei unveränderten Dateien nichts übertragen und auch nichts kopiert. Es wird einfach nur ein weiterer <a class="internal" href="../ln.html#Hardlinks">Hardlink</a> auf die bereits gesicherte Datei angelegt. Das ganze wird über die <code class="notranslate">--link-dest</code>-Option von rsync gesteuert.</p></div><div class="section_2"><h3 id="Pakete">Pakete<a class="headerlink" href="#Pakete">¶</a></h3><p>
+Vom Skript benötigt wird das Paket<sup><a href="#source-4">[4]</a></sup></p><ul><li><p><strong>rsync</strong></p></li></ul><p><img alt="Wiki/Vorlagen/Installbutton/button.png" class="image-default" src="../_/fd60ccb86c4d96df2f4518df2936cc7d038467aa.png"/>
+mit <a class="internal" href="../apturl.html">apturl</a>
+</p><div class="package-list"><div class="contents"><p>
+Paketliste zum Kopieren:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo apt-get install rsync </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo aptitude install rsync </pre></div></div><p>
+</p></div></div><p>Folgendes Paket kann bei Bedarf installiert werden:</p><ul><li><p><strong>openssh-server</strong> (optional, für das Sichern von einer Quelle über <a class="internal" href="../ssh.html">SSH</a>)</p></li></ul><p><img alt="Wiki/Vorlagen/Installbutton/button.png" class="image-default" src="../_/fd60ccb86c4d96df2f4518df2936cc7d038467aa.png"/>
+mit <a class="internal" href="../apturl.html">apturl</a>
+</p><div class="package-list"><div class="contents"><p>
+Paketliste zum Kopieren:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo apt-get install openssh-server </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo aptitude install openssh-server </pre></div></div><p>
+</p></div></div><p>Außerdem kann ggf. ein <a class="internal" href="../internetanwendungen.html#E-Mail">E-Mail-Programm</a> (für die Benachrichtigung über E-Mail) installiert werden.</p></div><div class="section_2"><h3 id="berpruefen-des-Mountpoints">Überprüfen des Mountpoints<a class="headerlink" href="#berpruefen-des-Mountpoints">¶</a></h3><p>
+Über den Parameter <code class="notranslate">MOUNTPOINT</code> kann zur Laufzeit des Skripts geprüft werden, ob der Zielordner für die Datensicherung, z.B. eine USB-Platte oder ein <a class="internal" href="../nfsv4.html">NFS-Mount</a>, eingebunden ist. Sollte es nicht eingebunden sein, so wird keine Datensicherung durchgeführt. Diese Überprüfung kann durch das Weglassen der Option übersprungen werden.</p></div><div class="section_2"><h3 id="Automatisches-Loeschen-alter-Backups">Automatisches Löschen alter Backups<a class="headerlink" href="#Automatisches-Loeschen-alter-Backups">¶</a></h3><p>
+Zur Minimierung der archivierten Datenmenge ist mit dem Parameter <code class="notranslate">MONTHROTATE</code> ein Rotieren von Backups möglich. Hierbei werden im Folgemonat alte Versionen ersetzt.</p></div><div class="section_2"><h3 id="Sichern-ueber-SSH">Sichern über SSH<a class="headerlink" href="#Sichern-ueber-SSH">¶</a></h3><p>
+Das Skript ermöglicht auch das Sichern von Daten von einem entfernten System (<code class="notranslate">FROMSSH</code>) bzw. zu einem entfernten Rechner (<code class="notranslate">TOSSH</code>) per <a class="internal" href="../ssh.html">SSH</a>. Zur automatischen Sicherung ist der Austausch von <a class="internal" href="../ssh.html#Authentifizierung-ueber-Public-Keys">SSH-Keys</a> notwendig, da mehrmals SSH-Verbindungen aufgebaut werden.</p></div><div class="section_2"><h3 id="Log-Datei-per-E-Mail-versenden">Log-Datei per E-Mail versenden<a class="headerlink" href="#Log-Datei-per-E-Mail-versenden">¶</a></h3><p>
+Damit das Skript am Ende eine E-Mail mit angehängter Logdatei versendet, kann der Parameter <code class="notranslate">MAILREC</code> mit entsprechender E-Mail-Adresse verwendet werden. Dafür muss ein Mailprogramm installiert sein. Der E-Mail-Versand kann durch Weglassen der Option ausgeschaltet werden. Sollte bei der Erstellung ein Fehler aufgetreten sein, so wird im E-Mail-Betreff der Begriff "Error" aufgeführt.</p></div><div class="section_2"><h3 id="Aktuelle-Paketliste-erzeugen-und-sichern">Aktuelle Paketliste erzeugen und sichern<a class="headerlink" href="#Aktuelle-Paketliste-erzeugen-und-sichern">¶</a></h3><p>
+Die Liste der installierten Pakete wird durch das Setzen der Option <code class="notranslate">PACKAGES</code> der Logdatei und auch der E-Mail vorangestellt. Es wird empfohlen, den Ordner mit der Logdatei (z.B. /root) in den Sicherungsvorgang aufzunehmen. Bei der Option <code class="notranslate">FROMSSH</code> wird keine Paketliste erzeugt.</p></div></div><div class="section_1"><h2 id="Das-Skript">Das Skript<a class="headerlink" href="#Das-Skript">¶</a></h2><p>
+Einen Texteditor <sup><a href="#source-2">[2]</a></sup> öffnen und folgenden Text hinein kopieren:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># Simple backup with rsync</span>
+<span class="c1"># local-mode, tossh-mode, fromssh-mode</span>
+
+<span class="nv">SOURCES</span><span class="o">=(</span>/root /etc /home /boot <span class="o">)</span>
+<span class="nv">TARGET</span><span class="o">=</span><span class="s2">"/media/backup"</span>
+
+<span class="c1"># edit or comment with "#"</span>
+<span class="c1">#LISTPACKAGES=listdebianpackages        # local-mode and tossh-mode</span>
+<span class="nv">MONTHROTATE</span><span class="o">=</span>monthrotate                 <span class="c1"># use DD instead of YYMMDD</span>
+
+<span class="nv">RSYNCCONF</span><span class="o">=(</span>--delete<span class="o">)</span>
+<span class="c1">#MOUNTPOINT="/media/daten"               # check local mountpoint</span>
+<span class="c1">#MAILREC="user@domain"</span>
+
+<span class="c1">#SSHUSER="sshuser"</span>
+<span class="c1">#FROMSSH="fromssh-server"</span>
+<span class="c1">#TOSSH="tossh-server"</span>
+<span class="nv">SSHPORT</span><span class="o">=</span><span class="m">22</span>
+
+<span class="c1">### do not edit ###</span>
+
+<span class="nv">MOUNT</span><span class="o">=</span><span class="s2">"/bin/mount"</span><span class="p">;</span> <span class="nv">FGREP</span><span class="o">=</span><span class="s2">"/bin/fgrep"</span><span class="p">;</span> <span class="nv">SSH</span><span class="o">=</span><span class="s2">"/usr/bin/ssh"</span>
+<span class="nv">LN</span><span class="o">=</span><span class="s2">"/bin/ln"</span><span class="p">;</span> <span class="nv">ECHO</span><span class="o">=</span><span class="s2">"/bin/echo"</span><span class="p">;</span> <span class="nv">DATE</span><span class="o">=</span><span class="s2">"/bin/date"</span><span class="p">;</span> <span class="nv">RM</span><span class="o">=</span><span class="s2">"/bin/rm"</span>
+<span class="nv">DPKG</span><span class="o">=</span><span class="s2">"/usr/bin/dpkg"</span><span class="p">;</span> <span class="nv">AWK</span><span class="o">=</span><span class="s2">"/usr/bin/awk"</span><span class="p">;</span> <span class="nv">MAIL</span><span class="o">=</span><span class="s2">"/usr/bin/mail"</span>
+<span class="nv">CUT</span><span class="o">=</span><span class="s2">"/usr/bin/cut"</span><span class="p">;</span> <span class="nv">TR</span><span class="o">=</span><span class="s2">"/usr/bin/tr"</span><span class="p">;</span> <span class="nv">RSYNC</span><span class="o">=</span><span class="s2">"/usr/bin/rsync"</span>
+<span class="nv">LAST</span><span class="o">=</span><span class="s2">"last"</span><span class="p">;</span> <span class="nv">INC</span><span class="o">=</span><span class="s2">"--link-dest=</span><span class="nv">$TARGET</span><span class="s2">/</span><span class="nv">$LAST</span><span class="s2">"</span>
+
+<span class="nv">LOG</span><span class="o">=</span><span class="nv">$0</span>.log
+<span class="nv">$DATE</span> &gt; <span class="nv">$LOG</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="si">${</span><span class="nv">TARGET</span><span class="p">:</span><span class="si">${#</span><span class="nv">TARGET</span><span class="si">}</span><span class="p">-1:</span><span class="nv">1</span><span class="si">}</span><span class="s2">"</span> !<span class="o">=</span> <span class="s2">"/"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+  <span class="nv">TARGET</span><span class="o">=</span><span class="nv">$TARGET</span>/
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$LISTPACKAGES</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -z <span class="s2">"</span><span class="nv">$FROMSSH</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+  <span class="nv">$ECHO</span> <span class="s2">"</span><span class="nv">$DPKG</span><span class="s2"> --get-selections | </span><span class="nv">$AWK</span><span class="s2"> '!/deinstall|purge|hold/'|</span><span class="nv">$CUT</span><span class="s2"> -f1 | </span><span class="nv">$TR</span><span class="s2"> '\n' ' '"</span> &gt;&gt; <span class="nv">$LOG</span>
+  <span class="nv">$DPKG</span> --get-selections <span class="p">|</span> <span class="nv">$AWK</span> <span class="s1">'!/deinstall|purge|hold/'</span><span class="p">|</span><span class="nv">$CUT</span> -f1 <span class="p">|</span><span class="nv">$TR</span> <span class="s1">'\n'</span> <span class="s1">' '</span>  &gt;&gt; <span class="nv">$LOG</span>  <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> 
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$MOUNTPOINT</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+  <span class="nv">MOUNTED</span><span class="o">=</span><span class="k">$(</span><span class="nv">$MOUNT</span> <span class="p">|</span> <span class="nv">$FGREP</span> <span class="s2">"</span><span class="nv">$MOUNTPOINT</span><span class="s2">"</span><span class="k">)</span><span class="p">;</span>
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="o">[</span> -z <span class="s2">"</span><span class="nv">$MOUNTPOINT</span><span class="s2">"</span> <span class="o">]</span> <span class="o">||</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$MOUNTED</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+  <span class="k">if</span> <span class="o">[</span> -z <span class="s2">"</span><span class="nv">$MONTHROTATE</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nv">TODAY</span><span class="o">=</span><span class="k">$(</span><span class="nv">$DATE</span> +%y%m%d<span class="k">)</span>
+  <span class="k">else</span>
+    <span class="nv">TODAY</span><span class="o">=</span><span class="k">$(</span><span class="nv">$DATE</span> +%d<span class="k">)</span>
+  <span class="k">fi</span>
+
+  <span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$SSHUSER</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$SSHPORT</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nv">S</span><span class="o">=</span><span class="s2">"</span><span class="nv">$SSH</span><span class="s2"> -p </span><span class="nv">$SSHPORT</span><span class="s2"> -l </span><span class="nv">$SSHUSER</span><span class="s2">"</span><span class="p">;</span>
+  <span class="k">fi</span>
+
+  <span class="k">for</span> SOURCE in <span class="s2">"</span><span class="si">${</span><span class="nv">SOURCES</span><span class="p">[@]</span><span class="si">}</span><span class="s2">"</span>
+    <span class="k">do</span>
+      <span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$S</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$FROMSSH</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -z <span class="s2">"</span><span class="nv">$TOSSH</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nv">$ECHO</span> <span class="s2">"</span><span class="nv">$RSYNC</span><span class="s2"> -e \"</span><span class="nv">$S</span><span class="s2">\" -avR \"</span><span class="nv">$FROMSSH</span><span class="s2">:</span><span class="nv">$SOURCE</span><span class="s2">\" </span><span class="si">${</span><span class="nv">RSYNCCONF</span><span class="p">[@]</span><span class="si">}</span><span class="s2"> </span><span class="nv">$TARGET$TODAY</span><span class="s2"> </span><span class="nv">$INC</span><span class="s2">"</span>  &gt;&gt; <span class="nv">$LOG</span> 
+        <span class="nv">$RSYNC</span> -e <span class="s2">"</span><span class="nv">$S</span><span class="s2">"</span> -avR <span class="s2">"</span><span class="nv">$FROMSSH</span><span class="s2">:\"</span><span class="nv">$SOURCE</span><span class="s2">\""</span> <span class="s2">"</span><span class="si">${</span><span class="nv">RSYNCCONF</span><span class="p">[@]</span><span class="si">}</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$TARGET</span><span class="s2">"</span><span class="nv">$TODAY</span> <span class="nv">$INC</span> &gt;&gt; <span class="nv">$LOG</span> <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> 
+        <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> -ne <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+          <span class="nv">ERROR</span><span class="o">=</span><span class="m">1</span>
+        <span class="k">fi</span> 
+      <span class="k">fi</span> 
+      <span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$S</span><span class="s2">"</span> <span class="o">]</span>  <span class="o">&amp;&amp;</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$TOSSH</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -z <span class="s2">"</span><span class="nv">$FROMSSH</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nv">$ECHO</span> <span class="s2">"</span><span class="nv">$RSYNC</span><span class="s2"> -e \"</span><span class="nv">$S</span><span class="s2">\" -avR \"</span><span class="nv">$SOURCE</span><span class="s2">\" </span><span class="si">${</span><span class="nv">RSYNCCONF</span><span class="p">[@]</span><span class="si">}</span><span class="s2"> \"</span><span class="nv">$TOSSH</span><span class="s2">:</span><span class="nv">$TARGET$TODAY</span><span class="s2">\" </span><span class="nv">$INC</span><span class="s2"> "</span> &gt;&gt; <span class="nv">$LOG</span>
+        <span class="nv">$RSYNC</span> -e <span class="s2">"</span><span class="nv">$S</span><span class="s2">"</span> -avR <span class="s2">"</span><span class="nv">$SOURCE</span><span class="s2">"</span> <span class="s2">"</span><span class="si">${</span><span class="nv">RSYNCCONF</span><span class="p">[@]</span><span class="si">}</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$TOSSH</span><span class="s2">:\"</span><span class="nv">$TARGET</span><span class="s2">\"</span><span class="nv">$TODAY</span><span class="s2">"</span> <span class="nv">$INC</span> &gt;&gt; <span class="nv">$LOG</span> <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> 
+        <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> -ne <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+          <span class="nv">ERROR</span><span class="o">=</span><span class="m">1</span>
+        <span class="k">fi</span> 
+      <span class="k">fi</span>
+      <span class="k">if</span> <span class="o">[</span> -z <span class="s2">"</span><span class="nv">$S</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nv">$ECHO</span> <span class="s2">"</span><span class="nv">$RSYNC</span><span class="s2"> -avR \"</span><span class="nv">$SOURCE</span><span class="s2">\" </span><span class="si">${</span><span class="nv">RSYNCCONF</span><span class="p">[@]</span><span class="si">}</span><span class="s2"> </span><span class="nv">$TARGET$TODAY</span><span class="s2"> </span><span class="nv">$INC</span><span class="s2">"</span>  &gt;&gt; <span class="nv">$LOG</span> 
+        <span class="nv">$RSYNC</span> -avR <span class="s2">"</span><span class="nv">$SOURCE</span><span class="s2">"</span> <span class="s2">"</span><span class="si">${</span><span class="nv">RSYNCCONF</span><span class="p">[@]</span><span class="si">}</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$TARGET</span><span class="s2">"</span><span class="nv">$TODAY</span> <span class="nv">$INC</span>  &gt;&gt; <span class="nv">$LOG</span> <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> 
+        <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> -ne <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+          <span class="nv">ERROR</span><span class="o">=</span><span class="m">1</span>
+        <span class="k">fi</span> 
+      <span class="k">fi</span>
+  <span class="k">done</span>
+
+  <span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$S</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$TOSSH</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -z <span class="s2">"</span><span class="nv">$FROMSSH</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nv">$ECHO</span> <span class="s2">"</span><span class="nv">$SSH</span><span class="s2"> -p </span><span class="nv">$SSHPORT</span><span class="s2"> -l </span><span class="nv">$SSHUSER</span><span class="s2"> </span><span class="nv">$TOSSH</span><span class="s2"> </span><span class="nv">$LN</span><span class="s2"> -nsf </span><span class="nv">$TARGET$TODAY</span><span class="s2"> </span><span class="nv">$TARGET$LAST</span><span class="s2">"</span> &gt;&gt; <span class="nv">$LOG</span>  
+    <span class="nv">$SSH</span> -p <span class="nv">$SSHPORT</span> -l <span class="nv">$SSHUSER</span> <span class="nv">$TOSSH</span> <span class="s2">"</span><span class="nv">$LN</span><span class="s2"> -nsf \"</span><span class="nv">$TARGET</span><span class="s2">\"</span><span class="nv">$TODAY</span><span class="s2"> \"</span><span class="nv">$TARGET</span><span class="s2">\"</span><span class="nv">$LAST</span><span class="s2">"</span> &gt;&gt; <span class="nv">$LOG</span> <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+    <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> -ne <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+      <span class="nv">ERROR</span><span class="o">=</span><span class="m">1</span>
+    <span class="k">fi</span> 
+  <span class="k">fi</span> 
+  <span class="k">if</span> <span class="o">(</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$S</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$FROMSSH</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">[</span> -z <span class="s2">"</span><span class="nv">$TOSSH</span><span class="s2">"</span> <span class="o">]</span> <span class="o">)</span> <span class="o">||</span> <span class="o">(</span> <span class="o">[</span> -z <span class="s2">"</span><span class="nv">$S</span><span class="s2">"</span> <span class="o">]</span> <span class="o">)</span><span class="p">;</span>  <span class="k">then</span>
+    <span class="nv">$ECHO</span> <span class="s2">"</span><span class="nv">$LN</span><span class="s2"> -nsf </span><span class="nv">$TARGET$TODAY</span><span class="s2"> </span><span class="nv">$TARGET$LAST</span><span class="s2">"</span> &gt;&gt; <span class="nv">$LOG</span>
+    <span class="nv">$LN</span> -nsf <span class="s2">"</span><span class="nv">$TARGET</span><span class="s2">"</span><span class="nv">$TODAY</span> <span class="s2">"</span><span class="nv">$TARGET</span><span class="s2">"</span><span class="nv">$LAST</span>  &gt;&gt; <span class="nv">$LOG</span> <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> 
+    <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> -ne <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+      <span class="nv">ERROR</span><span class="o">=</span><span class="m">1</span>
+    <span class="k">fi</span> 
+  <span class="k">fi</span>
+<span class="k">else</span>
+  <span class="nv">$ECHO</span> <span class="s2">"</span><span class="nv">$MOUNTPOINT</span><span class="s2"> not mounted"</span> &gt;&gt; <span class="nv">$LOG</span>
+  <span class="nv">ERROR</span><span class="o">=</span><span class="m">1</span>
+<span class="k">fi</span>
+<span class="nv">$DATE</span> &gt;&gt; <span class="nv">$LOG</span>
+<span class="k">if</span> <span class="o">[</span> -n <span class="s2">"</span><span class="nv">$MAILREC</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+  <span class="k">if</span> <span class="o">[</span> <span class="nv">$ERROR</span> <span class="o">]</span><span class="p">;</span><span class="k">then</span>
+    <span class="nv">$MAIL</span> -s <span class="s2">"Error Backup </span><span class="nv">$LOG</span><span class="s2">"</span> <span class="nv">$MAILREC</span> &lt; <span class="nv">$LOG</span>
+  <span class="k">else</span>
+    <span class="nv">$MAIL</span> -s <span class="s2">"Backup </span><span class="nv">$LOG</span><span class="s2">"</span> <span class="nv">$MAILREC</span> &lt; <span class="nv">$LOG</span>
+  <span class="k">fi</span>
+<span class="k">fi</span>
+</pre></div>
+</td></tr></table></div><p>
+Die  Datei wird z.B. unter dem Namen <strong>/root/backup.sh</strong> gesichert. Da die Logdatei unter dem Namen mit selben Anhang und dem Anhang <strong>.log</strong> (z.B. <strong>/root/backup.sh.log</strong>) gesichert wird, empfiehlt es sich, eine sprechende Bezeichnung als Programmnamen zu vergeben.</p><div class="section_2"><h3 id="Beispiel-tousbplatte-sh">Beispiel tousbplatte.sh<a class="headerlink" href="#Beispiel-tousbplatte-sh">¶</a></h3><p>
+Sichern auf USB-Festplatte mit Überprüfung des "mount point", 
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>
+<span class="nv">SOURCES</span><span class="o">=(</span>/root /etc /home /boot <span class="o">)</span>
+<span class="nv">TARGET</span><span class="o">=</span><span class="s2">"/media/usb/zielverzeichnis"</span>
+
+<span class="c1"># edit or comment with "#"</span>
+<span class="c1">#LISTPACKAGES=listdebianpackages        # local-mode and tossh-mode</span>
+<span class="nv">MONTHROTATE</span><span class="o">=</span>monthrotate                 <span class="c1"># use DD instead of YYMMDD</span>
+
+<span class="nv">RSYNCCONF</span><span class="o">=(</span>--delete<span class="o">)</span>
+<span class="c1">#MOUNTPOINT="/media/daten"               # check local mountpoint</span>
+<span class="c1">#MAILREC="user@domain"</span>
+
+<span class="c1">#SSHUSER="sshuser"</span>
+<span class="c1">#FROMSSH="fromssh-server"</span>
+<span class="c1">#TOSSH="tossh-server"</span>
+<span class="nv">SSHPORT</span><span class="o">=</span><span class="m">22</span>
+</pre></div>
+</td></tr></table></div></div><div class="section_2"><h3 id="Beispiel-tossh-sh">Beispiel tossh.sh<a class="headerlink" href="#Beispiel-tossh-sh">¶</a></h3><p>
+Sichern auf SSH-Server und E-Mail-Benachrichtigung.
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span>
+<span class="nv">SOURCES</span><span class="o">=(</span>/root /etc /home /boot <span class="o">)</span>
+<span class="nv">TARGET</span><span class="o">=</span><span class="s2">"/pfad/auf/ssh-zielserver"</span>
+
+<span class="c1"># edit or comment with "#"</span>
+<span class="nv">LISTPACKAGES</span><span class="o">=</span>listdebianpackages        <span class="c1"># local-mode and tossh-mode</span>
+<span class="nv">MONTHROTATE</span><span class="o">=</span>monthrotate                 <span class="c1"># use DD instead of YYMMDD</span>
+
+<span class="nv">RSYNCCONF</span><span class="o">=(</span>--delete<span class="o">)</span>
+<span class="c1">#MOUNTPOINT="/media/daten"               # check local mountpoint</span>
+<span class="c1">#MAILREC="user@domain"</span>
+
+<span class="nv">SSHUSER</span><span class="o">=</span><span class="s2">"root"</span>
+<span class="c1">#FROMSSH="fromssh-server"</span>
+<span class="nv">TOSSH</span><span class="o">=</span><span class="s2">"192.168.1.100"</span>
+<span class="nv">SSHPORT</span><span class="o">=</span><span class="m">22</span>
+</pre></div>
+</td></tr></table></div></div><div class="section_2"><h3 id="Beispiel-Minimal-Variante">Beispiel Minimal Variante<a class="headerlink" href="#Beispiel-Minimal-Variante">¶</a></h3><p>
+Wem das obige Beispiel zu überdimensioniert ist, dem wird hier die minimale Basisvariante vorgestellt:</p><p>Es soll das gesamte Home-Verzeichnis des Benutzers auf eine externen Festplatte (ext4 oder NTFS - siehe auch <a class="internal" href="../skripte/backup_mit_rsync.html#Einschraenkungen">Einschraenkungen</a>) gesichert werden. Auf der externen Festplatte wird vom Skript für jedes Sicherungs-Archiv automatisch ein Ordner mit Datum z.B. "2013-03-16" angelegt. Bei unveränderten Dateien sparen Hardlinks in das vorherige Archiv Speicherplatz und Kopierzeit.
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/sh</span>
+
+<span class="nv">quelle</span><span class="o">=</span>/home/werner/
+<span class="nv">ziel</span><span class="o">=</span>/media/backup_platte/
+<span class="nv">heute</span><span class="o">=</span><span class="k">$(</span>date +%Y-%m-%d<span class="k">)</span>
+
+rsync -avR --delete <span class="s2">"</span><span class="si">${</span><span class="nv">quelle</span><span class="si">}</span><span class="s2">"</span>  <span class="s2">"</span><span class="si">${</span><span class="nv">ziel</span><span class="si">}${</span><span class="nv">heute</span><span class="si">}</span><span class="s2">/"</span> --link-dest<span class="o">=</span><span class="s2">"</span><span class="si">${</span><span class="nv">ziel</span><span class="si">}</span><span class="s2">last/"</span>
+ln -nsf <span class="s2">"</span><span class="si">${</span><span class="nv">ziel</span><span class="si">}${</span><span class="nv">heute</span><span class="si">}</span><span class="s2">"</span> <span class="s2">"</span><span class="si">${</span><span class="nv">ziel</span><span class="si">}</span><span class="s2">last"</span>
+
+<span class="nb">exit</span> <span class="m">0</span>
+</pre></div>
+</td></tr></table></div><p>
+Falls mit NTFS Datenträgern das Problem auftritt, dass immer alles neu kopiert wird und keine Hardlinks angelegt werden, liegt das vermutlich an den simulierten Dateirechten bei NTFS. Hier hilft es, folgende zusätzliche Optionen in der rsync-Zeile anzugeben
+</p><pre class="notranslate">rsync ... --no-perms --no-owner --no-group ...</pre><p>
+Beachte: Durch die Hardlinks liegen Dateien nur einmal auf dem Ziel-Datenträger. Bei sehr wichtigen Daten, oder auch von Zeit zu Zeit, ist es empfehlenswert, diese mit dem Original bitweise zu vergleichen, zusätzliche rsync Option -c:
+</p><pre class="notranslate">rsync ... -c ...</pre><p>
+Das ist sehr zeitintensiv, da alle Daten auf dem Ziel gelesen und mit dem Original verglichen werden, stellt aber sicher, dass die gesicherten Daten vollständig lesbar und korrekt sind.</p></div></div><div class="section_1"><h2 id="Installation-und-Ausfuehrung">Installation und Ausführung<a class="headerlink" href="#Installation-und-Ausfuehrung">¶</a></h2><p>
+Das Skript muss ausführbar<sup><a href="#source-3">[3]</a></sup> gemacht werden.</p><div class="section_2"><h3 id="Optionen-und-Parameter">Optionen und Parameter<a class="headerlink" href="#Optionen-und-Parameter">¶</a></h3><p>
+Das Skript erwartet genau einen Eintrag für das Backup-Ziel <code class="notranslate">TARGET</code> und einen bzw. mehrere Einträge für die Backup-Quellen <code class="notranslate">SOURCES</code>.</p><p><code class="notranslate">RSYNCCONF</code> -Optionen:</p><p>Das Backup-Skript nutzt <a class="internal" href="../rsync.html">rsync</a> für die Synchronisation der Verzeichnisse und Daten. Über die Variable <code class="notranslate">RSYNCONF</code> kann die Sicherung z.B. eingeschränkt werden.</p><pre class="notranslate">--delete              gelöschte Dateien werden auch in der Sicherung gelöscht
+                      (hat nur Auswirkungen bei mehreren Sicherungsläufen pro Tag)
+--exclude=.*          sämtliche Punkt-Dateien und Punkt-Verzeichnisse werden nicht gesichert
+--exclude=.mozilla    Anwendungsdaten von Mozilla/Firefox werden nicht gesichert (z.B. Browser-Cache)</pre><p>In <code class="notranslate">SOURCES</code> <code class="notranslate">TARGET</code> und <code class="notranslate">RSYNCCONF</code> können Pfadangaben mit Leerzeichen genutzt werden. Hierfür sind bei <code class="notranslate">SOURCES</code> und <code class="notranslate">RSYNCCONF</code> die Pfade mit Anführungszeichen zu umschließen.</p><p><code class="notranslate">PACKAGES</code> verwenden, um eine Liste aller installierten Pakete zu sichern. Die Liste kann benutzt werden, wenn man das System neu aufsetzen muss und den alten Zustand wiederherstellen will. Die Paketliste wird der E-Mail-Benachrichtung angehangen. Eine separate Speicherung findet nicht statt.</p><p><code class="notranslate">MAILREC</code> verwenden, um das Logfile an eine E-Mail-Adresse zu versenden. Dafür muss ein E-Mail-Programm installiert sein. Wie bei <code class="notranslate">MOUNTPOINT</code> kann die Option durch Weglassen ausgeschaltet werden.</p><p>Soll das Skript automatisiert innerhalb bestimmter Zeitintervalle laufen, kann es z.B. in <a class="internal" href="../cron.html">Cron</a>-Abläufe eingebunden werden.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Das Skript überprüft nicht, ob im Zielverzeichnis genügend freier Speicher vorhanden ist. Fehler bei den Eingabeparametern fängt das Skript nicht ab. Fehlerhafte Angaben können das System zerstören, da die Aktionen als root ausgeführt werden.
+</p></div></div></div></div><div class="section_1"><h2 id="Einschraenkungen">Einschränkungen<a class="headerlink" href="#Einschraenkungen">¶</a></h2><p>
+Das Skript wurde nur für unten gelisteten Dateisysteme getestet. Ein Einsatz von NTFS oder FAT als Zieldateisystem ist nur eingeschränkt möglich.</p><table><tr class="titel"><td colspan="3"> Getestete Dateisysteme </td></tr><tr class="kopf"><td> FS </td><td> inkrementell </td><td> Hinweise </td></tr><tr><td> ext2 </td><td style="background-color: #ccff99"> Ja </td><td rowspan="5"> Praktisch alle UNIX-artigen Dateisysteme unterstützen <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Hardlink">Hardlinks</a>. Im Zweifel hilft eine kurze Suche nach dem Dateisystem und dem Stichwort "hardlinks". Je nach der Implementation der Hardlinks verbrauchen einige Dateisysteme u.U. mehr Speicherplatz als andere. </td></tr><tr><td> ext3 </td><td style="background-color: #ccff99"> Ja </td></tr><tr><td> ext4 </td><td style="background-color: #ccff99"> Ja </td></tr><tr><td> xfs </td><td style="background-color: #ccff99"> Ja </td></tr><tr><td> vzfs/unionfs </td><td style="background-color: #ccff99"> Ja </td></tr><tr><td> HFS+ </td><td style="background-color: #ccff99"> Ja </td><td> Bei extern angeschlossenen Festplatten deaktiviert OS X standardmäßig die Benutzerrechteverwaltung, was inkrementelle Backups unmöglich macht. Diese kann man allerdings von Hand wieder aktivieren (sudo chflags nouchg /Volumes/your_disk). </td></tr><tr><td> FAT32 </td><td style="background-color: #EEEEEE"> Nein </td><td> Backups sind mit diesem Skript auch auf FAT32-Ziele möglich, jedoch nicht inkrementell. </td></tr><tr><td> NTFS (ntfs-3g) </td><td style="background-color: #ccff99"> Ja </td><td rowspan="2"> NTFS unterstützt seit Windows 2000 Hardlinks und stellt die entspr. Funktionen per API zur Verfügung. Der ntfs-3g-Treiber unterstützt dies seit <a class="internal" href="../jaunty.html">Jaunty</a>. Startet man das Skript unter Windows aus <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Cygwin">Cygwin</a> heraus, sind inkrementelle Backups ebenfalls möglich. </td></tr><tr><td> NTFS (Windows) </td><td style="background-color: #ccff99"> Ja </td></tr></table><p>
+</p></div><div class="section_1"><h2 id="Externes-Backup-bei-FAT-Partitionen">Externes Backup bei FAT-Partitionen<a class="headerlink" href="#Externes-Backup-bei-FAT-Partitionen">¶</a></h2><p>
+Für eine Datensicherung auf einem externen Medium mit einem abweichenden Dateisystem kann ein beliebiges Tagesarchiv z.B. mit TAR leicht gesichert werden.</p><div class="bash"><div class="contents"><pre class="notranslate">tar cvzf /media/extern/080122.tar.gz /media/backup/080122 </pre></div></div><p>Dabei ist aber zu beachten, dass FAT-Dateisysteme nur Dateien bis zu einer Größe von 4 GB erlauben. Ansonsten müssen mehrere TARs erstellt oder ein einzelnes aufgespalten werden.</p></div><div class="section_1"><h2 id="Daten-zuruecksichern">Daten zurücksichern<a class="headerlink" href="#Daten-zuruecksichern">¶</a></h2><p>
+Die Daten können einfach mit Betriebssystemmitteln (<a class="internal" href="../shell/cp.html">cp</a>, <a class="internal" href="../rsync.html">rsync</a>) bei Bedarf zurückkopiert werden.</p><p>Beim monatlichen Rotieren ist das Ermitteln von alten Sicherungen evtl. schwieriger, da als Datum nur der Tag und nicht JJMMTT gewählt wird. Mit dem unten stehenden Befehl erhält man eine Zuordnung des Sicherungsordners (TT) zum wirklichen Sicherungsdatum (JJ-MM-TT). Bitte entsprechend auf das Backup anwenden. Gesucht wird nach dem jeweiligen Namen des Logdateien, hier "backup.sh.log". Der Rechenaufwand ist hierbei relativ hoch.</p><div class="bash"><div class="contents"><pre class="notranslate">find . -name "backup.sh.log" |xargs -i ls -l --time-style=full-iso {}  |cut -d" " -f6,9 |sort </pre></div></div><p>Um alle Pakete zu installieren, sind aus der Logdatei bzw. der E-Mail die Pakete zu extrahieren und zu installieren.</p></div><div class="section_1"><h2 id="Links">Links<a class="headerlink" href="#Links">¶</a></h2><p>
+</p><ul><li><p><a class="internal" href="../datensicherung.html">Datensicherung</a> <img alt="{Übersicht}" src="../_/021d71c30babf2ce4dd27339ba3c55995610945b.png"/> Übersicht, wichtige Verzeichnisse</p></li><li><p><a class="external" href="https://ctaas.de/rsync.htm" rel="nofollow">ctaas.de/rsync.htm</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/> - übersichtliches &amp; leicht anpassbares Skript zur Sicherung mit rsync nach dem Großvater-Vater-Sohn Generationenprinzip.</p></li><li><p><a class="external" href="http://www.321tux.de/2011/01/komfortables-backup-skript-rsync/" rel="nofollow">Komfortables Backup-Skript</a> <img alt="{de}" src="../_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/></p></li><li><p><a class="external" href="http://blog.pointsoftware.ch/index.php/howto-local-and-remote-snapshot-backup-using-rsync-with-hard-links/" rel="nofollow">rsync-snapshot.sh</a> <img alt="{en}" src="../_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> Ein rsync Shell-Skript mit intelligenter Rotation (nicht lineare Distribution) von Backups. Integritätsschutz, Quotas, Regeln und viele Features. </p></li></ul><p></p></div></div>
+<p class="meta">
+<a href="../skripte/backup_mit_rsync/a/revision/945280.html">Diese Revision</a> wurde am 6. Dezember 2017 22:20 von <a href="https://ubuntuusers.de/user/BillMaier/">BillMaier</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="../startseite.html">Wiki</a></li>
+<li><a href="../skripte.html">Skripte</a></li>
+<li><a href="../skripte/backup_mit_rsync.html">Backup mit RSYNC</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="../_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="../_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="../_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="../_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Befehle_Btrfs-Dateisystem › ubuntuusers statisches Wiki</title>
+<link href="./_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="./_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="./_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="./_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="./_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="./_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="./startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="./befehle_btrfs-dateisystem.html">Befehle Btrfs-Dateisystem</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/Befehle_Btrfs-Dateisystem">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="./wiki/index.html">Index</a></li>
+<li><a href="./wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="./wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="./wiki.html">Übersicht</a></li>
+<li><a href="./wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="./wiki/benutzung.html">Benutzung</a></li>
+<li><a href="./kategorien.html">Kategorie</a></li>
+<li><a href="./wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="./wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="./howto.html">Howto anlegen</a></li>
+<li><a href="./wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="./wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="./baustelle.html">Baustellen</a></li>
+<li><a href="./wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="./wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="./wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="./wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="./befehle_btrfs-dateisystem/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="./befehle_btrfs-dateisystem/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="./befehle_btrfs-dateisystem/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="./befehle_btrfs-dateisystem/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="./befehle_btrfs-dateisystem/a/backlinks.html">Befehle Btrfs-Dateisystem</a></h1>
+<div id="page"><div class="box improvable"><h3 class="box improvable">Ausbaufähige Anleitung</h3><div class="contents"><p>
+Dieser Anleitung fehlen noch einige Informationen. Wenn Du etwas
+verbessern kannst, dann editiere den Beitrag, um die Qualität
+des Wikis noch weiter zu verbessern.
+</p><hr/><p><strong>Anmerkung:</strong> Ausgehend von der Fortschreibung der <strong>btrfs-tools</strong> auf Version 2.x rc sind einige, weitergehende Befehle noch nicht enthalten.
+</p></div></div><p>
+</p><div class="box tested_for"><h3 class="box tested_for">Dieser Artikel wurde für die folgenden
+Ubuntu-Versionen getestet:</h3><div class="contents"><p>
+</p><ul><li><p><a class="internal" href="./xenial_xerus.html">Ubuntu 16.04</a> Xenial Xerus</p></li><li><p><a class="internal" href="./trusty_tahr.html">Ubuntu 14.04</a> Trusty Tahr</p></li></ul></div></div><p>
+</p><div class="box advanced"><h3 class="box advanced">Artikel für fortgeschrittene Anwender</h3><div class="contents"><p>
+Dieser Artikel erfordert mehr Erfahrung im Umgang mit
+Linux und ist daher nur für fortgeschrittene Benutzer
+gedacht.
+</p></div></div><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="./terminal.html">Ein Terminal öffnen</a></p></li><li><p><a class="crosslink anchor" href="#source-2" id="source-2"></a> <a class="internal" href="./pakete_installieren.html">Pakete installieren</a></p></li></ol></div></div><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Die nachfolgende Beschreibung basiert auf den <strong>btrfs-tools</strong> der Version 0.19 von 2010. Um den aktuellen Befehlsumfang zu <code class="notranslate">btrfs</code> zu erhalten (Optionen, Ergänzungen), sollte man den jeweiligen Befehl im Terminal<sup><a href="#source-1">[1]</a></sup> ohne Option (entspricht der Option <code class="notranslate">--help</code>) abfragen - die <a class="internal" href="./man.html">Manpages</a> sind teilweise fehlerhaft bzw. Hinweise fehlen ganz!
+</p></div></div><div class="toc toc-depth-2"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a class="crosslink" href="#Btrfs-Allgemein">Btrfs Allgemein
+</a><ol class="arabic"><li><a class="crosslink" href="#Sachstand-btrfs-tools">Sachstand btrfs-tools
+</a></li><li><a class="crosslink" href="#Befehle-zum-Btrfs-Dateisystem">Befehle zum Btrfs-Dateisystem
+</a></li><li><a class="crosslink" href="#Ausgelagerte-Beschreibungen">Ausgelagerte Beschreibungen
+</a></li></ol></li><li><a class="crosslink" href="#Befehle-mit-Optionen">Befehle mit Optionen
+</a><ol class="arabic"><li><a class="crosslink" href="#btrfs-balance">btrfs balance
+</a></li><li><a class="crosslink" href="#btrfs-device-add">btrfs device add
+</a></li><li><a class="crosslink" href="#btrfs-check">btrfs check
+</a></li><li><a class="crosslink" href="#btrfs-device-delete">btrfs device delete
+</a></li><li><a class="crosslink" href="#btrfs-device-scan">btrfs device scan
+</a></li><li><a class="crosslink" href="#btrfs-filesystem-defragment">btrfs filesystem defragment
+</a></li><li><a class="crosslink" href="#btrfs-filesystem-df">btrfs filesystem df
+</a></li><li><a class="crosslink" href="#btrfs-filesystem-resize">btrfs filesystem resize
+</a></li><li><a class="crosslink" href="#btrfs-filesystem-show">btrfs filesystem show
+</a></li><li><a class="crosslink" href="#btrfs-filesystem-sync">btrfs filesystem sync
+</a></li><li><a class="crosslink" href="#btrfs-subvolume-create">btrfs subvolume create
+</a></li><li><a class="crosslink" href="#btrfs-subvolume-delete">btrfs subvolume delete
+</a></li><li><a class="crosslink" href="#btrfs-subvolume-find-new">btrfs subvolume find-new
+</a></li><li><a class="crosslink" href="#btrfs-subvolume-list">btrfs subvolume list
+</a></li><li><a class="crosslink" href="#btrfs-subvolume-set-default">btrfs subvolume set-default
+</a></li><li><a class="crosslink" href="#btrfs-subvolume-snapshot">btrfs subvolume snapshot
+</a></li></ol></li><li><a class="crosslink" href="#Direkte-Befehle">Direkte Befehle
+</a><ol class="arabic"><li><a class="crosslink" href="#btrfs-convert">btrfs-convert
+</a></li><li><a class="crosslink" href="#btrfs-debug-tree">btrfs-debug-tree
+</a></li><li><a class="crosslink" href="#btrfs-image">btrfs-image
+</a></li></ol></li><li><a class="crosslink" href="#Kompakte-Befehle">Kompakte Befehle
+</a><ol class="arabic"><li><a class="crosslink" href="#btrfsck">btrfsck
+</a></li><li><a class="crosslink" href="#btrfstune">btrfstune
+</a></li></ol></li><li><a class="crosslink" href="#Obsolete-Befehle">Obsolete Befehle
+</a><ol class="arabic"><li><a class="crosslink" href="#btrfsctl">btrfsctl
+</a></li><li><a class="crosslink" href="#btrfs-show">btrfs-show
+</a></li><li><a class="crosslink" href="#btrfs-vol">btrfs-vol
+</a></li><li><a class="crosslink" href="#btrfs-filesystem-balance">btrfs filesystem balance
+</a></li></ol></li><li><a class="crosslink" href="#Links">Links
+</a><ol class="arabic"><li><a class="crosslink" href="#Informationen">Informationen
+</a></li><li><a class="crosslink" href="#Downloads">Downloads
+</a></li></ol></li></ol></div><p><img alt="btrfs_logo.png" class="image-left" src="./_/026c9ac6d4cd15a7be7416cb1fe6fc523ccd4c51.png"/>
+</p><div class="section_1"><h2 id="Btrfs-Allgemein">Btrfs Allgemein<a class="headerlink" href="#Btrfs-Allgemein">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Sachstand-btrfs-tools">Sachstand btrfs-tools<a class="headerlink" href="#Sachstand-btrfs-tools">¶</a></h3><p>
+In diesem Artikel zum <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Btrfs">Btrfs-Dateisystem</a> ist eine Übersicht der Befehle mit Kurzbeschreibungen aufgeführt. Manche Befehle sind mit anderer Syntax mehrfach vorhanden - welche man endgültig anwenden kann, wird die Entwicklung der Btrfs-Tools in Zukunft zeigen.</p><ul><li><p><strong>btrfs-tools</strong></p></li></ul><p><img alt="Wiki/Vorlagen/Installbutton/button.png" class="image-default" src="./_/fd60ccb86c4d96df2f4518df2936cc7d038467aa.png"/>
+mit <a class="internal" href="./apturl.html">apturl</a>
+</p><div class="package-list"><div class="contents"><p>
+Paketliste zum Kopieren:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo apt-get install btrfs-tools </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo aptitude install btrfs-tools </pre></div></div><p>
+</p></div></div><p>vorbehalten. Dieses Paket ist in der Regel schon nach der Installation vorhanden.</p></div><div class="section_2"><h3 id="Befehle-zum-Btrfs-Dateisystem">Befehle zum Btrfs-Dateisystem<a class="headerlink" href="#Befehle-zum-Btrfs-Dateisystem">¶</a></h3><p>
+Der Aufbau der Syntax unterscheidet sich zur Zeit in</p><ul><li><p><a class="crosslink" href="#Befehle-mit-Optionen">Befehle mit Optionen</a></p></li><li><p><a class="crosslink" href="#Direkte-Befehle">Direkte Befehle</a></p></li><li><p><a class="crosslink" href="#Kompakte-Befehle">Kompakte Befehle</a></p></li><li><p><a class="crosslink" href="#Obsolete-Befehle">Obsolete Befehle</a></p></li></ul><p>
+Der nachfolgende Aufbau der Beschreibung wurde danach gegliedert - über das Inhaltsverzeichnis kann man sich vorab informieren und die jeweilige Beschreibung dieser Befehle auch direkt aufrufen.</p></div><div class="section_2"><h3 id="Ausgelagerte-Beschreibungen">Ausgelagerte Beschreibungen<a class="headerlink" href="#Ausgelagerte-Beschreibungen">¶</a></h3><p>
+Diese Teilbeschreibung behandelt die Befehle für das normale Arbeiten mit dem Btrfs-Dateisystem.</p><p>Für folgende Teilaspekte wurden, um die Übersicht zu behalten, separate Beschreibungen erstellt. Die <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Btrfs">Btrfs</a>-Befehle enthalten dann nachfolgend <span class="underline">nur</span> eine kurze Beschreibung der Syntax und einen Link in das relevante WIKI.</p><ul><li><p><a class="internal" href="./installieren_auf_btrfs-dateisystem.html">Installieren auf Btrfs-Dateisystem</a></p><ul><li><p>Installation auf Btrfs-Dateisystem</p></li><li><p>Formatierung mit <a class="internal" href="./installieren_auf_btrfs-dateisystem.html#Der-mkfs-btrfs-Befehl"><code class="notranslate">mkfs.btrfs</code></a></p><ul><li><p>Normales System</p></li><li><p>Btrfs-RAID-Verbund</p></li></ul></li><li><p>Formatierung überprüfen mit <a class="internal" href="./installieren_auf_btrfs-dateisystem.html#Formatierung-ueberpruefen"><code class="notranslate">btrfs filesystem show</code></a></p></li><li><p>Zusatzmaßnahmen</p></li><li><p>Probleme und Abhilfe</p></li></ul></li></ul><p>
+</p><ul><li><p><a class="internal" href="./konvertierung_nach_btrfs.html">Konvertierung nach Btrfs</a></p><ul><li><p>Umwandlung von <strong>ext3</strong> / <strong>ext4</strong> auf ein Btrfs-Dateisystem mit <a class="crosslink" href="#btrfs-convert"><code class="notranslate">btrfs-convert</code></a></p></li></ul></li></ul><p>
+</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Die in den nachfolgenden Beispielen angeführten Laufwerke, Geräte bzw. Bezeichnungen sind dem jeweils eigenen System anzupassen.
+</p></div></div></div></div><div class="section_1"><h2 id="Befehle-mit-Optionen">Befehle mit Optionen<a class="headerlink" href="#Befehle-mit-Optionen">¶</a></h2><p>
+Die Eingabe in das Terminal<sup><a href="#source-1">[1]</a></sup> von:
+</p><div class="bash"><div class="contents"><pre class="notranslate">btrfs </pre></div></div><p>
+ohne weitere Ergänzung ergibt eine Liste der Befehle mit den Optionen und Ergänzungen. Diese werden hier nachfolgend alphabetisch sortiert beschrieben.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Alle Befehle, bis auf das einleitende <code class="notranslate">btrfs</code>, können abgekürzt werden, soweit das zu einer eindeutigen Zuordnung führt. Solange man sich nicht sicher ist, sollte man die nachfolgend beschriebenen Langformen der Befehle verwenden! Zum Beispiel bewirken:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs filesystem balance </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs fi ba </pre></div></div><p>
+das Gleiche.
+</p></div></div><div class="section_2"><h3 id="btrfs-balance">btrfs balance<a class="headerlink" href="#btrfs-balance">¶</a></h3><p>
+Mit der Zeit sind bei einem Btrfs-RAID-Verbund, nach dem Hinzufügen bzw. Entfernen von externen Speicherplatz, die Metadaten und Filedaten nicht mehr gleichmäßig auf den Laufwerken bzw. dem Laufwerk verteilt. Um diese wieder ins Lot zu bringen, sollte man die Verteilung neu anordnen lassen. Dazu gibt man folgendes im laufenden System oder nach dem Einhängen eines externen Laufwerkes (siehe Fallbeispiele) in ein Terminal<sup><a href="#source-1">[1]</a></sup> ein:</p><ul><li><p>für das Wurzelverzeichnis:</p></li></ul><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs balance start / </pre></div></div><ul><li><p>für ein selektives Verzeichnis:</p></li></ul><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs balance start /var/cache </pre></div></div><p>Nachdem man diesen Befehl gestartet hat, kann man die folgenden Optionen anwenden:
+</p><ul><li><p>sudo btrfs balance pause &lt;Pfad&gt; - Hält die Reorganisation an.</p></li><li><p>sudo btrfs balance cancel &lt;Pfad&gt; - Bricht die Reorganisation ab.</p></li><li><p>sudo btrfs balance resume &lt;Pfad&gt; - Nimmt eine angehaltene Reorganisation wieder auf.</p></li><li><p>sudo btrfs balance status &lt;Pfad&gt; - Zeigt den aktuellen Stand der Reorganisation an.</p></li></ul><p>
+</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Die obige Eingabe von <code class="notranslate">sudo btrfs balance start /</code> sperrt das Terminal bis der Vorgang abgeschlossen ist. Will man einen der obigen Folgebefehle anwenden, muss man eine weitere Instanz vom Terminal öffnen und dort dann z.B. <code class="notranslate">sudo btrfs balance status /</code> eingeben.</p><p>Je nach Datenmenge und Zustand des Btrfs-Dateisystemes kann diese Maßnahme eine längere Zeit in Anspruch nehmen. Man kann aber während des Abgleiches eingeschränkt weiter arbeiten, ohne das es dabei zu Konflikten (mit den Daten) kommt.
+</p></div></div><p>Auch ist es durch diesen Befehl möglich, das Dateisystem in eine andere Form zu konvertieren (Zum Beispiel von Raid1 zu Raid0)
+Dazu gibt man in ein Terminal folgendes ein:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs balance start -dconvert=raid0 -mconvert=raid0 / </pre></div></div><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Bei "-mconvert=raid0" wird die Sicherheit der Metadaten reduziert! Deshalb muss bei dieser Aktion die Option "-f" hinzugefügt werden.
+</p></div></div></div><div class="section_2"><h3 id="btrfs-device-add">btrfs device add<a class="headerlink" href="#btrfs-device-add">¶</a></h3><p>
+Falls es zu Speicherplatzproblemen kommt und mit dem Befehl <a class="crosslink" href="#btrfs-filesystem-resize"><code class="notranslate">btrfs filesystem resize</code></a>  keine Abhilfe mehr möglich ist, so kann man einem <strong>laufenden System</strong> weiteren Speicherplatz hinzufügen. Dies funktioniert sowohl pauschal, indem man das Wurzelverzeichnis erweitert bzw. selektiv, indem man einen beliebigen Ast (Pfad) in der <a class="internal" href="./verzeichnisstruktur.html">Verzeichnisstruktur</a> ausbaut.</p><p>Das Laufwerk, das hinzugefügt werden soll, darf nicht schon an anderer Stelle eingebunden sein und sollte mit dem Btrfs-Dateisystem formatiert sein. Siehe auch folgende Fallbeispiele:</p><ul><li><p>Dem Wurzelverzeichnis einen Speicherbereich hinzufügen:</p></li></ul><p>Dazu gibt man im Terminal<sup><a href="#source-1">[1]</a></sup> ein:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs device add /dev/sda6 / </pre></div></div><p>
+Der gesamte Wurzelbereich wird hierdurch um den Speicherplatz von <strong>/dev/sda6</strong> vergrößert.</p><ul><li><p>Einem Bereich einen Speicherbereich hinzufügen:</p></li></ul><p>Dazu gibt man im Terminal<sup><a href="#source-1">[1]</a></sup> ein:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs device add /dev/loop0 /var/cache </pre></div></div><p>
+Das Verzeichnis <strong>/var/cache</strong> wird um den Speicherplatz von <strong>/dev/loop0</strong> erweitert.</p><p>Das bestehende Dateisystem passt den Speicherplatz auf dem hinzugefügten Laufwerk automatisch an. Es muss kein zusätzlicher Eintrag in der <strong>/etc/fstab</strong> vorgenommen werden. Beim nächsten Booten, wird dieses Laufwerk automatisch mit dem Basislaufwerk richtig eingebunden. Damit der Speicherplatz auch optimal und richtig benutzt werden kann, sollte man im Anschluss den Befehl <a class="crosslink" href="#btrfs-device-scan"><code class="notranslate">btrfs device scan</code></a> ausführen, damit das Dateisystem alle Komponenten korrekt zuordnet.</p><p>Danach sollte noch <a class="crosslink" href="#btrfs-balance"><code class="notranslate">btrfs balance</code></a> ausgeführt werden, damit die Daten wieder gleichmäßig verteilt sind.</p><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Der Inhalt des zusätzlichen Laufwerkes wird beim Hinzufügen gelöscht bzw. überschrieben. Das zusätzliche Laufwerk <span class="underline">muss</span>, solange es nicht mit dem Befehl <a class="crosslink" href="#btrfs-device-delete"><code class="notranslate">btrfs device delete</code></a> entfernt wurde, schon beim Booten vom System <span class="underline">erreichbar</span> sein. Das gilt insbesondere bei externen Laufwerken!
+</p></div></div></div><div class="section_2"><h3 id="btrfs-check">btrfs check<a class="headerlink" href="#btrfs-check">¶</a></h3><p>
+Wenn das btrfs-System mal nicht funktionieren sollte, oder balance nicht seinen Dienst verrichtet, hilft der Befehl "btrfs check". Dafür darf das Volumen aber <strong>nicht</strong> eingehängt sein!
+</p><div class="bash"><div class="contents"><pre class="notranslate">btrfs check --repair /dev/sdX </pre></div></div></div><div class="section_2"><h3 id="btrfs-device-delete">btrfs device delete<a class="headerlink" href="#btrfs-device-delete">¶</a></h3><p>
+</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Dieser Befehl wird zur Zeit nicht (richtig) ausgeführt. Ein korrektes Aushängen ist nicht in allen Fällen möglich!
+</p></div></div><p>Hat man seinen Speicherplatz aus einzelnen Laufwerken zusammengestellt - siehe <a class="crosslink" href="#btrfs-device-add">btrfs device add</a>, so kann man diesen Speicherplatz bedarfsweise wieder freigeben und ggf. an anderer Stelle verwenden. Dazu gibt man in ein Terminal<sup><a href="#source-1">[1]</a></sup> ein:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs device delete /dev/sda6 / </pre></div></div><p>
+Damit wird der Speicherplatz an dieser Stelle um die Größe des genannten Laufwerkes verkleinert.</p><p>Damit der Speicherplatz wieder optimal benutzt werden kann, sollte man im Anschluss den Befehl <a class="crosslink" href="#btrfs-filesystem-balance"><code class="notranslate">btrfs filesystem balance</code></a> ausführen.</p></div><div class="section_2"><h3 id="btrfs-device-scan">btrfs device scan<a class="headerlink" href="#btrfs-device-scan">¶</a></h3><p>
+Nachdem man in ein Terminal<sup><a href="#source-1">[1]</a></sup></p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs device scan </pre></div></div><p>eingibt. Ergibt dieser Befehl nur die Ausgabe von:
+</p><pre class="notranslate">failed to read /dev/sdh
+failed to read /dev/sdg
+failed to read /dev/sdf
+failed to read /dev/sde
+failed to read /dev/sdd
+failed to read /dev/sr0</pre><p>
+und damit nur Laufwerke, welche <span class="underline">kein</span> Btrfs-Dateisystem besitzen (Negativliste).</p><p>Mit der Ergänzung eines Laufwerkpfades
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs device scan /dev/sdXY </pre></div></div><p>
+erhält man bei
+</p><ul><li><p>einem Btrfs-Dateisystem</p><ul><li><pre class="notranslate">Scanning for Btrfs filesystems in '/dev/sdb1'</pre></li></ul></li><li><p>Ohne ein Btrfs-Dateisystem</p><ul><li><pre class="notranslate">Scanning for Btrfs filesystems in '/dev/sda1'
+ERROR: unable to scan the device '/dev/sda1'</pre></li></ul></li></ul><p>
+Um weitergehende Informationen zu erhalten, sollte man den Befehl <a class="internal" href="./installieren_auf_btrfs-dateisystem.html#Formatierung-ueberpruefen"><code class="notranslate">btrfs filesystem show</code></a> anwenden.</p></div><div class="section_2"><h3 id="btrfs-filesystem-defragment">btrfs filesystem defragment<a class="headerlink" href="#btrfs-filesystem-defragment">¶</a></h3><p>
+</p><div class="box experts"><h3 class="box experts">Experten-Info:</h3><div class="contents"><p><a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Copy-On-Write">Copy On Write</a> Dateisysteme (COW) haben viele Vorteile, aber auch Nachteile - z.B. <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Defragmentierung">Defragmentierung</a>. Btrfs legt die Daten beim ersten Schreiben einer Datei sequentiell ab, aber COW erfordert, das geänderte Daten nicht einfach überschrieben werden, sondern in freie Speicherbereiche abgelegt werden. Damit sind dann die Dateien nicht mehr zusammenhängend - also fragmentiert. Das hat dann ggf. auch noch Einfluss auf das Speichern anderer Dateien. Weitere Informationen siehe unter den <a class="internal" href="./btrfs-mountoptionen.html#Mountoptionen">Mountoptionen</a>.
+</p></div></div><p>Es wird empfohlen bei normalen Festplatten - nicht jedoch  bei <a class="internal" href="./ssd.html">SSD</a>-Laufwerken - die Struktur und die der Metadaten in einem Btrfs-Dateisystem ab und an zu reorganisieren. Dies ist jedoch  nicht zwingend erforderlich.</p><p>Das wird unter dem Btrfs-Dateisystem als Defragmentierung bezeichnet und kann in einem laufenden System durchgeführt werden bzw. wenn ein Laufwerk oder Unterlaufwerk (Subvolume) dazu eingebunden wurde.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Diese Defragmentierung ist vergleichbar mit der vom <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Windows">Windows</a>-Betriebssystem - es wird eine Reorganisation der eigentlichen Daten durchgeführt! Je nach Datenmenge und Zustand des Btrfs-Dateisystemes kann diese Maßnahme eine längere Zeit in Anspruch nehmen. Man kann aber während einer Defragmentierung eingeschränkt weiter arbeiten, ohne dass es dabei zu Konflikten (mit den Daten) kommt.
+</p></div></div><p>Um den Zeitaufwand zu reduzieren, sollte man Schnappschüsse, die man nicht mehr benötigt, entfernen bzw. diese extern auslagern. Siehe auch die Hinweise bei den Befehlen <a class="crosslink" href="#btrfs-subvolume-snapshot"><code class="notranslate">btrfs subvolume snapshot</code></a> bzw. <a class="crosslink" href="#btrfs-image"><code class="notranslate">btrfs-image</code></a>.</p><p>Eine Defragmentierung erreicht man durch die (hier beispielhafte) Eingabe im Terminal<sup><a href="#source-1">[1]</a></sup> von:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs filesystem defragment /home </pre></div></div><p>Dabei muss der angegebene Pfad, hier im Beispiel <strong>/home</strong>, nicht mit den Unterlaufwerken (Subvolumes) korrespondieren!</p></div><div class="section_2"><h3 id="btrfs-filesystem-df">btrfs filesystem df<a class="headerlink" href="#btrfs-filesystem-df">¶</a></h3><p>
+Mit dem Befehl:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs filesystem df PFAD </pre></div></div><p>
+erhält man eine grobe Aussage zur Belegung des abgefragten Speichermedium. Mit der Option <code class="notranslate">PFAD</code> wird der Bereich festgelegt. Die beispielhafte Ausgabe für ein Btrfs-RAID-Verbund ist:</p><pre class="notranslate">	Data, RAID0: total=4.00GB, used=2.37GB
+	System, RAID1: total=8.00MB, used=4.00KB
+	System: total=4.00MB, used=0.00
+	Metadata, RAID1: total=768.00MB, used=181.83MB</pre><p>bzw. für ein einzelnes Laufwerk / Partition z.B.:</p><pre class="notranslate">	Data: total=3.01GB, used=1.68GB
+	System, DUP: total=8.00MB, used=4.00KB
+	System: total=4.00MB, used=0.00
+	Metadata, DUP: total=1.50GB, used=212.58MB
+	Metadata: total=8.00MB, used=0.00</pre><p>oder auch für ein bestimmtes Verzeichnis z.B. bei:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs filesystem df /boot </pre></div></div><pre class="notranslate">Data: total=212.69MB, used=56.21MB
+System, DUP: total=8.00MB, used=4.00KB
+System: total=4.00MB, used=0.00
+Metadata, DUP: total=102.31MB, used=448.00KB
+Metadata: total=8.00MB, used=0.00</pre></div><div class="section_2"><h3 id="btrfs-filesystem-resize">btrfs filesystem resize<a class="headerlink" href="#btrfs-filesystem-resize">¶</a></h3><p>
+Um die Größe eines Speicherbereiches festzulegen bzw. zu verändern, kann man im Terminal<sup><a href="#source-1">[1]</a></sup></p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs filesystem resize [Option] /PFAD </pre></div></div><p>eingeben. Die Optionen sind wie folgt zu setzen (Fallbeispiele), <strong>/mnt</strong>: ist der Pfad eines eingehängtes Laufwerk oder Unterlaufwerk (Subvolume):</p><ul><li><p>Laufwerk vergrößern:</p><ul><li><p>mit Vorzeichen: + = vergrößern um </p></li><li><p>Wert = 4</p></li><li><p>Faktor: g = GB, m = MB, k = KB</p></li></ul></li></ul><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs filesystem resize +4g /mnt </pre></div></div><ul><li><p>Laufwerk verkleinern:</p><ul><li><p>mit Vorzeichen: - = verkleinern um </p></li><li><p>Wert = 4</p></li><li><p>Faktor: g = GB, m = MB, k = KB</p></li></ul></li></ul><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs filesystem resize -4g /mnt </pre></div></div><ul><li><p>Laufwerk eine definierte Größe zuweisen:</p><ul><li><p>Wert = 4</p></li><li><p>Faktor: g = GB, m = MB, k = KB</p></li></ul></li></ul><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs filesystem resize 16g /mnt </pre></div></div><ul><li><p>einem Laufwerk bzw. Unterlaufwerk (Subvolume) den gesamten noch zur Verfügung stehenden Speicherplatz zuweisen</p></li></ul><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs filesystem resize max /mnt </pre></div></div><p>In allen Fällen wird bei erfolgreicher Veränderung eine Anzeige ausgegeben, die beispielhaft so aussieht:
+</p><pre class="notranslate">resize '/mnt' of '+4g'</pre></div><div class="section_2"><h3 id="btrfs-filesystem-show">btrfs filesystem show<a class="headerlink" href="#btrfs-filesystem-show">¶</a></h3><p>
+Will man eine Übersicht zu vorhandenen Btrfs-Dateisystemen erhalten, kann man im Terminal<sup><a href="#source-1">[1]</a></sup></p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs filesystem show </pre></div></div><p>eingeben. Dann werden entsprechende Informationen zu <span class="underline">allen</span> Laufwerken angezeigt, unabhängig vom Mount-Status, ob ein Btrfs-Dateisystem vorhanden ist oder auch nicht.</p><p>Weitere Informationen dazu findet man im separaten WIKI unter <a class="internal" href="./installieren_auf_btrfs-dateisystem.html#Formatierung-ueberpruefen">Formatierung überprüfen</a>.</p></div><div class="section_2"><h3 id="btrfs-filesystem-sync">btrfs filesystem sync<a class="headerlink" href="#btrfs-filesystem-sync">¶</a></h3><p>
+Dieser Befehl ist <span class="underline">nur</span> wirksam, wenn beim <a class="internal" href="./installieren_auf_btrfs-dateisystem.html#Optionen-mkfs-btrfs">Formatieren</a> eines Btrfs_RAID-Verbundes die Optionen 
+</p><ul><li><p><code class="notranslate">-d</code> = Datenprofil mit raid0 bis raid10</p></li><li><p><code class="notranslate">-m</code> = Metadatenprofil mit raid0 bis raid10</p></li></ul><p>eingesetzt wurden. Die Eingabe erfolgt in ein Terminal<sup><a href="#source-1">[1]</a></sup> mit:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs filesystem sync PFAD </pre></div></div><p>Die Angabe <code class="notranslate">PFAD</code> kann dabei ein beliebiger Pfad im laufendem System sein.</p></div><div class="section_2"><h3 id="btrfs-subvolume-create">btrfs subvolume create<a class="headerlink" href="#btrfs-subvolume-create">¶</a></h3><p>
+Will man eigene Unterlaufwerke (Subvolumes) anlegen, so kann man dies auf einer mit Btrfs formatierten Partition erreichen, indem man diese Partition, sofern erforderlich, 
+</p><ul><li><p>in das laufende System einbindet</p></li><li><p>alternativ zum Einbindepunkt wechselt. </p></li></ul><p>Dazu gibt man in ein Terminal<sup><a href="#source-1">[1]</a></sup> nacheinander</p><div class="bash"><div class="contents"><pre class="notranslate">sudo mount /dev/sda1 /media </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs subvolume create /media/BEZEICHNUNG </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo umount /dev/sda1 </pre></div></div><p>ein. Als <code class="notranslate">BEZEICHNUNG</code> kann man eine beliebige Information wählen, z.B.: <code class="notranslate">daten</code> - also auch eine Bezeichnung ohne das führende <code class="notranslate">@</code>.</p><div class="box experts"><h3 class="box experts">Experten-Info:</h3><div class="contents"><p>Ein so erstelltes Unterlaufwerk (Subvolume) <span class="underline">muss</span> als erstes die Zuweisungen für
+</p><ul><li><p>den <a class="internal" href="./benutzer_und_gruppen.html">Benutzer</a>, (sofern ungleich <em>root</em>) → siehe <a class="internal" href="./chown.html">chown</a></p></li><li><p>die <a class="internal" href="./rechte.html">Rechte</a> → siehe <a class="internal" href="./chmod.html">chmod</a></p></li></ul><p>erhalten, da ansonsten keine Daten bzw. Verzeichnisse darin ohne root-Rechte angelegt werden können.
+</p></div></div></div><div class="section_2"><h3 id="btrfs-subvolume-delete">btrfs subvolume delete<a class="headerlink" href="#btrfs-subvolume-delete">¶</a></h3><p>
+Um ein bestehendes Unter-Laufwerk (Subvolume) wieder zu löschen, kann man dieses (ggf. nach dem Einbinden in das eigene System) mit der Eingabe in ein Terminal<sup><a href="#source-1">[1]</a></sup> von:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs subvolume delete /media/BEZEICHNUNG </pre></div></div><div class="box experts"><h3 class="box experts">Experten-Info:</h3><div class="contents"><p>Die normale Bash-Routine/Befehlsequenz </p><div class="bash"><div class="contents"><pre class="notranslate">sudo rm -rf /mnt/BEZEICHNUNG </pre></div></div><p> ist für ein Subvolume unwirksam. Es wird dabei nur der Inhalt des Unterlaufwerkes (Subvolume) gelöscht und das kann zu unkontrolliertem Verhalten bzw. auch  Datenverlust führen. Man sollte daher vorab mit dem Befehl <a class="crosslink" href="#btrfs-subvolume-list"><code class="notranslate">btrfs subvolume list</code></a> den Status eines Verzeichnisses überprüfen!
+</p></div></div></div><div class="section_2"><h3 id="btrfs-subvolume-find-new">btrfs subvolume find-new<a class="headerlink" href="#btrfs-subvolume-find-new">¶</a></h3><p>
+Will man Informationen über den Zustand einzelner Dateien angezeigt bekommen, so kann man diese im Terminal<sup><a href="#source-1">[1]</a></sup> abfragen mit:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs subvolume find-new /home 20725 &gt; liste.txt </pre></div></div><p>Dabei bedeuten
+</p><ul><li><p><code class="notranslate">/home</code></p></li></ul><p>ein gültiges Unterlaufwerk (Subvolume) und 
+</p><ul><li><p><code class="notranslate">20725</code></p></li></ul><p>die laufende Nummer der Metadaten-Information, ab der ein Suchvorgang erfolgen soll (jünger als Parameter). Man sollte erst einmal mit einer zu hohen Zahl (z.B. 1 000 000) anfangen, dann erhält man als Ausgabe die letzte lfd. Zählnummer - z.B.:
+</p><pre class="notranslate">transid marker was 20741</pre><p>
+mit der man dann (&lt;=) eine erneute Suche einleiten kann und erhält u.a.:</p><pre class="notranslate">inode 9690 file offset 0 len 20 disk start 0 offset 0 gen 20728 flags INLINE ~/.local/share/zeitgeist/bb.fts.index/postlist.baseB</pre><ul><li><p><code class="notranslate">&gt; liste.txt</code></p></li></ul><p>Damit wird die Ausgabe in eine Datei umgeleitet. Dieses ist immer vorzuziehen - ein Abbrechen der Ausgabe ist jederzeit möglich mit 
+<span class="key">Strg</span>  + 
+<span class="key">C</span> .</p></div><div class="section_2"><h3 id="btrfs-subvolume-list">btrfs subvolume list<a class="headerlink" href="#btrfs-subvolume-list">¶</a></h3><p>
+Um die Unter-Laufwerke (Subvolumes) ID in einem aktiven System abzufragen, gibt man in ein Terminal<sup><a href="#source-1">[1]</a></sup> ein:</p><div class="bash"><div class="contents"><pre class="notranslate">btrfs subvolume list / </pre></div></div><p>und erhält (die beispielhafte) Ausgabe für das aktuelle Wurzelverzeichnis:</p><pre class="notranslate">	ID 260 top level 5 path @
+	ID 258 top level 5 path @home
+	ID 261 top level 5 path @data</pre><p>Diese Daten sind für das Einbinden von Partitionen mit Subvolumes von Interesse, sowohl für das aktuelle einmalige Einbinden als auch für die <strong>/etc/fstab</strong>. Unterlaufwerke (Subvolumes), welche nicht zum Wurzelverzeichnis gehören, kann man dann anstelle mit <code class="notranslate">… -o subvol=@data …</code> z.B. sicherer einbinden mit:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo mount -o subvolid=261 /dev/sda3 /media/daten </pre></div></div><p>bzw. in der <strong>/etc/fstab</strong>:
+</p><pre class="notranslate">UUID=2f613613-85b4-46cf-bbbe-90a1748f7753 /media/daten btrfs defaults,subvolid=261 0  0</pre></div><div class="section_2"><h3 id="btrfs-subvolume-set-default">btrfs subvolume set-default<a class="headerlink" href="#btrfs-subvolume-set-default">¶</a></h3><p>
+Legt ein Subvolume als Standard fest, welches beim Mounten ohne weitere Mount-Optionen in den Zielordner gemountet wird.
+Standardmäßing ist dies das beim Anlegen des Dateisystems erstellte Top-Level-Subvolume mit der internen subvolid=5.</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs subvolume set-default SUB_ID FS-PATH </pre></div></div><p><code class="notranslate">SUB_ID</code> ist die ID des neu zu spezifizierenden Subvolumes. FS-PATH ist der Ordner, in den das zu ändernde BTRFS-Dateisystem gemountet ist.</p><p>Um das Top-Level-Subvolume als Standard wiederherzustellen, gibt man also z.B. ein:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo mount /dev/sda1 /mnt </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs subvolume set-default 5 /mnt </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo umount /dev/sda1 </pre></div></div></div><div class="section_2"><h3 id="btrfs-subvolume-snapshot">btrfs subvolume snapshot<a class="headerlink" href="#btrfs-subvolume-snapshot">¶</a></h3><p>
+Um einen aktuellen Zustand des Dateisystemes bzw. Teilen davon zu erhalten (Snapshot), kann man über ein Terminal<sup><a href="#source-1">[1]</a></sup> diesen erstellen lassen (quasi Backup). Dieses kann in einem laufenden System oder auch aus einem Live-System erfolgen. Als Quelle wird von einer Partition mit Subvolumes ausgegangen. Als Beispiel wird hier vom Laufwerk <strong>/dev/sda1</strong> mit dem Unterlaufwerk (Subvolume) <strong>@home</strong> ausgegangen. Man gibt dann  nacheinander in ein Terminal<sup><a href="#source-1">[1]</a></sup> ein:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo mount /dev/sda1 /mnt </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">cd /mnt </pre></div></div><p>Der Schnappschuss wird erstellt mit:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs subvolume snapshot @home home-2012-04-28 </pre></div></div><p>Als Ziel <span class="underline">muss</span> ein Verzeichnis auf dem gleichen Laufwerk gewählt werden, als Bezeichnung sollte eine mit aussagefähigem Text (z.B.: <code class="notranslate">home-datum</code>) genommen werden. Es wird dabei nur geringfügig mehr Speicherplatz in Anspruch genommen, da der Snapshot nur ein zusätzliches Unterlaufwerk (Subvolume) darstellt, intern werden die Verzeichnisse und Dateien nur mit den Metadaten verlinkt. Einen älteren Schnappschuss sollte man mit dem Befehl <a class="crosslink" href="#btrfs-subvolume-delete"><code class="notranslate">btrfs subvolume delete</code></a> löschen. Danach kann/sollte man den Einhängepunkt wieder lösen mit:</p><div class="bash"><div class="contents"><pre class="notranslate">cd .. </pre></div></div><p>
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo umount /dev/sda1 </pre></div></div><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Nach dem Löschen eines Schnappschusses werden in dem automatisch startenden Hintergrundprozess (<code class="notranslate">btrfs-cleaner</code>) alle überflüssigen Dateien und Metadaten überprüft und gelöscht. Dass kann je nach Datenmenge und Zugriffszeit auf die Festplatte(n) erhebliche Zeit in Anspruch nehmen. Ein Weiterarbeiten ist dabei grundsätzlich möglich.
+</p></div></div><div class="box experts"><h3 class="box experts">Experten-Info:</h3><div class="contents"><p>Nach einem Schnappschuss bleiben die realen Dateien auf der Festplatte solange erhalten, bis dieser Schnappschuss wieder gelöscht wird. Deshalb sollte man vor dem Anlegen eines Schnappschusses alle überflüssigen Daten / Dateien löschen.
+</p><ul><li><p>Beispiel 1</p></li></ul><p>Vorhanden seien Kernel A und Kernel B, als man den Schnappschuss angelegt hat. Nach einiger Zeit wird der Kernel C hinzugefügt und der Kernel A gelöscht. Dann bleiben trotzdem alle Daten für Kernel A auf der Festplatte bestehen, denn diese werden (bis zum Löschen) vom Schnappschuss gehalten. 
+</p><ul><li><p>Beispiel 2</p></li></ul><p>Im Verzeichnis <strong>/var/cache/apt/archives</strong> werden die Pakete für die Installation, das Update bzw. ein Upgrade solange aufbewahrt, bis diese gelöscht werden (was nicht immer automatisch erfolgt). So sammeln sich so ggf. größere Datenmengen an!
+</p></div></div></div></div><div class="section_1"><h2 id="Direkte-Befehle">Direkte Befehle<a class="headerlink" href="#Direkte-Befehle">¶</a></h2><p>
+</p><div class="section_2"><h3 id="btrfs-convert">btrfs-convert<a class="headerlink" href="#btrfs-convert">¶</a></h3><p>
+Die Konvertierung von ext2 - ext4 nach Btrfs erfolgt bei einer Eingabe in das Terminal<sup><a href="#source-1">[1]</a></sup> von:
+</p><div class="bash"><div class="contents"><pre class="notranslate">btrfs-convert [-d] [-i] [-n] [-r] GERÄT </pre></div></div><p>
+Die zugehörigen Optionen und Parameter sind:
+</p><ul><li><p><code class="notranslate">-d</code> = deaktiviere Prüfsummen der Daten</p></li><li><p><code class="notranslate">-i</code> = ignoriere xattrs and ACLs</p></li><li><p><code class="notranslate">-n</code> = verzichte auf Verdichtung kleiner Files (&lt; Seitegröße)</p></li><li><p><code class="notranslate">-r</code> = mit der Sicherungsdatei zurück konvertieren</p></li><li><p><code class="notranslate">GERÄT</code> = relevantes Laufwerk / Partition</p></li></ul><p>Eine detailierte Erläuterung erfolgt im separaten WIKI → <a class="internal" href="./konvertierung_nach_btrfs.html">Konvertierung nach Btrfs</a></p></div><div class="section_2"><h3 id="btrfs-debug-tree">btrfs-debug-tree<a class="headerlink" href="#btrfs-debug-tree">¶</a></h3><p>
+</p><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Der Befehl </p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs-debug-tree </pre></div></div><p> darf nicht auf einem eingehängten (mounted) Dateisystem angewendet werden!
+</p></div></div><p>Um den gesamten Metadatenbaum (BTree) eines Laufwerkes mit den einzelnen Einträgen (Äste und Blätter) zu überprüfen, gibt man für ein <span class="underline">nicht eingebundenes</span> Laufwerk im Terminal<sup><a href="#source-1">[1]</a></sup> ein:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfs-debug-tree [-e] GERÄT &gt; Ausgabe.txt </pre></div></div><p>Die bedarfsweise Option 
+</p><ul><li><p><code class="notranslate">-e</code></p></li></ul><p>beschränkt die Ausgabe auf fehlerhafte Einträge.</p><p>Das zu prüfende Laufwerk ist mit <strong>/dev/sda1</strong> bzw. der relevanten Laufwerksbezeichnung vorzugeben. Um die Ausgabe in Ruhe auswerten zu könnnen, sollte man die Ausgabe mit <code class="notranslate">&gt; Ausgabe.txt</code> in eine Datei umleiten.</p></div><div class="section_2"><h3 id="btrfs-image">btrfs-image<a class="headerlink" href="#btrfs-image">¶</a></h3><p>
+Mit diesem Befehl wird eine Image-Datei erstellt, die von der angegebenen Quelle ein Image unter dem angebenen Ziel erstellt.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Das Ergebnis ist <span class="underline">nicht</span> vergleichbar mit dem, was mit dem Befehl <a class="crosslink" href="#btrfs-subvolume-snapshot"><code class="notranslate">btrfs subvolume snapshot</code></a> erreicht wird. Hier werden nur die Metadaten des Btrfs-Dateisystemes in eine Datei kopiert - die eigentlichen Daten werden jeweils als Null-Datei übernommen!
+</p></div></div><p>Dazu gibt man in das Terminal<sup><a href="#source-1">[1]</a></sup> ein:</p><div class="bash"><div class="contents"><pre class="notranslate">btrfs-image [Option(en)] QUELLE ZIEL </pre></div></div><p>Die Optionen haben folgende Bedeutung:
+</p><ul><li><p><code class="notranslate">-r</code> = Schreibe ein älteres Image zurück</p><ul><li><p><code class="notranslate">QUELLE</code> ist das Image, <code class="notranslate">ZIEL</code> das Laufwerk</p></li></ul></li><li><p><code class="notranslate">-c WERT</code> = Komprimierung, Wert von 0 = keine, 1 = niedrigste <code class="notranslate">zlib</code>, 9 = höchste <code class="notranslate">zlib</code></p></li><li><p><code class="notranslate">-t WERT</code> = Anzahl der parallelen Prozesse, Wert von 1 bis 32, Default = Anzahl CPUs</p><ul><li><p><code class="notranslate">QUELLE</code> = ein gültiges Btrfs-Laufwerk - <strong>/dev/sdXY</strong></p></li><li><p><code class="notranslate">ZIEL</code> = eine aussagefähige Bezeichnung (inkl. Pfadangabe)</p></li></ul></li></ul><p>
+Dieses Image belegt zusätzlichen Speicherplatz und sollte nach dem Fertigstellen auf ein anderes oder externes Laufwerk gesichert werden.</p><div class="box improvable"><h3 class="box improvable">Ausbaufähige Anleitung</h3><div class="contents"><p>
+Dieser Anleitung fehlen noch einige Informationen. Wenn Du etwas
+verbessern kannst, dann editiere den Beitrag, um die Qualität
+des Wikis noch weiter zu verbessern.
+</p></div></div></div></div><div class="section_1"><h2 id="Kompakte-Befehle">Kompakte Befehle<a class="headerlink" href="#Kompakte-Befehle">¶</a></h2><p>
+</p><div class="section_2"><h3 id="btrfsck">btrfsck<a class="headerlink" href="#btrfsck">¶</a></h3><p>
+Um eine manuelle Prüfung am Dateisystem für ein <span class="underline">nicht</span> eingebundenes Laufwerk auszuführen, gibt man in das Terminal<sup><a href="#source-1">[1]</a></sup> ein:</p><div class="bash"><div class="contents"><pre class="notranslate">btrfsck /dev/sda1 </pre></div></div><p>und erhält bei einem fehlerfreien Durchlauf (beispielhaft):
+</p><pre class="notranslate">found 2662187008 bytes used err is 0
+total csum bytes: 2410436
+total tree bytes: 192860160
+total fs tree bytes: 179916800
+btree space waste bytes: 46454099
+file data blocks allocated: 13467791360
+ referenced 2771017728
+Btrfs Btrfs v0.19</pre><p>Da diese Dateiprüfung zur Zeit mit dem Standardtool keine Korrekturen ausführt, kann man sich selbst helfen, indem man eine solche Prüfung manuell ausführt. Dazu legt man sich das folgende Skript z.B. als <strong>dateick-btrfs</strong> ausführbar ab nach:
+</p><ul><li><p><strong>/usr/local/sbin</strong></p></li></ul><p>
+</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="nv">E_BADARGS</span><span class="o">=</span><span class="m">65</span>
+
+<span class="k">function</span> FEHLERSUCHE <span class="o">{</span>
+  find <span class="nv">$1</span> -mount -type f -exec cat <span class="s1">'{}'</span> &gt; /dev/null <span class="se">\;</span>
+<span class="o">}</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -ne <span class="m">1</span> <span class="o">]</span>
+<span class="k">then</span>
+  <span class="nb">echo</span> <span class="s2">"Bitte geben Sie den Pfad zu"</span><span class="p">;</span>
+  <span class="nb">echo</span> <span class="s2">"dem eingehängten Laufwerk an"</span><span class="p">;</span>
+  <span class="nb">exit</span> <span class="nv">$E_BADARGS</span>
+<span class="k">fi</span>
+
+<span class="nb">echo</span> <span class="s2">"Skript \"dateick-btrfs\" wurde gestartet."</span><span class="p">;</span>
+<span class="nb">echo</span> <span class="s2">"Überprüfe </span><span class="nv">$1</span><span class="s2">, das wird eine Weile dauern!"</span><span class="p">;</span>
+FEHLERSUCHE <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>
+<span class="nb">echo</span> <span class="s2">"Fehlersuche beendet! Bitte prüfen Sie 'dmesg' auf mögliche Fehler"</span><span class="p">;</span>
+
+<span class="nb">exit</span> <span class="m">0</span>
+</pre></div>
+</td></tr></table></div><p>Das Skript wird im Terminal z.B. mit:
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo dateick-btrfs /etc </pre></div></div><p>
+gestartet und überprüft den angegebenen Pfad rekursiv dahingehend, ob die Prüfsummen der Dateien mit den redundanten Prüfsummen übereinstimmen. Wenn eine falsche Prüfsumme gefunden wird, sendet die Kernelroutine einen entsprechenden Hinweis, der im Terminal mit
+</p><div class="bash"><div class="contents"><pre class="notranslate">dmesg </pre></div></div><p>
+ausgelesen werden kann.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Das Skript arbeitet nicht auf einem mit <code class="notranslate">single</code> formatierten Btrfs-Dateisystem, siehe auch den Expertenhinweis beim Befehl <a class="internal" href="./installieren_auf_btrfs-dateisystem.html#Optionen-mkfs-btrfs"><code class="notranslate">mkfs.btrfs</code></a>.
+</p></div></div></div><div class="section_2"><h3 id="btrfstune">btrfstune<a class="headerlink" href="#btrfstune">¶</a></h3><p>
+Will man ein reales Backup von einer Partition insgesamt oder einem Unterlaufwerk (Subvolume) extern anlegen, so <span class="underline">muss</span> diese Option vorab gesetzt (enabled) werden. Alternativ kann man die Partition auch mit der Option <code class="notranslate">ro</code> einbinden!</p><p>Will man mit einem Dateisystem (experimentell) arbeiten, so empfiehlt es sich, auch hierbei dieses auf den Status
+</p><ul><li><p>nur lesbar (readonly)</p></li></ul><p>einzustellen.</p><p>Dazu gibt man in ein Terminal<sup><a href="#source-1">[1]</a></sup> ein:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfstune 0 /dev/sda1 </pre></div></div><p>Die Optionen sind
+</p><ul><li><p><code class="notranslate">0</code> = normale Einstellung, les- und beschreibbar (disabled)</p></li><li><p><code class="notranslate">1</code> = Seeding-Flag setzen, <span class="underline">nur</span> lesbar (enabled)</p></li></ul><p>  
+Bei erfolgreicher Umstellung wird beim Setzen des Seeding-Flags keine Rück-/Fehlermeldung ausgegeben - hingegen erfolgt im Fehlerfall bzw. beim Entfernen des Seeding-Flags folgende Ausgabe:
+</p><pre class="notranslate">seeding flag is not set on /dev/sda1</pre></div></div><div class="section_1"><h2 id="Obsolete-Befehle">Obsolete Befehle<a class="headerlink" href="#Obsolete-Befehle">¶</a></h2><p>
+</p><div class="section_2"><h3 id="btrfsctl">btrfsctl<a class="headerlink" href="#btrfsctl">¶</a></h3><p>
+Dieser alternative Befehl sollte nicht mehr verwendet werden (unsichere Befehlsausführung, wird nicht mehr gepflegt).</p><p>Der <code class="notranslate">btrfsctl</code>-Befehl stellt eine Zusammenfassung der einzelnen <code class="notranslate">btrfs</code>-Befehle dar. Die Eingabe in das Terminal <sup><a href="#source-1">[1]</a></sup> erfolgt mit:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo btrfsctl [Option(en)] </pre></div></div></div><div class="section_2"><h3 id="btrfs-show">btrfs-show<a class="headerlink" href="#btrfs-show">¶</a></h3><p>
+Dieses ist ein alternativer Befehl zu <a class="crosslink" href="#btrfs-filesystem-show"><code class="notranslate">btrfs filesystem show</code></a> und sollte nicht mehr verwendet werden (unsichere Befehlsausführung, wird nicht mehr gepflegt).</p></div><div class="section_2"><h3 id="btrfs-vol">btrfs-vol<a class="headerlink" href="#btrfs-vol">¶</a></h3><p>
+Dieses ist ein alternativer Befehl,  je nach Option <code class="notranslate">-a</code> = <a class="crosslink" href="#btrfs-device-add"><code class="notranslate">btrfs device add</code></a>, <code class="notranslate">-b</code> = <a class="crosslink" href="#btrfs-filesystem-balance"><code class="notranslate">btrfs filesystem balance</code></a> sowie <code class="notranslate">-r</code> = <a class="crosslink" href="#btrfs-device-delete"><code class="notranslate">btrfs device delete</code></a> und sollte nicht mehr verwendet werden (unsichere Befehlsausführung, wird nicht mehr gepflegt).</p></div><div class="section_2"><h3 id="btrfs-filesystem-balance">btrfs filesystem balance<a class="headerlink" href="#btrfs-filesystem-balance">¶</a></h3><p>
+Dieses ist ein alternativer Befehl zu <a class="crosslink" href="#btrfs-balance"><code class="notranslate">btrfs balance</code></a> und sollte nicht mehr verwendet werden (unsichere Befehlsausführung, wird nicht mehr gepflegt).</p></div></div><div class="section_1"><h2 id="Links">Links<a class="headerlink" href="#Links">¶</a></h2><p>
+</p><ul><li><p><a class="internal" href="./btrfs-dateisystem.html">Das Btrfs Dateisystem</a> <img alt="{Übersicht}" src="./_/021d71c30babf2ce4dd27339ba3c55995610945b.png"/></p><ul><li><p><a class="internal" href="./faq_btrfs-dateisystem.html">Allgemeine Hinweise zum Btrfs Dateisystem</a></p></li><li><p><a class="internal" href="./installieren_auf_btrfs-dateisystem.html">Installieren auf Btrfs-Dateisystem</a></p></li><li><p><a class="internal" href="./konvertierung_nach_btrfs.html">Konvertierung nach Btrfs</a></p></li><li><p><a class="internal" href="./btrfs-mountoptionen.html">Btrfs-Mountoptionen</a></p></li></ul></li></ul><p>
+</p><div class="section_2"><h3 id="Informationen">Informationen<a class="headerlink" href="#Informationen">¶</a></h3><p>
+</p><ul><li><p><a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Btrfs">Btrfs-Dateisystem</a></p></li><li><p><a class="interwiki interwiki-ubuntu_doc" href="https://help.ubuntu.com/community/btrfs">Ubuntu-Help Btrfs</a></p></li><li><p><a class="external" href="https://btrfs.wiki.kernel.org/" rel="nofollow">btrfs.wiki.kernel.org</a> <img alt="{us}" src="./_/36152d62b7197ebd79bc885a8a2614445933cf09.png"/></p></li><li><p><a class="external" href="http://www.admin-magazin.de/Das-Heft/2009/04/Das-neue-Linux-Dateisystem-Btrfs-im-Detail" rel="nofollow">Btrfs im Detail</a> <img alt="{de}" src="./_/ffd333e1d59794eac31aea8b3e984e1b88473c33.png"/></p></li><li><p><a class="external" href="http://www.funtoo.org/wiki/BTRFS_Fun" rel="nofollow">funtoo.org Btrfs</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/></p></li></ul><p>
+</p></div><div class="section_2"><h3 id="Downloads">Downloads<a class="headerlink" href="#Downloads">¶</a></h3><p>
+</p><ul><li><p><a class="external" href="http://sourceforge.net/projects/partedmagic/" rel="nofollow">PartedMagic</a> <img alt="{en}" src="./_/d5ecf89114b079f85d02099649c4ee617ffa34c7.png"/> <img alt="{dl}" src="./_/8e630211d0f5f5cb7c6424055f9c9aa15a420fab.png"/></p></li></ul><p></p></div></div></div>
+<p class="meta">
+<a href="./befehle_btrfs-dateisystem/a/revision/944676.html">Diese Revision</a> wurde am 4. November 2017 06:32 von <a href="https://ubuntuusers.de/user/Fatboy_Snarky/">Fatboy_Snarky</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="./startseite.html">Wiki</a></li>
+<li><a href="./befehle_btrfs-dateisystem.html">Befehle Btrfs-Dateisystem</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="./_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="./_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="./_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="./_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Howto/LVM_nachträglich_einrichten › ubuntuusers statisches Wiki</title>
+<link href="../_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="../_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="../_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="../_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="../_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="../_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="../startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="../howto/lvm_nachträglich_einrichten.html">LVM nachträglich einrichten</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/Howto/LVM_nachträglich_einrichten">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="../wiki/index.html">Index</a></li>
+<li><a href="../wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="../wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="../wiki.html">Übersicht</a></li>
+<li><a href="../wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="../wiki/benutzung.html">Benutzung</a></li>
+<li><a href="../kategorien.html">Kategorie</a></li>
+<li><a href="../wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="../wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="../howto.html">Howto anlegen</a></li>
+<li><a href="../wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="../wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="../baustelle.html">Baustellen</a></li>
+<li><a href="../wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="../wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="../wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="../wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="../howto/lvm_nachträglich_einrichten/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="../howto/lvm_nachträglich_einrichten/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="../howto/lvm_nachträglich_einrichten/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="../howto/lvm_nachträglich_einrichten/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="../howto/lvm_nachträglich_einrichten/a/backlinks.html">LVM nachträglich einrichten</a></h1>
+<div id="page"><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Die Verwendung dieses Howto geschieht auf eigene Gefahr. Bei Problemen mit der Anleitung melde dies bitte in der dazugehörigen Diskussion und wende dich zusätzlich an den Verfasser des Howtos.
+</p></div></div><div class="box advanced"><h3 class="box advanced">Artikel für fortgeschrittene Anwender</h3><div class="contents"><p>
+Dieser Artikel erfordert mehr Erfahrung im Umgang mit
+Linux und ist daher nur für fortgeschrittene Benutzer
+gedacht.
+</p></div></div><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Diese Howto-Anleitung wurde zuletzt von <a class="crosslink user" href="https://ubuntuusers.de/user/frostschutz/">frostschutz</a> am 24.10.2016 unter <strong>Ubuntu 16.10</strong> erfolgreich getestet.
+</p></div></div><div class="section_1"><h2 id="Problembeschreibung">Problembeschreibung<a class="headerlink" href="#Problembeschreibung">¶</a></h2><p>
+Man hat eine Installation ohne LVM vorgenommen, oder sonst eine Partition / Blockgerät ohne LVM direkt mit einem Dateisystem formatiert, und möchte nun nachträglich doch LVM einsetzen, ohne alle Daten umkopieren zu müssen. Die nachträgliche Einrichtung von LVM ist unter bestimmten Randbedingungen möglich.</p><p>Zwar würde eine Formatierung mit LVM normalerweise den Anfang des Dateisystems überschreiben. LVM erzeugt jedoch logische Blockgeräte, die von der physikalischen Anordnung der Daten weitgehend unabhängig sind. Es ist somit möglich, den Anfang des Dateisystems ans Ende des Blockgerätes zu verlegen. Korrektes Alignment vorausgesetzt, können die restlichen Daten an Ort und Stelle verbleiben.</p><p>Ein Dateisystem belegt im Normalfall den gesamten Speicherplatz des Blockgerätes, auf dem es erstellt wurde. LVM kann nur vielfache der <a class="internal" href="../logical_volume_manager.html#Physical-Extent">PE-Size</a> verwenden, so daß ggf. der letzte angebrochene PE am Ende des Blockgerät nicht mehr für das Dateisystem selbst nutzbar ist. Die LVM-Metadaten selbst liegen am Partitionsanfang und müssen in unserem Falle aus Alignment-Gründen auf die PE-Size angehoben werden.</p><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Die <em>Mindestanforderung</em> für die nachträgliche Einrichtung von LVM ist also,</p><ul><li><p>das Dateisystem um die doppelte PE-Size zu verkleinern,</p></li></ul><p>oder
+</p><ul><li><p>die Partition / das Blockgerät um die doppelte PE-Size zu vergrößern,</p></li></ul><p>
+so daß effektiv der von LVM benötigte Platz für Metadaten/Overhead auf dem Blockgerät freigegeben wird. <em>Mindestanforderung</em> heißt: es darf ruhig mehr sein.
+</p></div></div></div><div class="section_1"><h2 id="Wichtige-Vorbereitung">Wichtige Vorbereitung<a class="headerlink" href="#Wichtige-Vorbereitung">¶</a></h2><p>
+Zunächst ist eine schlimme Falle in LVM zu deaktivieren. Wenn in der Datei <code class="notranslate">/etc/lvm/lvm.conf</code> die Variable <code class="notranslate">issue_discards=1</code> gesetzt ist, ist <strong>kompletter Datenverlust</strong> auf SSDs, in VMs, und bei Loop-Devices <strong>vorprogrammiert</strong>. Bei Ubuntu ist dies leider Standard, und ein <code class="notranslate">lvresize</code>/<code class="notranslate">lvremove</code> ist somit nicht rückgängig zu machen, da LVM dann ein discard/TRIM durchführen würde.</p><p>Um diesen Wert zu prüfen kann der folgende Befehl verwendet werden:</p><div class="bash"><div class="contents"><pre class="notranslate"># lvm dumpconfig | grep discards
+	issue_discards=<strong class="highlighted">0</strong> </pre></div></div><p>Ist der Wert nicht Null, muss er durch editieren der <code class="notranslate">/etc/lvm/lvm.conf</code> auf 0 gesetzt werden, was nach dem editieren nochmals zu prüfen ist.</p></div><div class="section_1"><h2 id="Anleitung">Anleitung<a class="headerlink" href="#Anleitung">¶</a></h2><p>
+</p><p>
+</p><table style="float: right; clear: left; margin-top: 0px; border: none"><tr class="titel"><td> <img alt="lvm-nachträglich-einrichten.png" class="image-default" src="../_/0ab0041a8c0058676b3acdb6741732376a4789bc.png"/></td></tr><tr class="normal"><td style="text-align: center; width: 300px"> Illustrierung der einzelnen Schritte</td></tr></table><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Nochmal:</p><ul><li><p>Dateisystem um <code class="notranslate">2*PE</code> kleiner als das Blockgerät.</p></li><li><p>In der <code class="notranslate">lvm.conf</code> ist <code class="notranslate">issue_discards=0</code>.</p></li></ul><p>
+Diese Anleitung richtet sich an Experten, die mit LVM bereits bestens vertraut sind. Kompletter Datenverlust ist möglich.
+</p></div></div><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Es wird ausschließlich das Anlegen von LVM selbst beschrieben, ohne weitere Konfigurationschritte. Die Vergrößerung von Partitionen bzw. Verkleinerung von Dateisystemen (z.B. <code class="notranslate">parted</code>/<code class="notranslate">resize2fs</code>) sowie Aktualisierung von <code class="notranslate">/etc/fstab</code>, Bootloader, Initramfs, ... ist an anderen Stellen ausführlich beschrieben und soll hier nicht wiederholt werden.
+</p></div></div><p>Die Ausgangssituation ist ein Blockgerät das hinreichend größer ist als das darauf befindliche Dateisystem und somit die o.g. Anforderungen erfüllt. Das Blockgerät wurde also vergrößert oder das Dateisystem verkleinert. Wer diese Situation an einem Loop-Gerät üben will kann dies folgendermaßen erzeugen:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="gp">#</span> truncate -s 2G loop.img
+<span class="gp">#</span> losetup --find --show loop.img
+<span class="go">/dev/loop9</span>
+<span class="gp">#</span> mkfs.ext4 /dev/loop9 1G
+</pre></div>
+</td></tr></table></div><p>In diesem Fall ist <code class="notranslate">/dev/loop9</code> ein Blockgerät der Größe 2G, das Dateisystem belegt jedoch nur 1G. Wer das Ergebnis später auf Korrektheit prüfen will, kann dieses Dateisystem mounten und Testdateien darauf anlegen. Das Dateisystem sollte im weiteren Verlauf jedoch nicht mehr gemountet sein.</p><p>Da der Anfang des Dateisystems überschrieben wird, ist es notwendig davon ein Backup zu erstellen. Dieses sollte mindestens <code class="notranslate">3*PE-Size</code> umfassen, darf jedoch auch gerne etwas größer ausfallen.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="gp">#</span> dd <span class="k">if</span><span class="o">=</span>/dev/loop9 <span class="nv">bs</span><span class="o">=</span>1M <span class="nv">count</span><span class="o">=</span><span class="k">$((</span><span class="m">32</span><span class="o">*</span><span class="m">4</span><span class="k">))</span> <span class="nv">of</span><span class="o">=</span>dateisystem-anfang.img
+<span class="go">128+0 records in</span>
+<span class="go">128+0 records out</span>
+<span class="go">134217728 bytes (134 MB) copied, 0.987076 s, 136 MB/s</span>
+</pre></div>
+</td></tr></table></div><p>Der Anfang des Dateisystems ist somit gesichert und LVM kann angelegt werden. Dieses Beispiel verwendet (ohne besonderen Grund) eine <code class="notranslate">PE-Size</code> von <code class="notranslate">32 MiB</code>. Die gewünschte Größe ist sowohl bei <code class="notranslate">pvcreate</code> und <code class="notranslate">vgcreate</code> anzugeben.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="gp">#</span> pvcreate --dataalignment<span class="o">=</span>32M /dev/loop9
+<span class="go">WARNING: ext4 signature detected on /dev/loop9 at offset 1080. Wipe it? [y/n]: y</span>
+<span class="go">  Wiping ext4 signature on /dev/loop9.</span>
+<span class="go">  Physical volume "/dev/loop9" successfully created</span>
+<span class="gp">#</span> vgcreate --physicalextentsize<span class="o">=</span>32M LoopVG /dev/loop9
+<span class="go">  Volume group "LoopVG" successfully created</span>
+</pre></div>
+</td></tr></table></div><p>Damit ist nun das Dateisystem vorläufig Geschichte und an seinen Platz ist ein LVM-VG gerückt. Der innerhalb dieser VG verwendbare Platz startet bei 32 MiB (Alignment) und endet, sofern die Partition nicht zufällig genau einem vielfachen von 32 MiB entspricht, bis zu 32 MiB vor Partitionsende.</p><p>Legt man nun einfach ein LV auf die volle Größe an, beginnt dieses am falschen Punkt, nämlich 32 MiB im Dateisystem. Die ersten 32 MiB müssen jedoch am Ende des Blockgeräts, hinter dem Dateisystem liegen. Dies ist am einfachsten durch einen temporären Abstandhalter zu erreichen.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="gp">#</span> lvcreate -l100%free -n abstandhalter LoopVG
+<span class="go">  Logical volume "abstandhalter" created.</span>
+<span class="gp">#</span> lvresize -L-32M LoopVG/abstandhalter
+<span class="go">  WARNING: Reducing active logical volume to 1.94 GiB</span>
+<span class="go">  THIS MAY DESTROY YOUR DATA (filesystem etc.)</span>
+<span class="go">Do you really want to reduce abstandhalter? [y/n]: y</span>
+<span class="go">  Size of logical volume LoopVG/abstandhalter changed from 1.97 GiB (63 extents) to 1.94 GiB (62 extents).</span>
+<span class="go">  Logical volume abstandhalter successfully resized</span>
+</pre></div>
+</td></tr></table></div><p>Der Abstandhalter wurde auf die volle Größe angelegt und anschließend um 32 MiB (1 PE) verkleinert. Somit sind nun 32 MiB am Ende frei und man kann das eigentliche Dateisystem-LV anlegen.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="gp">#</span> lvcreate -L32M -n dateisystem LoopVG
+<span class="go">  Logical volume "dateisystem" created.</span>
+</pre></div>
+</td></tr></table></div><p>Das Dateisytem-LV beginnt somit mit dem letzten PE und der Abstandhalter kann dementsprechend wieder entfernt und das LV vergrößert werden.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="gp">#</span> lvremove LoopVG/abstandhalter
+<span class="go">Do you really want to remove active logical volume abstandhalter? [y/n]: y</span>
+<span class="go">  Logical volume "abstandhalter" successfully removed</span>
+<span class="gp">#</span> lvresize -l+100%FREE LoopVG/dateisystem
+<span class="go">  Size of logical volume LoopVG/dateisystem changed from 32.00 MiB (1 extents) to 1.97 GiB (63 extents).</span>
+<span class="go">  Logical volume filesystem successfully resized</span>
+</pre></div>
+</td></tr></table></div><p>Das dateisystem-LV verwendet nun 100% des verfügbaren Speicherplatzes. Die ersten 32 MiB davon liegen jedoch physikalisch am Ende des Blockgeräts; dahinter sind die Daten mit der ursprünglichen Partition identisch, da der 1. PE (jetzt der 2. PE innerhalb des LV) durch das gewünschte Alignment von 32 MiB, ebenso just am physikalischen Offset von 32 MiB liegt. Dies sollte jedoch an dieser Stelle nochmals überprüft werden.</p><p>Zurückspielen des im LV fehlenden Dateisystem-Anfangs. Es ist wichtig hier nur so wenig wie möglich zurückzuschreiben und nicht alles auf einmal, da sonst nichts geprüft werden kann. Eigentlich sollte es genügen, 32 MiB zurückzuschreiben, da ab 32 MiB das 1. PE beginnt das nicht verändert worden sein sollte. Tatsächlich nullt LVM beim Erstellen eines LV die ersten 4 KiB, so auch beim Erstellen des Abstandhalters. Daher müssen tatsächlich etwas mehr als 32 MiB zurückgeschrieben werden:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="gp">#</span> dd <span class="nv">bs</span><span class="o">=</span>1M <span class="nv">count</span><span class="o">=</span><span class="k">$((</span><span class="m">32</span><span class="o">+</span><span class="m">1</span><span class="k">))</span> <span class="k">if</span><span class="o">=</span>dateisystem-anfang.img <span class="nv">of</span><span class="o">=</span>/dev/LoopVG/dateisystem
+<span class="go">33+0 records in</span>
+<span class="go">33+0 records out</span>
+<span class="go">34603008 bytes (35 MB) copied, 0.0509655 s, 679 MB/s</span>
+</pre></div>
+</td></tr></table></div><p>Überprüfung mittels <code class="notranslate">cmp</code>:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="gp">#</span> cmp dateisystem-anfang.img /dev/LoopVG/dateisystem
+<span class="go">cmp: EOF on dateisystem-anfang.img</span>
+</pre></div>
+</td></tr></table></div><p>Es wurden nur 33 MiB auf das LV zurückgeschrieben, das zuvor erstellte Backup war jedoch 128 MiB groß. <code class="notranslate">cmp</code> hat somit 128 MiB geprüft und keine Unterschiede gefunden. Alles OK!</p><p>Zur weiteren Sicherheit Dateiystem prüfen:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="gp">#</span> fsck.ext4 -f -n /dev/LoopVG/dateisystem
+<span class="go">e2fsck 1.42.13 (17-May-2015)</span>
+<span class="go">Pass 1: Checking inodes, blocks, and sizes</span>
+<span class="go">Pass 2: Checking directory structure</span>
+<span class="go">Pass 3: Checking directory connectivity</span>
+<span class="go">Pass 4: Checking reference counts</span>
+<span class="go">Pass 5: Checking group summary information</span>
+<span class="go">/dev/LoopVG/dateisystem: 12/65536 files (0.0% non-contiguous), 258048/262144 blocks</span>
+</pre></div>
+</td></tr></table></div><p>Anschließend zunächst read-only mounten und Dateien prüfen. Der Vorgang sollte damit abgeschlossen sein.</p></div><div class="section_1"><h2 id="Notbremse">Notbremse<a class="headerlink" href="#Notbremse">¶</a></h2><p>
+Treten bei einem Schritt Fehler auf, hat man verloren. Als Sofortmaßnahme ist die VG zu deaktivieren und das zuvor erstellte Backup zurückzuspielen:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="gp">#</span> vgchange -a n
+<span class="gp">#</span> cp dateisystem-anfang.img /dev/loop9
+</pre></div>
+</td></tr></table></div><p>Und sofern man die Mindestanforderung nicht vergeigt und nichts ins LV-Dateisystem geschrieben hat, sollte damit wieder alles beim alten sein.</p></div><div class="section_1"><h2 id="Links">Links<a class="headerlink" href="#Links">¶</a></h2><p>
+</p><ul><li><p><a class="external" href="https://github.com/g2p/blocks#readme" rel="nofollow" title="https://github.com/g2p/blocks#readme">https://github.com/g2p/blocks#readme</a> — bietet ein Programm <code class="notranslate">lvmify</code> das nach dem gleichen Prinzip arbeitet</p></li><li><p><a class="internal" href="../logical_volume_manager.html">Logical Volume Manager</a></p></li><li><p><a class="internal" href="../howto.html">Howto</a> <img alt="{Übersicht}" src="../_/021d71c30babf2ce4dd27339ba3c55995610945b.png"/> - Übersicht aller Howto-Artikel</p></li></ul><p>
+</p></div></div>
+<p class="meta">
+<a href="../howto/lvm_nachträglich_einrichten/a/revision/943727.html">Diese Revision</a> wurde am 22. September 2017 14:41 von <a href="https://ubuntuusers.de/user/frostschutz/">frostschutz</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="../startseite.html">Wiki</a></li>
+<li><a href="../howto.html">Howto</a></li>
+<li><a href="../howto/lvm_nachträglich_einrichten.html">LVM nachträglich einrichten</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="../_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="../_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="../_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="../_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

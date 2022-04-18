@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Howto/systemd_Service_Unit_Beispiel › ubuntuusers statisches Wiki</title>
+<link href="../_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="../_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="../_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="../_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="../_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="../_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="../startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="../howto/systemd_service_unit_beispiel.html">systemd Service Unit Beispiel</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/Howto/systemd_Service_Unit_Beispiel">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="../wiki/index.html">Index</a></li>
+<li><a href="../wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="../wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="../wiki.html">Übersicht</a></li>
+<li><a href="../wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="../wiki/benutzung.html">Benutzung</a></li>
+<li><a href="../kategorien.html">Kategorie</a></li>
+<li><a href="../wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="../wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="../howto.html">Howto anlegen</a></li>
+<li><a href="../wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="../wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="../baustelle.html">Baustellen</a></li>
+<li><a href="../wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="../wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="../wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="../wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="../howto/systemd_service_unit_beispiel/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="../howto/systemd_service_unit_beispiel/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="../howto/systemd_service_unit_beispiel/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="../howto/systemd_service_unit_beispiel/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="../howto/systemd_service_unit_beispiel/a/backlinks.html">systemd Service Unit Beispiel</a></h1>
+<div id="page"><div class="box warning"><h3 class="box warning">Achtung!</h3><div class="contents"><p>Die Verwendung dieses Howto geschieht auf eigene Gefahr. Bei Problemen mit der Anleitung melde dies bitte in der dazugehörigen Diskussion und wende dich zusätzlich an den Verfasser des Howtos.
+</p></div></div><div class="box notice"><h3 class="box notice">Hinweis:</h3><div class="contents"><p>Diese Howto-Anleitung wurde zuletzt von <a class="crosslink user" href="https://ubuntuusers.de/user/noisefloor/">noisefloor</a> am 27.6.2017 unter <strong>Ubuntu 16.04</strong> erfolgreich getestet.
+</p></div></div><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="../terminal.html">Ein Terminal öffnen</a></p></li><li><p><a class="crosslink anchor" href="#source-2" id="source-2"></a> <a class="internal" href="../editor.html">Einen Editor öffnen</a></p></li><li><p><a class="crosslink anchor" href="#source-3" id="source-3"></a> <a class="internal" href="../sudo.html">Root-Rechte</a></p></li><li><p><a class="crosslink anchor" href="#source-4" id="source-4"></a> <a class="internal" href="../rechte.html">Rechte für Dateien und Ordner ändern</a></p></li></ol></div></div><div class="toc toc-depth-3"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a class="crosslink" href="#service-Datei-anlegen">.service Datei anlegen
+</a></li><li><a class="crosslink" href="#Service-Unit-aktivieren">Service Unit aktivieren
+</a></li><li><a class="crosslink" href="#Modifikation">Modifikation
+</a><ol class="arabic"><li><a class="crosslink" href="#Benutzer-aendern">Benutzer ändern
+</a></li><li><a class="crosslink" href="#Server-im-gesamten-Netzwerk-erreichbar-machen">Server im gesamten Netzwerk erreichbar m...</a></li><li><a class="crosslink" href="#zusaetzliche-Befehl-vor-und-nach-dem-Start-ausfuehren">zusätzliche Befehl vor und nach dem Star...</a></li></ol></li><li><a class="crosslink" href="#Links">Links
+</a></li></ol></div><p>Im folgenden wird anhand eines Beispiels gezeigt, wie man eine eigene <a class="internal" href="../systemd/service_units.html">Service Unit</a> für <a class="internal" href="../systemd.html">systemd</a> anlegt und aktiviert.</p><p>Das Programm, welches ausgeführt werden soll, ist ein simpler, in Python geschriebener Webserver, welcher nichts anderes macht, als auf localhost und Port 8000 zu lauschen und beim Aufruf der Adresse <code class="notranslate">http://127.0.0.1:8000</code> "Hello World" und die aktuelle Uhrzeit zurück liefert.</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+
+<span class="kn">from</span> <span class="nn">wsgiref.simple_server</span> <span class="kn">import</span> <span class="n">make_server</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="k">def</span> <span class="nf">hello_world_app</span><span class="p">(</span><span class="n">environ</span><span class="p">,</span> <span class="n">start_response</span><span class="p">):</span>
+    <span class="n">status</span> <span class="o">=</span> <span class="s1">'200 OK'</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">'Content-type'</span><span class="p">,</span> <span class="s1">'text/plain; charset=utf-8'</span><span class="p">)]</span>
+    <span class="n">start_response</span><span class="p">(</span><span class="n">status</span><span class="p">,</span> <span class="n">headers</span><span class="p">)</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s1">'Hello World @ {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">text</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">'utf-8'</span><span class="p">)]</span>
+
+<span class="n">httpd</span> <span class="o">=</span> <span class="n">make_server</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="mi">8000</span><span class="p">,</span> <span class="n">hello_world_app</span><span class="p">)</span>
+<span class="n">httpd</span><span class="o">.</span><span class="n">server_forever</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div><p>Der Code wird z.B. im Homeverzeichnis unter <strong>/home/BENUTZER/code/simple_wsgi_server.py</strong> gespeichert. Anschließend muss die Datei noch ausführbar gemacht werden<sup><a href="#source-4">[4]</a></sup>.</p><div class="section_1"><h2 id="service-Datei-anlegen">.service Datei anlegen<a class="headerlink" href="#service-Datei-anlegen">¶</a></h2><p>
+Als erstes muss eine <strong>.service</strong> Datei unter <strong>/etc/systemd/system</strong> angelegt werden, z.B. mit dem Dateinamen <strong>wsgiserver.service</strong>. Diese Datei editiert man dann mit einem Editor mit Root-Rechten<sup><a href="#source-2">[2]</a></sup><sup><a href="#source-3">[3]</a></sup> und fügt folgenden Inhalt ein:</p><pre class="notranslate">[Unit]
+Description=Simple WSGI Server
+
+[Service]
+Type=simple
+ExecStart=/home/BENUTZER/code/simple_wsgi_server.py
+
+[Install]
+WantedBy=multi-user.target</pre></div><div class="section_1"><h2 id="Service-Unit-aktivieren">Service Unit aktivieren<a class="headerlink" href="#Service-Unit-aktivieren">¶</a></h2><p>
+Jetzt muss die Service Unit noch aktiviert werden<sup><a href="#source-1">[1]</a></sup><sup><a href="#source-3">[3]</a></sup>:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo systemctl enable wsgiserver.service </pre></div></div><p>Anschließend kann die Unit gestartet werden:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo systemctl start wsgiserver.service </pre></div></div><p>Wer jetzt auf dem Rechner im Webbrowser die Adresse <code class="notranslate">http://127.0.0.1:8000</code> aufruft, der sollte mit einem "Hello World" plus Datum und Uhrzeit begrüßt werden.</p></div><div class="section_1"><h2 id="Modifikation">Modifikation<a class="headerlink" href="#Modifikation">¶</a></h2><p>
+</p><div class="section_2"><h3 id="Benutzer-aendern">Benutzer ändern<a class="headerlink" href="#Benutzer-aendern">¶</a></h3><p>
+Da in der <strong>.service</strong> Datei kein Nutzer angegeben ist, wird das Python-Skript von Root ausgeführt. Um den Nutzer zu ändern, fügt ergänzt man die Datei <strong>wsgiserver.service</strong> in der Sektion <em>"[Service]"</em> einfach um die Zeile</p><pre class="notranslate">User=www-data</pre><p>Dann läuft das Skript mit den Rechten des Nutzers <strong>www-data</strong>. Natürlich kann man hier auch jeden anderen Benutzer angeben, der auf dem System existiert.</p><p>Wichtig ist dabei, dass dieser Nutzer auch die nötigen <a class="internal" href="../rechte.html">Rechte</a> hat, die Datei auszuführen. Für das obige Beispiel des einfachen Servers würde das Ausführungsrechte benötigt.</p><p>Möchte man für die Python-Datei bei nur das Leserecht für alle Nutzer einräumen, dann wäre folgende Änderung an der <strong>.service</strong> Datei notwendig:</p><pre class="notranslate">...
+[Service]
+...
+ExecStart=/usr/bin/python3 /home/BENUTZER/code/simple_wsgi_server.py
+...</pre><p>Da der Pfad zum Python3 Interpreter mit angegeben wird, muss die Datei <strong>simple_wsgi_server.py</strong> nicht (mehr) ausführbar sein.</p></div><div class="section_2"><h3 id="Server-im-gesamten-Netzwerk-erreichbar-machen">Server im gesamten Netzwerk erreichbar machen<a class="headerlink" href="#Server-im-gesamten-Netzwerk-erreichbar-machen">¶</a></h3><p>
+Der Server aus dem obigen Beispiel läuft nur auf <code class="notranslate">localhost</code> und ist somit für andere Rechner im selben Netzwerk nicht erreichbar. Wer das möchte, muss die letzte Zeile im Python-Skript wie folgt ändern:</p><div class="code"><table class="notranslate syntaxtable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="notranslate syntax"><pre><span></span><span class="n">httpd</span> <span class="o">=</span> <span class="n">make_server</span><span class="p">(</span><span class="s1">'0.0.0.0'</span><span class="p">,</span> <span class="mi">8000</span><span class="p">,</span> <span class="n">hello_world_app</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div><p>Damit lauft der Server auf allen IP-Addresse.</p><p>Und da der Server jetzt über das Netzwerk erreichbar ist, sollt er natürlich nur gestartet werden, wenn das Netzwerk auch verfügbar ist. Um das zu erreichen, fügt man in der <strong>.service</strong>-Datei in der Sektion <em>"[Unit]"</em> noch folgende Zeile ein:</p><pre class="notranslate">After=network.target</pre><p>systemd prüft so vor Starten des Servers, ob das Netzwerk vorhanden / bereit ist.</p></div><div class="section_2"><h3 id="zusaetzliche-Befehl-vor-und-nach-dem-Start-ausfuehren">zusätzliche Befehl vor und nach dem Start ausführen<a class="headerlink" href="#zusaetzliche-Befehl-vor-und-nach-dem-Start-ausfuehren">¶</a></h3><p>
+Das Python Serverskript benötigt keine zusätzlichen Befehle, die vor oder nach dem Start ausgeführt werden müssten. Andere / komplexere Skripte / Programme, benötigen dies aber vielleicht doch, z.B. zum Löschen von alten Daten etc.</p><p>Um zusätzliche Befehle auszuführen, hinterlegt man in der Sektion <em>"[Service]"</em> die Schlüssel <code class="notranslate">ExecStartPre</code> und / oder <code class="notranslate">ExecStartPost</code></p><p>Würde man die Sektion um z.B. um die Zeile</p><pre class="notranslate">ExecStartPost=/bin/echo "Server gestartet"</pre><p>so würde der Eintrag "Server gestartet" zusätzlich in die zentrale Logdatei geschrieben, nachdem der Server erfolgreich gestartet wurde.</p><p>Hinweis: bei realen Applikation ist diese Art von Logging normalerweise überflüssig, da systemd sowieso in die zentrale Logdatei loggt, wenn ein Service gestartet wurde. Für diese Beispiel sieht der Logeintrag z.B so aus</p><pre class="notranslate">Jan 16 17:32:31 noisefloor-xubuntu systemd[1]: Started Simple WSGI Server</pre></div></div><div class="section_1"><h2 id="Links">Links<a class="headerlink" href="#Links">¶</a></h2><p>
+</p><ul><li><p><a class="internal" href="../systemd/service_units.html">systemd/Service Units</a> - Wikiartikel zum Thema Aufbau von Service Units unter systemd</p></li></ul><p>
+</p></div></div>
+<p class="meta">
+<a href="../howto/systemd_service_unit_beispiel/a/revision/942250.html">Diese Revision</a> wurde am 28. Juni 2017 14:44 von <a href="https://ubuntuusers.de/user/noisefloor/">noisefloor</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="../startseite.html">Wiki</a></li>
+<li><a href="../howto.html">Howto</a></li>
+<li><a href="../howto/systemd_service_unit_beispiel.html">systemd Service Unit Beispiel</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="../_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="../_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="../_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="../_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Skripte/WLAN-Prozesspriorität › ubuntuusers statisches Wiki</title>
+<link href="../_/34e5d78db234405457773cc26741aada99f7fff2.css" rel="stylesheet" type="text/css"/>
+<link href="../_/61af784fc5c93e296fec3be63b8e0bb48443727c.css" rel="stylesheet" type="text/css"/>
+<link href="../_/634e8d1015b02df998cdec7cb07c5aff61d068b5.css" rel="stylesheet" type="text/css"/>
+<link href="../_/b583ff7e37147497a59224ccf54cfee812a1d21b.css" rel="stylesheet" type="text/css"/>
+<link href="../_/a0d5775ed6f36f8cc5b12bcf2f1c1bd98a3eb225.css" rel="stylesheet" type="text/css"/>
+<link href="../_/98de73bded109a634cbd1e924abdd8c8964b8df2.css" media="print" rel="stylesheet" type="text/css"/>
+
+<meta content="#a87300" name="theme-color"/>
+
+</head>
+<body>
+<div class="wrap">
+<div class="header">
+<h1><a href="http://ubuntuusers.de/"><span>ubuntuusers.de</span></a></h1>
+<ul class="tabbar">
+<li class="portal">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ubuntuusers.de/">Portal<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="forum">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://forum.ubuntuusers.de/">Forum<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="wiki active">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/">Wiki<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="ikhaya">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://ikhaya.ubuntuusers.de/">Ikhaya<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="planet">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://planet.ubuntuusers.de/">Planet<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+<li class="community">
+<div class="tab_left"></div>
+<div class="tab_center"><a href="http://wiki.ubuntuusers.de/Mitmachen">Mitmachen<span></span></a></div>
+<div class="tab_right"></div>
+</li>
+</ul>
+</div>
+<div class="body">
+<div class="appheader">
+
+<div class="pagetitle">
+<h1 class="breadcrumb_title">
+<a class="separator" href="../startseite.html">
+              Wiki
+            </a>
+</h1>
+<h2 class="breadcrumb_subtitle"><a href="../skripte/wlan-prozesspriorität.html">WLAN-Prozesspriorität</a></h2>
+</div>
+</div><div class="message staticwikinote"><strong>Hinweis:</strong> Dies ist ein statischer Snapshot unseres Wikis vom Jan. 17, 2018 und kann daher nicht bearbeitet werden. Der aktuelle Artikel ist unter <a href="http://wiki.ubuntuusers.de/Skripte/WLAN-Prozesspriorität">wiki.ubuntuusers.de</a> zu finden.</div>
+
+<!--[if lt IE 8]>
+      <div class="message fail">Bitte installiere den Internet Explorer 8 oder neuer.</div>
+      <![endif]-->
+<div class="page_content">
+<div class="navi_sidebar navigation">
+<div class="container">
+<h3 class="navi_wiki">Wiki</h3>
+<ul>
+<li><a href="../wiki/index.html">Index</a></li>
+<li><a href="../wiki/recentchanges.html">Letzte Änderungen</a></li>
+<li><a href="../wiki/neue_artikel.html">Liste neuer Artikel</a></li>
+<li><a href="../wiki.html">Übersicht</a></li>
+<li><a href="../wiki/faq_-_häufig_gestellte_fragen.html">FAQ</a></li>
+<li><a href="../wiki/benutzung.html">Benutzung</a></li>
+<li><a href="../kategorien.html">Kategorie</a></li>
+<li><a href="../wiki/tagcloud.html">Wortwolke</a></li>
+</ul>
+<h3 class="navi_join">Mitmachen</h3>
+<ul>
+<li><a href="../wikiartikel_anlegen.html">Wikiartikel anlegen</a></li>
+<li><a href="../howto.html">Howto anlegen</a></li>
+<li><a href="../wiki/referenz.html">Wiki-Referenz</a></li>
+<li><a href="../wiki/syntax.html">Wiki-Syntax</a></li>
+<li><a href="../baustelle.html">Baustellen</a></li>
+<li><a href="../wiki/artikelideen.html">Artikelideen</a></li>
+<li><a href="../wiki/ungetestet.html">Ungetestete Artikel</a></li>
+<li><a href="../wiki/vorlagen/ausbaufähig/a/backlinks.html">Ausbaufähige Artikel</a></li>
+<li><a href="../wiki/vorlagen/fehlerhaft/a/backlinks.html">Fehlerhafte Artikel</a></li>
+<li><a href="https://forum.ubuntuusers.de/forum/wiki/">Rund ums Wiki</a></li>
+</ul>
+<h3 class="navi_config">Konfiguration</h3>
+<ul>
+<li><a href="../skripte/wlan-prozesspriorität/a/backlinks.html">Backlinks anzeigen</a></li>
+<li>
+        Exportieren
+        <ul>
+<li><a href="../skripte/wlan-prozesspriorität/a/export/meta.html" rel="nofollow">Metadaten</a></li>
+<li><a href="../skripte/wlan-prozesspriorität/a/export/raw.html" rel="nofollow">Rohformat</a></li>
+<li><a href="../skripte/wlan-prozesspriorität/a/export/html.html" rel="nofollow">HTML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="content content_tabbar content_sidebar">
+<h1 class="pagetitle"><a href="../skripte/wlan-prozesspriorität/a/backlinks.html">WLAN-Prozesspriorität</a></h1>
+<div id="page"><p>
+</p><p>
+</p><div class="box tested_for"><h3 class="box tested_for">Dieser Artikel wurde für die folgenden
+Ubuntu-Versionen getestet:</h3><div class="contents"><p> 
+Dieser Artikel ist größtenteils für alle Ubuntu-Versionen gültig.
+</p></div></div><p>
+</p><div class="box knowledge"><h3 class="box knowledge">Zum Verständnis dieses Artikels sind folgende Seiten hilfreich:</h3><div class="contents"><p>
+</p><ol class="arabic"><li><p><a class="crosslink anchor" href="#source-1" id="source-1"></a> <a class="internal" href="../terminal.html">Ein Terminal öffnen</a> </p></li><li><p><a class="crosslink anchor" href="#source-2" id="source-2"></a> <a class="internal" href="../editor.html">Einen Editor öffnen</a> </p></li><li><p><a class="crosslink anchor" href="#source-3" id="source-3"></a> <a class="internal" href="../sudo.html">root-Rechte</a> </p></li><li><p><a class="crosslink anchor" href="#source-4" id="source-4"></a> <a class="internal" href="../shell/bash-skripting-guide_für_anfänger.html">Shell/Bash-Skripting-Guide für Anfänger</a></p></li></ol></div></div><div class="toc toc-depth-2"><div class="head">Inhaltsverzeichnis</div><ol class="arabic"><li><a class="crosslink" href="#Manuelle-berpruefung">Manuelle Überprüfung
+</a></li><li><a class="crosslink" href="#Skript-erstellen">Skript erstellen
+</a><ol class="arabic"><li><a class="crosslink" href="#Parameter-anpassen">Parameter anpassen
+</a></li><li><a class="crosslink" href="#Skript-testen-und-optimieren">Skript testen und optimieren
+</a></li><li><a class="crosslink" href="#Debug-Meldungen">Debug-Meldungen
+</a></li><li><a class="crosslink" href="#Logbuch">Logbuch
+</a></li></ol></li><li><a class="crosslink" href="#Automatischer-Start">Automatischer Start
+</a></li><li><a class="crosslink" href="#Versionen">Versionen
+</a></li></ol></div><p> <img alt="Wiki/Icons/terminal.png" class="image-default" src="../_/6f31267c02ec44ef98179062267fb87f33b1ba62.png"/></p><p>In diesem Artikel wird ein Skript beschrieben, um bei WLAN-Verbindungsproblemen unter Ubuntu die Prozesspriorität von wpa_supplicant, des DHCP-Clients und des verwendeten Managers automatisch anzupassen. Das Problem tritt meist bei mit Windows WLAN-Treibern in Verbindung mit <a class="internal" href="../wlan/ndiswrapper.html">NdisWrapper</a> auf.</p><p>Beim Aufbau einer WLAN-Verbindung wird wegen einer zu hohen Prozesspriorität von <a class="internal" href="../wlan/wpa_supplicant.html">wpa_supplicant</a>, des verwendeten Managers und <a class="internal" href="../wlan/ndiswrapper.html">NdisWrapper</a> oftmals keine IP-Adresse vom Router zugewiesen. Während des Verbindungsaufbaus kann die Priorität der Prozesse geändert werden. Der Effekt muss nicht auftreten und ist auch von der Rechenleistung des Systems und der Anzahl weiterer Systemprozesse abhängig.</p><p>Bei einer klassischen Konfiguration über die Datei <a class="internal" href="../interfaces.html">interfaces</a> kann die Priorität durch den direkten Aufruf von wpa_supplicant eingestellt werden. Hinweise dazu in folgendem <a class="crosslink post" href="https://forum.ubuntuusers.de/post/1942046/">Forenbeitrag</a></p><p>Merkmale des Skripts:<br/></p><ul><li><p>Speziell angepasste Versionen für den <a class="internal" href="../network-manager.html">Network-Manager</a> und <a class="internal" href="../wicd.html">Wicd</a>. Für Wicd gibt es alternativ auch einen <a class="crosslink post" href="https://forum.ubuntuusers.de/post/1946278/">Patch</a></p></li><li><p>Erkennung und Überwachung der LAN-Schnittstelle</p></li><li><p>Überwachung der Verbindung über <a class="internal" href="../ping.html">ping</a> (abschaltbar) und der IP-Adresse (LAN und WLAN)</p></li><li><p>Debug-Modus</p></li><li><p>Erweiterte Protokollierung der Ereignisse</p></li></ul><p>
+</p><div class="section_1"><h2 id="Manuelle-berpruefung">Manuelle Überprüfung<a class="headerlink" href="#Manuelle-berpruefung">¶</a></h2><p>
+Prozesspriorität bei laufendem Verbindungsversuch im Terminal <sup><a href="#source-1">[1]</a></sup> ändern. Siehe dazu auch <a class="internal" href="../shell/nice.html">Shell/nice</a>.
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo renice +19 $(pidof wpa_supplicant)  </pre></div></div><p>
+Funktioniert nun der Verbindungsaufbau, liegt es an einer zu hohen Prozesspriorität.
+Je nach verwendetem Manager die benötigte Skript-Version auswählen, das Skript erstellen und zuerst im <a class="interwiki interwiki-wikipedia" href="https://de.wikipedia.org/wiki/Debugger">Debug-Modus</a> starten um die optimalen Werte der Zeitgeber für den Verbindungsaufbau zu ermitteln. Die Werte sind auch von der Rechenleistung des Systems abhängig und die Vorgabewerte des Skripts sind ggf. anzupassen.</p></div><div class="section_1"><h2 id="Skript-erstellen">Skript erstellen<a class="headerlink" href="#Skript-erstellen">¶</a></h2><p>
+Mit einem Editor <sup><a href="#source-2">[2]</a></sup> erzeugt man eine leere Datei und kopiert den zum verwendeten Manager passenden Code des des unter <a class="internal" href="../skripte/wlan-prozesspriorität.html#Versionen">Versionen</a> aufgezeigten Skriptes hinein und speichert unter entsprechendem Dateinamen ab. Anschließend muss das Skript noch ausführbar gemacht werden <sup><a href="#source-4">[4]</a></sup>.</p><div class="section_2"><h3 id="Parameter-anpassen">Parameter anpassen<a class="headerlink" href="#Parameter-anpassen">¶</a></h3><p>
+Im folgenden Abschnitt am Anfang des Skripts können verschieden Einstellungen festgelegt werden. 
+</p><pre class="notranslate">### Variablen
+### Zeiten für die Loops und Wartezeiten in Sekunden - Werte ggf. anpassen
+...</pre><p>
+Entsprechende Hinweistexte stehen vor dem entsprechenden Parameter. Vorab sind einige Einstellungen für die verwendeten Schnittstellen und IP-Adressen für den Verbindungstest zu überprüfen und an das eigene System anzupassen. Ab Ubuntu 9.10 Karmic Koala ist es erforderlich die Priorität einzelner Prozesse individuell anzupassen. Beachte die Erläuterungen und Vorgabewerte im Konfigurationsblock des Skripts.</p><p>Name der vorhandenen LAN-Schnittstelle
+</p><pre class="notranslate">### LAN-Verbindung prüfen
+LAN_Interface="eth0"</pre><p>
+Name der WLAN-Schnittstelle:
+</p><pre class="notranslate">### WLAN_Interface = Schnittstelle ggf. anpassen
+WLAN_Interface="wlan0"</pre><p>
+IP-Adresse des eigenen Routers oder Gateways:
+</p><pre class="notranslate">### IP-Adresse die angepingt werden soll (nur 1 Ping)
+### IP-des Routers, Gateways oder Adresse (z.B. google.de) eintragen
+pingip="192.168.178.1"</pre><p>Einstellungen der Zeitgeber:
+</p><pre class="notranslate">### Überwachungsintervall wenn LAN-Verbindung als aktiv erkannt wurde
+slow_Loop_LAN=120
+
+## Wartezeit vor renice bis wpa_supplicant sicher gestartet ist (0-4)
+wait_to_renice_wpa=0
+
+## Prozessüberwachung bevor wpa_supplicant gestartet ist (4-6)
+fast_Loop=4
+
+## Prozessüberwachung nachdem die Prozesspriorität von wpa_supplicant geändert wurde 
+## diese Zeit in Sek. steht auch dem Manager zur Verfügung eine Verbindung herzustellen 
+## Intervall für die Überwachung der WLAN-Verbindung 
+slow_Loop=65</pre><p>Für Wicd können zusätzlich die Werte für den verwendeten DHCP-Client eingestellt werden:
+</p><pre class="notranslate">## Wartezeit vor renice bis der DHCP-Client sicher gestartet ist (2-6)
+wait_to_renice_client=3
+
+### Wert für Prozesspriorität DHCP-Client - Wert ggf. anpassen
+prcprio_client=19
+
+### DHCP-Client (dhclient)(default), (dhpcpd) (pump)
+client="dhclient"</pre><p>Allgemeine Optionen:
+</p><pre class="notranslate">### ndiswrapper wird verwendet ja(1) default, nein(0)
+### kann bei Verwendung des Network-Managers die Stabilität der Verbindung verbessern
+ndiswrapper=1 
+
+### Prozesspriorität für ndiswrapper (-20 bis +19)
+### ubuntu 8.04 -9.04: +19
+### ubuntu 9.10: -12 bis -6 (-8 default)
+prio_ndis=-8
+
+### ping-Check aktiv (1) (default) / abgeschaltet (0)
+### zusätzliche Überwachung der Verbindung über ping
+pingcheck=1
+
+### Namen und Pfade der Protokolldateien ggf. anpassen
+LogFile="prcprio.log"
+
+### LOG sichtbar(1) (default) - Log versteckt(0)
+logvisible=1</pre><p>
+Ab Version 0.2.1c kann die Priorität der einzelnen Prozesse individuell angepasst und aktiviert bzw. deaktiviert werden. Ab ubuntu 9.10 ist es nicht ganz einfach die passenden Einstellungen zu ermitteln.</p></div><div class="section_2"><h3 id="Skript-testen-und-optimieren">Skript testen und optimieren<a class="headerlink" href="#Skript-testen-und-optimieren">¶</a></h3><p>
+Zum testen und ermitteln der optimalen Zeiten der internen Zeitgeber das Skript zuerst über Terminal <sup><a href="#source-1">[1]</a></sup><sup><a href="#source-3">[3]</a></sup> im Debugmodus starten:</p><div class="bash"><div class="contents"><pre class="notranslate">sudo ./prcprio_wicd.sh -d         # bei der Version für Wicd
+sudo ./prcprio_NM.sh -d           # bei der Version für den Network-Manager  </pre></div></div><p>Im Terminal werden nun alle Hinweistexte angezeigt. Das Programm kann mit 
+<span class="key">Strg</span>  + 
+<span class="key">C</span>  abgebrochen werden um die Parameter für die Zeitgeber bei Bedarf anzupassen. Anschließend das Skript neu starten und wieder einen Verbindungsaufbau mit dem Manager probieren. Zusätzliche Informationen werden im erzeugten Logbuch angezeigt (<strong>prcprio.log</strong>).</p></div><div class="section_2"><h3 id="Debug-Meldungen">Debug-Meldungen<a class="headerlink" href="#Debug-Meldungen">¶</a></h3><p>
+Typische Ausgabe de Debugmeldungen im Terminal:
+</p><pre class="notranslate">:~$ sudo ./prcprio_v021_NM.sh -d
+prcprio Debug-Mode aktiviert
+
+Loop:1 Timer: fast:4  slow-WLAN:65  slow-LAN:120  wait wpa:0
+Phase 0 - wpa_s-PID:2859 - Message: startup
+Ping: waiting for ping - WLAN ip-unknown - LAN ip-unknown
+
+Loop:2 Timer: fast:4  slow-WLAN:65  slow-LAN:120  wait wpa:0
+Phase 1 - wpa_s-PID:2859 - Message: waiting for PID
+Ping: waiting for ping - WLAN ip-unknown - LAN ip-unknown
+
+Loop:3 Timer: fast:4  slow-WLAN:65  slow-LAN:120  wait wpa:0
+Phase 2 - wpa_s-PID:2859 - Message: wait to renice
+Ping: waiting for ping - WLAN ip-unknown - LAN ip-unknown
+
+Loop:4 Timer: fast:4  slow-WLAN:65  slow-LAN:120  wait wpa:0
+Phase 3 - wpa_s-PID:2859 - Message: renice Process - Looptimer: 65 s
+Ping: waiting for ping - WLAN ip-unknown - LAN ip-unknown
+
+Loop:5 Timer: fast:4  slow-WLAN:65  slow-LAN:120  wait wpa:0
+Phase 3 - wpa_s-PID:2859 - Message: doing normal Loop - Looptimer: 65 s
+Ping: 0% packet loss - WLAN ip-addr:192.168.178.20 - LAN ip-unknown
+...</pre><div class="section_3"><h4 id="Details">Details<a class="headerlink" href="#Details">¶</a></h4><p>
+In der ersten Zeile wird die Anzahl der durchlaufenen Programmschleifen (Loop) und die eingestellten Werte der einzelnen Zeitgeber (Timer) angezeigt.
+</p><pre class="notranslate">Loop:1 Timer: fast:4  slow-WLAN:65  slow-LAN:120  wait wpa:0</pre><p>
+In der zweiten Zeile werden der Fortschritt (Phase), die erkannte Prozess-ID von wpa_supplicant, die momentan verwendeten Zeitwerte für die Programmschleife und weitere Meldungen zu den ausgelösten Aktionen des Skripts angezeigt.
+</p><pre class="notranslate">Phase 2 - wpa_s-PID:2859 - Message: wait to renice</pre><p>
+In der dritten Zeile stehen Rückmeldungen des Verbindungstests und die IP-Adressen der verwendeten Schnittstellen:
+</p><pre class="notranslate">Ping: waiting for ping - WLAN ip-unknown - LAN ip-unknown</pre><p>
+Bei bestehenden WLAN-Verbindung:
+</p><pre class="notranslate">Ping: 0% packet loss - WLAN ip-addr:192.168.178.20 - LAN ip-unknown</pre><p>
+Bei bestehenden LAN-Verbindung:
+</p><pre class="notranslate">Phase 3 - wpa_s-PID:5286 - Message:  LAN-IP detected Loop 120 s - clear LAN-IP Buffer - check at next Loop
+Ping: 0% packet loss - WLAN ip-Dummy - LAN ip-addr:192.168.178.41</pre></div></div><div class="section_2"><h3 id="Logbuch">Logbuch<a class="headerlink" href="#Logbuch">¶</a></h3><p>
+Typischer Inhalt der Logbuchdatei <strong>prcprio.log</strong>:</p><pre class="notranslate">prcprio V0.2 für Network-Manager 2009 by Elektronenblitz63
+published under GPL v3
+Fr 4. Sep 11:02:28 CEST 2009 Programmstart
+Ändere die Priorität von Ndiswrapper (ndis_wq/wrapndis_wq) und Network-Manager
+3611: Alte Priorität: 0, neue Priorität: 19
+3612: Alte Priorität: 0, neue Priorität: 19
+2855: Alte Priorität: 0, neue Priorität: 19
+Phase 0 - starte Loop - 4 Sek. - warte auf wpa_supplicant
+Phase 1 - wait to renice Prozess Nr:2859 (wpa_supplicant)
+2859: Alte Priorität: 0, neue Priorität: 19
+Phase 2 - Priorität Prozess Nr:2859=19 (wpa_supplicant) geändert.
+Phase 3 - Loop 65 Sek. - starte Schnittstellenüberwachung
+Fr 4. Sep 11:03:36 CEST 2009  - WLAN ip-addr:192.168.178.20 - prüfe Verbindung: ping to ip-192.168.178.1 - waiting for ping
+Fr 4. Sep 11:04:45 CEST 2009  - WLAN ip-addr:192.168.178.20 - prüfe Verbindung: ping to ip-192.168.178.1 - 0% packet loss
+Fr 4. Sep 11:05:55 CEST 2009  - WLAN ip-addr:192.168.178.20 - prüfe Verbindung: ping to ip-192.168.178.1 - 0% packet loss
+Fr 4. Sep 11:07:04 CEST 2009  - WLAN ip-addr:192.168.178.20 - prüfe Verbindung: ping to ip-192.168.178.1 - 0% packet loss
+Fr 4. Sep 11:07:16 CEST 2009 kann Host nicht pingen  - kill wpa_supplicant
+Phase 0 - Prozess beendet - unknown - Loop 4 Sek. - warte auf wpa_supplicant
+Phase 1 - wait to renice Prozess Nr:4907 (wpa_supplicant)
+4907: Alte Priorität: 0, neue Priorität: 19
+Phase 2 - Priorität Prozess Nr:4907=19 (wpa_supplicant) geändert.
+Phase 3 - Loop 65 Sek. - starte Schnittstellenüberwachung
+Fr 4. Sep 11:08:25 CEST 2009  - WLAN ip- - prüfe Verbindung: ping to ip-192.168.178.1 - waiting for ping
+Fr 4. Sep 11:08:27 CEST 2009 keine IP-Adresse LAN/WLAN-Interface - kill wpa_supplicant
+Phase 0 - Prozess beendet - WLAN-IP: unknown - Loop 4 Sek. - warte auf wpa_supplicant
+Phase 1 - wait to renice Prozess Nr:4966 (wpa_supplicant)
+4966: Alte Priorität: 0, neue Priorität: 19
+Phase 2 - Priorität Prozess Nr:4966=19 (wpa_supplicant) geändert.
+Phase 3 - Loop 65 Sek. - starte Schnittstellenüberwachung
+Fr 4. Sep 11:09:36 CEST 2009  - LAN/WLAN ip- - prüfe Verbindung: ping to ip-192.168.178.1 - waiting for ping
+Fr 4. Sep 11:10:45 CEST 2009  - LAN/WLAN ip-addr:192.168.178.20 - prüfe Verbindung: ping to ip-192.168.178.1 - 0% packet loss
+Fr 4. Sep 11:10:57 CEST 2009 kann Host nicht pingen  - kill wpa_supplicant
+Phase 0 - Prozess beendet - unknown - Loop 4 Sek. - warte auf wpa_supplicant
+Phase 1 - wait to renice Prozess Nr:5286 (wpa_supplicant)
+5286: Alte Priorität: 0, neue Priorität: 19
+Phase 2 - Priorität Prozess Nr:5286=19 (wpa_supplicant) geändert.
+Phase 3 - Loop 65 Sek. - starte Schnittstellenüberwachung
+Fr 4. Sep 11:12:07 CEST 2009  - LAN/WLAN ip-addr:192.168.178.41 - prüfe Verbindung: ping to ip-192.168.178.1 - waiting for ping
+LAN aktiv - Intervalltimer auf 120</pre><p>Das Skript für den Network-Manager wurde gestartet, die Prozesspriorität für die laufenden Prozesse wurden geändert und eine WLAN-Verbindung konnte aufgebaut werden. Im laufenden Betrieb wurde ein Verbindungsabbruch provoziert, erneut verbunden und anschließend von WLAN auf LAN umgeschaltet.</p><p>Funktioniert alles wie gewünscht, wird das Skript überlicherweise unter <strong>/opt</strong> abgelegt, wenn mehrere Benutzer die Funktion nutzen wollen oder müssen.
+</p><div class="bash"><div class="contents"><pre class="notranslate">sudo cp prcprio_wicd.sh /opt      # bei der Version für Wicd
+sudo cp prcprio_NM.sh /opt        # bei der Version für den Network-Manager  </pre></div></div></div></div><div class="section_1"><h2 id="Automatischer-Start">Automatischer Start<a class="headerlink" href="#Automatischer-Start">¶</a></h2><p>
+Funktioniert alles, kann ein Eintrag für das Script in <a class="internal" href="../rc.local.html">rc.local</a> angelegt werden um es automatisch zu starten.
+</p><pre class="notranslate">cd /opt
+./prcprio_wicd.sh
+exit 0</pre><p>Bei Verwendung des Network-Managers lautet der Eintrag entsprechend:
+</p><pre class="notranslate">cd /opt
+./prcprio_NM.sh
+exit 0</pre><p>
+Alternativ kann das Skript auch nach <strong>/sbin</strong> kopiert und über die <a class="internal" href="../autostart.html">Autostart</a>-Funktion aktiviert werden.</p></div><div class="section_1"><h2 id="Versionen">Versionen<a class="headerlink" href="#Versionen">¶</a></h2><p>
+Skriptversion 0.2.1c für den <a class="internal" href="../network-manager.html">Network-Manager</a> (<strong>prcprio_NM.sh</strong>):
+</p><pre class="notranslate">#!/bin/bash
+## prcprio.sh V0.2.1c by Elektronenblitz63 (UbuntuUsers.de) 2009
+## Version for Network-Manager
+## elektronenblitz63@online.de
+## published under GPL v3
+##
+## Changelog:
+## überwacht den Verbindungsaufbau über wpa_supplicant und ändert die Prozess-ID
+## für Network-Manager, Wicd und andere Manager bei Verbindungsproblemen
+## speziell für ubuntu 8.04 und 9.04
+##
+## V0.2.1c
+## Novenber 2009
+## Anpassungen für Ubuntu 9.10 Karmic Koala
+## Script optimiert. Prozesspriorität variabel einstellbar.
+##
+## V0.2.1b für NM
+## Script optimiert. Prozesspriorität des NM erhöht.
+##
+## V0.2.1
+## Debug-Modus möglich. Programmaufruf prcprio.sh -d im Terminal
+## Überwachung der LAN-Schnittstelle und WLAN-Schnittstelle
+## Verbindungsüberwachung über IP und Ping (optional)
+##
+## V0.1.1
+## Code verbessert
+## Logbuchausgaben überarbeitet und erweitert
+
+### Variablen
+### Zeiten für die Loops und Wartezeiten in Sekunden - Werte ggf. anpassen
+
+### LAN-Verbindung prüfen
+LAN_Interface="eth0"
+
+### Überwachungsintervall wenn LAN-Verbindung als aktiv erkannt wurde
+slow_Loop_LAN=120
+
+## Wartezeit vor renice bis wpa_supplicant sicher gestartet ist (0-4)
+wait_to_renice_wpa=0
+
+## Prozessüberwachung bevor wpa_supplicant gestartet ist (4-6)
+fast_Loop=4
+
+## Prozessüberwachung nachdem die Prozesspriorität von wpa_supplicant geändert wurde 
+## diese Zeit in Sek. steht auch dem Manager zur Verfügung eine Verbindung herzustellen 
+## Intervall für die Überwachung der WLAN-Verbindung 
+slow_Loop=65
+
+### WLAN_Interface = Schnitstelle ggf. anpassen
+WLAN_Interface="wlan0"
+
+### Prozessprioritäten
+
+### Wert für Prozesspriorität wpa_supplicant - Wert ggf. anpassen (+19 default)
+prcprio=+19
+
+### Priorität von ndiswrapper ändern ja(1) default, nein(0)
+ndiswrapper=1
+
+### Prozesspriorität für ndiswrapper (-20 bis +19)
+### ubuntu 8.04 -9.04: +19
+### ubuntu 9.10: -12 bis -6 (-8 default)
+prio_ndis=-8
+
+### Priorität des Network-Manager ändern ja(1) default, nein(0)
+reniceNM=1
+
+### Prozesspriorität für Network-Manager (-20 bis +19)
+### ubuntu 8.04 -9.04: +19
+### ubuntu 9.10: 0 - +10 (+6 default)
+prio_NM=+6
+
+### Verbindungsprüfung
+
+### ping-Check aktiv (1) (default) / abgeschaltet (0)
+### zusätzliche Überwachung der Verbindung über ping
+pingcheck=1
+
+### IP-Adresse die angepingt werden soll (nur 1 Ping)
+### IP-des Routers, Gateways oder Adresse (z.B. google.de) eintragen
+pingip="192.168.178.1"
+
+### Namen und Pfade der Protokolldateien ggf. anpassen
+File="prcprio.log"
+Path="`pwd`"
+LogFile="$Path"/"$File"
+
+### LOG sichtbar(1) (default) - Log versteckt(0)
+logvisible=1
+
+### Debug-Modus aus(0) (default)
+debug=0
+
+### allg. Variablen
+IP="unknown"
+DummyLIP="unknown"
+Control=0
+PID=0
+Datum="`date`"
+pingout="waiting for ping"
+DebugMessage="startup"
+nLoop=$slow_Loop
+lcounter=0
+LIP=""
+
+### Programm
+
+if [ "$1" = "-d" ]; then
+    debug=1
+fi
+
+if [ "$logvisible" = 0 ]; then
+  LogFile="$Path"/."$File"
+    echo "prcprio V0.2.1c - Logbuch versteckt" &gt;&gt; $LogFile
+fi
+
+if [ "$pingcheck" = 0 ]; then
+    pingout="deactivated"
+fi
+  
+if [ "$debug" = 1 ]; then
+    echo "prcprio Debug-Mode aktiviert"
+fi 
+
+echo "prcprio V0.2.1c für Network-Manager 2009 by Elektronenblitz63" &gt; $LogFile
+ echo "published under GPL v3" &gt;&gt; $LogFile
+  echo "$Datum Programmstart" &gt;&gt; $LogFile
+
+if [ "$ndiswrapper" = 1 ]; then
+   echo "Ändere die Priorität von Ndiswrapper (ndis_wq/wrapndis_wq)" &gt;&gt; $LogFile
+    renice $prio_ndis $(pidof ndis_wq) &gt;&gt; $LogFile
+     renice $prio_ndis $(pidof wrapndis_wq) &gt;&gt; $LogFile
+fi
+
+if [ "$reniceNM" = 1 ]; then
+   echo "Ändere die Priorität des Network-Manager" &gt;&gt; $LogFile
+    renice $prio_NM $(pidof NetworkManager) &gt;&gt; $LogFile
+fi
+
+   echo "Phase $Control - starte Loop - $fast_Loop Sek. - warte auf wpa_supplicant" &gt;&gt; $LogFile
+
+### Loop
+
+while true
+  do
+
+lcounter=$[$lcounter+1]
+
+### PID of wpa_supplicant
+
+   PID="`(pidof -s wpa_supplicant)`"
+  
+### Debugging on ?
+
+if [ "$debug" = 1 ]; then
+echo
+ echo "Loop:$lcounter Timer: fast:$fast_Loop  slow-WLAN:$slow_Loop  slow-LAN:$slow_Loop_LAN  wait wpa:$wait_to_renice_wpa"
+  echo "Phase $Control - wpa_s-PID:$PID - Message: $DebugMessage"
+   echo "Ping: $pingout - WLAN ip-$IP - LAN ip-$DummyLIP"
+fi
+
+### looking for Process and renice
+
+if [ "$Control" = 2 ]; then
+  Control=3
+   DebugMessage="renice Process - Looptimer: $slow_Loop s"
+    echo "Phase 3 - Loop $slow_Loop Sek. - starte Schnittstellenüberwachung" &gt;&gt; $LogFile
+
+elif [ "$Control" = 1 ]; then
+ Control=2
+
+  echo "Phase 1 - wait to renice Prozess Nr:$PID (wpa_supplicant)" &gt;&gt; $LogFile
+  
+    sleep "$wait_to_renice_wpa"
+
+     renice ${prcprio} ${PID} &gt;&gt; $LogFile
+
+     DebugMessage="wait to renice"
+       echo "Phase 2 - Priorität Prozess Nr:$PID=$prcprio (wpa_supplicant) geändert." &gt;&gt; $LogFile
+	
+	sleep 1
+ 
+
+### something wrong ? - kill Process
+
+### check ping / kill Process if necessary
+
+elif [ "$pingout" = "100% packet loss" ]; then
+    Datum="`date`"
+      echo "$Datum kann Host nicht pingen  - kill wpa_supplicant" &gt;&gt; $LogFile
+ 
+       killall wpa_supplicant
+	        
+  IP="unknown"
+   pingout="waiting for ping"
+    Control=0
+     slow_Loop=$nLoop
+      DummyLIP="unknown"	
+       DebugMessage="Warning! - Reset- no ping received !"
+      
+       echo "Phase $Control - Prozess beendet - $IP - Loop $fast_Loop Sek. - warte auf wpa_supplicant" &gt;&gt; $LogFile
+
+	 sleep 1
+
+### dont kill if LAN is active
+
+elif [ "$LIP" != "" ]; then
+
+   slow_Loop=$slow_Loop_LAN
+    IP="Dummy"
+     DummyLIP=$LIP
+      LIP=""
+
+       DebugMessage=" LAN-IP detected Loop $slow_Loop_LAN s - clear LAN-IP Buffer - check at next Loop"
+	echo "LAN aktiv - Intervalltimer auf $slow_Loop_LAN" &gt;&gt; $LogFile
+
+### check WLAN-IP / kill Process if necessary	 
+
+ elif [ "$IP" = "" ]; then
+   Datum="`date`"
+    echo "$Datum keine IP-Adresse LAN/WLAN-Interface - kill wpa_supplicant" &gt;&gt; $LogFile
+  
+      killall wpa_supplicant
+	       
+  IP="unknown"
+   pingout="waiting for ping"
+    Control=0
+     slow_Loop=$nLoop
+      DummyLIP="unknown"
+
+       DebugMessage="Warning! Reset Prozess - no LAN or WLAN-IP"
+        echo "Phase $Control - Prozess beendet - WLAN-IP: $IP - Loop $fast_Loop Sek. - warte auf wpa_supplicant" &gt;&gt; $LogFile
+	
+	  sleep 1
+
+### no Client active - check Process
+
+elif [ "$PID" = "" ]; then
+
+   Control=0
+    
+     sleep "$fast_Loop"
+
+	DebugMessage="wpa_supplicant no PID - checking LAN"
+
+elif [ "$Control" = 0 ]; then
+
+ Control=1
+
+  DebugMessage="waiting for PID"
+
+elif [ "$Control" = 3 ]; then
+
+    sleep "$slow_Loop"
+
+      DebugMessage="doing normal Loop - Looptimer: $slow_Loop s"
+
+### get IP's
+
+    IP=$(LANG=C ifconfig $WLAN_Interface | grep 'inet addr' | awk {'print $2'} | sed -e 's/"//g')
+
+	 sleep 1
+
+            LIP=$(LANG=C ifconfig $LAN_Interface | grep 'inet addr' | awk {'print $2'} | sed -e 's/"//g')
+
+	      sleep 1      
+      	
+		 Datum="`date`"
+
+        echo "$Datum  - LAN/WLAN ip-$IP$LIP - prüfe Verbindung: ping to ip-$pingip - $pingout" &gt;&gt; $LogFile   
+
+             pingout="deactivated"
+
+### pinging if activated
+
+if [ "$pingcheck" = 1 ]; then
+  pingout="`(ping -c1 $pingip | egrep -wo '100% packet loss|0% packet loss|connect: Network is unreachable')`"
+
+sleep 2
+
+### get WLAN-IP
+
+    IP=$(LANG=C ifconfig $WLAN_Interface | grep 'inet addr' | awk {'print $2'} | sed -e 's/"//g')
+
+### 
+
+    fi
+fi
+   done
+
+exit 0</pre><p>Skriptversion 0.2.1c für <a class="internal" href="../wicd.html">Wicd</a> (<strong>prcprio_wicd.sh</strong>):
+</p><pre class="notranslate">#!/bin/bash
+## prcprio.sh V0.2.1c by Elektronenblitz63 (UbuntuUsers.de) 2009
+## Version for Wicd
+## elektronenblitz63@online.de
+## published under GPL v3
+##
+## Changelog:
+## 28. April 2009
+## überwacht den Verbindungsaufbau über wpa_supplicant und ändert die Prozess-ID
+## für Network-Manager, Wicd und andere Manager bei Verbindungsproblemen
+## speziell für ubuntu 8.04 und 9.04
+##
+## V0.2.1c
+## Novenber 2009
+## Anpassungen für Ubuntu 9.10 Karmic Koala
+## Script optimiert. Prozesspriorität variabel einstellbar.
+##
+## V0.2.1
+## Debug-Modus möglich. Programmaufruf prcprio.sh -d im Terminal
+## Überwachung der LAN-Schnittstelle und WLAN-Schnittstelle
+## Verbindungsüberwachung über IP und Ping (optional)
+##
+## V0.1.1
+## Code verbessert
+## Logbuchausgaben überarbeitet und erweitert
+
+### Variablen
+### Zeiten für die Loops und Wartezeiten in Sekunden - Werte ggf. anpassen
+
+### LAN-Verbindung prüfen
+LAN_Interface="eth0"
+
+### Überwachungsintervall wenn LAN-Verbindung als aktiv erkannt wurde
+slow_Loop_LAN=120
+
+## Wartezeit vor renice bis wpa_supplicant sicher gestartet ist (0-4)
+wait_to_renice_wpa=0
+
+## Wartezeit vor renice bis der DHCP-Client sicher gestartet ist (2-8)
+wait_to_renice_client=6
+
+## Prozessüberwachung bevor wpa_supplicant gestartet ist (4-6)
+fast_Loop=4
+
+## Prozessüberwachung nachdem die Prozesspriorität von wpa_supplicant geändert wurde 
+## diese Zeit in Sek. steht auch dem Manager zur Verfügung eine Verbindung herzustellen 
+## Intervall für die Überwachung der WLAN-Verbindung 
+slow_Loop=60
+
+### DHCP-Client (dhclient)(default), (dhpcpd) (pump)
+client="dhclient"
+
+### WLAN_Interface = Schnitstelle ggf. anpassen
+WLAN_Interface="wlan0"
+
+### Beendet laufende Prozesse von wpa_supplicant und DH-CLient bei Startup
+### aktiv (1) (default) / abgeschaltet (0)
+startupkill=1 
+
+### Prozessprioritäten
+
+### Wert für Prozesspriorität DHCP-Client - Wert ggf. anpassen
+prcprio_client=+19
+
+### Wert für Prozesspriorität wpa_supplicant - Wert ggf. anpassen
+prcprio=+19
+
+### Priorität von ndiswrapper ändern ja(1) default, nein(0)
+ndiswrapper=1 
+
+### Prozesspriorität für ndiswrapper (-20 bis +19)
+### ubuntu 8.04 -9.04: +19
+### ubuntu 9.10: -6 bis +4 (0 default)
+prio_ndis=0
+
+### ping-Check aktiv (1) (default) / abgeschaltet (0)
+### zusätzliche Überwachung der Verbindung über ping
+pingcheck=1
+
+### IP-Adresse die angepingt werden soll (nur 1 Ping)
+### IP-des Routers, Gateways oder Adresse (z.B. google.de) eintragen
+pingip="192.168.178.1"
+
+### Namen und Pfade der Protokolldateien ggf. anpassen
+File="prcprio.log"
+Path="`pwd`"
+LogFile="$Path"/"$File"
+
+### LOG sichtbar(1) (default) - Log versteckt(0)
+logvisible=1
+
+### Debug-Modus aus(0) (default)
+debug=0
+
+### allg. Variablen
+IP="unknown"
+DummyLIP="unknown"
+Control=0
+PID=0
+Datum="`date`"
+pingout="waiting for ping"
+DebugMessage="startup"
+nLoop=$slow_Loop
+lcounter=0
+LIP=""
+
+### Programm
+
+if [ "$1" = "-d" ]; then
+    debug=1
+fi
+
+if [ "$logvisible" = 0 ]; then
+  LogFile="$Path"/."$File"
+    echo "prcprio V0.2.1c - Logbuch versteckt" &gt;&gt; $LogFile
+fi
+
+if [ "$pingcheck" = 0 ]; then
+    pingout="deactivated"
+fi
+  
+if [ "$debug" = 1 ]; then
+    echo "prcprio Debug-Mode aktiviert"
+fi 
+
+echo "prcprio V0.2.1c for WICD Network-Manager 2009 by Elektronenblitz63" &gt; $LogFile
+ echo "published under GPL v3" &gt;&gt; $LogFile
+  echo "$Datum Programmstart" &gt;&gt; $LogFile
+
+if [ "$ndiswrapper" = 1 ]; then
+   echo "Ändere die Priorität von Ndiswrapper (ndis_wq/wrapndis_wq) und Wicd" &gt;&gt; $LogFile
+
+    renice $prio_ndis $(pidof ndis_wq) &gt;&gt; $LogFile
+     renice $prio_ndis $(pidof wrapndis_wq) &gt;&gt; $LogFile
+fi  
+
+if [ "$startupkill" = 1 ]; then
+ killall wpa_supplicant
+  killall $client
+   echo "laufende Prozesse beendet" &gt;&gt; $LogFile
+fi
+
+echo "Phase $Control - starte Loop - $fast_Loop Sek. - warte auf wpa_supplicant" &gt;&gt; $LogFile
+
+### Loop
+
+while true
+  do
+
+lcounter=$[$lcounter+1]
+
+### PID of wpa_supplicant
+
+   PID="`(pidof -s wpa_supplicant)`"
+  
+### Debugging on ?
+
+if [ "$debug" = 1 ]; then
+echo
+ echo "Loop:$lcounter Timer: fast:$fast_Loop  slow-WLAN:$slow_Loop  slow-LAN:$slow_Loop_LAN  wait wpa:$wait_to_renice_wpa"
+  echo "Phase $Control - wpa_s-PID:$PID - Client-PID:$PID_client - Message: $DebugMessage"
+   echo "Ping: $pingout - WLAN ip-$IP - LAN ip-$DummyLIP"
+fi
+
+### looking for Process and renice
+
+if [ "$Control" = 2 ]; then
+  Control=3
+   DebugMessage="renice Process - Looptimer: $slow_Loop s"
+    echo "Phase 3 - Loop $slow_Loop Sek. - starte Schnittstellenüberwachung" &gt;&gt; $LogFile
+
+elif [ "$Control" = 1 ]; then
+ Control=2
+
+  echo "Phase 1 - wait to renice Prozess Nr:$PID (wpa_supplicant)" &gt;&gt; $LogFile
+  
+    sleep "$wait_to_renice_wpa"
+      renice ${prcprio} ${PID} &gt;&gt; $LogFile
+      sleep "$wait_to_renice_client"
+
+        PID_client="`(pidof -s $client)`"
+         renice ${prcprio_client} ${PID_client} &gt;&gt; $LogFile
+
+          DebugMessage="Renice Processes"
+           echo "Phase 2 - Priorität Prozess Nr:$PID=$prcprio (wpa_supplicant) und  $PID_client:=$prcprio_client ($client) geändert." &gt;&gt; $LogFile
+	
+	sleep 1
+
+### something wrong ? - kill Process
+
+### check ping / kill Process if necessary
+
+elif [ "$pingout" = "100% packet loss" ]; then
+    Datum="`date`"
+      echo "$Datum kann Host nicht pingen  - kill wpa_supplicant/DHCP-Client" &gt;&gt; $LogFile
+ 
+       killall wpa_supplicant
+        killall $client
+	        
+  IP="unknown"
+   pingout="waiting for ping"
+    Control=0
+     slow_Loop=$nLoop
+      DummyLIP="unknown"	
+       DebugMessage="Warning! - Reset- no ping received !"
+      
+       echo "Phase $Control - Prozess beendet - $IP - Loop $fast_Loop Sek. - warte auf wpa_supplicant" &gt;&gt; $LogFile
+
+	 sleep 1
+
+### dont kill if LAN is active
+
+elif [ "$LIP" != "" ]; then
+
+   slow_Loop=$slow_Loop_LAN
+    IP="Dummy"
+     DummyLIP=$LIP
+      LIP=""
+
+       DebugMessage=" LAN-IP detected Loop $slow_Loop_LAN s - clear LAN-IP Buffer - check at next Loop"
+	echo "LAN aktiv - Intervalltimer auf $slow_Loop_LAN" &gt;&gt; $LogFile
+
+### check WLAN-IP / kill Process if necessary	 
+
+ elif [ "$IP" = "" ]; then
+   Datum="`date`"
+    echo "$Datum keine IP-Adresse LAN/WLAN-Interface - kill wpa_supplicant/DHCP-Client" &gt;&gt; $LogFile
+  
+      killall wpa_supplicant
+       killall $client	       
+
+  IP="unknown"
+   pingout="waiting for ping"
+    Control=0
+     slow_Loop=$nLoop
+      DummyLIP="unknown"
+
+       DebugMessage="Warning! Reset Prozess - no LAN or WLAN-IP"
+        echo "Phase $Control - Prozess beendet - WLAN-IP: $IP - Loop $fast_Loop Sek. - warte auf wpa_supplicant" &gt;&gt; $LogFile
+	
+	  sleep 1
+
+### no Client active - check Process
+
+elif [ "$PID" = "" ]; then
+
+   Control=0
+    
+     sleep "$fast_Loop"
+
+	DebugMessage="wpa_supplicant no PID - checking LAN"
+
+elif [ "$Control" = 0 ]; then
+
+ Control=1
+
+  DebugMessage="waiting for PID"
+
+elif [ "$Control" = 3 ]; then
+
+    sleep "$slow_Loop"
+
+      DebugMessage="doing normal Loop - Looptimer: $slow_Loop s"
+
+### get IP's
+
+    IP=$(LANG=C ifconfig $WLAN_Interface | grep 'inet addr' | awk {'print $2'} | sed -e 's/"//g')
+
+	 sleep 1
+
+            LIP=$(LANG=C ifconfig $LAN_Interface | grep 'inet addr' | awk {'print $2'} | sed -e 's/"//g')
+
+	      sleep 1      
+      	
+		 Datum="`date`"
+
+        echo "$Datum  - LAN/WLAN ip-$IP$LIP - prüfe Verbindung: ping to ip-$pingip - $pingout" &gt;&gt; $LogFile   
+
+             pingout="deactivated"
+
+### pinging if activated
+
+if [ "$pingcheck" = 1 ]; then
+  pingout="`(ping -c1 $pingip | egrep -wo '100% packet loss|0% packet loss|connect: Network is unreachable')`"
+
+sleep 2
+
+### get WLAN-IP
+
+    IP=$(LANG=C ifconfig $WLAN_Interface | grep 'inet addr' | awk {'print $2'} | sed -e 's/"//g')
+
+### 
+
+    fi
+fi
+   done
+
+exit 0</pre><p></p></div></div>
+<p class="meta">
+<a href="../skripte/wlan-prozesspriorität/a/revision/193885.html">Diese Revision</a> wurde am 20. August 2010 09:03 von <a href="https://ubuntuusers.de/user/elektronenblitz63/">elektronenblitz63</a> erstellt.
+    
+  </p>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div class="pathbar breadcrumb">
+<div class="breadcrumb">
+<ol>
+<li><a href="../startseite.html">Wiki</a></li>
+<li><a href="../skripte.html">Skripte</a></li>
+<li><a href="../skripte/wlan-prozesspriorität.html">WLAN-Prozesspriorität</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="footer" style="clear: both;">
+<ul>
+<li class="poweredby"><li class="poweredby">Erstellt mit <a href="http://inyokaproject.org/">Inyoka</a></li></li>
+<li class="license">
+
+<img alt="Copyleft" src="../_/65dad5b770326dbbe1bd26ee6363e366a76bd8b7.png"/>
+          2004 – 2017 ubuntuusers.de • Einige Rechte vorbehalten<br/>
+<a href="../_lizenz.html" rel="cc:morePermissions">Lizenz</a> •
+          <a href="http://ubuntuusers.de/kontakt/">Kontakt</a> •
+          <a href="http://ubuntuusers.de/datenschutz/">Datenschutz</a> •
+          <a href="http://ubuntuusers.de/impressum/">Impressum</a> •
+          <a href="https://ubuntuusers.statuspage.io">Serverstatus</a>
+</li>
+<li class="housing">
+<span title="Unterbringung und Netzanbindung eines Servers">Serverhousing</span> gespendet von<br/>
+<img alt="noris network" src="../_/e7d27e9081eec23a8a5a5fe9434d7b2f1532e1d9.png"/>
+<img alt="anexia" src="../_/ad1b63a3fc35749344af0a03e8c3ce05a2a3ee7e.png"/>
+</li>
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
